@@ -10,7 +10,7 @@ import { rerender, go } from "../nav.js";
 import { startTour } from "../tour.js";
 import { dayKey } from "../time.js";
 
-export const VERSION = "1.4.0";
+export const VERSION = "1.4.1";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {

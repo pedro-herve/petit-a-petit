@@ -81,7 +81,7 @@ Pronto: na primeira abertura aparece *Criar conta grátis / Já tenho conta*. Qu
 
 A configuração do Firebase para apps web é pública por natureza; a segurança vem das regras do Firestore (cada usuário só lê e escreve o próprio documento).
 
-**Limites do plano gratuito** (sobram para uso pessoal e de família/amigos): 1 GB armazenado, 50 mil leituras e 20 mil gravações por dia no Firestore. Cada sincronização usa 1 leitura e 1 gravação.
+**Limites do plano gratuito** (sobram para uso pessoal e de família/amigos): 1 GB armazenado, 50 mil leituras e 20 mil gravações por dia e 10 GB/mês de tráfego no Firestore. O progresso é salvo primeiro no aparelho e só vai para a nuvem ao abrir o app, ao terminar uma sessão e ao sair do app (cerca de 3 leituras e 2 gravações por pessoa por dia, e só grava quando há novidade). Se um limite for atingido, o plano Spark não cobra nada: a sincronização fica pausada até o limite renovar e o app continua funcionando com o progresso salvo no aparelho.
 
 ## Custos
 
