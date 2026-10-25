@@ -4,13 +4,13 @@ import { LEVELS, LEVEL_IDS, levelInfo, levelState, lineOf, unit, customUnits, un
 import { maturity, MATURITY_LABEL } from "../fsrs.js";
 import { h, mount, icon, frText, speakBtn, confirmSheet, toast, progressRing } from "../ui.js";
 import { typo } from "../text.js";
-import { start, buildExtraNew, startExam, dialogueView, pourquoiView, taskView } from "./session.js";
+import { start, buildExtraNew, buildUnitPractice, startExam, dialogueView, pourquoiView, taskView } from "./session.js";
 import { go, rerender } from "../nav.js";
 
 let shown = null; // level (or "mine") currently displayed
 let shownFor = null; // current level when `shown` was chosen; a new current level resets the view
 
-const lineVars = (L) => ({ "--line": levelInfo(L).color, "--line-ink": levelInfo(L).ink });
+const lineVars = (L) => ({ "--metro": levelInfo(L).color, "--metro-ink": levelInfo(L).ink });
 
 function starRow(n) {
   return h("span", { class: "stars", "aria-label": `${n} de 3 estrelas` }, [1, 2, 3].map((i) => h("span", { class: i <= n ? "on" : "" }, "★")));
@@ -58,15 +58,16 @@ function station(s, st, L, n) {
         h("b", { class: "serif" }, typo(u.title), mamie && h("span", { class: "st-mamie" }, icon("heart"), "Mamie")),
         h("small", null, u.titlePt || "")
       ),
-      h("span", { class: "st-meta" }, status === "done" ? starRow(st.stars) : status === "locked" ? "" : added > 0 ? `${added}/${total}` : icon("chevron"))
+      h("span", { class: "st-meta" }, status === "done" && starRow(st.stars), status === "open" && added > 0 && `${added}/${total}`, status !== "locked" && icon("chevron"))
     ),
     status === "current" &&
       h("div", { class: "st-current" },
         h("span", { class: "here-tag" }, "Vous êtes ici"),
         h("div", { class: "bar thin" }, h("div", { class: "bar-fill", style: { width: `${pct * 100}%` } })),
+        h("small", { class: "muted" }, added ? `${added} de ${total} frases vistas` : `${total} frases novas te esperam`),
         h("div", { class: "row gap" },
-          h("small", { class: "muted grow" }, added ? `${added} de ${total} frases` : `${total} frases novas`),
-          h("button", { class: "btn primary small", onclick: () => studyUnit(u.id) }, icon("play"), added ? "Continuar" : "Começar")
+          h("button", { class: "view-link plain grow", onclick: () => go(`/trilha/${u.id}`) }, "Ver estação", icon("chevron")),
+          h("button", { class: "btn primary small", onclick: () => studyUnit(u.id) }, icon("play"), added ? "Continuar" : "Estudar")
         )
       )
   );
@@ -251,7 +252,10 @@ export function renderUnit(el, id) {
       pr.done && stars(s, u) < 3 &&
         h("small", { class: "muted" }, stars(s, u) === 1 && u.task ? "Faça a missão para ganhar ★★. Domine todas as frases para ★★★." : "Domine todas as frases (3 semanas de intervalo) para ganhar ★★★.")
     ),
-    remaining > 0 && h("button", { class: "btn primary big", onclick: () => studyUnit(id) }, icon("play"), pr.added ? "Continuar esta estação" : "Estudar esta estação agora"),
+    remaining > 0
+      ? h("button", { class: "btn primary big", onclick: () => studyUnit(id) }, icon("play"), pr.added ? "Continuar esta estação" : "Estudar esta estação")
+      : h("button", { class: "btn primary big", onclick: () => start(buildUnitPractice(u), { title: u.title }) }, icon("play"), "Praticar as frases desta estação"),
+    remaining === 0 && h("p", { class: "muted small center" }, "Prática livre: não mexe no calendário de revisões. Para rever o conteúdo, use as abas abaixo."),
     u.culture && h("div", { class: "culture" }, h("b", null, "Culture · "), u.culture),
     seg,
     panel,

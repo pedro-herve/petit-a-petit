@@ -177,8 +177,17 @@ export function frText(text, cls = "fr") {
   return el;
 }
 
-export function speakBtn(text, { slow = false, label = "Ouvir", cls = "" } = {}) {
-  return h("button", { class: `icon-btn ${cls}`, "aria-label": slow ? "Ouvir devagar" : label, onclick: (e) => { e.stopPropagation(); speak(text, { slow }); } }, icon(slow ? "turtle" : "volume"));
+// Round buttons are labelled ("Ouvir" / "Devagar"); small ones are just the icon.
+export function speakBtn(text, { slow = false, label = "Ouvir", cls = "", gender = null } = {}) {
+  const play = (e) => {
+    e.stopPropagation();
+    speak(text, { slow, gender });
+  };
+  if (cls.includes("round"))
+    return h("button", { class: `speak-pill ${slow ? "slow" : ""} ${cls.includes("huge") ? "huge" : ""}`, onclick: play },
+      icon(slow ? "turtle" : "volume"), h("span", null, slow ? "Devagar" : label)
+    );
+  return h("button", { class: `icon-btn ${cls}`, "aria-label": slow ? "Ouvir devagar" : label, onclick: play }, icon(slow ? "turtle" : "volume"));
 }
 
 export function progressRing(pct, size = 64, stroke = 6, label = "") {

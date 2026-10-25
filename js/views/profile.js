@@ -9,8 +9,9 @@ import { installHelp } from "../install.js";
 import { rerender, go } from "../nav.js";
 import { startTour } from "../tour.js";
 import { dayKey } from "../time.js";
+import { applyTheme } from "../theme.js";
 
-export const VERSION = "1.4.1";
+export const VERSION = "1.5.0";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {
@@ -108,7 +109,7 @@ export function renderProfile(el) {
     h("option", { value: "" }, "Automática"),
     voices.map((v) => h("option", { value: v.id, selected: v.id === s.settings.voice || null }, `${v.name} (${v.lang})`))
   );
-  const rate = h("input", { type: "range", min: "0.6", max: "1.2", step: "0.05", value: String(s.settings.rate), onchange: (e) => setSetting("rate", Number(e.target.value)) });
+  const rate = h("input", { type: "range", min: "0.8", max: "1.2", step: "0.05", value: String(s.settings.rate), onchange: (e) => { setSetting("rate", Number(e.target.value)); speak("Bonjour ! Voici la vitesse normale."); } });
   const time = h("input", { type: "time", value: s.settings.reminder || "19:00", onchange: (e) => setSetting("reminder", e.target.value) });
   const fileIn = h("input", {
     type: "file",
@@ -173,13 +174,23 @@ export function renderProfile(el) {
     ),
 
     h("section", { class: "card" },
+      h("h3", null, "Aparência"),
+      h("div", { class: "segmented" },
+        [["auto", "Automático"], ["light", "Claro"], ["dark", "Escuro"]].map(([v, t]) =>
+          h("button", { class: (s.settings.theme || "auto") === v ? "on" : "", onclick: () => { setSetting("theme", v); applyTheme(v); rerender(); } }, t)
+        )
+      ),
+      h("p", { class: "muted small" }, "Automático segue o modo claro/escuro do seu celular.")
+    ),
+
+    h("section", { class: "card" },
       h("h3", null, "Áudio"),
       row("Voz francesa", voiceSel),
-      row("Velocidade", rate),
+      row("Velocidade normal", rate, "No meio (1,0) é a velocidade em que os franceses falam. O botão “Devagar” toca a 70% dela."),
       row("Tocar áudio automaticamente", toggle(s.settings.autoplay, (v) => setSetting("autoplay", v))),
       row("Tradução nos diálogos", toggle(s.settings.showPt, (v) => setSetting("showPt", v)), "Mostrar o português logo de início"),
       h("div", { class: "row gap wrap" }, h("button", { class: "btn soft", onclick: () => speak("Bonjour ! Je suis ta voix française. On y va ?") }, icon("volume"), "Testar voz")),
-      h("p", { class: "muted small" }, "Para uma voz bem mais natural no iPhone: Ajustes → Acessibilidade → Conteúdo Falado → Vozes → Francês → baixe uma voz “Melhorada” ou “Premium”. Depois escolha aqui.")
+      h("p", { class: "muted small" }, "Para vozes bem mais naturais no iPhone: Ajustes → Acessibilidade → Conteúdo Falado → Vozes → Francês (França) → baixe “Thomas” e “Audrey” na versão Melhorada. Com uma voz masculina e uma feminina da França, cada personagem dos diálogos ganha sua própria voz.")
     ),
 
     h("section", { class: "card" },

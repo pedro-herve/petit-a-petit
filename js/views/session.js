@@ -4,7 +4,7 @@ import { content, nextNewCards, unit, card as getCard, currentLevel, unitProgres
 import { preview, schedule, formatInterval, AGAIN, HARD, GOOD, EASY } from "../fsrs.js";
 import { dayEnd } from "../time.js";
 import { h, mount, icon, frText, md, speakBtn, toast, confirmSheet } from "../ui.js";
-import { speak, stopSpeaking, canRecord, startRecording, canRecognize, listen } from "../speech.js";
+import { speak, stopSpeaking, canRecord, startRecording, canRecognize, startListening, recognitionError, LISTEN_MAX_MS } from "../speech.js";
 import { compare, typo } from "../text.js";
 import { PROVIDERS, correctionPrompt, sendTo } from "../ai.js";
 import { go } from "../nav.js";
@@ -114,6 +114,11 @@ export function buildPractice(state, kind, n = 10) {
   return [];
 }
 
+// Free practice of one station's sentences (listening and speaking), without touching the review calendar.
+export function buildUnitPractice(u) {
+  return shuffle(u.cards).map((c, i) => ({ type: "review", id: c.id, mode: i % 2 ? "listen" : "produce", practice: true }));
+}
+
 // Level exam (and placement test): multiple choice, graded automatically, no effect on reviews.
 export function buildExam(level, n = 20) {
   const pool = lineOf(level).flatMap((u) => u.cards);
@@ -149,7 +154,7 @@ export function start(steps, { title = "Sessão de hoje", daily = false, exam = 
   }
   const state = store.get();
   const doneAtStart = new Set([...content.units.keys()].filter((id) => unitProgress(state, id).done));
-  S = { steps: [...steps, { type: "done" }], idx: 0, title, daily, exam, doneAtStart, touched: new Set(), tick: Date.now(), sec: 0, counted: false, stats: { reviews: 0, again: 0, news: 0 }, requeued: {} };
+  S = { steps: [...steps, { type: "done" }], idx: 0, maxIdx: 0, title, daily, exam, doneAtStart, touched: new Set(), tick: Date.now(), sec: 0, counted: false, stats: { reviews: 0, again: 0, news: 0 }, requeued: {} };
   go("/sessao");
 }
 
@@ -167,11 +172,19 @@ function next(root) {
   stopSpeaking();
   addTime();
   S.idx++;
+  S.maxIdx = Math.max(S.maxIdx, S.idx);
   if (!S.counted && S.idx >= 3) {
     S.counted = true;
     store.logDay({ sessions: 1 });
   }
   store.persist();
+  renderSession(root);
+}
+
+// Going back shows earlier steps again, read-only: answers already given are kept.
+function back(root) {
+  stopLines();
+  if (S.idx > 0) S.idx--;
   renderSession(root);
 }
 
@@ -188,6 +201,8 @@ export function renderSession(root) {
   if (!S) return go("/hoje");
   const step = S.steps[S.idx];
   const total = S.steps.length - 1;
+  const revisiting = S.idx < S.maxIdx && step.type !== "done";
+  const canGoBack = S.idx > 0 && !S.exam && step.type !== "done";
   const pct = Math.min(1, S.idx / Math.max(1, total));
   const body = h("div", { class: "session-body" });
   root.replaceChildren(
@@ -196,16 +211,18 @@ export function renderSession(root) {
         h("button", {
           class: "icon-btn",
           "aria-label": "Sair da sessão",
-          onclick: () => (step.type === "done" || S.idx === 0 ? exit() : confirmSheet("Sair da sessão?", "O que você já fez fica salvo.", "Sair", exit)),
+          onclick: () => (step.type === "done" || S.idx === 0 ? exit() : confirmSheet("Sair da sessão?", "O que você já fez fica salvo.", "Sair", () => exit())),
         }, icon("x")),
+        canGoBack && h("button", { class: "icon-btn", "aria-label": "Voltar ao passo anterior", onclick: () => back(root) }, icon("back")),
         h("div", { class: "bar" }, h("div", { class: "bar-fill", style: { width: `${pct * 100}%` } })),
         h("span", { class: "session-count" }, step.type === "done" ? "" : S.exam ? `${S.exam.level} · ${S.idx + 1}/${total}` : `${S.idx + 1}/${total}`)
       ),
       body
     )
   );
-  const R = { intro, dialogue, pourquoi, learn, review, dictation, task, quiz, done }[step.type];
+  const R = revisiting && ["review", "dictation", "quiz", "task"].includes(step.type) ? replay : { intro, dialogue, pourquoi, learn, review, dictation, task, quiz, done }[step.type];
   R(body, step, () => next(root));
+  if (revisiting) body.prepend(h("div", { class: "revisit-bar" }, icon("refresh"), h("span", null, "Revendo"), h("button", { class: "btn link", onclick: () => { S.idx = S.maxIdx; renderSession(root); } }, "Voltar para onde parei")));
   window.scrollTo(0, 0);
 }
 
@@ -218,6 +235,25 @@ function unitLabel(u) {
 }
 
 // ---------- steps ----------
+
+// A step already answered, shown again with its answer and no new rating.
+function replay(el, step, done) {
+  if (step.type === "task") {
+    el.append(taskView(unit(step.unit)), h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: done }, "Avançar")));
+    return;
+  }
+  const c = getCard(step.id);
+  el.append(
+    h("div", { class: "step card-step" },
+      chip("Revendo"),
+      h("div", { class: "big-fr" }, frText(c.fr)),
+      h("div", { class: "row gap center" }, speakBtn(c.fr, { cls: "round" }), speakBtn(c.fr, { slow: true, cls: "round" })),
+      h("div", { class: "big-pt" }, c.pt),
+      c.note && h("div", { class: "note" }, icon("info"), h("span", null, c.note))
+    ),
+    h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: done }, "Avançar"))
+  );
+}
 
 function intro(el, step, done) {
   const u = unit(step.unit);
@@ -243,19 +279,37 @@ function bubble(line, i, { hidden = false, showPt = false } = {}) {
     hidden
       ? h("div", { class: "fr hidden-line" }, "• • • • • • •")
       : h("div", { class: "bubble-text" }, frText(line.fr), h("div", { class: "pt", hidden: !showPt }, line.pt)),
-    !hidden && speakBtn(line.fr, { cls: "small" })
+    !hidden && speakBtn(line.fr, { cls: "small", gender: genderOf(line.who) })
   );
 }
 
-async function playLines(lines, list, from = 0) {
-  for (let i = from; i < lines.length; i++) {
-    if (!list.isConnected) return;
+// Voice per character, so a dialogue sounds like two people talking.
+const FEMALE_WHO = /^(mamie|camille|marina|madame|mme|la |une |sophie|anne|marie|lucie|julie|claire|maman)/i;
+const MALE_WHO = /^(léo|leo|monsieur|m\.|le |un |bernard|julien|hugo|papi|gérard|gerard|thomas|marc|paul|pierre|papa)/i;
+export const genderOf = (who = "") => (FEMALE_WHO.test(who) ? "f" : MALE_WHO.test(who) ? "m" : null);
+
+let playback = 0; // only the latest "play all" keeps going
+
+async function playLines(lines, list, onState) {
+  const mine = ++playback;
+  onState?.(true);
+  for (let i = 0; i < lines.length; i++) {
+    if (mine !== playback || !list.isConnected) break;
     list.querySelectorAll(".bubble").forEach((b) => b.classList.toggle("playing", Number(b.dataset.i) === i));
     list.querySelector(`[data-i="${i}"]`)?.scrollIntoView({ block: "nearest", behavior: "smooth" });
-    await speak(lines[i].fr);
-    await new Promise((r) => setTimeout(r, 350));
+    const finished = await speak(lines[i].fr, { gender: genderOf(lines[i].who) });
+    if (!finished || mine !== playback) break;
+    await new Promise((r) => setTimeout(r, 550)); // a breath between lines, like a real conversation
   }
-  list.querySelectorAll(".bubble").forEach((b) => b.classList.remove("playing"));
+  if (mine === playback) {
+    list.querySelectorAll(".bubble").forEach((b) => b.classList.remove("playing"));
+    onState?.(false);
+  }
+}
+
+function stopLines() {
+  playback++;
+  stopSpeaking();
 }
 
 export function dialogueView(u, { startHidden = true, onDone } = {}) {
@@ -264,7 +318,15 @@ export function dialogueView(u, { startHidden = true, onDone } = {}) {
   let showPt = store.get().settings.showPt;
   const wrap = h("div", { class: "step" });
   const draw = () => {
+    stopLines();
     const list = h("div", { class: "dialogue" }, lines.map((l, i) => bubble(l, i, { hidden: phase === "listen", showPt })));
+    const playBtn = h("button", { class: "btn soft" });
+    const setPlaying = (on) => {
+      playBtn.classList.toggle("on", on);
+      playBtn.replaceChildren(icon(on ? "stop" : "play"), on ? "Parar" : "Tocar o diálogo");
+    };
+    setPlaying(false);
+    playBtn.onclick = () => (playBtn.classList.contains("on") ? (stopLines(), setPlaying(false)) : playLines(lines, list, setPlaying));
     wrap.replaceChildren(
       h("div", { class: "dialogue-head" },
         chip(phase === "listen" ? "1 · Escute sem ler" : "2 · Leia e toque nas palavras"),
@@ -272,17 +334,17 @@ export function dialogueView(u, { startHidden = true, onDone } = {}) {
         h("p", { class: "muted" }, u.dialogue.context)
       ),
       h("div", { class: "row gap wrap" },
-        h("button", { class: "btn soft", onclick: () => playLines(lines, list) }, icon("play"), "Tocar tudo"),
+        playBtn,
         phase === "read" && h("button", { class: `btn soft ${showPt ? "on" : ""}`, onclick: () => { showPt = !showPt; draw(); } }, icon("eye"), showPt ? "Esconder tradução" : "Mostrar tradução")
       ),
       list,
       h("div", { class: "step-actions" },
         phase === "listen"
-          ? h("button", { class: "btn primary big", onclick: () => { stopSpeaking(); phase = "read"; draw(); } }, "Mostrar o texto")
-          : onDone && h("button", { class: "btn primary big", onclick: onDone }, "Continuar")
+          ? h("button", { class: "btn primary big", onclick: () => { phase = "read"; draw(); } }, "Mostrar o texto")
+          : onDone && h("button", { class: "btn primary big", onclick: () => { stopLines(); onDone(); } }, "Continuar")
       )
     );
-    if (phase === "listen" && store.get().settings.autoplay) setTimeout(() => playLines(lines, list), 400);
+    if (phase === "listen" && store.get().settings.autoplay) setTimeout(() => list.isConnected && playLines(lines, list, setPlaying), 400);
   };
   draw();
   return wrap;
@@ -345,25 +407,32 @@ function shadowTools(text) {
     box.append(btn);
   }
   if (canRecognize()) {
-    box.append(
-      h("button", {
-        class: "btn soft",
-        onclick: async (e) => {
-          const b = e.currentTarget;
-          b.disabled = true;
-          b.replaceChildren(icon("mic"), "Ouvindo…");
-          try {
-            const alts = await listen();
-            const best = alts.map((a) => compare(text, a)).sort((x, y) => y.score - x.score)[0];
-            res.replaceChildren(best ? diffView(best, alts[0]) : h("p", { class: "muted" }, "Não ouvi nada. Tente de novo."));
-          } catch {
-            res.replaceChildren(h("p", { class: "muted" }, "O reconhecimento de voz não está disponível agora."));
-          }
-          b.disabled = false;
-          b.replaceChildren(icon("sparkle"), "Testar pronúncia");
-        },
-      }, icon("sparkle"), "Testar pronúncia")
-    );
+    // Tap to start, tap again to stop (it also stops by itself after a few seconds).
+    let session = null;
+    const btn = h("button", { class: "btn soft" }, icon("sparkle"), "Testar pronúncia");
+    const reset = () => {
+      session = null;
+      btn.classList.remove("recording");
+      btn.replaceChildren(icon("sparkle"), "Testar de novo");
+    };
+    btn.onclick = async () => {
+      if (session) return session.stop();
+      stopSpeaking();
+      const live = h("p", { class: "live-heard" }, "Fale a frase agora…");
+      res.replaceChildren(h("div", { class: "listening" }, h("span", { class: "rec-dot" }), live, h("small", { class: "muted" }, `Toque em Parar quando terminar (para sozinho em ${LISTEN_MAX_MS / 1000} s).`)));
+      btn.classList.add("recording");
+      btn.replaceChildren(icon("stop"), "Parar");
+      session = startListening({ onPartial: (t) => (live.textContent = `“${t}”`) });
+      try {
+        const alts = await session.done;
+        const best = alts.map((a) => compare(text, a)).sort((x, y) => y.score - x.score)[0];
+        res.replaceChildren(best ? diffView(best, alts[0]) : h("p", { class: "muted" }, recognitionError("no-speech")));
+      } catch (code) {
+        res.replaceChildren(h("p", { class: "muted" }, recognitionError(code)));
+      }
+      reset();
+    };
+    box.append(btn);
   }
   return box.childElementCount ? h("div", null, box, res) : null;
 }
@@ -600,7 +669,7 @@ function examResult(el) {
   el.append(
     h("div", { class: "step done-step" },
       pass
-        ? h("div", { class: "stamp", style: { "--line": info.color } }, h("small", null, "Petit à Petit"), h("b", null, level), h("span", null, "Validé"))
+        ? h("div", { class: "stamp", style: { "--metro": info.color } }, h("small", null, "Petit à Petit"), h("b", null, level), h("span", null, "Validé"))
         : h("div", { class: "done-badge" }, icon("refresh")),
       h("h1", { class: "display" }, pass ? "Félicitations !" : "Presque !"),
       h("p", { class: "lead" },
@@ -686,7 +755,7 @@ function done(el) {
       ),
       h("div", { class: "streak-line" }, icon("flame"), st === 1 ? "1 dia seguido" : `${st} dias seguidos`),
       completed.map((u) =>
-        h("div", { class: "station-done", style: { "--line": levelInfo(u.level).color, "--line-ink": levelInfo(u.level).ink } },
+        h("div", { class: "station-done", style: { "--metro": levelInfo(u.level).color, "--metro-ink": levelInfo(u.level).ink } },
           h("span", { class: "station-dot" }, icon("check")),
           h("div", null, h("small", null, "Estação concluída"), h("b", { class: "serif" }, typo(u.title)))
         )

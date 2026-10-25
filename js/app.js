@@ -3,6 +3,7 @@ import * as store from "./store.js";
 import * as auth from "./auth.js";
 import { loadContent, indexContent, migrateLevels } from "./content.js";
 import { configure } from "./speech.js";
+import { applyTheme } from "./theme.js";
 import { h, icon } from "./ui.js";
 import { route, setRenderer, go } from "./nav.js";
 import { syncNow } from "./sync.js";
@@ -40,6 +41,12 @@ function render() {
   if (!s.profile) return renderSetup(root, { onReady: ready });
   indexContent(s.custom);
   if (migrateLevels(s)) store.persist();
+  // Old default speed (0.92) was slower than natural French; normal is now 1.0.
+  if (s.settings.rate === 0.92) {
+    s.settings.rate = 1;
+    store.persist();
+  }
+  applyTheme(s.settings.theme);
   configure(s.settings);
 
   const r = route();

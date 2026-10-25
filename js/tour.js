@@ -16,7 +16,12 @@ function allSteps() {
     {
       target: ".today",
       title: "Comece sempre por aqui",
-      text: `Esta é a sua sessão do dia. Ao tocar em Commencer, o app junta as revisões que vencem hoje com até ${n} frases novas, tudo cabendo nos seus ${minutes} minutos. O anel mostra quanto você já estudou hoje.`,
+      text: `Esta é a sua sessão do dia. Ao tocar em Começar a sessão, o app junta as revisões que vencem hoje com até ${n} frases novas, tudo cabendo nos seus ${minutes} minutos. O anel mostra quanto você já estudou hoje.`,
+    },
+    {
+      title: "Uma regra simples",
+      rule: true,
+      text: "Em todo o app, o botão azul com ▶ começa os exercícios. Já tocar no nome de uma estação ou na setinha › só abre para ver o conteúdo, sem começar nada.",
     },
     {
       target: ".streak",
@@ -26,7 +31,7 @@ function allSteps() {
     {
       target: ".unit-card",
       title: "Onde você está",
-      text: "A unidade atual e quantas frases dela você já viu. Toque para rever o diálogo, as explicações e todas as frases.",
+      text: "A estação em que você está e quantas frases dela já viu. Toque no cartão para ver o diálogo, os porquês e as frases, sem começar exercícios.",
     },
     {
       target: ".week",
@@ -103,7 +108,13 @@ function render() {
     ? h("ul", { class: "tour-list" },
         step.list.map(([ic, b, t]) => h("li", null, icon(ic), h("span", null, h("b", null, b), " — ", t)))
       )
-    : h("p", { class: "tour-text" }, step.text);
+    : step.rule
+      ? h("div", { class: "stack tight" },
+          h("p", { class: "tour-text" }, step.text),
+          h("div", { class: "rule-row" }, h("span", { class: "btn primary small" }, icon("play"), "Estudar"), h("span", null, "começa os exercícios")),
+          h("div", { class: "rule-row" }, h("span", { class: "view-link" }, "Ver estação", icon("chevron")), h("span", null, "só abre para ver"))
+        )
+      : h("p", { class: "tour-text" }, step.text);
 
   const actions = last
     ? h("div", { class: "tour-actions column" },

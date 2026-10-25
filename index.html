@@ -19,6 +19,13 @@
     <meta property="og:description" content="Aprenda francês de verdade, um pouco por dia. Grátis." />
     <meta property="og:image" content="icons/icon-512.png" />
     <link rel="stylesheet" href="css/app.css" />
+    <script>
+      // Apply the saved light/dark choice before the first paint.
+      try {
+        var t = localStorage.getItem("pap:theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="app">

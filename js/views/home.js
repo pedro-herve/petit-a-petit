@@ -30,14 +30,18 @@ export function renderHome(el) {
           progressRing(today.sec / goalSec, 72, 7, `${Math.round(today.sec / 60)}′`),
           h("div", null,
             h("h2", null, studiedToday ? "Continuar hoje" : "Sessão de hoje"),
-            h("p", { class: "muted" }, `${plan.reviews.length} revisões · ${plan.news.length} frases novas · ≈ ${plan.minutes} min`)
+            h("ul", { class: "plan-list" },
+              plan.reviews.length > 0 && h("li", null, icon("refresh"), `${plan.reviews.length} ${plan.reviews.length === 1 ? "revisão" : "revisões"}`),
+              plan.news.length > 0 && h("li", null, icon("sparkle"), `${plan.news.length} frases novas`, cur && h("span", { class: "muted" }, ` · ${typo(cur.title)}`)),
+              h("li", { class: "muted" }, icon("clock"), `≈ ${plan.minutes} min`)
+            )
           )
         ),
         plan.dueTotal > plan.reviews.length &&
           h("div", { class: "callout warn" }, icon("info"), h("span", null, `Há ${plan.dueTotal} revisões acumuladas; hoje faremos ${plan.reviews.length}. As frases novas voltam quando as revisões estiverem em dia.`)),
         plan.news.length === 0 && plan.cap > 0 && plan.dueTotal > 0 && plan.dueTotal <= plan.reviews.length &&
           h("div", { class: "callout" }, icon("info"), h("span", null, "Hoje as revisões ocupam o seu tempo. Isso é bom: é a fase em que a memória se consolida.")),
-        h("button", { class: "btn primary big", onclick: () => start(buildDaily(store.get()), { daily: true }) }, icon("play"), "Commencer")
+        h("button", { class: "btn primary big", onclick: () => start(buildDaily(store.get()), { daily: true }) }, icon("play"), studiedToday ? "Continuar a sessão" : "Começar a sessão")
       )
     : h("section", { class: "card today done" },
         h("div", { class: "today-top" },
@@ -75,7 +79,7 @@ export function renderHome(el) {
       h("button", { class: "install-banner", onclick: install }, icon("download"), h("span", null, h("b", null, isAndroid() ? "Instale o app" : "Instale no iPhone"), " para usar em tela cheia, com ícone próprio e sem internet."), icon("chevron")),
     todayCard,
     exam &&
-      h("section", { class: "card exam-card", style: { "--line": levelInfo(exam).color, "--line-ink": levelInfo(exam).ink } },
+      h("section", { class: "card exam-card", style: { "--metro": levelInfo(exam).color, "--metro-ink": levelInfo(exam).ink } },
         h("span", { class: "line-badge" }, exam),
         h("div", null,
           h("h3", { class: "serif" }, `Terminus da Linha ${exam}!`),
@@ -89,15 +93,15 @@ export function renderHome(el) {
         const custom = cur.id.startsWith("c-");
         const n = custom ? 0 : lineOf(cur.level).findIndex((x) => x.id === cur.id) + 1;
         const info = levelInfo(cur.level);
-        return h("section", { class: "card unit-card", style: custom ? null : { "--line": info.color, "--line-ink": info.ink }, onclick: () => go(`/trilha/${cur.id}`) },
+        return h("section", { class: "card unit-card", style: custom ? null : { "--metro": info.color, "--metro-ink": info.ink }, onclick: () => go(`/trilha/${cur.id}`) },
           h("div", { class: "unit-card-top" },
-            h("span", { class: `chip line-tag ${cur.track === "mamie" ? "rose" : ""}` }, custom ? `Minha lição · ${cur.level}` : `Linha ${cur.level} · Estação ${n}${cur.track === "mamie" ? " · Mamie" : ""}`),
-            icon("chevron")
+            h("span", { class: "eyebrow-sm" }, "Sua estação atual"),
+            h("span", { class: `chip line-tag ${cur.track === "mamie" ? "rose" : ""}` }, custom ? `Minha lição · ${cur.level}` : `Linha ${cur.level} · Estação ${n}${cur.track === "mamie" ? " · Mamie" : ""}`)
           ),
           h("h3", { class: "serif" }, typo(cur.title)),
           h("p", { class: "muted" }, cur.titlePt),
           h("div", { class: "bar thin" }, h("div", { class: "bar-fill line-fill", style: { width: `${pr.pct * 100}%` } })),
-          h("small", { class: "muted" }, `${pr.added} de ${pr.total} frases`)
+          h("div", { class: "row" }, h("small", { class: "muted grow" }, `${pr.added} de ${pr.total} frases`), h("span", { class: "view-link" }, "Ver estação", icon("chevron")))
         );
       })(),
     h("section", { class: "card week" },
