@@ -2,6 +2,8 @@
 
 **Francês de verdade, um pouco por dia.** App web (PWA) gratuito para brasileiros aprenderem francês, do A1 ao B1, com uma trilha especial para conversar com a família francesa ("Trilha Mamie"). Instala na tela de início do iPhone, funciona offline e não tem custo nenhum: nem para quem mantém, nem para quem usa.
 
+**Abrir o app:** https://pedro-herve.github.io/petit-a-petit/ (no iPhone: Safari → Compartilhar → Adicionar à Tela de Início)
+
 > « Petit à petit, l'oiseau fait son nid. » Pouco a pouco, o passarinho faz seu ninho.
 
 ## O método
