@@ -1,0 +1,3237 @@
+[
+  {
+    "id": "a2-01",
+    "level": "A2",
+    "track": "main",
+    "title": "Quand j'étais petit",
+    "titlePt": "Lembranças de infância",
+    "goal": "Descrever como as coisas eram no passado e contar hábitos da sua infância usando o imparfait.",
+    "dialogue": {
+      "title": "Les petits bateaux",
+      "context": "Léo agora está passando uma temporada mais longa em Paris: alugou um estúdio bem em frente ao prédio da avó, no 15e. Num domingo de sol, ele e Mamie Hélène passeiam no Jardin du Luxembourg, perto do lago onde as crianças empurram barquinhos de madeira.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Regarde les petits bateaux ! Quand j'étais petite, je venais ici tous les dimanches.",
+          "pt": "Olha os barquinhos! Quando eu era pequena, eu vinha aqui todo domingo."
+        },
+        {
+          "who": "Léo",
+          "fr": "Avec qui ?",
+          "pt": "Com quem?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Avec mon père. On louait toujours le même bateau, un rouge. Après, il achetait des gaufres.",
+          "pt": "Com o meu pai. A gente alugava sempre o mesmo barquinho, um vermelho. Depois, ele comprava waffles."
+        },
+        {
+          "who": "Léo",
+          "fr": "Vous habitiez loin d'ici ?",
+          "pt": "Vocês moravam longe daqui?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Non, rue de Vaugirard. On venait à pied.",
+          "pt": "Não, na rue de Vaugirard. A gente vinha a pé."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et la semaine, qu'est-ce que tu faisais après l'école ?",
+          "pt": "E durante a semana, o que você fazia depois da escola?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Je jouais dans la rue avec mes copines. Et tous les jours, je faisais une heure de piano.",
+          "pt": "Eu brincava na rua com as minhas amigas. E todos os dias eu fazia uma hora de piano."
+        },
+        {
+          "who": "Léo",
+          "fr": "Tous les jours ? Tu aimais ça ?",
+          "pt": "Todos os dias? Você gostava?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Pas du tout ! Je détestais les gammes. C'est drôle, non ?",
+          "pt": "Nem um pouco! Eu odiava as escalas. Engraçado, né?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Très drôle, pour une prof de piano ! Moi, quand j'étais petit, tu venais à São Paulo pour Noël.",
+          "pt": "Muito engraçado, para uma professora de piano! E eu, quando era pequeno, você vinha a São Paulo no Natal."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Oui ! Tu étais adorable… et tu mangeais tout mon chocolat.",
+          "pt": "Sim! Você era uma graça… e comia todo o meu chocolate."
+        },
+        {
+          "who": "Léo",
+          "fr": "C'était le bon temps !",
+          "pt": "Bons tempos!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Le bon temps, c'est maintenant, mon chéri. Allez, on loue un bateau ?",
+          "pt": "O tempo bom é agora, meu querido. Vamos, a gente aluga um barquinho?"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-01-01",
+        "fr": "Quand j'étais petite, je venais ici.",
+        "pt": "Quando eu era pequena, eu vinha aqui.",
+        "note": "As terminações -ais, -ait e -aient soam todas [é]: 'j'étais' = [jê-té]."
+      },
+      {
+        "id": "a2-01-02",
+        "fr": "Quand j'étais petit, j'habitais à São Paulo.",
+        "pt": "Quando eu era pequeno, eu morava em São Paulo."
+      },
+      {
+        "id": "a2-01-03",
+        "fr": "Vous habitiez loin d'ici ?",
+        "pt": "Vocês moravam longe daqui?",
+        "note": "Com 'vous', a terminação é -iez: 'vous habitiez' [vu-za-bi-tiê]."
+      },
+      {
+        "id": "a2-01-04",
+        "fr": "Il n'y avait pas de portables.",
+        "pt": "Não existia celular."
+      },
+      {
+        "id": "a2-01-05",
+        "fr": "Qu'est-ce que tu faisais après l'école ?",
+        "pt": "O que você fazia depois da escola?",
+        "note": "Em 'faisais', o primeiro 'ai' soa como um 'e' fraco: [fe-ZÉ]."
+      },
+      {
+        "id": "a2-01-06",
+        "fr": "Je jouais dans la rue avec mes copines.",
+        "pt": "Eu brincava na rua com as minhas amigas.",
+        "note": "'Jouer' é jogar e também brincar. 'Copain / copine' = amigo / amiga, informal."
+      },
+      {
+        "id": "a2-01-07",
+        "fr": "Je faisais du piano tous les jours.",
+        "pt": "Eu tocava piano todos os dias."
+      },
+      {
+        "id": "a2-01-08",
+        "fr": "Tu aimais l'école ?",
+        "pt": "Você gostava da escola?"
+      },
+      {
+        "id": "a2-01-09",
+        "fr": "Je détestais les gammes !",
+        "pt": "Eu odiava as escalas!"
+      },
+      {
+        "id": "a2-01-10",
+        "fr": "Le dimanche, on allait au Luxembourg.",
+        "pt": "Aos domingos, a gente ia ao Luxemburgo.",
+        "note": "'Le dimanche' (com artigo) = todo domingo, hábito. Só 'dimanche' = um domingo específico."
+      },
+      {
+        "id": "a2-01-11",
+        "fr": "On louait toujours le même bateau.",
+        "pt": "A gente alugava sempre o mesmo barquinho."
+      },
+      {
+        "id": "a2-01-12",
+        "fr": "Mon père achetait des gaufres.",
+        "pt": "Meu pai comprava waffles."
+      },
+      {
+        "id": "a2-01-13",
+        "fr": "Tu venais à São Paulo pour Noël.",
+        "pt": "Você vinha a São Paulo no Natal."
+      },
+      {
+        "id": "a2-01-14",
+        "fr": "Tu étais adorable.",
+        "pt": "Você era uma graça."
+      },
+      {
+        "id": "a2-01-15",
+        "fr": "En hiver, il faisait très froid.",
+        "pt": "No inverno, fazia muito frio."
+      },
+      {
+        "id": "a2-01-16",
+        "fr": "Le bon temps, c'est maintenant !",
+        "pt": "O tempo bom é agora!"
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Imparfait = 'eu brincava'",
+        "body": "O imparfait é o primo francês do nosso **pretérito imperfeito**. Use para o que *era* — descrição: idade, tempo, lugar, como as coisas eram — e para o que *costumava acontecer*, os hábitos. *Je jouais dans la rue* = 'eu brincava na rua'.\nTeste rápido: se em português você diria 'eu fazia', 'eu tinha', 'eu morava', 'era', em francês quase sempre vai o imparfait.\nPalavras que puxam o imparfait: *tous les jours*, *le dimanche*, *toujours*, *à l'époque*, *quand j'étais petit*.",
+        "examples": [
+          {
+            "fr": "Je jouais dans la rue.",
+            "pt": "Eu brincava na rua."
+          },
+          {
+            "fr": "J'avais huit ans.",
+            "pt": "Eu tinha oito anos."
+          },
+          {
+            "fr": "À l'époque, on habitait à Paris.",
+            "pt": "Naquela época, a gente morava em Paris."
+          }
+        ]
+      },
+      {
+        "title": "Como formar: o truque do 'nous'",
+        "body": "Pegue o verbo no presente com *nous*, tire o *-ons* e acrescente as terminações **-ais, -ais, -ait, -ions, -iez, -aient**.\n*nous faisons* → *je faisais*; *nous allons* → *j'allais*; *nous avons* → *j'avais*.\nSó um verbo foge da regra: **être** → *j'étais*.\nBoa notícia para a pronúncia: *-ais*, *-ait* e *-aient* soam igual [é]. Na prática, só *nous* e *vous* soam diferente. E *on* (o 'a gente' do francês falado) usa a forma de *il*: *on allait*.",
+        "examples": [
+          {
+            "fr": "Nous allions à l'école à pied.",
+            "pt": "Nós íamos à escola a pé."
+          },
+          {
+            "fr": "Elles parlaient tout le temps.",
+            "pt": "Elas falavam o tempo todo."
+          },
+          {
+            "fr": "J'étais très bavarde.",
+            "pt": "Eu era muito tagarela."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte em 3 ou 4 frases como era a sua vida quando você era criança: onde morava, o que fazia depois da escola e aos domingos.",
+      "model": "Quand j'étais petit, j'habitais à Recife. Après l'école, je jouais au foot avec mes copains. Le dimanche, on allait chez ma grand-mère. C'était le bon temps !"
+    },
+    "culture": "O Jardin du Luxembourg, no 6e, é o parque preferido de gerações de crianças parisienses: barquinhos de madeira no lago, carrossel e teatro de marionetes.",
+    "glossary": {
+      "mamie": "vovó (carinhoso)",
+      "c'": "isso / é (antes de vogal: c'est)",
+      "est": "é / está (être)",
+      "toi": "você (pronome tônico)",
+      "la": "a (artigo); (pronome) a",
+      "petite": "pequena",
+      "fille": "menina / filha",
+      "sur": "em / sobre / em cima de",
+      "oui": "sim",
+      "j'": "eu (antes de vogal)",
+      "avais": "tinha (avoir, imparfait)",
+      "huit": "oito",
+      "ans": "anos",
+      "étais": "era / estava (être, imparfait)",
+      "et": "e",
+      "très": "muito",
+      "bavarde": "tagarela",
+      "tu": "você (informal)",
+      "habitais": "morava (habiter, imparfait)",
+      "habitait": "morava (habiter, imparfait)",
+      "où": "onde",
+      "à": "a / em / para",
+      "l'": "o / a (antes de vogal)",
+      "époque": "época",
+      "rue": "rua",
+      "de": "de",
+      "vaugirard": "Vaugirard (rua de Paris)",
+      "au": "ao / no (à + le)",
+      "étage": "andar",
+      "il": "ele (ou sujeito impessoal)",
+      "n'": "não (antes de vogal: ne)",
+      "y": "lá / aí; il y a = há, tem; (pronome) lá, nisso",
+      "avait": "tinha / havia (avoir, imparfait)",
+      "pas": "não (ne… pas)",
+      "d'": "de (antes de vogal)",
+      "ascenseur": "elevador",
+      "qu'est-ce": "o que (qu'est-ce que…?)",
+      "que": "que",
+      "faisais": "fazia (faire, imparfait)",
+      "après": "depois (de)",
+      "école": "escola",
+      "je": "eu",
+      "jouais": "brincava / jogava (jouer, imparfait)",
+      "dans": "em / dentro de; dans cinq minutes = daqui a cinco minutos",
+      "avec": "com",
+      "mes": "meus / minhas",
+      "copines": "amigas (informal)",
+      "tous": "todos",
+      "les": "os / as (artigo); (pronome) os, as",
+      "jours": "dias",
+      "une": "uma",
+      "heure": "hora",
+      "piano": "piano",
+      "aimais": "gostava (aimer, imparfait)",
+      "ça": "isso",
+      "du": "do / da (de + le); pas du tout = nem um pouco",
+      "tout": "tudo / todo",
+      "détestais": "odiava (détester, imparfait)",
+      "gammes": "escalas (de música)",
+      "drôle": "engraçado",
+      "non": "não",
+      "pour": "para / por",
+      "prof": "professor(a) (informal)",
+      "dimanche": "domingo",
+      "le": "o (artigo); (pronome) o",
+      "on": "a gente / nós",
+      "allait": "ia (aller, imparfait)",
+      "luxembourg": "Luxemburgo (jardim de Paris)",
+      "mon": "meu",
+      "père": "pai",
+      "achetait": "comprava (acheter, imparfait)",
+      "toujours": "sempre / ainda",
+      "des": "uns / umas",
+      "gaufres": "waffles",
+      "moi": "eu / mim (pronome tônico); me (excusez-moi)",
+      "quand": "quando",
+      "petit": "pequeno",
+      "venais": "vinha (venir, imparfait)",
+      "são": "São (São Paulo)",
+      "paulo": "Paulo (São Paulo)",
+      "noël": "Natal",
+      "adorable": "adorável, uma graça",
+      "mangeais": "comia (manger, imparfait)",
+      "chocolat": "chocolate",
+      "était": "era / estava (être, imparfait)",
+      "bon": "bom",
+      "temps": "tempo",
+      "cette": "esta / essa",
+      "télé": "TV",
+      "maison": "casa",
+      "en": "em (preposição); (pronome) disso, deles",
+      "hiver": "inverno",
+      "faisait": "fazia (faire, imparfait); il faisait froid = fazia frio",
+      "froid": "frio",
+      "paris": "Paris",
+      "nous": "nós; (pronome) nos",
+      "allions": "íamos (aller, imparfait)",
+      "pied": "pé; à pied = a pé",
+      "elles": "elas",
+      "parlaient": "falavam (parler, imparfait)",
+      "recife": "Recife",
+      "foot": "futebol",
+      "copains": "amigos (informal)",
+      "chez": "na casa de",
+      "ma": "minha",
+      "grand-mère": "avó",
+      "regarde": "olha (regarder)",
+      "bateaux": "barcos, barquinhos",
+      "bateau": "barco, barquinho",
+      "qui": "quem; que",
+      "louait": "alugava (louer, imparfait)",
+      "loue": "alugo / aluga (louer)",
+      "même": "mesmo; même pas = nem",
+      "rouge": "vermelho",
+      "habitiez": "moravam / morava (habiter, imparfait, vous)",
+      "loin": "longe; loin d'ici = longe daqui",
+      "ici": "aqui; d'ici là = até lá",
+      "venait": "vinha (venir, imparfait)",
+      "semaine": "semana; la semaine = durante a semana",
+      "portables": "celulares",
+      "maintenant": "agora",
+      "chéri": "querido",
+      "allez": "vão / vá (aller); allez ! = vamos!",
+      "petits": "pequenos; petits bateaux = barquinhos",
+      "dimanches": "domingos; tous les dimanches = todo domingo"
+    }
+  },
+  {
+    "id": "a2-02",
+    "level": "A2",
+    "track": "main",
+    "title": "Il était une fois",
+    "titlePt": "Contar uma história",
+    "goal": "Contar uma história no passado, separando o cenário (imparfait) dos acontecimentos (passé composé).",
+    "dialogue": {
+      "title": "Dans le métro",
+      "context": "Depois do jantar, Léo pede à avó para contar como ela conheceu o Papi, o avô que ele quase não conheceu.",
+      "lines": [
+        {
+          "who": "Léo",
+          "fr": "Mamie, comment tu as rencontré Papi ?",
+          "pt": "Mamie, como você conheceu o vovô?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Oh, c'est une belle histoire. C'était au printemps, j'avais vingt ans.",
+          "pt": "Ah, é uma bela história. Era primavera, eu tinha vinte anos."
+        },
+        {
+          "who": "Léo",
+          "fr": "Tu étais déjà pianiste ?",
+          "pt": "Você já era pianista?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "J'étais étudiante au Conservatoire. Un soir, j'allais à mon premier concert. J'étais très nerveuse.",
+          "pt": "Eu era estudante do Conservatório. Uma noite, eu estava indo para o meu primeiro concerto. Estava muito nervosa."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et alors ?",
+          "pt": "E aí?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Le métro était plein. Tout à coup, il a freiné et je suis tombée… sur un jeune homme !",
+          "pt": "O metrô estava lotado. De repente, ele freou e eu caí… em cima de um rapaz!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Non ! Il était comment ?",
+          "pt": "Não! Como ele era?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Grand, timide… avec une moustache horrible. Mais c'était le coup de foudre.",
+          "pt": "Alto, tímido… com um bigode horrível. Mas foi amor à primeira vista."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et qu'est-ce qu'il a dit ?",
+          "pt": "E o que ele disse?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Il a souri et il a dit : « Bonsoir, mademoiselle. Vous tombez bien ! »",
+          "pt": "Ele sorriu e disse: 'Boa noite, senhorita. A senhorita caiu na hora certa!'"
+        },
+        {
+          "who": "Léo",
+          "fr": "Et le concert ?",
+          "pt": "E o concerto?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "On parlait, on riait… et j'ai raté ma station !",
+          "pt": "A gente conversava, ria… e eu perdi a minha estação!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Tu as raté ton premier concert ?!",
+          "pt": "Você perdeu o seu primeiro concerto?!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Non, je suis arrivée juste à temps. Et lui, il était au premier rang !",
+          "pt": "Não, cheguei bem na hora. E ele estava na primeira fila!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-02-01",
+        "fr": "Comment tu as rencontré Papi ?",
+        "pt": "Como você conheceu o vovô?"
+      },
+      {
+        "id": "a2-02-02",
+        "fr": "C'était au printemps, j'avais vingt ans.",
+        "pt": "Era primavera, eu tinha vinte anos."
+      },
+      {
+        "id": "a2-02-03",
+        "fr": "Il pleuvait très fort.",
+        "pt": "Chovia muito forte."
+      },
+      {
+        "id": "a2-02-04",
+        "fr": "J'allais à mon premier concert.",
+        "pt": "Eu estava indo para o meu primeiro concerto.",
+        "note": "O imparfait também traduz o 'estava + -ndo': 'j'allais' = 'eu estava indo'."
+      },
+      {
+        "id": "a2-02-05",
+        "fr": "Tout à coup, le métro a freiné.",
+        "pt": "De repente, o metrô freou.",
+        "note": "'Tout à coup' anuncia um acontecimento → passé composé. Pronúncia ligada: [tu-ta-ku]."
+      },
+      {
+        "id": "a2-02-06",
+        "fr": "Il était grand et un peu timide.",
+        "pt": "Ele era alto e um pouco tímido."
+      },
+      {
+        "id": "a2-02-07",
+        "fr": "Je suis tombée sur un jeune homme.",
+        "pt": "Eu caí em cima de um rapaz.",
+        "note": "'Tomber sur quelqu'un' também quer dizer 'dar de cara com alguém', encontrar por acaso."
+      },
+      {
+        "id": "a2-02-08",
+        "fr": "C'était le coup de foudre !",
+        "pt": "Foi amor à primeira vista!",
+        "note": "'Coup de foudre' = descarga de raio. Em francês, a paixão à primeira vista cai como um raio!"
+      },
+      {
+        "id": "a2-02-09",
+        "fr": "On parlait et j'ai raté ma station.",
+        "pt": "A gente estava conversando e eu perdi a minha estação.",
+        "note": "'Rater' = perder (trem, estação, ônibus, prova). Informal e muito usado."
+      },
+      {
+        "id": "a2-02-10",
+        "fr": "Je suis arrivée juste à temps.",
+        "pt": "Cheguei bem na hora."
+      },
+      {
+        "id": "a2-02-11",
+        "fr": "Un an plus tard, on était mariés.",
+        "pt": "Um ano depois, estávamos casados."
+      },
+      {
+        "id": "a2-02-12",
+        "fr": "Il était une fois une jeune pianiste.",
+        "pt": "Era uma vez uma jovem pianista."
+      },
+      {
+        "id": "a2-02-13",
+        "fr": "Je dormais quand le téléphone a sonné.",
+        "pt": "Eu estava dormindo quando o telefone tocou."
+      },
+      {
+        "id": "a2-02-14",
+        "fr": "Quand je suis arrivé, il faisait nuit.",
+        "pt": "Quando eu cheguei, já estava escuro."
+      },
+      {
+        "id": "a2-02-15",
+        "fr": "D'habitude, je rentrais à pied.",
+        "pt": "Normalmente, eu voltava para casa a pé."
+      },
+      {
+        "id": "a2-02-16",
+        "fr": "Mais ce jour-là, j'ai pris le bus.",
+        "pt": "Mas naquele dia, eu peguei o ônibus."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Cenário × acontecimento",
+        "body": "Pense numa peça de teatro. O **imparfait** monta o *cenário*: o tempo, o lugar, o que estava acontecendo, como as pessoas eram (*le métro était plein*, *j'allais à mon premier concert*). O **passé composé** traz a *ação* que entra em cena e faz a história andar (*il a freiné*, *je suis tombée*).\nEm português é a mesma lógica: 'o metrô estava lotado' × 'o metrô freou'.\nTeste: se em português você diria 'estava + -ndo' ou 'costumava', use o imparfait. Se diria 'freou', 'disse', 'perdi' (uma ação pontual, que aconteceu e acabou), use o passé composé.",
+        "examples": [
+          {
+            "fr": "Il pleuvait quand il est arrivé.",
+            "pt": "Chovia quando ele chegou."
+          },
+          {
+            "fr": "Je dormais quand le téléphone a sonné.",
+            "pt": "Eu estava dormindo quando o telefone tocou."
+          },
+          {
+            "fr": "J'étais fatiguée, alors je suis rentrée.",
+            "pt": "Eu estava cansada, então voltei para casa."
+          }
+        ]
+      },
+      {
+        "title": "Palavras que dão a pista",
+        "body": "Algumas palavras quase sempre puxam um dos dois tempos.\nHábito, repetição, duração sem fim definido → **imparfait**: *d'habitude*, *tous les jours*, *souvent*, *le dimanche*, *à l'époque*.\nAção única, de repente, num momento preciso → **passé composé**: *un jour*, *tout à coup*, *ce jour-là*, *une fois*.\nE as duas se combinam muito bem: *D'habitude, je rentrais à pied, mais ce jour-là, j'ai pris le bus.* É exatamente o nosso 'eu voltava' × 'eu peguei'.",
+        "examples": [
+          {
+            "fr": "D'habitude, je rentrais à pied.",
+            "pt": "Normalmente, eu voltava a pé."
+          },
+          {
+            "fr": "Un jour, j'ai rencontré ton grand-père.",
+            "pt": "Um dia, conheci o seu avô."
+          },
+          {
+            "fr": "Tous les étés, on allait en Bretagne.",
+            "pt": "Todo verão, a gente ia para a Bretanha."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte em 4 frases como você conheceu alguém importante (um amigo, um amor): primeiro o cenário (imparfait), depois o que aconteceu (passé composé).",
+      "model": "C'était en 2015, j'étais à une fête chez un ami. Il faisait chaud et la musique était très forte. Tout à coup, une fille est arrivée avec un gâteau. On a parlé toute la nuit !"
+    },
+    "culture": "O Conservatoire de Paris é a escola de música mais prestigiada da França. No tempo da Mamie, ficava na rue de Madrid, no 8e; desde 1990 está no parque de la Villette, no 19e.",
+    "glossary": {
+      "comment": "como",
+      "as": "(você) tem / auxiliar do passé composé (avoir)",
+      "rencontré": "conheceu / encontrou (rencontrer)",
+      "papi": "vovô (carinhoso)",
+      "oh": "ah! / oh!",
+      "belle": "bela, bonita",
+      "histoire": "história",
+      "printemps": "primavera",
+      "vingt": "vinte",
+      "déjà": "já",
+      "pianiste": "pianista",
+      "étudiante": "estudante (fem.)",
+      "conservatoire": "conservatório",
+      "un": "um",
+      "soir": "noite (o começo da noite)",
+      "pleuvait": "chovia (pleuvoir, imparfait)",
+      "fort": "forte; alto (som, volume)",
+      "bus": "ônibus",
+      "alors": "então / e aí",
+      "coup": "golpe; tout à coup = de repente",
+      "jeune": "jovem",
+      "homme": "homem",
+      "arrivé": "chegado (arriver); est arrivé = chegou",
+      "grand": "alto / grande",
+      "timide": "tímido",
+      "moustache": "bigode",
+      "horrible": "horrível",
+      "mais": "mas",
+      "foudre": "raio; coup de foudre = amor à primeira vista",
+      "qu'": "que (antes de vogal)",
+      "a": "tem / auxiliar do passé composé (avoir)",
+      "dit": "disse / dito (dire); il dit = ele diz",
+      "vous": "você (formal) / vocês; (pronome) lhe, te",
+      "mademoiselle": "senhorita",
+      "parlait": "falava / conversava (parler, imparfait)",
+      "riait": "ria (rire, imparfait)",
+      "sans": "sem",
+      "ai": "tenho / auxiliar do passé composé (avoir)",
+      "raté": "perdido (rater); j'ai raté = perdi",
+      "trois": "três",
+      "an": "ano",
+      "plus": "mais; plus tard = depois; ne… plus = não… mais",
+      "tard": "tarde",
+      "mariés": "casados",
+      "fois": "vez; il était une fois = era uma vez",
+      "peu": "pouco; un peu = um pouco",
+      "ce": "esse / este / isso",
+      "jour": "dia",
+      "là": "lá / aí; ce jour-là = naquele dia",
+      "dormais": "dormia / estava dormindo (dormir, imparfait)",
+      "téléphone": "telefone; (je) telefono (téléphoner à)",
+      "sonné": "tocado (sonner); a sonné = tocou",
+      "suis": "sou / estou; auxiliar (être)",
+      "nuit": "noite; il faisait nuit = estava escuro",
+      "habitude": "hábito; d'habitude = normalmente",
+      "rentrais": "voltava para casa (rentrer, imparfait)",
+      "pris": "pegado / tomado (prendre); j'ai pris = peguei",
+      "devant": "em frente a, diante de",
+      "fatiguée": "cansada",
+      "rentrée": "voltado para casa (rentrer, fem.)",
+      "ton": "seu / teu (informal)",
+      "grand-père": "avô",
+      "étés": "verões",
+      "bretagne": "Bretanha (região da França)",
+      "fête": "festa",
+      "ami": "amigo",
+      "chaud": "quente; il faisait chaud = fazia calor",
+      "musique": "música",
+      "forte": "forte / alta",
+      "arrivée": "chegada (arriver, fem.); est arrivée = chegou",
+      "gâteau": "bolo",
+      "parlé": "falado (parler); on a parlé = a gente conversou",
+      "toute": "toda; toute la nuit = a noite toda",
+      "allais": "ia / estava indo (aller, imparfait)",
+      "concert": "concerto, show",
+      "nerveuse": "nervosa",
+      "plein": "cheio, lotado",
+      "freiné": "freado (freiner); il a freiné = freou",
+      "tombée": "caída (tomber, fem.); je suis tombée = caí",
+      "souri": "sorrido (sourire); il a souri = sorriu",
+      "bonsoir": "boa noite (ao chegar)",
+      "tombez": "cai (tomber, vous); vous tombez bien = chegou na hora certa",
+      "station": "estação (de metrô)",
+      "juste": "bem, exatamente; justo; juste à temps = bem na hora",
+      "rang": "fileira; au premier rang = na primeira fila",
+      "premier": "primeiro"
+    }
+  },
+  {
+    "id": "a2-03",
+    "level": "A2",
+    "track": "main",
+    "title": "Je le vois",
+    "titlePt": "Pronomes objeto: le, la, les, lui, leur",
+    "goal": "Evitar repetições substituindo pessoas e coisas por pronomes (le, la, les, lui, leur) colocados antes do verbo.",
+    "dialogue": {
+      "title": "Où sont mes lunettes ?",
+      "context": "No sábado é aniversário da Camille. Na casa da Mamie, Léo e a avó organizam a festa… enquanto ela procura os óculos.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Léo, tu vois mes lunettes ? Je ne les trouve pas.",
+          "pt": "Léo, você está vendo os meus óculos? Não estou achando."
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, je les vois… Elles sont sur ta tête, Mamie !",
+          "pt": "Estou, sim… Estão na sua cabeça, Mamie!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Ah, les voilà ! Bon. Alors, samedi, c'est l'anniversaire de Camille.",
+          "pt": "Ah, aí estão eles! Bom. Então, sábado é o aniversário da Camille."
+        },
+        {
+          "who": "Léo",
+          "fr": "Je sais. Qu'est-ce qu'on lui offre ?",
+          "pt": "Eu sei. O que a gente dá de presente para ela?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Elle adore la cuisine. On lui offre un beau livre de recettes ?",
+          "pt": "Ela adora cozinhar. Vamos dar para ela um livro de receitas bonito?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Bonne idée. Je le cherche demain à la librairie.",
+          "pt": "Boa ideia. Eu procuro amanhã na livraria."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et Monsieur Bernard ? Tu l'invites ?",
+          "pt": "E o Monsieur Bernard? Você convida?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, je lui téléphone ce soir.",
+          "pt": "Sim, eu ligo para ele hoje à noite."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et les parents de Camille ? Tu leur as écrit ?",
+          "pt": "E os pais da Camille? Você escreveu para eles?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Pas encore. Je leur envoie un message tout de suite.",
+          "pt": "Ainda não. Mando uma mensagem para eles agora mesmo."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et le gâteau ? Je le fais ou je l'achète ?",
+          "pt": "E o bolo? Eu faço ou compro?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Tu le fais ! Ton gâteau au chocolat, je l'adore.",
+          "pt": "Você faz! O seu bolo de chocolate, eu adoro."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Flatteur ! Bon, je le fais… si je trouve mes lunettes.",
+          "pt": "Bajulador! Tá bom, eu faço… se eu encontrar os meus óculos."
+        },
+        {
+          "who": "Léo",
+          "fr": "Mamie… elles sont toujours sur ta tête.",
+          "pt": "Mamie… eles continuam na sua cabeça."
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-03-01",
+        "fr": "Tu vois mes lunettes ?",
+        "pt": "Você está vendo os meus óculos?",
+        "note": "'Lunettes' é feminino e plural: 'elles sont sur ta tête'."
+      },
+      {
+        "id": "a2-03-02",
+        "fr": "Je ne les trouve pas.",
+        "pt": "Não estou achando (eles)."
+      },
+      {
+        "id": "a2-03-03",
+        "fr": "Oui, je les vois.",
+        "pt": "Sim, estou vendo (eles)."
+      },
+      {
+        "id": "a2-03-04",
+        "fr": "Qu'est-ce qu'on lui offre ?",
+        "pt": "O que a gente dá de presente para ela?",
+        "note": "'Lui' = a ele E a ela. O contexto mostra quem é."
+      },
+      {
+        "id": "a2-03-05",
+        "fr": "On lui offre un livre de recettes ?",
+        "pt": "Vamos dar um livro de receitas para ela?"
+      },
+      {
+        "id": "a2-03-06",
+        "fr": "Je le cherche demain à la librairie.",
+        "pt": "Procuro amanhã na livraria.",
+        "note": "Falso amigo: 'librairie' = livraria. Biblioteca é 'bibliothèque'."
+      },
+      {
+        "id": "a2-03-07",
+        "fr": "Monsieur Bernard ? Je l'invite samedi.",
+        "pt": "O Monsieur Bernard? Eu o convido para sábado."
+      },
+      {
+        "id": "a2-03-08",
+        "fr": "Je lui téléphone ce soir.",
+        "pt": "Eu ligo para ele hoje à noite."
+      },
+      {
+        "id": "a2-03-09",
+        "fr": "Camille ? Je l'appelle demain matin.",
+        "pt": "A Camille? Eu ligo para ela amanhã de manhã.",
+        "note": "'Appeler' é direto (je l'appelle), mas 'téléphoner à' é indireto (je lui téléphone)."
+      },
+      {
+        "id": "a2-03-10",
+        "fr": "Tu leur as écrit ?",
+        "pt": "Você escreveu para eles?"
+      },
+      {
+        "id": "a2-03-11",
+        "fr": "Je leur envoie un message tout de suite.",
+        "pt": "Mando uma mensagem para eles agora mesmo."
+      },
+      {
+        "id": "a2-03-12",
+        "fr": "Je le fais ou je l'achète ?",
+        "pt": "Eu faço ou compro?"
+      },
+      {
+        "id": "a2-03-13",
+        "fr": "Ton gâteau au chocolat, je l'adore !",
+        "pt": "O seu bolo de chocolate, eu adoro!"
+      },
+      {
+        "id": "a2-03-14",
+        "fr": "Tes clés ? Je les ai trouvées !",
+        "pt": "Suas chaves? Eu achei!",
+        "note": "Pronome antes de 'avoir' → o particípio concorda: 'trouvées' (les clés, fem. plural). Na fala, nada muda."
+      },
+      {
+        "id": "a2-03-15",
+        "fr": "Je peux t'aider ?",
+        "pt": "Posso te ajudar?"
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "O pronome vem antes do verbo",
+        "body": "Em francês, o pronome objeto vem **antes do verbo**: *je **le** vois*, *je **lui** parle*. É como o português mais formal: 'eu **o** vejo', 'eu **lhe** falo'. No Brasil a gente diz 'eu vejo ele' — mas em francês isso não existe: nunca diga 'je vois il' nem 'je vois lui'.\nNa negação, o pronome continua grudado no verbo: *je **ne les** trouve **pas***.\nNo passé composé, ele vai antes do auxiliar: *je **l'**ai acheté*, *tu **leur** as écrit ?*",
+        "examples": [
+          {
+            "fr": "Je le vois.",
+            "pt": "Eu o vejo. (= eu vejo ele)"
+          },
+          {
+            "fr": "Je ne les trouve pas.",
+            "pt": "Não os encontro."
+          },
+          {
+            "fr": "Je l'ai acheté hier.",
+            "pt": "Eu o comprei ontem."
+          }
+        ]
+      },
+      {
+        "title": "Le, la, les ou lui, leur ?",
+        "body": "Pergunte: o verbo pede a preposição *à*?\nSe **não** pede (*voir*, *inviter*, *chercher*, *aimer*, *appeler* quelqu'un), use **le / la / les** — e *le / la* viram **l'** antes de vogal.\nSe pede *à* (*parler à*, *téléphoner à*, *écrire à*, *offrir à*), use **lui** (singular, serve para ele *e* para ela!) ou **leur** (plural, sem -s).\nCuidado com as diferenças: em português é 'ligar **para** alguém', mas em francês *appeler* é direto: *je **l'**appelle*. Já *téléphoner à* é indireto: *je **lui** téléphone*.",
+        "examples": [
+          {
+            "fr": "Monsieur Bernard ? Je l'invite.",
+            "pt": "O Monsieur Bernard? Eu o convido."
+          },
+          {
+            "fr": "Camille ? Je lui téléphone.",
+            "pt": "A Camille? Eu ligo para ela."
+          },
+          {
+            "fr": "Ses parents ? Je leur écris.",
+            "pt": "Os pais dela? Eu escrevo para eles."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você está organizando uma festa. Responda usando pronomes: Você convida a Camille? Você liga para os vizinhos? Você compra o bolo?",
+      "model": "Camille ? Oui, je l'invite, bien sûr ! Les voisins ? Je leur téléphone ce soir. Le gâteau ? Non, je ne l'achète pas : Mamie le fait !"
+    },
+    "culture": "Na França, no trabalho, é o próprio aniversariante que costuma levar bolo ou croissants para os colegas. E o presente se abre na hora, na frente de quem deu.",
+    "glossary": {
+      "vois": "vejo / vê (voir)",
+      "lunettes": "óculos (fem. plural)",
+      "ne": "não (ne… pas)",
+      "trouve": "encontro / acho (trouver)",
+      "sont": "são / estão (être)",
+      "ta": "sua / tua (informal)",
+      "tête": "cabeça",
+      "ah": "ah!; ah bon = ah, é? / ah, tá",
+      "samedi": "sábado",
+      "anniversaire": "aniversário",
+      "sais": "sei / sabe (savoir)",
+      "lui": "(pronome) a ele / a ela, lhe; (tônico) ele",
+      "offre": "ofereço, dou de presente (offrir)",
+      "elle": "ela",
+      "adore": "adoro / adora (adorer)",
+      "cuisine": "cozinha; cozinhar",
+      "beau": "bonito, belo",
+      "livre": "livro",
+      "recettes": "receitas",
+      "bonne": "boa",
+      "idée": "ideia",
+      "cherche": "procuro / procura (chercher)",
+      "demain": "amanhã",
+      "librairie": "livraria",
+      "monsieur": "senhor",
+      "invites": "convida (inviter, tu)",
+      "invite": "convido / convida (inviter)",
+      "parents": "pais",
+      "leur": "(pronome) a eles / a elas, lhes",
+      "écrit": "escrito (écrire); tu as écrit = você escreveu",
+      "encore": "ainda; pas encore = ainda não",
+      "envoie": "envio, mando (envoyer)",
+      "message": "mensagem",
+      "suite": "sequência; tout de suite = agora mesmo",
+      "fais": "faço / faz (faire)",
+      "achète": "compro / compra (acheter)",
+      "flatteur": "bajulador",
+      "si": "se; si ! = sim! (resposta a uma pergunta negativa)",
+      "appelle": "chamo / ligo para (appeler)",
+      "matin": "manhã",
+      "tes": "seus / suas (informal)",
+      "clés": "chaves",
+      "trouvées": "encontradas (trouver, fem. plural)",
+      "peux": "posso / pode (pouvoir)",
+      "t'": "te (antes de vogal)",
+      "aider": "ajudar",
+      "acheté": "comprado (acheter); je l'ai acheté = eu o comprei",
+      "hier": "ontem",
+      "écris": "escrevo / escreve (écrire)",
+      "ses": "seus / suas (dele, dela)",
+      "bien": "bem; bien sûr = claro; bien meilleur = muito melhor",
+      "sûr": "certo; bien sûr = claro",
+      "voisins": "vizinhos",
+      "ou": "ou",
+      "voilà": "eis aí; les voilà = aí estão eles"
+    }
+  },
+  {
+    "id": "a2-04",
+    "level": "A2",
+    "track": "main",
+    "title": "J'y vais, j'en veux",
+    "titlePt": "Os pronomes y e en",
+    "goal": "Falar de lugares, coisas e quantidades sem repetir as palavras, usando y e en.",
+    "dialogue": {
+      "title": "Au marché",
+      "context": "Na manhã da festa, Camille e Léo vão à feira do bairro comprar o que falta para o aniversário dela.",
+      "lines": [
+        {
+          "who": "Camille",
+          "fr": "Bon, on va au marché ? Il ferme à une heure.",
+          "pt": "Bom, vamos à feira? Ela fecha à uma."
+        },
+        {
+          "who": "Léo",
+          "fr": "D'accord, on y va !",
+          "pt": "Beleza, vamos lá!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Alors, le fromage… Mamie en a encore ?",
+          "pt": "Então, o queijo… a Mamie ainda tem?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, elle en a, mais pas beaucoup.",
+          "pt": "Tem, mas não muito."
+        },
+        {
+          "who": "Camille",
+          "fr": "Bon, on en prend trois : un comté, un brie et un chèvre.",
+          "pt": "Bom, vamos levar três: um comté, um brie e um de cabra."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et des fraises ? Tu en veux ?",
+          "pt": "E morangos? Você quer?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Oui, j'en veux deux barquettes. C'est mon anniversaire !",
+          "pt": "Quero, duas caixinhas. É o meu aniversário!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Et le gâteau ? Tu y as pensé ?",
+          "pt": "E o bolo? Você pensou nisso?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Pas besoin, Mamie le fait. Elle en parle tous les jours !",
+          "pt": "Não precisa, a Mamie vai fazer. Ela fala disso todo dia!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Et les bougies ? Il y en a chez elle ?",
+          "pt": "E as velas? Tem na casa dela?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Non, il n'y en a plus. On en achète à la supérette.",
+          "pt": "Não, não tem mais. A gente compra no mercadinho."
+        },
+        {
+          "who": "Léo",
+          "fr": "Au fait, tu as invité combien de personnes ?",
+          "pt": "Aliás, você convidou quantas pessoas?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Euh… J'en ai invité trente.",
+          "pt": "Hã… convidei trinta."
+        },
+        {
+          "who": "Léo",
+          "fr": "Trente ?! Bon… on y retourne. On reprend du fromage !",
+          "pt": "Trinta?! Bom… vamos voltar lá. Vamos levar mais queijo!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-04-01",
+        "fr": "D'accord, on y va !",
+        "pt": "Beleza, vamos lá!",
+        "note": "'On y va' (vamos lá) é uma das frases mais usadas do francês. Liga: [on-ni-va]."
+      },
+      {
+        "id": "a2-04-02",
+        "fr": "Mamie en a encore ?",
+        "pt": "A Mamie ainda tem?"
+      },
+      {
+        "id": "a2-04-03",
+        "fr": "Oui, elle en a, mais pas beaucoup.",
+        "pt": "Tem, mas não muito."
+      },
+      {
+        "id": "a2-04-04",
+        "fr": "On en prend trois.",
+        "pt": "Vamos levar três.",
+        "note": "Com números, o 'en' é obrigatório: 'j'en prends trois'. Em português, só 'levo três'."
+      },
+      {
+        "id": "a2-04-05",
+        "fr": "Des fraises ? Tu en veux ?",
+        "pt": "Morangos? Você quer?"
+      },
+      {
+        "id": "a2-04-06",
+        "fr": "J'en veux deux barquettes.",
+        "pt": "Quero duas caixinhas."
+      },
+      {
+        "id": "a2-04-07",
+        "fr": "Le gâteau ? Tu y as pensé ?",
+        "pt": "O bolo? Você pensou nisso?",
+        "note": "'Penser à quelque chose' → 'y penser'. Para pessoas, use pronome tônico: 'je pense à elle'."
+      },
+      {
+        "id": "a2-04-08",
+        "fr": "Elle en parle tous les jours.",
+        "pt": "Ela fala disso todos os dias."
+      },
+      {
+        "id": "a2-04-09",
+        "fr": "Il y en a chez elle ?",
+        "pt": "Tem na casa dela?"
+      },
+      {
+        "id": "a2-04-10",
+        "fr": "Non, il n'y en a plus.",
+        "pt": "Não, não tem mais.",
+        "note": "Na fala rápida, vira 'y en a plus' [ian-na-plu]."
+      },
+      {
+        "id": "a2-04-11",
+        "fr": "J'en ai invité trente.",
+        "pt": "Convidei trinta."
+      },
+      {
+        "id": "a2-04-12",
+        "fr": "Tu es déjà allé à Montmartre ?",
+        "pt": "Você já foi a Montmartre?"
+      },
+      {
+        "id": "a2-04-13",
+        "fr": "Non, je n'y suis jamais allé.",
+        "pt": "Não, nunca fui lá."
+      },
+      {
+        "id": "a2-04-14",
+        "fr": "J'en ai un, il s'appelle Thomas.",
+        "pt": "(Irmão?) Tenho um, ele se chama Thomas."
+      },
+      {
+        "id": "a2-04-15",
+        "fr": "J'y vais à pied.",
+        "pt": "Vou lá a pé."
+      },
+      {
+        "id": "a2-04-16",
+        "fr": "Tu en as besoin ?",
+        "pt": "Você precisa disso?",
+        "note": "'Avoir besoin de' = precisar de → 'en avoir besoin'."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Y = 'lá' (ou 'nisso')",
+        "body": "**Y** substitui um lugar que já foi mencionado (*au marché*, *à Paris*, *chez Mamie*). É o nosso 'lá': *Tu vas au marché ? — Oui, j'**y** vais* ('vou lá').\nTambém substitui *à* + coisa, com verbos como *penser à*: *Tu penses au gâteau ? — Oui, j'**y** pense* ('penso nisso').\nEm português, muitas vezes a gente simplesmente omite: 'Você vai à feira? — Vou.' Em francês, 'je vais' sozinho soa incompleto: o *y* precisa estar lá. Daí a frase mais famosa de todas: ***on y va*** = 'vamos lá'.",
+        "examples": [
+          {
+            "fr": "Tu vas au marché ? Oui, j'y vais.",
+            "pt": "Você vai à feira? Vou, sim."
+          },
+          {
+            "fr": "Je n'y suis jamais allé.",
+            "pt": "Nunca fui lá."
+          },
+          {
+            "fr": "Tu y penses ?",
+            "pt": "Você pensa nisso?"
+          }
+        ]
+      },
+      {
+        "title": "En = 'disso', 'deles'",
+        "body": "**En** substitui algo que vem com *de / du / de la / des*: *Tu veux du fromage ? — Oui, j'**en** veux* ('quero, sim').\nCom quantidades e números, ele é obrigatório: *Tu as des frères ? — J'**en** ai deux.* Em português dizemos só 'tenho dois'; em francês, 'j'ai deux' sozinho fica faltando um pedaço. Pense no *en* como um 'deles / disso' invisível que o francês nunca esquece.\nEle também aparece com verbos que pedem *de*: *parler de* → *j'en parle*; *avoir besoin de* → *j'en ai besoin*.",
+        "examples": [
+          {
+            "fr": "Tu veux du fromage ? Oui, j'en veux.",
+            "pt": "Quer queijo? Quero, sim."
+          },
+          {
+            "fr": "Des fraises ? J'en prends un kilo.",
+            "pt": "Morangos? Vou levar um quilo."
+          },
+          {
+            "fr": "J'en ai besoin.",
+            "pt": "Preciso disso."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Responda usando y ou en: Você vai à padaria hoje? Você tem irmãos? Você come muito queijo? Você já foi a Paris?",
+      "model": "Oui, j'y vais ce matin. Des frères ? J'en ai deux. Du fromage ? J'en mange tous les jours ! Paris ? Non, je n'y suis jamais allé, mais j'y pense souvent."
+    },
+    "culture": "Em muitas bancas das feiras de Paris, não se escolhe a fruta com a mão: quem serve é o feirante. Diga para quando é: 'pour ce soir' ou 'pour demain'.",
+    "glossary": {
+      "va": "vai (aller); on y va = vamos lá; ça va = tudo bem; ça ne va pas = não vai bem",
+      "vas": "vai (aller, tu)",
+      "vais": "vou (aller)",
+      "marché": "feira, mercado de rua; (marcher) andado",
+      "ferme": "fecha (fermer)",
+      "accord": "acordo; d'accord = de acordo, beleza",
+      "fromage": "queijo",
+      "beaucoup": "muito",
+      "prend": "pega / leva (prendre)",
+      "prends": "pego / levo (prendre)",
+      "comté": "comté (queijo do Jura)",
+      "brie": "brie (queijo)",
+      "chèvre": "cabra; queijo de cabra",
+      "fraises": "morangos",
+      "veux": "quero / quer (vouloir)",
+      "deux": "dois",
+      "barquettes": "caixinhas, bandejinhas",
+      "pensé": "pensado (penser); tu as pensé = você pensou",
+      "besoin": "necessidade; avoir besoin de = precisar de",
+      "parle": "falo / fala (parler)",
+      "bougies": "velas",
+      "supérette": "mercadinho",
+      "fait": "faz (faire); au fait = aliás; il fait beau = faz sol",
+      "invité": "convidado (inviter)",
+      "combien": "quanto(s)",
+      "personnes": "pessoas",
+      "euh": "hã… / é…",
+      "trente": "trinta",
+      "retourne": "volta (retourner)",
+      "reprend": "pega mais, pega de novo (reprendre)",
+      "es": "é / está (être, tu)",
+      "allé": "ido (aller); tu es allé = você foi",
+      "montmartre": "Montmartre (bairro de Paris)",
+      "jamais": "nunca (ne… jamais)",
+      "s'": "se (antes de vogal)",
+      "penses": "pensa (penser, tu)",
+      "pense": "penso / pensa (penser)",
+      "kilo": "quilo",
+      "frères": "irmãos",
+      "mange": "como / come (manger)",
+      "souvent": "frequentemente, muitas vezes"
+    }
+  },
+  {
+    "id": "a2-05",
+    "level": "A2",
+    "track": "main",
+    "title": "Chez le médecin",
+    "titlePt": "No médico",
+    "goal": "Explicar ao médico o que você está sentindo e entender o que precisa, deve e pode fazer.",
+    "dialogue": {
+      "title": "Une petite consultation",
+      "context": "Depois da festa (e de muito queijo), Léo fica doente. Monsieur Bernard recomenda o médico do bairro.",
+      "lines": [
+        {
+          "who": "Le médecin",
+          "fr": "Bonjour, monsieur. Asseyez-vous. Qu'est-ce qui ne va pas ?",
+          "pt": "Bom dia. Sente-se. O que o senhor está sentindo?"
+        },
+        {
+          "who": "Léo",
+          "fr": "J'ai mal à la gorge et j'ai mal à la tête.",
+          "pt": "Estou com dor de garganta e dor de cabeça."
+        },
+        {
+          "who": "Le médecin",
+          "fr": "Ça a commencé quand ?",
+          "pt": "Começou quando?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Dimanche matin, après l'anniversaire de ma cousine. J'ai trop dansé !",
+          "pt": "Domingo de manhã, depois do aniversário da minha prima. Dancei demais!"
+        },
+        {
+          "who": "Le médecin",
+          "fr": "Vous avez de la fièvre ?",
+          "pt": "O senhor está com febre?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, trente-huit cinq ce matin. Et je tousse un peu.",
+          "pt": "Sim, trinta e oito e meio hoje de manhã. E estou tossindo um pouco."
+        },
+        {
+          "who": "Le médecin",
+          "fr": "Ouvrez la bouche, s'il vous plaît. Oui, c'est très rouge.",
+          "pt": "Abra a boca, por favor. É, está bem vermelha."
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est grave, docteur ?",
+          "pt": "É grave, doutor?"
+        },
+        {
+          "who": "Le médecin",
+          "fr": "Non, c'est un virus. Il faut boire beaucoup d'eau et vous reposer.",
+          "pt": "Não, é um vírus. É preciso beber muita água e descansar."
+        },
+        {
+          "who": "Léo",
+          "fr": "Je dois prendre des antibiotiques ?",
+          "pt": "Tenho que tomar antibiótico?"
+        },
+        {
+          "who": "Le médecin",
+          "fr": "Non, les antibiotiques, ce n'est pas automatique ! Vous pouvez prendre du paracétamol.",
+          "pt": "Não, antibiótico não é automático! O senhor pode tomar paracetamol."
+        },
+        {
+          "who": "Léo",
+          "fr": "Je peux sortir demain ?",
+          "pt": "Posso sair amanhã?"
+        },
+        {
+          "who": "Le médecin",
+          "fr": "Non, vous devez rester à la maison deux ou trois jours. Pas de fête !",
+          "pt": "Não, o senhor deve ficar em casa dois ou três dias. Nada de festa!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Promis. Je vous dois combien ?",
+          "pt": "Prometo. Quanto lhe devo?"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-05-01",
+        "fr": "Qu'est-ce qui ne va pas ?",
+        "pt": "O que você está sentindo?",
+        "note": "Pergunta fixa do médico (e de amigos preocupados). Literalmente: 'o que não vai bem?'"
+      },
+      {
+        "id": "a2-05-02",
+        "fr": "J'ai mal à la gorge.",
+        "pt": "Estou com dor de garganta.",
+        "note": "O 'l' de 'mal' soa de verdade, com a língua nos dentes de cima — não vira 'u' como em 'mau'."
+      },
+      {
+        "id": "a2-05-03",
+        "fr": "J'ai mal à la tête.",
+        "pt": "Estou com dor de cabeça."
+      },
+      {
+        "id": "a2-05-04",
+        "fr": "J'ai mal au ventre.",
+        "pt": "Estou com dor de barriga.",
+        "note": "à + le = au: 'mal au ventre', 'mal au dos'. à + les = aux: 'mal aux dents'."
+      },
+      {
+        "id": "a2-05-05",
+        "fr": "J'ai mal aux pieds, j'ai trop marché.",
+        "pt": "Meus pés estão doendo, andei demais."
+      },
+      {
+        "id": "a2-05-06",
+        "fr": "Vous avez de la fièvre ?",
+        "pt": "O senhor está com febre?"
+      },
+      {
+        "id": "a2-05-07",
+        "fr": "J'ai trente-huit cinq de fièvre.",
+        "pt": "Estou com trinta e oito e meio de febre.",
+        "note": "Os franceses leem 38,5 como 'trente-huit cinq', sem dizer a vírgula."
+      },
+      {
+        "id": "a2-05-08",
+        "fr": "Je tousse un peu, surtout la nuit.",
+        "pt": "Estou tossindo um pouco, principalmente à noite."
+      },
+      {
+        "id": "a2-05-09",
+        "fr": "C'est grave, docteur ?",
+        "pt": "É grave, doutor?"
+      },
+      {
+        "id": "a2-05-10",
+        "fr": "Il faut boire beaucoup d'eau.",
+        "pt": "É preciso beber muita água."
+      },
+      {
+        "id": "a2-05-11",
+        "fr": "Il faut vous reposer.",
+        "pt": "O senhor precisa descansar."
+      },
+      {
+        "id": "a2-05-12",
+        "fr": "Je dois prendre des antibiotiques ?",
+        "pt": "Tenho que tomar antibiótico?"
+      },
+      {
+        "id": "a2-05-13",
+        "fr": "Vous pouvez prendre du paracétamol.",
+        "pt": "O senhor pode tomar paracetamol."
+      },
+      {
+        "id": "a2-05-14",
+        "fr": "Vous devez rester au lit deux jours.",
+        "pt": "O senhor deve ficar de cama por dois dias."
+      },
+      {
+        "id": "a2-05-15",
+        "fr": "Je voudrais une boîte de paracétamol.",
+        "pt": "Eu queria uma caixa de paracetamol."
+      },
+      {
+        "id": "a2-05-16",
+        "fr": "Je vous dois combien ?",
+        "pt": "Quanto lhe devo?",
+        "note": "'Devoir' também é 'dever dinheiro'. Serve para médico, encanador, cabeleireiro…"
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "J'ai mal à… : a dor com 'avoir'",
+        "body": "Para falar de dor, o francês usa **avoir mal à** + parte do corpo, **com artigo**: *j'ai mal **à la** tête*, *j'ai mal **au** ventre*, *j'ai mal **aux** pieds*. Em português dizemos 'estou com dor de cabeça' ou 'minha cabeça dói'. Repare que o francês não usa o possessivo: nada de 'ma tête' aqui.\nAtenção às contrações, as mesmas de sempre: à + le = **au**, à + les = **aux**.\nE para perguntar onde dói: *Vous avez mal où ?* = 'Onde dói?'",
+        "examples": [
+          {
+            "fr": "J'ai mal à la tête.",
+            "pt": "Estou com dor de cabeça."
+          },
+          {
+            "fr": "Tu as mal au dos ?",
+            "pt": "Você está com dor nas costas?"
+          },
+          {
+            "fr": "Elle a mal aux dents.",
+            "pt": "Ela está com dor de dente."
+          }
+        ]
+      },
+      {
+        "title": "Il faut, devoir, pouvoir",
+        "body": "**Il faut** + infinitivo = 'é preciso'. É impessoal e nunca muda: *il faut boire*.\n**Devoir** = 'dever / ter que' e **pouvoir** = 'poder'. Os dois são irregulares, mas seguem o mesmo desenho:\n*je dois, tu dois, il doit, nous devons, vous devez, ils doivent*\n*je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent*\nDepois deles, o verbo vai no infinitivo, como em português: *je dois rester* = 'devo ficar'.\nDica: o -s e o -t finais são mudos, então *dois* e *doit* soam iguais: [duá].",
+        "examples": [
+          {
+            "fr": "Il faut manger des fruits.",
+            "pt": "É preciso comer frutas."
+          },
+          {
+            "fr": "Je dois rester à la maison.",
+            "pt": "Tenho que ficar em casa."
+          },
+          {
+            "fr": "Vous pouvez sortir demain.",
+            "pt": "O senhor pode sair amanhã."
+          },
+          {
+            "fr": "Ils doivent se reposer.",
+            "pt": "Eles precisam descansar."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você está no médico. Diga o que está sentindo (duas dores), se tem febre, e pergunte o que você pode ou deve fazer.",
+      "model": "Bonjour, docteur. J'ai mal à la tête et j'ai mal au dos. J'ai trente-huit de fièvre. Je dois prendre des médicaments ? Je peux faire du sport ?"
+    },
+    "culture": "Na França, você paga a consulta do clínico geral (cerca de 30 €) e a Sécurité sociale reembolsa a maior parte. Os farmacêuticos (a cruz verde) dão muitos conselhos — e o slogan 'Les antibiotiques, c'est pas automatique' ficou famoso.",
+    "glossary": {
+      "bonjour": "bom dia / olá",
+      "asseyez-vous": "sente-se (s'asseoir)",
+      "mal": "dor; avoir mal à = estar com dor em",
+      "gorge": "garganta",
+      "commencé": "começado (commencer); ça a commencé = começou",
+      "cousine": "prima",
+      "trop": "demais",
+      "dansé": "dançado (danser); j'ai dansé = dancei",
+      "avez": "tem / têm (avoir, vous)",
+      "fièvre": "febre",
+      "cinq": "cinco",
+      "tousse": "tusso / tosse (tousser)",
+      "ouvrez": "abra (ouvrir, vous)",
+      "bouche": "boca",
+      "plaît": "agrada (plaire); s'il vous plaît = por favor",
+      "grave": "grave",
+      "docteur": "doutor",
+      "virus": "vírus",
+      "faut": "é preciso (il faut, falloir)",
+      "boire": "beber",
+      "eau": "água",
+      "reposer": "descansar (se reposer)",
+      "dois": "devo / deve (devoir)",
+      "prendre": "pegar / tomar",
+      "antibiotiques": "antibióticos",
+      "automatique": "automático",
+      "pouvez": "pode / podem (pouvoir, vous)",
+      "paracétamol": "paracetamol",
+      "sortir": "sair",
+      "devez": "deve / devem (devoir, vous)",
+      "rester": "ficar, permanecer",
+      "promis": "prometido; promis ! = prometo!",
+      "ventre": "barriga",
+      "aux": "aos / nos (à + les)",
+      "pieds": "pés",
+      "surtout": "principalmente",
+      "voudrais": "queria, gostaria (vouloir)",
+      "boîte": "caixa",
+      "lit": "cama; au lit = de cama",
+      "dos": "costas",
+      "dents": "dentes",
+      "manger": "comer",
+      "fruits": "frutas",
+      "doivent": "devem (devoir, ils)",
+      "se": "se (pronome)",
+      "médicaments": "remédios",
+      "sport": "esporte; faire du sport = fazer exercício",
+      "faire": "fazer"
+    }
+  },
+  {
+    "id": "a2-06",
+    "level": "A2",
+    "track": "main",
+    "title": "Des projets",
+    "titlePt": "Planos para o futuro",
+    "goal": "Falar dos seus planos com o futuro simples e fazer previsões com 'si' e 'quand'.",
+    "dialogue": {
+      "title": "Au bord de la Seine",
+      "context": "Já recuperado, Léo passeia com Camille à beira do Sena. Os dois falam dos planos para as próximas semanas — e para o futuro.",
+      "lines": [
+        {
+          "who": "Camille",
+          "fr": "Alors, tu restes encore combien de temps à Paris ?",
+          "pt": "E aí, você fica mais quanto tempo em Paris?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Deux mois. Après, je rentrerai à São Paulo.",
+          "pt": "Dois meses. Depois, volto para São Paulo."
+        },
+        {
+          "who": "Camille",
+          "fr": "Et qu'est-ce que tu feras d'ici là ?",
+          "pt": "E o que você vai fazer até lá?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Je prendrai des cours de français et je visiterai la Normandie.",
+          "pt": "Vou fazer aulas de francês e conhecer a Normandia."
+        },
+        {
+          "who": "Camille",
+          "fr": "S'il fait beau samedi, on ira à Giverny. Tu verras les jardins de Monet !",
+          "pt": "Se fizer sol no sábado, a gente vai a Giverny. Você vai ver os jardins do Monet!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Génial ! Mamie viendra avec nous ?",
+          "pt": "Demais! A Mamie vem com a gente?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Si elle n'est pas fatiguée, oui. Elle adore Monet.",
+          "pt": "Se ela não estiver cansada, sim. Ela adora o Monet."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et toi, tu viendras un jour au Brésil ?",
+          "pt": "E você, vai ao Brasil um dia?"
+        },
+        {
+          "who": "Camille",
+          "fr": "L'année prochaine, j'aurai trois semaines de vacances. Je viendrai, promis !",
+          "pt": "Ano que vem, vou ter três semanas de férias. Eu vou, prometo!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Si tu viens, je te montrerai São Paulo et Rio.",
+          "pt": "Se você for, eu te mostro São Paulo e o Rio."
+        },
+        {
+          "who": "Camille",
+          "fr": "Et on mangera des brigadeiros ?",
+          "pt": "E a gente vai comer brigadeiro?"
+        },
+        {
+          "who": "Léo",
+          "fr": "On en mangera tous les jours !",
+          "pt": "A gente vai comer todo dia!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Alors c'est décidé : quand j'aurai mes billets, je t'enverrai un message.",
+          "pt": "Então está decidido: quando eu tiver as passagens, te mando uma mensagem."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et moi, je t'attendrai à l'aéroport !",
+          "pt": "E eu vou te esperar no aeroporto!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-06-01",
+        "fr": "Après, je rentrerai à São Paulo.",
+        "pt": "Depois, vou voltar para São Paulo."
+      },
+      {
+        "id": "a2-06-02",
+        "fr": "Qu'est-ce que tu feras d'ici là ?",
+        "pt": "O que você vai fazer até lá?",
+        "note": "'Faire' → radical 'fer-': je ferai, tu feras. O 'e' é fraco: [fe-RA]."
+      },
+      {
+        "id": "a2-06-03",
+        "fr": "Je prendrai des cours de français.",
+        "pt": "Vou fazer aulas de francês."
+      },
+      {
+        "id": "a2-06-04",
+        "fr": "S'il fait beau samedi, on ira à Giverny.",
+        "pt": "Se fizer sol no sábado, a gente vai a Giverny.",
+        "note": "Depois de 'si', vem presente: 's'il fait beau'. Nunca 's'il fera beau'."
+      },
+      {
+        "id": "a2-06-05",
+        "fr": "Tu verras les jardins de Monet.",
+        "pt": "Você vai ver os jardins do Monet.",
+        "note": "'Voir' → 'verr-': je verrai, tu verras. Os dois 'r' soam como um só."
+      },
+      {
+        "id": "a2-06-06",
+        "fr": "Mamie viendra avec nous ?",
+        "pt": "A Mamie vem com a gente?"
+      },
+      {
+        "id": "a2-06-07",
+        "fr": "Tu viendras un jour au Brésil ?",
+        "pt": "Você vem ao Brasil um dia?"
+      },
+      {
+        "id": "a2-06-08",
+        "fr": "L'année prochaine, j'aurai trois semaines de vacances.",
+        "pt": "Ano que vem, vou ter três semanas de férias."
+      },
+      {
+        "id": "a2-06-09",
+        "fr": "Je viendrai, promis !",
+        "pt": "Eu vou, prometo!"
+      },
+      {
+        "id": "a2-06-10",
+        "fr": "Si tu viens, je te montrerai Rio.",
+        "pt": "Se você vier, eu te mostro o Rio.",
+        "note": "Em português: 'se você vier' (subjuntivo). Em francês: presente, 'si tu viens'."
+      },
+      {
+        "id": "a2-06-11",
+        "fr": "On en mangera tous les jours !",
+        "pt": "A gente vai comer todo dia!"
+      },
+      {
+        "id": "a2-06-12",
+        "fr": "Quand j'aurai mes billets, je t'enverrai un message.",
+        "pt": "Quando eu tiver as passagens, te mando uma mensagem."
+      },
+      {
+        "id": "a2-06-13",
+        "fr": "Je t'attendrai à l'aéroport.",
+        "pt": "Vou te esperar no aeroporto."
+      },
+      {
+        "id": "a2-06-14",
+        "fr": "Demain, il pleuvra toute la journée.",
+        "pt": "Amanhã vai chover o dia inteiro.",
+        "note": "A previsão do tempo adora o futuro: 'il fera beau', 'il pleuvra', 'il y aura du vent'."
+      },
+      {
+        "id": "a2-06-15",
+        "fr": "Un jour, j'habiterai à Paris.",
+        "pt": "Um dia, eu vou morar em Paris."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Futuro simples = infinitivo + 'avoir'",
+        "body": "O futuro francês funciona como o nosso. Em português, 'falarei' é 'falar' + 'ei' (que vem do antigo 'hei', do verbo haver). Em francês, é o **infinitivo** + as terminações de *avoir* no presente: **-ai, -as, -a, -ons, -ez, -ont**.\n*je visiterai*, *tu mangeras*, *on parlera*. Verbos em -re perdem o *e*: *prendre* → *je prendrai*.\nAlguns têm radical próprio, que vale decorar: *être* → **ser-**, *avoir* → **aur-**, *aller* → **ir-**, *faire* → **fer-**, *venir* → **viendr-**, *voir* → **verr-**, *pouvoir* → **pourr-**.\nNa conversa, o futur proche (*je vais faire*) é mais comum para planos próximos; o futuro simples soa mais firme, ou mais distante.",
+        "examples": [
+          {
+            "fr": "Je visiterai la Normandie.",
+            "pt": "Vou conhecer a Normandia."
+          },
+          {
+            "fr": "On ira à Giverny.",
+            "pt": "A gente vai a Giverny."
+          },
+          {
+            "fr": "Tu seras là ?",
+            "pt": "Você vai estar lá?"
+          }
+        ]
+      },
+      {
+        "title": "Si + presente, quand + futuro",
+        "body": "Aqui o francês e o português se separam. Nós dizemos 'se você **vier**', 'quando eu **tiver**' — é o futuro do subjuntivo, que **não existe** em francês.\nDepois de **si**, use o **presente**: *si tu viens, je te montrerai Rio*.\nDepois de **quand** (falando do futuro), use o **futuro**: *quand j'aurai mes billets, je t'enverrai un message*.\nNunca diga 'si tu viendras'. O truque: onde o português pede 'vier', 'tiver', 'fizer', o francês usa presente depois de *si* e futuro depois de *quand*.",
+        "examples": [
+          {
+            "fr": "S'il fait beau, on ira à la plage.",
+            "pt": "Se fizer sol, a gente vai à praia."
+          },
+          {
+            "fr": "Si tu veux, je viendrai.",
+            "pt": "Se você quiser, eu vou."
+          },
+          {
+            "fr": "Quand je serai à Rio, je t'appellerai.",
+            "pt": "Quando eu estiver no Rio, te ligo."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte seus planos para o próximo ano em 4 frases, com o futuro simples e pelo menos uma frase com 'si'.",
+      "model": "L'année prochaine, je prendrai des cours de français. En juillet, j'irai à Paris et je verrai ma grand-mère. Si j'ai assez d'argent, je visiterai aussi la Normandie. Ce sera génial !"
+    },
+    "culture": "Giverny fica a uns 75 km de Paris: é onde Monet viveu e pintou as ninfeias. A casa e os jardins abrem de abril ao começo de novembro; o trem sai da Gare Saint-Lazare até Vernon.",
+    "glossary": {
+      "restes": "fica (rester, tu)",
+      "mois": "mês / meses",
+      "rentrerai": "voltarei para casa (rentrer, futuro)",
+      "feras": "fará (faire, futuro, tu)",
+      "prendrai": "pegarei / farei (prendre, futuro)",
+      "cours": "aulas, curso",
+      "français": "francês",
+      "visiterai": "visitarei, conhecerei (visiter, futuro)",
+      "normandie": "Normandia (região da França)",
+      "ira": "irá (aller, futuro)",
+      "giverny": "Giverny (vila de Monet)",
+      "verras": "verá (voir, futuro, tu)",
+      "jardins": "jardins",
+      "monet": "Monet (pintor)",
+      "génial": "genial, demais",
+      "viendra": "virá (venir, futuro)",
+      "brésil": "Brasil",
+      "année": "ano",
+      "prochaine": "próxima; l'année prochaine = ano que vem",
+      "aurai": "terei (avoir, futuro)",
+      "semaines": "semanas",
+      "vacances": "férias",
+      "viendrai": "virei (venir, futuro)",
+      "viendras": "virá (venir, futuro, tu)",
+      "viens": "venho / vem (venir)",
+      "te": "te",
+      "montrerai": "mostrarei (montrer, futuro)",
+      "rio": "Rio (de Janeiro)",
+      "mangera": "comerá (manger, futuro)",
+      "brigadeiros": "brigadeiros",
+      "décidé": "decidido",
+      "billets": "passagens, bilhetes",
+      "enverrai": "enviarei, mandarei (envoyer, futuro)",
+      "attendrai": "esperarei (attendre, futuro)",
+      "aéroport": "aeroporto",
+      "pleuvra": "choverá (pleuvoir, futuro)",
+      "journée": "dia (a duração do dia)",
+      "habiterai": "morarei (habiter, futuro)",
+      "plage": "praia",
+      "seras": "será / estará (être, futuro, tu)",
+      "serai": "serei / estarei (être, futuro)",
+      "appellerai": "ligarei (appeler, futuro)",
+      "juillet": "julho",
+      "irai": "irei (aller, futuro)",
+      "verrai": "verei (voir, futuro)",
+      "assez": "suficiente; assez de = bastante",
+      "argent": "dinheiro",
+      "aussi": "também",
+      "sera": "será (être, futuro)"
+    }
+  },
+  {
+    "id": "a2-07",
+    "level": "A2",
+    "track": "main",
+    "title": "Au restaurant",
+    "titlePt": "No restaurante",
+    "goal": "Pedir recomendações, fazer o pedido, reclamar com educação e ligar frases com qui, que e où.",
+    "dialogue": {
+      "title": "Le bistrot de Papi",
+      "context": "Para agradecer à avó, Léo a convida para jantar num bistrô do bairro. Mamie conhece muito bem o lugar…",
+      "lines": [
+        {
+          "who": "Le serveur",
+          "fr": "Bonsoir ! Vous avez réservé ?",
+          "pt": "Boa noite! Vocês têm reserva?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, une table pour deux, au nom de Léo.",
+          "pt": "Sim, uma mesa para dois, em nome de Léo."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Tu sais, c'est le bistrot où ton grand-père m'a invitée la première fois.",
+          "pt": "Sabe, este é o bistrô onde o seu avô me convidou pela primeira vez."
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est vrai ? Alors, c'est un endroit qui compte pour toi.",
+          "pt": "Sério? Então é um lugar que significa muito para você."
+        },
+        {
+          "who": "Le serveur",
+          "fr": "Voici la carte. Le plat du jour, c'est un bœuf bourguignon.",
+          "pt": "Aqui está o cardápio. O prato do dia é bœuf bourguignon."
+        },
+        {
+          "who": "Léo",
+          "fr": "Qu'est-ce que vous nous conseillez ?",
+          "pt": "O que o senhor nos recomenda?"
+        },
+        {
+          "who": "Le serveur",
+          "fr": "Le magret de canard. C'est le plat que tout le monde adore ici.",
+          "pt": "O magret de pato. É o prato que todo mundo adora aqui."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Moi, je prends la sole meunière. C'est le plat que je prenais toujours avec lui.",
+          "pt": "Eu vou de linguado à meunière. É o prato que eu sempre pedia com ele."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et pour moi, un steak frites à point, s'il vous plaît.",
+          "pt": "E para mim, um bife com fritas ao ponto, por favor."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Alors, ton steak ? Il est bon ?",
+          "pt": "E aí, o seu bife? Está bom?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Pas vraiment… Excusez-moi, monsieur ! Il est trop cuit, je l'ai demandé à point.",
+          "pt": "Não muito… Com licença! Está passado demais, eu pedi ao ponto."
+        },
+        {
+          "who": "Le serveur",
+          "fr": "Oh, je suis désolé. Je vous en apporte un autre tout de suite.",
+          "pt": "Ah, me desculpe. Já trago outro para o senhor."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Bravo, tu as été très poli. Ton grand-père, lui, criait !",
+          "pt": "Muito bem, você foi muito educado. Já o seu avô gritava!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Et ce soir, c'est moi qui invite. Pour la grand-mère que j'adore !",
+          "pt": "E hoje sou eu que convido. Para a avó que eu adoro!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-07-01",
+        "fr": "Vous avez réservé ?",
+        "pt": "Vocês têm reserva?"
+      },
+      {
+        "id": "a2-07-02",
+        "fr": "Une table pour deux, au nom de Léo.",
+        "pt": "Uma mesa para dois, em nome de Léo."
+      },
+      {
+        "id": "a2-07-03",
+        "fr": "C'est le bistrot où ton grand-père m'a invitée.",
+        "pt": "É o bistrô onde o seu avô me convidou.",
+        "note": "'Invitée' com -e: o 'me' é a Mamie (feminino) e vem antes do verbo."
+      },
+      {
+        "id": "a2-07-04",
+        "fr": "C'est un endroit qui compte pour moi.",
+        "pt": "É um lugar que significa muito para mim."
+      },
+      {
+        "id": "a2-07-05",
+        "fr": "Le plat du jour, c'est quoi ?",
+        "pt": "Qual é o prato do dia?",
+        "note": "'C'est quoi ?' no fim da frase é bem falado. Mais formal: 'Quel est le plat du jour ?'"
+      },
+      {
+        "id": "a2-07-06",
+        "fr": "Qu'est-ce que vous nous conseillez ?",
+        "pt": "O que o senhor nos recomenda?"
+      },
+      {
+        "id": "a2-07-07",
+        "fr": "C'est le plat que tout le monde adore.",
+        "pt": "É o prato que todo mundo adora."
+      },
+      {
+        "id": "a2-07-08",
+        "fr": "C'est le plat que je prenais avec lui.",
+        "pt": "É o prato que eu pedia com ele."
+      },
+      {
+        "id": "a2-07-09",
+        "fr": "Un steak frites à point, s'il vous plaît.",
+        "pt": "Um bife com fritas ao ponto, por favor.",
+        "note": "Ponto da carne: 'bleu' (quase cru), 'saignant' (malpassado), 'à point' (ao ponto), 'bien cuit' (bem passado)."
+      },
+      {
+        "id": "a2-07-10",
+        "fr": "Excusez-moi, mon steak est trop cuit.",
+        "pt": "Com licença, o meu bife está passado demais."
+      },
+      {
+        "id": "a2-07-11",
+        "fr": "Je vous en apporte un autre.",
+        "pt": "Trago outro para o senhor."
+      },
+      {
+        "id": "a2-07-12",
+        "fr": "On peut avoir une carafe d'eau ?",
+        "pt": "Pode trazer uma jarra de água?",
+        "note": "A 'carafe d'eau' (água da torneira) é gratuita nos restaurantes franceses."
+      },
+      {
+        "id": "a2-07-13",
+        "fr": "Le serveur qui est là-bas est très sympa.",
+        "pt": "O garçom que está ali é muito simpático."
+      },
+      {
+        "id": "a2-07-14",
+        "fr": "Le quartier où j'habite est très calme.",
+        "pt": "O bairro onde eu moro é muito tranquilo."
+      },
+      {
+        "id": "a2-07-15",
+        "fr": "Ce soir, c'est moi qui invite !",
+        "pt": "Hoje à noite, sou eu que convido!",
+        "note": "Na França, quem convida paga. 'C'est moi qui invite' encerra a discussão!"
+      },
+      {
+        "id": "a2-07-16",
+        "fr": "C'est le jour où je suis arrivé.",
+        "pt": "Foi o dia em que eu cheguei."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Qui ou que ?",
+        "body": "Em português, 'que' serve para tudo: 'o garçom **que** chegou', 'o prato **que** eu pedi'. Em francês, depende da função.\nUse **qui** quando a palavra é o **sujeito** do verbo seguinte. Logo depois de *qui* vem um verbo: *le serveur **qui** est là-bas*.\nUse **que** quando ela é o **objeto**. Logo depois vem outro sujeito (*je, tu, on, Léo…*): *le plat **que** je prenais*.\nTruque visual: ***qui* + verbo**; ***que* + sujeito + verbo**.\nE mais: *que* vira *qu'* antes de vogal (*le plat qu'il adore*), mas *qui* nunca se apostrofa.",
+        "examples": [
+          {
+            "fr": "Le serveur qui est là-bas est sympa.",
+            "pt": "O garçom que está ali é simpático."
+          },
+          {
+            "fr": "Le plat que je prenais toujours.",
+            "pt": "O prato que eu sempre pedia."
+          },
+          {
+            "fr": "C'est le dessert qu'elle adore.",
+            "pt": "É a sobremesa que ela adora."
+          }
+        ]
+      },
+      {
+        "title": "Où: o lugar… e o momento",
+        "body": "**Où** liga uma frase a um lugar: *le bistrot **où** il m'a invitée* = 'o bistrô **onde** ele me convidou'. Até aqui, igual ao português.\nA surpresa: o francês também usa *où* para o **tempo**! *Le jour **où** je suis arrivé* = 'o dia **em que** eu cheguei'. Nada de 'le jour que'.\nEntão, sempre que for dizer 'o dia em que', 'o ano em que', 'no momento em que', pense em **où**.",
+        "examples": [
+          {
+            "fr": "Le quartier où j'habite est calme.",
+            "pt": "O bairro onde eu moro é tranquilo."
+          },
+          {
+            "fr": "Le jour où je suis arrivé, il pleuvait.",
+            "pt": "No dia em que eu cheguei, chovia."
+          },
+          {
+            "fr": "C'est l'année où je suis né.",
+            "pt": "É o ano em que eu nasci."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você está num restaurante: peça uma recomendação, faça o seu pedido e reclame com educação de um problema. Use 'qui' ou 'que' pelo menos uma vez.",
+      "model": "Bonsoir ! Qu'est-ce que vous nous conseillez ? Alors, je prends le poisson que vous recommandez. Excusez-moi, mais mon plat est froid. Vous pouvez le réchauffer, s'il vous plaît ?"
+    },
+    "culture": "Nos restaurantes franceses, o serviço já está incluído na conta ('service compris'): a gorjeta é opcional. Para chamar o garçom, diga 'Monsieur !' ou 'S'il vous plaît !' — nunca 'Garçon !'.",
+    "glossary": {
+      "réservé": "reservado (réserver); vous avez réservé = vocês reservaram",
+      "table": "mesa",
+      "nom": "nome; au nom de = em nome de",
+      "bistrot": "bistrô, restaurante simples",
+      "m'": "me (antes de vogal)",
+      "invitée": "convidada (inviter, fem.)",
+      "première": "primeira",
+      "vrai": "verdadeiro; c'est vrai ? = sério?",
+      "endroit": "lugar",
+      "compte": "conta, importa (compter)",
+      "voici": "aqui está",
+      "carte": "cardápio",
+      "plat": "prato",
+      "bœuf": "boi; bœuf bourguignon = carne cozida no vinho",
+      "bourguignon": "da Borgonha",
+      "conseillez": "aconselha, recomenda (conseiller, vous)",
+      "magret": "peito (de pato)",
+      "canard": "pato",
+      "monde": "mundo; tout le monde = todo mundo",
+      "prenais": "pegava / pedia (prendre, imparfait)",
+      "sole": "linguado",
+      "meunière": "à meunière (na manteiga)",
+      "steak": "bife",
+      "frites": "batatas fritas",
+      "point": "ponto; à point = ao ponto",
+      "vraiment": "realmente; pas vraiment = não muito",
+      "excusez": "desculpe (excuser, vous); excusez-moi = com licença",
+      "cuit": "cozido, passado (cuire)",
+      "demandé": "pedido (demander); je l'ai demandé = eu pedi",
+      "désolé": "desculpe, sinto muito",
+      "apporte": "trago / traz (apporter)",
+      "autre": "outro",
+      "bravo": "muito bem!",
+      "été": "sido (être); tu as été = você foi",
+      "poli": "educado",
+      "criait": "gritava (crier, imparfait)",
+      "quoi": "o quê",
+      "peut": "pode (pouvoir)",
+      "avoir": "ter",
+      "carafe": "jarra",
+      "serveur": "garçom",
+      "là-bas": "lá, ali",
+      "sympa": "simpático, legal",
+      "quartier": "bairro",
+      "habite": "moro / mora (habiter)",
+      "calme": "calmo, tranquilo; sossego",
+      "dessert": "sobremesa",
+      "né": "nascido (naître); je suis né = eu nasci",
+      "poisson": "peixe",
+      "recommandez": "recomenda (recommander, vous)",
+      "réchauffer": "esquentar de novo"
+    }
+  },
+  {
+    "id": "a2-08",
+    "level": "A2",
+    "track": "main",
+    "title": "Plus ou moins",
+    "titlePt": "Comparar",
+    "goal": "Comparar coisas, lugares e pessoas, dizer qual é o melhor e não confundir meilleur com mieux.",
+    "dialogue": {
+      "title": "Le concours de croissants",
+      "context": "Monsieur Bernard e Camille discordam: qual padaria do bairro faz o melhor croissant? Léo vira o jurado.",
+      "lines": [
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Léo, vous avez goûté les croissants de la boulangerie d'en face ? Ce sont les meilleurs du quartier.",
+          "pt": "Léo, você já provou os croissants da padaria aqui em frente? São os melhores do bairro."
+        },
+        {
+          "who": "Camille",
+          "fr": "Les meilleurs ? Pas du tout ! La boulangerie près du métro est bien meilleure.",
+          "pt": "Os melhores? Nada disso! A padaria perto do metrô é muito melhor."
+        },
+        {
+          "who": "Léo",
+          "fr": "On fait un test ? J'ai acheté un croissant dans chaque boulangerie.",
+          "pt": "Vamos fazer um teste? Comprei um croissant em cada padaria."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Excellente idée. Goûtez d'abord le premier.",
+          "pt": "Excelente ideia. Prove o primeiro, para começar."
+        },
+        {
+          "who": "Léo",
+          "fr": "Il est très bon. Bien croustillant, et pas trop gras.",
+          "pt": "Está muito bom. Bem crocante, e não muito gorduroso."
+        },
+        {
+          "who": "Camille",
+          "fr": "Maintenant, le deuxième !",
+          "pt": "Agora, o segundo!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Il est plus beurré et moins croustillant que le premier.",
+          "pt": "Tem mais manteiga e é menos crocante que o primeiro."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Alors, quel est le meilleur ?",
+          "pt": "E então, qual é o melhor?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Euh… Le premier est meilleur chaud, et le deuxième est meilleur froid.",
+          "pt": "Hã… O primeiro é melhor quente, e o segundo é melhor frio."
+        },
+        {
+          "who": "Camille",
+          "fr": "Quel diplomate ! Tu parles de mieux en mieux, mais tu ne réponds pas !",
+          "pt": "Que diplomata! Você fala cada vez melhor, mas não responde!"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Il a raison, mademoiselle. Le plus important, c'est de manger les deux.",
+          "pt": "Ele tem razão, senhorita. O mais importante é comer os dois."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et la meilleure pâtissière du quartier, c'est Mamie !",
+          "pt": "E a melhor confeiteira do bairro é a Mamie!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Ça, c'est vrai. Elle fait les plus beaux gâteaux du monde.",
+          "pt": "Isso é verdade. Ela faz os bolos mais bonitos do mundo."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Bon. Demain, on compare les pains au chocolat ?",
+          "pt": "Bom. Amanhã a gente compara os pains au chocolat?"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-08-01",
+        "fr": "Ce sont les meilleurs croissants du quartier.",
+        "pt": "São os melhores croissants do bairro."
+      },
+      {
+        "id": "a2-08-02",
+        "fr": "Cette boulangerie est bien meilleure.",
+        "pt": "Esta padaria é muito melhor.",
+        "note": "'Bien' reforça o comparativo: 'bien meilleur' = muito melhor."
+      },
+      {
+        "id": "a2-08-03",
+        "fr": "Il est plus croustillant que l'autre.",
+        "pt": "Ele é mais crocante que o outro."
+      },
+      {
+        "id": "a2-08-04",
+        "fr": "Il est moins gras que le premier.",
+        "pt": "Ele é menos gorduroso que o primeiro."
+      },
+      {
+        "id": "a2-08-05",
+        "fr": "Il est aussi bon que le premier.",
+        "pt": "Ele é tão bom quanto o primeiro."
+      },
+      {
+        "id": "a2-08-06",
+        "fr": "Quel est le meilleur ?",
+        "pt": "Qual é o melhor?"
+      },
+      {
+        "id": "a2-08-07",
+        "fr": "Le premier est meilleur chaud.",
+        "pt": "O primeiro é melhor quente."
+      },
+      {
+        "id": "a2-08-08",
+        "fr": "Tu parles de mieux en mieux !",
+        "pt": "Você fala cada vez melhor!",
+        "note": "'De mieux en mieux' = cada vez melhor; 'de plus en plus' = cada vez mais."
+      },
+      {
+        "id": "a2-08-09",
+        "fr": "Je dors mieux à Paris qu'à São Paulo.",
+        "pt": "Durmo melhor em Paris do que em São Paulo."
+      },
+      {
+        "id": "a2-08-10",
+        "fr": "C'est mieux comme ça.",
+        "pt": "Assim é melhor."
+      },
+      {
+        "id": "a2-08-11",
+        "fr": "Le plus important, c'est de manger les deux.",
+        "pt": "O mais importante é comer os dois."
+      },
+      {
+        "id": "a2-08-12",
+        "fr": "C'est la plus belle ville du monde.",
+        "pt": "É a cidade mais bonita do mundo.",
+        "note": "Adjetivos que vêm antes do nome (beau, grand, petit) continuam antes no superlativo."
+      },
+      {
+        "id": "a2-08-13",
+        "fr": "Le métro est plus rapide que le bus.",
+        "pt": "O metrô é mais rápido que o ônibus."
+      },
+      {
+        "id": "a2-08-14",
+        "fr": "Il y a moins de monde le matin.",
+        "pt": "Tem menos gente de manhã.",
+        "note": "Com substantivos: 'plus de / moins de' + nome, sem artigo."
+      },
+      {
+        "id": "a2-08-15",
+        "fr": "Elle chante mieux que moi.",
+        "pt": "Ela canta melhor do que eu.",
+        "note": "Depois de 'que', use pronome tônico: 'que moi', 'que toi'. Nunca 'que je'."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Mais, menos, tão… que",
+        "body": "Para comparar, faça como em português: **plus** (mais), **moins** (menos), **aussi** (tão) + adjetivo + **que**: *il est **plus** croustillant **que** l'autre*.\nPara o superlativo, ponha o artigo na frente: ***le plus** important*, ***la plus** belle ville **du** monde* — igualzinho a 'a mais bonita do mundo'.\nCom substantivos, use **plus de / moins de**: *il y a **moins de** monde*.\nE depois de *que*, vem o pronome tônico: *plus grand **que moi***.",
+        "examples": [
+          {
+            "fr": "Le métro est plus rapide que le bus.",
+            "pt": "O metrô é mais rápido que o ônibus."
+          },
+          {
+            "fr": "C'est la plus belle ville du monde.",
+            "pt": "É a cidade mais bonita do mundo."
+          },
+          {
+            "fr": "Il est aussi bon que le premier.",
+            "pt": "Ele é tão bom quanto o primeiro."
+          }
+        ]
+      },
+      {
+        "title": "Meilleur × mieux",
+        "body": "Em português, 'melhor' é uma palavra só. Em francês são duas — e a diferença é a mesma de **bon** × **bien**.\n**Meilleur** é o comparativo de *bon* (adjetivo): descreve uma *coisa* e concorda com ela: *un meilleur croissant*, *une boulangerie meilleure*, *les meilleurs croissants*.\n**Mieux** é o comparativo de *bien* (advérbio): descreve uma *ação* e nunca muda: *tu parles mieux*, *je dors mieux*.\nTeste: troque por 'bom' ou 'bem'. 'O croissant é **bom**' → *meilleur*. 'Você fala **bem**' → *mieux*.\nE nunca diga 'plus bon' nem 'plus bien'!",
+        "examples": [
+          {
+            "fr": "Ce croissant est meilleur.",
+            "pt": "Este croissant é melhor."
+          },
+          {
+            "fr": "Tu parles mieux français.",
+            "pt": "Você fala francês melhor."
+          },
+          {
+            "fr": "Les meilleures fraises du marché.",
+            "pt": "Os melhores morangos da feira."
+          },
+          {
+            "fr": "Ça va mieux ?",
+            "pt": "Está melhor?"
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Compare a sua cidade com Paris em 4 frases: use plus / moins / aussi, um superlativo e meilleur ou mieux.",
+      "model": "São Paulo, c'est plus grand que Paris, mais c'est moins calme. Le métro de Paris est plus vieux que le métro de São Paulo. La meilleure cuisine ? La cuisine brésilienne, bien sûr ! Mais je dors mieux à Paris."
+    },
+    "culture": "Todo ano, Paris elege num concurso oficial a 'meilleure baguette de Paris'. A padaria vencedora fornece o pão do Palácio do Eliseu durante um ano.",
+    "glossary": {
+      "goûté": "provado (goûter); vous avez goûté = você provou",
+      "croissants": "croissants",
+      "croissant": "croissant",
+      "boulangerie": "padaria",
+      "face": "frente; d'en face = da frente",
+      "meilleurs": "melhores",
+      "meilleure": "melhor (fem.)",
+      "meilleures": "melhores (fem.)",
+      "meilleur": "melhor (adjetivo)",
+      "près": "perto; près de = perto de",
+      "métro": "metrô",
+      "test": "teste",
+      "chaque": "cada",
+      "excellente": "excelente",
+      "goûtez": "prove (goûter, vous)",
+      "abord": "d'abord = primeiro, antes",
+      "croustillant": "crocante",
+      "gras": "gorduroso",
+      "deuxième": "segundo",
+      "beurré": "amanteigado, com muita manteiga",
+      "moins": "menos",
+      "quel": "qual / que",
+      "diplomate": "diplomata",
+      "parles": "fala (parler, tu)",
+      "mieux": "melhor (advérbio)",
+      "réponds": "responde (répondre, tu)",
+      "raison": "razão; avoir raison = ter razão",
+      "important": "importante",
+      "pâtissière": "confeiteira",
+      "beaux": "bonitos",
+      "compare": "comparo / compara (comparer)",
+      "pains": "pães; pain au chocolat = pão com chocolate",
+      "dors": "durmo / dorme (dormir)",
+      "comme": "como; comme ça = assim",
+      "ville": "cidade",
+      "rapide": "rápido",
+      "chante": "canto / canta (chanter)",
+      "vieux": "velho, antigo",
+      "brésilienne": "brasileira",
+      "gâteaux": "bolos"
+    }
+  },
+  {
+    "id": "a2-09",
+    "level": "A2",
+    "track": "main",
+    "title": "Chez moi",
+    "titlePt": "A minha casa",
+    "goal": "Descrever a sua casa, dizer onde as coisas ficam e contar há quanto tempo você mora em algum lugar.",
+    "dialogue": {
+      "title": "Le studio de Léo",
+      "context": "Camille visita pela primeira vez o estúdio que Léo alugou, bem em frente ao prédio da Mamie.",
+      "lines": [
+        {
+          "who": "Camille",
+          "fr": "Alors, c'est ici que tu habites ? C'est mignon !",
+          "pt": "Então é aqui que você mora? Que fofo!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, j'habite ici depuis un mois. C'est petit, mais c'est calme.",
+          "pt": "É, moro aqui há um mês. É pequeno, mas é tranquilo."
+        },
+        {
+          "who": "Camille",
+          "fr": "Il y a combien de pièces ?",
+          "pt": "Tem quantos cômodos?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Une seule pièce, avec une petite cuisine et une salle de bains.",
+          "pt": "Um cômodo só, com uma cozinha pequena e um banheiro."
+        },
+        {
+          "who": "Camille",
+          "fr": "Et ton lit, il est où ?",
+          "pt": "E a sua cama, fica onde?"
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est le canapé, entre la fenêtre et la bibliothèque. C'est un canapé-lit !",
+          "pt": "É o sofá, entre a janela e a estante. É um sofá-cama!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Et Mamie, elle habite où exactement ?",
+          "pt": "E a Mamie, mora onde exatamente?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Juste en face. Regarde, sa fenêtre est derrière l'arbre.",
+          "pt": "Bem em frente. Olha, a janela dela fica atrás da árvore."
+        },
+        {
+          "who": "Camille",
+          "fr": "Ah, elle te surveille, alors !",
+          "pt": "Ah, então ela fica de olho em você!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Un peu… Il y a deux jours, elle m'a téléphoné à minuit : « Ferme ta fenêtre, il fait froid ! »",
+          "pt": "Um pouco… Dois dias atrás, ela me ligou à meia-noite: 'Fecha a janela, está frio!'"
+        },
+        {
+          "who": "Camille",
+          "fr": "Ça, c'est bien Mamie ! Elle vit dans ce quartier depuis soixante ans, elle voit tout.",
+          "pt": "Essa é a Mamie! Ela mora neste bairro há sessenta anos, vê tudo."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et toi, tu habites dans ton appart depuis quand ?",
+          "pt": "E você, mora no seu apê desde quando?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Depuis deux ans. Avant, j'ai vécu à Lyon pendant cinq ans… loin de Mamie !",
+          "pt": "Há dois anos. Antes, morei em Lyon durante cinco anos… longe da Mamie!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-09-01",
+        "fr": "J'habite ici depuis un mois.",
+        "pt": "Moro aqui há um mês."
+      },
+      {
+        "id": "a2-09-02",
+        "fr": "C'est petit, mais c'est calme.",
+        "pt": "É pequeno, mas é tranquilo."
+      },
+      {
+        "id": "a2-09-03",
+        "fr": "Il y a combien de pièces ?",
+        "pt": "Tem quantos cômodos?",
+        "note": "'Une pièce' = um cômodo. 'Un deux-pièces' = apartamento com sala e um quarto."
+      },
+      {
+        "id": "a2-09-04",
+        "fr": "Il y a une cuisine et une salle de bains.",
+        "pt": "Tem uma cozinha e um banheiro.",
+        "note": "'Salle de bains' = onde fica o chuveiro. O vaso costuma ficar separado: 'les toilettes'."
+      },
+      {
+        "id": "a2-09-05",
+        "fr": "Mon lit est à côté de la fenêtre.",
+        "pt": "A minha cama fica ao lado da janela."
+      },
+      {
+        "id": "a2-09-06",
+        "fr": "Le canapé est entre la fenêtre et la bibliothèque.",
+        "pt": "O sofá fica entre a janela e a estante."
+      },
+      {
+        "id": "a2-09-07",
+        "fr": "Mamie habite juste en face.",
+        "pt": "A Mamie mora bem em frente."
+      },
+      {
+        "id": "a2-09-08",
+        "fr": "Sa fenêtre est derrière l'arbre.",
+        "pt": "A janela dela fica atrás da árvore.",
+        "note": "'Derrière' (atrás) × 'devant' (na frente). E 'le derrière' também é… o bumbum!"
+      },
+      {
+        "id": "a2-09-09",
+        "fr": "Le chat dort sous le lit.",
+        "pt": "O gato dorme debaixo da cama."
+      },
+      {
+        "id": "a2-09-10",
+        "fr": "Je suis arrivé il y a un mois.",
+        "pt": "Cheguei há um mês."
+      },
+      {
+        "id": "a2-09-11",
+        "fr": "Elle m'a téléphoné il y a deux jours.",
+        "pt": "Ela me ligou dois dias atrás."
+      },
+      {
+        "id": "a2-09-12",
+        "fr": "Elle vit dans ce quartier depuis soixante ans.",
+        "pt": "Ela mora neste bairro há sessenta anos."
+      },
+      {
+        "id": "a2-09-13",
+        "fr": "Tu habites ici depuis quand ?",
+        "pt": "Desde quando você mora aqui?"
+      },
+      {
+        "id": "a2-09-14",
+        "fr": "J'ai vécu à Lyon pendant cinq ans.",
+        "pt": "Morei em Lyon durante cinco anos."
+      },
+      {
+        "id": "a2-09-15",
+        "fr": "J'habite au sixième étage, sans ascenseur.",
+        "pt": "Moro no sexto andar, sem elevador.",
+        "note": "Como no Brasil: o térreo é o 'rez-de-chaussée', e depois vem o 'premier étage'."
+      },
+      {
+        "id": "a2-09-16",
+        "fr": "Il y a une boulangerie en bas de chez moi.",
+        "pt": "Tem uma padaria embaixo do meu prédio.",
+        "note": "'En bas de chez moi' = bem na porta de casa, no térreo do meu prédio. Muito parisiense!"
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Depuis + presente",
+        "body": "Para algo que **começou no passado e continua agora**, o francês usa o **presente** + **depuis**: *j'habite ici **depuis** un mois*.\nO português faz igual: 'moro aqui **há** um mês' — também no presente! O erro clássico é traduzir esse 'há' por *il y a* ou usar o passé composé: *j'ai habité ici* dá a ideia de que você não mora mais lá.\nPara perguntar: ***depuis quand** tu habites ici ?* ('desde quando?') ou ***depuis combien de temps** ?* ('há quanto tempo?').",
+        "examples": [
+          {
+            "fr": "J'habite ici depuis un mois.",
+            "pt": "Moro aqui há um mês."
+          },
+          {
+            "fr": "Je suis à Paris depuis mars.",
+            "pt": "Estou em Paris desde março."
+          },
+          {
+            "fr": "Tu apprends le français depuis combien de temps ?",
+            "pt": "Há quanto tempo você aprende francês?"
+          }
+        ]
+      },
+      {
+        "title": "Il y a × pendant",
+        "body": "**Il y a** + tempo, com uma ação terminada, = 'atrás' / 'há': *je suis arrivé **il y a** un mois* ('cheguei há um mês').\n**Pendant** = 'durante', para um período fechado: *j'ai vécu à Lyon **pendant** cinq ans* (e não moro mais lá).\nResumo:\n**depuis** → ainda continua (presente)\n**il y a** → um ponto no passado (passé composé)\n**pendant** → uma duração fechada\nE não confunda: *il y a* também é o 'tem / há' de sempre (*il y a une cuisine*). O contexto mostra qual é qual.",
+        "examples": [
+          {
+            "fr": "Elle m'a téléphoné il y a deux jours.",
+            "pt": "Ela me ligou dois dias atrás."
+          },
+          {
+            "fr": "J'ai vécu à Lyon pendant cinq ans.",
+            "pt": "Morei em Lyon durante cinco anos."
+          },
+          {
+            "fr": "Il y a une boulangerie en bas.",
+            "pt": "Tem uma padaria lá embaixo."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Descreva a sua casa em 4 frases: quantos cômodos tem, onde ficam algumas coisas, há quanto tempo você mora lá e onde morou antes.",
+      "model": "J'habite dans un appartement de trois pièces depuis deux ans. Il y a un grand canapé devant la télé et mon bureau est à côté de la fenêtre. Avant, j'ai vécu chez mes parents pendant vingt-cinq ans. Je suis parti il y a deux ans."
+    },
+    "culture": "Em Paris, os apartamentos são contados em 'pièces' (sem contar cozinha e banheiro): um 'deux-pièces' tem sala e um quarto. As antigas 'chambres de bonne', no último andar dos prédios, viraram estúdios minúsculos.",
+    "glossary": {
+      "mignon": "fofo, bonitinho",
+      "depuis": "desde / há (algo que continua)",
+      "pièces": "cômodos",
+      "pièce": "cômodo",
+      "seule": "única, só",
+      "salle": "sala; salle de bains = banheiro",
+      "bains": "banhos",
+      "canapé": "sofá",
+      "canapé-lit": "sofá-cama",
+      "entre": "entre",
+      "fenêtre": "janela",
+      "bibliothèque": "estante de livros / biblioteca",
+      "exactement": "exatamente",
+      "sa": "sua (dele, dela)",
+      "derrière": "atrás de",
+      "arbre": "árvore",
+      "surveille": "vigia, fica de olho (surveiller)",
+      "téléphoné": "telefonado (téléphoner); elle m'a téléphoné = ela me ligou",
+      "minuit": "meia-noite",
+      "vit": "vive, mora (vivre)",
+      "soixante": "sessenta",
+      "voit": "vê (voir)",
+      "appart": "apê (appartement)",
+      "avant": "antes",
+      "vécu": "vivido (vivre); j'ai vécu = morei, vivi",
+      "lyon": "Lyon (cidade francesa)",
+      "pendant": "durante",
+      "côté": "lado; à côté de = ao lado de",
+      "chat": "gato",
+      "sous": "debaixo de, sob",
+      "sixième": "sexto",
+      "bas": "baixo; en bas de chez moi = embaixo do meu prédio",
+      "mars": "março",
+      "apprends": "aprende (apprendre, tu)",
+      "appartement": "apartamento",
+      "bureau": "escrivaninha / escritório",
+      "parti": "partido, ido embora (partir); je suis parti = saí, fui embora",
+      "habites": "mora (habiter, tu)",
+      "dort": "dorme (dormir)"
+    }
+  },
+  {
+    "id": "a2-10",
+    "level": "A2",
+    "track": "main",
+    "title": "Ce matin, je me suis levé tard",
+    "titlePt": "Verbos pronominais no passado",
+    "goal": "Contar o que aconteceu com você — rotina, imprevistos e emoções — usando verbos pronominais no passé composé.",
+    "dialogue": {
+      "title": "Le train pour Giverny",
+      "context": "Sábado, dia do passeio a Giverny. Camille e Mamie esperam Léo na Gare Saint-Lazare… e ele está atrasado. À noite, no trem de volta, os três comentam o dia.",
+      "lines": [
+        {
+          "who": "Camille",
+          "fr": "Léo ! Enfin ! Le train part dans cinq minutes !",
+          "pt": "Léo! Até que enfim! O trem sai em cinco minutos!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Désolé… Ce matin, je me suis levé tard.",
+          "pt": "Desculpa… Hoje de manhã, eu levantei tarde."
+        },
+        {
+          "who": "Camille",
+          "fr": "Tu n'as pas mis de réveil ?",
+          "pt": "Você não colocou o despertador?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Si ! Mais je me suis rendormi. Après, je me suis dépêché : je ne me suis même pas rasé !",
+          "pt": "Coloquei! Mas voltei a dormir. Depois, saí correndo: nem fiz a barba!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Moi, je me suis levée à six heures. Je me suis inquiétée pour toi !",
+          "pt": "Eu levantei às seis. Fiquei preocupada com você!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Et en plus, je me suis trompé de ligne de métro…",
+          "pt": "E, ainda por cima, errei a linha do metrô…"
+        },
+        {
+          "who": "Camille",
+          "fr": "Classique ! Bon, je me suis énervée, mais c'est fini. Allez, on y va !",
+          "pt": "Clássico! Bom, eu fiquei irritada, mas já passou. Vamos lá!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Alors, mon chéri, tu t'es bien amusé à Giverny ?",
+          "pt": "E aí, meu querido, você se divertiu em Giverny?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Oui, beaucoup ! Dans le jardin, je me suis senti dans un tableau de Monet.",
+          "pt": "Muito! No jardim, eu me senti dentro de um quadro do Monet."
+        },
+        {
+          "who": "Camille",
+          "fr": "Et Mamie s'est assise devant les nymphéas pendant une heure.",
+          "pt": "E a Mamie se sentou em frente às ninfeias por uma hora."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Je me suis souvenue de ton grand-père. On y allait souvent ensemble, au printemps.",
+          "pt": "Eu me lembrei do seu avô. A gente ia muito lá, na primavera."
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est beau, Mamie.",
+          "pt": "Que bonito, Mamie."
+        },
+        {
+          "who": "Camille",
+          "fr": "Et nous, on s'est bien amusés… même avec ton retard !",
+          "pt": "E a gente se divertiu muito… mesmo com o seu atraso!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Ce matin, j'étais stressé, mais ce soir, je suis vraiment heureux.",
+          "pt": "Hoje de manhã eu estava estressado, mas hoje à noite estou muito feliz."
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-10-01",
+        "fr": "Ce matin, je me suis levé tard.",
+        "pt": "Hoje de manhã, eu levantei tarde.",
+        "note": "Mulher escreve 'je me suis levée' — a pronúncia é a mesma."
+      },
+      {
+        "id": "a2-10-02",
+        "fr": "Je me suis rendormi.",
+        "pt": "Voltei a dormir.",
+        "note": "'Re-' indica repetição: s'endormir (pegar no sono) → se rendormir (voltar a dormir)."
+      },
+      {
+        "id": "a2-10-03",
+        "fr": "Tu n'as pas mis de réveil ?",
+        "pt": "Você não colocou o despertador?",
+        "note": "Para dizer 'sim' a uma pergunta negativa, use 'si', não 'oui': 'Si, j'en ai mis un !'"
+      },
+      {
+        "id": "a2-10-04",
+        "fr": "Je me suis dépêché.",
+        "pt": "Eu me apressei."
+      },
+      {
+        "id": "a2-10-05",
+        "fr": "Je ne me suis même pas rasé.",
+        "pt": "Nem fiz a barba."
+      },
+      {
+        "id": "a2-10-06",
+        "fr": "Je me suis inquiétée pour toi.",
+        "pt": "Fiquei preocupada com você."
+      },
+      {
+        "id": "a2-10-07",
+        "fr": "Je me suis trompé de ligne.",
+        "pt": "Errei a linha.",
+        "note": "'Se tromper de' = errar, pegar o errado: se tromper de train, de numéro, de porte."
+      },
+      {
+        "id": "a2-10-08",
+        "fr": "Je me suis énervée, mais c'est fini.",
+        "pt": "Fiquei irritada, mas já passou."
+      },
+      {
+        "id": "a2-10-09",
+        "fr": "Tu t'es bien amusé ?",
+        "pt": "Você se divertiu?"
+      },
+      {
+        "id": "a2-10-10",
+        "fr": "Je me suis senti dans un tableau.",
+        "pt": "Eu me senti dentro de um quadro."
+      },
+      {
+        "id": "a2-10-11",
+        "fr": "Elle s'est assise devant les nymphéas.",
+        "pt": "Ela se sentou em frente às ninfeias.",
+        "note": "No feminino, 'assise' faz o s soar: [a-siz]. No masculino, 'assis' [a-si]."
+      },
+      {
+        "id": "a2-10-12",
+        "fr": "Je me suis souvenue de ton grand-père.",
+        "pt": "Eu me lembrei do seu avô."
+      },
+      {
+        "id": "a2-10-13",
+        "fr": "On s'est bien amusés.",
+        "pt": "A gente se divertiu muito."
+      },
+      {
+        "id": "a2-10-14",
+        "fr": "Ce matin, j'étais stressé.",
+        "pt": "Hoje de manhã, eu estava estressado."
+      },
+      {
+        "id": "a2-10-15",
+        "fr": "Ils se sont rencontrés à Paris.",
+        "pt": "Eles se conheceram em Paris."
+      },
+      {
+        "id": "a2-10-16",
+        "fr": "J'ai eu peur, mais je me suis calmé.",
+        "pt": "Fiquei com medo, mas me acalmei."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Pronominal = sempre être",
+        "body": "Todo verbo pronominal (*se lever*, *se dépêcher*, *s'amuser*) faz o passé composé com **être** — sem exceção: *je **me suis** levé*, *tu **t'es** amusé*, *elle **s'est** assise*.\nA ordem é fixa: sujeito + pronome + *être* + particípio.\nNa negação, *ne … pas* abraça o pronome e o auxiliar: *je **ne** me suis **pas** rasé*.\nEm português, 'eu me levantei' tem um verbo só; em francês são três peças. Vale treinar em voz alta até soar natural: *je-me-suis-levé*.",
+        "examples": [
+          {
+            "fr": "Je me suis levé tard.",
+            "pt": "Levantei tarde."
+          },
+          {
+            "fr": "Tu t'es bien amusé ?",
+            "pt": "Você se divertiu?"
+          },
+          {
+            "fr": "Je ne me suis pas rasé.",
+            "pt": "Não fiz a barba."
+          }
+        ]
+      },
+      {
+        "title": "A concordância",
+        "body": "Como em todo passé composé com *être*, o particípio concorda com o sujeito: *elle s'est levé**e***, *ils se sont levé**s***, *elles se sont levé**es***. A Mamie diz *je me suis inquiét**ée***; o Léo, *je me suis inquiét**é***.\nNa maioria dos verbos, isso só muda a escrita, não a pronúncia. Mas, quando o particípio termina em consoante, o feminino se ouve: *assis* [a-si] → *assise* [a-siz].\nCom *on* no sentido de 'nós', é comum concordar no plural: *on s'est bien amusés*.",
+        "examples": [
+          {
+            "fr": "Elle s'est levée à six heures.",
+            "pt": "Ela levantou às seis."
+          },
+          {
+            "fr": "Ils se sont dépêchés.",
+            "pt": "Eles se apressaram."
+          },
+          {
+            "fr": "Mamie s'est assise.",
+            "pt": "A Mamie se sentou."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte a sua manhã de hoje (ou a de um dia caótico) em 4 ou 5 frases, com verbos pronominais: a que horas você acordou e levantou, se se apressou, como se sentiu.",
+      "model": "Ce matin, je me suis réveillé à sept heures, mais je me suis rendormi. Je me suis levé à huit heures et je me suis dépêché. Je me suis trompé de bus ! Je me suis énervé, mais après, je me suis calmé."
+    },
+    "culture": "A Gare Saint-Lazare, de onde saem os trens para a Normandia (e para Giverny), foi pintada várias vezes pelo próprio Monet, em 1877.",
+    "glossary": {
+      "enfin": "enfim, até que enfim",
+      "train": "trem",
+      "part": "sai (partir); de la part de = da parte de",
+      "minutes": "minutos",
+      "me": "me",
+      "levé": "levantado (se lever); je me suis levé = levantei",
+      "levée": "levantada (se lever, fem.)",
+      "mis": "posto, colocado (mettre); tu as mis = você colocou",
+      "réveil": "despertador",
+      "rendormi": "voltado a dormir (se rendormir)",
+      "dépêché": "apressado (se dépêcher); je me suis dépêché = me apressei",
+      "dépêchés": "apressados (se dépêcher, plural)",
+      "rasé": "barbeado (se raser); je me suis rasé = fiz a barba",
+      "six": "seis",
+      "heures": "horas",
+      "inquiétée": "preocupada (s'inquiéter, fem.)",
+      "trompé": "enganado (se tromper); je me suis trompé de = errei o/a",
+      "ligne": "linha",
+      "classique": "clássico",
+      "énervée": "irritada (s'énerver, fem.)",
+      "énervé": "irritado (s'énerver)",
+      "fini": "terminado, acabado (finir)",
+      "amusé": "divertido (s'amuser); tu t'es amusé = você se divertiu",
+      "amusés": "divertidos (s'amuser, plural)",
+      "jardin": "jardim",
+      "senti": "sentido (se sentir); je me suis senti = eu me senti",
+      "tableau": "quadro, pintura",
+      "assise": "sentada (s'asseoir, fem.)",
+      "nymphéas": "ninfeias (as flores pintadas por Monet)",
+      "souvenue": "lembrada (se souvenir, fem.); je me suis souvenue de = eu me lembrei de",
+      "ensemble": "juntos",
+      "retard": "atraso",
+      "stressé": "estressado",
+      "heureux": "feliz",
+      "ils": "eles",
+      "rencontrés": "conhecidos, encontrados (rencontrer, plural)",
+      "eu": "tido (avoir); j'ai eu peur = fiquei com medo",
+      "peur": "medo",
+      "calmé": "acalmado (se calmer)",
+      "réveillé": "acordado (se réveiller); je me suis réveillé = acordei",
+      "sept": "sete"
+    }
+  },
+  {
+    "id": "a2-11",
+    "level": "A2",
+    "track": "main",
+    "title": "Au téléphone",
+    "titlePt": "Ao telefone",
+    "goal": "Ligar para alguém, se identificar, deixar recado e usar os pronomes tônicos (moi, toi, lui…).",
+    "dialogue": {
+      "title": "Deux coups de fil",
+      "context": "Léo quer fazer um curso de francês à noite e liga para uma escola de línguas. Logo depois, o celular toca: é a Camille.",
+      "lines": [
+        {
+          "who": "La secrétaire",
+          "fr": "École Lutèce, bonjour !",
+          "pt": "Escola Lutèce, bom dia!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Bonjour, madame. Je voudrais parler à Madame Roux, s'il vous plaît.",
+          "pt": "Bom dia. Eu gostaria de falar com a senhora Roux, por favor."
+        },
+        {
+          "who": "La secrétaire",
+          "fr": "C'est de la part de qui ?",
+          "pt": "Quem gostaria?"
+        },
+        {
+          "who": "Léo",
+          "fr": "De Léo Silva. C'est pour les cours du soir.",
+          "pt": "Do Léo Silva. É sobre os cursos noturnos."
+        },
+        {
+          "who": "La secrétaire",
+          "fr": "Ne quittez pas, je vous la passe… Ah, désolée, elle est en réunion.",
+          "pt": "Um momento, vou transferir… Ah, desculpe, ela está em reunião."
+        },
+        {
+          "who": "Léo",
+          "fr": "Je peux laisser un message ?",
+          "pt": "Posso deixar um recado?"
+        },
+        {
+          "who": "La secrétaire",
+          "fr": "Bien sûr. Elle vous rappellera cet après-midi. Quel est votre numéro ?",
+          "pt": "Claro. Ela vai retornar a ligação hoje à tarde. Qual é o seu número?"
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est le zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit.",
+          "pt": "É zero seis, doze, trinta e quatro, cinquenta e seis, setenta e oito."
+        },
+        {
+          "who": "La secrétaire",
+          "fr": "Très bien, je lui transmets le message. Bonne journée !",
+          "pt": "Muito bem, passo o recado para ela. Tenha um bom dia!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Allô, Léo ? C'est moi !",
+          "pt": "Alô, Léo? Sou eu!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Camille ! J'entends mal, il y a beaucoup de bruit !",
+          "pt": "Camille! Estou ouvindo mal, tem muito barulho!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Je suis chez Mamie, avec Monsieur Bernard. Lui, il chante, et elle, elle joue du piano !",
+          "pt": "Estou na casa da Mamie, com o Monsieur Bernard. Ele está cantando e ela, tocando piano!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Sans moi ? Ce n'est pas juste !",
+          "pt": "Sem mim? Não é justo!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Alors viens ! Et apporte du pain : c'est toi qui es le plus près !",
+          "pt": "Então vem! E traz pão: é você que está mais perto!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-11-01",
+        "fr": "Je voudrais parler à Madame Roux.",
+        "pt": "Eu gostaria de falar com a senhora Roux."
+      },
+      {
+        "id": "a2-11-02",
+        "fr": "C'est de la part de qui ?",
+        "pt": "Quem gostaria? / Da parte de quem?",
+        "note": "Frase fixa de secretária. Responda: 'De la part de Léo' ou só 'De Léo'."
+      },
+      {
+        "id": "a2-11-03",
+        "fr": "Ne quittez pas, je vous la passe.",
+        "pt": "Um momento, vou transferir para ela.",
+        "note": "'Ne quittez pas' = não desligue, aguarde na linha. Com 'tu': 'ne quitte pas'."
+      },
+      {
+        "id": "a2-11-04",
+        "fr": "Elle est en réunion.",
+        "pt": "Ela está em reunião."
+      },
+      {
+        "id": "a2-11-05",
+        "fr": "Je peux laisser un message ?",
+        "pt": "Posso deixar um recado?"
+      },
+      {
+        "id": "a2-11-06",
+        "fr": "Elle vous rappellera cet après-midi.",
+        "pt": "Ela vai retornar a ligação hoje à tarde."
+      },
+      {
+        "id": "a2-11-07",
+        "fr": "Quel est votre numéro ?",
+        "pt": "Qual é o seu número?"
+      },
+      {
+        "id": "a2-11-08",
+        "fr": "Mon numéro, c'est le zéro six, douze, vingt, trente, quarante.",
+        "pt": "O meu número é zero seis, doze, vinte, trinta, quarenta.",
+        "note": "Na França, o telefone se lê de dois em dois: 06 12 20 30 40."
+      },
+      {
+        "id": "a2-11-09",
+        "fr": "Allô, c'est moi !",
+        "pt": "Alô, sou eu!",
+        "note": "Depois de 'c'est', vem pronome tônico: c'est moi, c'est toi, c'est lui. Nunca 'c'est je'."
+      },
+      {
+        "id": "a2-11-10",
+        "fr": "J'entends mal, il y a du bruit.",
+        "pt": "Estou ouvindo mal, tem barulho."
+      },
+      {
+        "id": "a2-11-11",
+        "fr": "Vous pouvez répéter, s'il vous plaît ?",
+        "pt": "O senhor pode repetir, por favor?"
+      },
+      {
+        "id": "a2-11-12",
+        "fr": "Lui, il chante, et elle, elle joue du piano.",
+        "pt": "Ele canta, e ela toca piano."
+      },
+      {
+        "id": "a2-11-13",
+        "fr": "Sans moi ? Ce n'est pas juste !",
+        "pt": "Sem mim? Não é justo!"
+      },
+      {
+        "id": "a2-11-14",
+        "fr": "C'est toi qui es le plus près.",
+        "pt": "É você que está mais perto.",
+        "note": "Depois de 'c'est toi qui', o verbo concorda com 'toi': c'est toi qui es, c'est moi qui suis."
+      },
+      {
+        "id": "a2-11-15",
+        "fr": "Je te rappelle dans cinq minutes.",
+        "pt": "Te ligo de volta em cinco minutos."
+      },
+      {
+        "id": "a2-11-16",
+        "fr": "Désolé, il n'y a pas de réseau ici.",
+        "pt": "Desculpa, não tem sinal aqui.",
+        "note": "'Réseau' = rede; no celular, é o sinal. 'Je n'ai pas de réseau' = estou sem sinal."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Moi, toi, lui: os pronomes tônicos",
+        "body": "Além de *je, tu, il…*, o francês tem os pronomes **tônicos**: **moi, toi, lui, elle, nous, vous, eux, elles**. Eles aparecem:\n• sozinhos: *Qui veut du café ? — **Moi** !*\n• depois de *c'est*: *c'est **moi***\n• depois de preposição: *avec **toi***, *chez **lui***, *sans **moi***\n• para dar ênfase: ***Moi**, je préfère le thé.*\nEm português, 'Quem quer café? — **Eu**!' usa o pronome normal. Em francês, 'Je !' sozinho é impossível. Pense no *moi* como o 'eu' que consegue ficar de pé sozinho.",
+        "examples": [
+          {
+            "fr": "C'est moi !",
+            "pt": "Sou eu!"
+          },
+          {
+            "fr": "Tu viens avec nous ?",
+            "pt": "Você vem com a gente?"
+          },
+          {
+            "fr": "Moi, je préfère le thé.",
+            "pt": "Eu prefiro chá."
+          },
+          {
+            "fr": "Ils sont chez eux.",
+            "pt": "Eles estão em casa (na casa deles)."
+          }
+        ]
+      },
+      {
+        "title": "Fórmulas do telefone",
+        "body": "No telefone, o francês tem frases prontas que vale decorar inteiras.\nAtender: ***Allô ?*** (só se usa no telefone!).\nQuem liga para uma empresa: *Je voudrais parler à…*\nA secretária pergunta ***C'est de la part de qui ?*** ('da parte de quem?') e pede ***Ne quittez pas*** ('não desligue' — literalmente, 'não deixe').\nSe a pessoa não está: *Je peux laisser un message ?*\nE os números: o francês lê de dois em dois. *06 12 34 56 78* = *zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit*. Treine o seu número assim!",
+        "examples": [
+          {
+            "fr": "Allô ? C'est de la part de qui ?",
+            "pt": "Alô? Quem gostaria?"
+          },
+          {
+            "fr": "Ne quittez pas.",
+            "pt": "Não desligue."
+          },
+          {
+            "fr": "Je vous la passe.",
+            "pt": "Vou transferir para ela."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você liga para um consultório: peça para falar com o médico, diga quem é, deixe um recado e dê o seu número (lido de dois em dois).",
+      "model": "Bonjour, madame. Je voudrais parler au docteur, s'il vous plaît. C'est de la part de Lucie. Il n'est pas là ? Alors je peux laisser un message ? Mon numéro, c'est le zéro six, vingt, quarante, soixante, quatre-vingts. Merci, bonne journée !"
+    },
+    "culture": "Na França, 'Allô' só se usa no telefone. Os celulares começam com 06 ou 07, e todo número tem dez dígitos, lidos em pares.",
+    "glossary": {
+      "lutèce": "Lutécia (antigo nome de Paris)",
+      "madame": "senhora",
+      "roux": "Roux (sobrenome)",
+      "silva": "Silva (sobrenome)",
+      "quittez": "deixe, desligue (quitter, vous); ne quittez pas = não desligue",
+      "passe": "passo, transfiro (passer)",
+      "désolée": "desculpe, sinto muito (fem.)",
+      "réunion": "reunião",
+      "laisser": "deixar",
+      "rappellera": "ligará de volta (rappeler, futuro)",
+      "rappelle": "ligo de volta (rappeler)",
+      "cet": "este / esse (antes de vogal)",
+      "après-midi": "tarde (período)",
+      "votre": "seu / sua (formal)",
+      "numéro": "número",
+      "zéro": "zero",
+      "douze": "doze",
+      "quatre": "quatro",
+      "cinquante": "cinquenta",
+      "dix": "dez",
+      "transmets": "transmito, passo (transmettre)",
+      "allô": "alô",
+      "entends": "ouço (entendre)",
+      "bruit": "barulho",
+      "joue": "toca (instrumento) / brinca (jouer)",
+      "pain": "pão",
+      "quarante": "quarenta",
+      "café": "café",
+      "préfère": "prefiro / prefere (préférer)",
+      "thé": "chá",
+      "eux": "eles (pronome tônico)",
+      "merci": "obrigado(a)",
+      "vingts": "vinte; quatre-vingts = oitenta",
+      "parler": "falar",
+      "répéter": "repetir",
+      "réseau": "rede; sinal (de celular)"
+    }
+  },
+  {
+    "id": "a2-12",
+    "level": "A2",
+    "track": "main",
+    "title": "Si j'étais toi",
+    "titlePt": "Pedidos, conselhos e desejos",
+    "goal": "Fazer pedidos educados, dar conselhos e falar de desejos com o conditionnel.",
+    "dialogue": {
+      "title": "Une idée un peu folle",
+      "context": "Faltam duas semanas para Léo voltar ao Brasil. Ele pensa em ficar um ano em Paris, trabalhando à distância, e pede conselhos na casa da Mamie.",
+      "lines": [
+        {
+          "who": "Léo",
+          "fr": "Mamie, Camille, j'ai une idée un peu folle. Je pourrais rester un an à Paris…",
+          "pt": "Mamie, Camille, tenho uma ideia meio maluca. Eu poderia ficar um ano em Paris…"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Un an ? Oh, ce serait merveilleux !",
+          "pt": "Um ano? Ah, seria maravilhoso!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Mais je ne sais pas… Je devrais d'abord parler à mon chef, non ?",
+          "pt": "Mas não sei… Eu deveria falar primeiro com o meu chefe, né?"
+        },
+        {
+          "who": "Camille",
+          "fr": "Bien sûr ! Si j'étais toi, je lui demanderais demain.",
+          "pt": "Claro! Se eu fosse você, perguntaria a ele amanhã."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et s'il dit non ?",
+          "pt": "E se ele disser não?"
+        },
+        {
+          "who": "Camille",
+          "fr": "À ta place, je lui proposerais de travailler à distance.",
+          "pt": "No seu lugar, eu proporia a ele trabalhar à distância."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et tu pourrais habiter ici, chez moi. J'aimerais tant t'avoir près de moi.",
+          "pt": "E você poderia morar aqui, comigo. Eu adoraria ter você perto de mim."
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est gentil, Mamie, mais tu ne voudrais pas un peu de calme ?",
+          "pt": "Que gentil, Mamie, mas você não ia querer um pouco de sossego?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Du calme ? À quatre-vingt-quatre ans, j'ai assez de calme ! Et Marina pourrait venir aussi.",
+          "pt": "Sossego? Aos oitenta e quatro anos, sossego é o que não me falta! E a Marina poderia vir também."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Excusez-moi… La porte était ouverte. Vous pourriez m'aider avec mes courses, Léo ?",
+          "pt": "Com licença… A porta estava aberta. Você poderia me ajudar com as compras, Léo?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Bien sûr, Monsieur Bernard ! Dites, vous feriez quoi, à ma place ?",
+          "pt": "Claro, Monsieur Bernard! Me diga, o que o senhor faria no meu lugar?"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Moi ? Je resterais, sans hésiter. Paris, c'est mieux en famille.",
+          "pt": "Eu? Eu ficaria, sem hesitar. Paris é melhor em família."
+        },
+        {
+          "who": "Léo",
+          "fr": "Bon… Demain, j'appelle mon chef. S'il dit oui, je resterai !",
+          "pt": "Bom… Amanhã eu ligo para o meu chefe. Se ele disser sim, eu fico!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Alors je vais préparer ta chambre… On ne sait jamais !",
+          "pt": "Então vou preparar o seu quarto… Nunca se sabe!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "a2-12-01",
+        "fr": "Je pourrais rester un an à Paris.",
+        "pt": "Eu poderia ficar um ano em Paris."
+      },
+      {
+        "id": "a2-12-02",
+        "fr": "Ce serait merveilleux !",
+        "pt": "Seria maravilhoso!"
+      },
+      {
+        "id": "a2-12-03",
+        "fr": "Je devrais parler à mon chef.",
+        "pt": "Eu deveria falar com o meu chefe."
+      },
+      {
+        "id": "a2-12-04",
+        "fr": "Si j'étais toi, je lui demanderais.",
+        "pt": "Se eu fosse você, eu perguntaria a ele.",
+        "note": "Bloco fixo para aconselhar. A estrutura completa (si + imparfait) você vê no B1."
+      },
+      {
+        "id": "a2-12-05",
+        "fr": "À ta place, je resterais.",
+        "pt": "No seu lugar, eu ficaria."
+      },
+      {
+        "id": "a2-12-06",
+        "fr": "Tu pourrais habiter chez moi.",
+        "pt": "Você poderia morar na minha casa."
+      },
+      {
+        "id": "a2-12-07",
+        "fr": "J'aimerais tant t'avoir près de moi.",
+        "pt": "Eu adoraria ter você perto de mim."
+      },
+      {
+        "id": "a2-12-08",
+        "fr": "Vous pourriez m'aider, s'il vous plaît ?",
+        "pt": "O senhor poderia me ajudar, por favor?",
+        "note": "O conditionnel deixa o pedido mais educado: 'Vous pouvez…?' → 'Vous pourriez…?'."
+      },
+      {
+        "id": "a2-12-09",
+        "fr": "Vous feriez quoi, à ma place ?",
+        "pt": "O que o senhor faria no meu lugar?"
+      },
+      {
+        "id": "a2-12-10",
+        "fr": "Je resterais, sans hésiter.",
+        "pt": "Eu ficaria, sem hesitar.",
+        "note": "O h de 'hésiter' é mudo, então liga: [san-zé-zi-té]."
+      },
+      {
+        "id": "a2-12-11",
+        "fr": "J'aimerais vivre à Paris.",
+        "pt": "Eu gostaria de morar em Paris."
+      },
+      {
+        "id": "a2-12-12",
+        "fr": "Tu devrais te reposer un peu.",
+        "pt": "Você deveria descansar um pouco."
+      },
+      {
+        "id": "a2-12-13",
+        "fr": "On pourrait dîner ensemble ce soir ?",
+        "pt": "A gente podia jantar junto hoje à noite?"
+      },
+      {
+        "id": "a2-12-14",
+        "fr": "Ça te dirait d'aller au cinéma ?",
+        "pt": "Você topa ir ao cinema?",
+        "note": "'Ça te dirait de…?' (literalmente 'isso te diria?') = 'você topa…?'. Muito usado!"
+      },
+      {
+        "id": "a2-12-15",
+        "fr": "S'il dit oui, je resterai !",
+        "pt": "Se ele disser sim, eu fico!",
+        "note": "'Je resterai' (futuro: certeza) × 'je resterais' (conditionnel: hipótese). O som é quase igual!"
+      },
+      {
+        "id": "a2-12-16",
+        "fr": "Il faudrait parler à ton chef.",
+        "pt": "Seria bom falar com o seu chefe."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Conditionnel = 'eu faria'",
+        "body": "O conditionnel é o nosso **futuro do pretérito**: 'eu fa**ria**', 'você pode**ria**'. A formação é um combo: **radical do futuro** + **terminações do imparfait** (-ais, -ais, -ait, -ions, -iez, -aient).\n*je ferai* → *je fer**ais***; *je pourrai* → *je pourr**ais***; *je serai* → *je ser**ais***.\nO português faz parecido: 'farei' → 'faria'.\nE você já usa um conditionnel desde o A1: ***je voudrais*** vem de *vouloir*!",
+        "examples": [
+          {
+            "fr": "Je ferais un voyage.",
+            "pt": "Eu faria uma viagem."
+          },
+          {
+            "fr": "Ce serait génial.",
+            "pt": "Seria demais."
+          },
+          {
+            "fr": "Tu pourrais venir ?",
+            "pt": "Você poderia vir?"
+          }
+        ]
+      },
+      {
+        "title": "Pedir, aconselhar, desejar",
+        "body": "Três usos do dia a dia:\n**Pedir com educação**: *Vous **pourriez** m'aider ?* soa mais gentil que *Vous pouvez…?*\n**Aconselhar**: *Tu **devrais** te reposer*; *À ta place, je **resterais***; *Si j'étais toi, je…*\n**Desejar**: *J'**aimerais** vivre à Paris.*\nArmadilha de pronúncia: *je resterai* (futuro) e *je resterais* (conditionnel) soam quase iguais. Na teoria, o primeiro termina em [ê] fechado e o segundo em [é] aberto; na prática, o contexto decide: é certeza ou hipótese?",
+        "examples": [
+          {
+            "fr": "Vous pourriez parler plus lentement ?",
+            "pt": "O senhor poderia falar mais devagar?"
+          },
+          {
+            "fr": "À ta place, je lui téléphonerais.",
+            "pt": "No seu lugar, eu ligaria para ele."
+          },
+          {
+            "fr": "J'aimerais bien un café.",
+            "pt": "Eu queria muito um café."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Um amigo quer morar na França, mas está com medo. Dê 3 conselhos usando 'tu devrais', 'à ta place' e 'tu pourrais', e diga um desejo seu com 'j'aimerais'.",
+      "model": "Tu devrais prendre des cours de français. À ta place, je chercherais un appartement près du centre. Tu pourrais aussi parler avec des Français sur internet. Moi, j'aimerais beaucoup vivre à Paris un jour !"
+    },
+    "culture": "Na França, o conditionnel é o 'por favor' da gramática: 'Vous pourriez…?' e 'Je voudrais…' são o jeito padrão de pedir algo a desconhecidos. Um 'Je veux' seco pode soar mal-educado.",
+    "glossary": {
+      "folle": "louca, maluca",
+      "pourrais": "poderia (pouvoir, conditionnel)",
+      "serait": "seria (être, conditionnel)",
+      "merveilleux": "maravilhoso",
+      "devrais": "deveria (devoir, conditionnel)",
+      "chef": "chefe",
+      "demanderais": "perguntaria, pediria (demander, conditionnel)",
+      "place": "lugar; à ta place = no seu lugar",
+      "proposerais": "proporia (proposer, conditionnel)",
+      "travailler": "trabalhar",
+      "distance": "distância",
+      "aimerais": "gostaria, adoraria (aimer, conditionnel)",
+      "tant": "tanto",
+      "gentil": "gentil",
+      "porte": "porta",
+      "ouverte": "aberta",
+      "pourriez": "poderia (pouvoir, conditionnel, vous)",
+      "courses": "compras (do dia a dia)",
+      "dites": "diga (dire, vous)",
+      "feriez": "faria (faire, conditionnel, vous)",
+      "resterais": "ficaria (rester, conditionnel)",
+      "hésiter": "hesitar",
+      "famille": "família",
+      "resterai": "ficarei (rester, futuro)",
+      "préparer": "preparar",
+      "chambre": "quarto",
+      "sait": "sabe (savoir); on ne sait jamais = nunca se sabe",
+      "vivre": "viver, morar",
+      "pourrait": "poderia (pouvoir, conditionnel)",
+      "dîner": "jantar",
+      "dirait": "diria (dire, conditionnel); ça te dirait de… ? = você topa…?",
+      "aller": "ir",
+      "cinéma": "cinema",
+      "faudrait": "seria preciso (falloir, conditionnel)",
+      "ferais": "faria (faire, conditionnel)",
+      "voyage": "viagem",
+      "venir": "vir",
+      "lentement": "devagar",
+      "téléphonerais": "telefonaria (téléphoner, conditionnel)",
+      "chercherais": "procuraria (chercher, conditionnel)",
+      "centre": "centro",
+      "internet": "internet",
+      "habiter": "morar",
+      "marina": "Marina (a namorada de Léo)"
+    }
+  }
+]

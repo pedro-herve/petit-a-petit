@@ -1,0 +1,10 @@
+{
+  "name": "petit-a-petit",
+  "private": true,
+  "type": "module",
+  "description": "Aprender francês com repetição espaçada — PWA gratuita",
+  "scripts": {
+    "validate": "node tools/validate.mjs content/a1.json content/a2.json content/b1.json content/mamie.json",
+    "serve": "node tools/serve.mjs"
+  }
+}

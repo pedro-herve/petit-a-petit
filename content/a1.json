@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "a1-01",
+    "level": "A1",
+    "track": "main",
+    "title": "Bonjour !",
+    "titlePt": "Cumprimentar e se apresentar",
+    "goal": "Cumprimentar alguém, dizer seu nome, perguntar como a pessoa está e se despedir — usando tu ou vous na hora certa.",
+    "dialogue": {
+      "title": "Au café du coin",
+      "context": "Léo acaba de chegar a Paris. Num café do 15e arrondissement, pertinho da casa da avó, ele encontra pela primeira vez a prima Camille. Na mesa ao lado está Monsieur Bernard, o vizinho da Mamie.",
+      "lines": [
+        { "who": "Camille", "fr": "Salut ! Tu es Léo ?", "pt": "Oi! Você é o Léo?" },
+        { "who": "Léo", "fr": "Oui, c'est moi ! Et toi, tu es Camille ?", "pt": "Sim, sou eu! E você é a Camille?" },
+        { "who": "Camille", "fr": "Oui ! Bienvenue à Paris ! Ça va ?", "pt": "Sou! Bem-vindo a Paris! Tudo bem?" },
+        { "who": "Léo", "fr": "Ça va, merci. Un peu fatigué, mais content !", "pt": "Tudo, obrigado. Um pouco cansado, mas contente!" },
+        { "who": "Camille", "fr": "Léo, je te présente Monsieur Bernard, le voisin de Mamie.", "pt": "Léo, este é o Monsieur Bernard, o vizinho da vovó." },
+        { "who": "Monsieur Bernard", "fr": "Bonjour, jeune homme. Enchanté !", "pt": "Bom dia, meu jovem. Muito prazer!" },
+        { "who": "Léo", "fr": "Bonjour, monsieur. Je m'appelle Léo. Enchanté !", "pt": "Bom dia, senhor. Eu me chamo Léo. Muito prazer!" },
+        { "who": "Monsieur Bernard", "fr": "Vous allez bien ? Pas trop fatigué ?", "pt": "Tudo bem com você? Não está muito cansado?" },
+        { "who": "Léo", "fr": "Très bien, merci. Et vous ?", "pt": "Muito bem, obrigado. E o senhor?" },
+        { "who": "Monsieur Bernard", "fr": "Je vais bien, merci. Bon séjour à Paris !", "pt": "Estou bem, obrigado. Boa estadia em Paris!" },
+        { "who": "Léo", "fr": "Merci, monsieur. Au revoir !", "pt": "Obrigado, senhor. Até logo!" },
+        { "who": "Camille", "fr": "Allez, à bientôt, Monsieur Bernard !", "pt": "Bom, até mais, Monsieur Bernard!" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-01-01", "fr": "Bonjour, je m'appelle Léo.", "pt": "Bom dia, eu me chamo Léo.", "note": "'Bonjour' vale o dia todo, até o fim da tarde. 'Je m'appelle' soa [je-ma-pél]." },
+      { "id": "a1-01-02", "fr": "Salut ! Ça va ?", "pt": "Oi! Tudo bem?", "note": "'Salut' é informal (amigos, família). O 't' final é mudo: [sa-lü]." },
+      { "id": "a1-01-03", "fr": "Ça va bien, et toi ?", "pt": "Tudo bem, e você?" },
+      { "id": "a1-01-04", "fr": "Très bien, merci. Et vous ?", "pt": "Muito bem, obrigado. E o senhor?" },
+      { "id": "a1-01-05", "fr": "Vous allez bien ?", "pt": "O senhor está bem?", "note": "Ligação: o 's' mudo de 'vous' vira 'z' antes de vogal: [vu-za-lê-biẽ]." },
+      { "id": "a1-01-06", "fr": "Bonsoir, madame !", "pt": "Boa noite, senhora!", "note": "'Bonsoir' é para chegar, a partir do fim da tarde. 'Bonne nuit' só na hora de dormir." },
+      { "id": "a1-01-07", "fr": "Tu es Camille ?", "pt": "Você é a Camille?" },
+      { "id": "a1-01-08", "fr": "Oui, c'est moi !", "pt": "Sim, sou eu!" },
+      { "id": "a1-01-09", "fr": "Enchanté, madame !", "pt": "Muito prazer, senhora!", "note": "Se quem fala é mulher, escreve-se 'enchantée' — mas a pronúncia é a mesma: [ã-chã-tê]." },
+      { "id": "a1-01-10", "fr": "Je te présente Camille.", "pt": "Esta é a Camille. (Te apresento a Camille.)" },
+      { "id": "a1-01-11", "fr": "Comment tu t'appelles ?", "pt": "Como você se chama?" },
+      { "id": "a1-01-12", "fr": "Comment vous appelez-vous ?", "pt": "Como o senhor se chama?" },
+      { "id": "a1-01-13", "fr": "Je suis un peu fatigué.", "pt": "Estou um pouco cansado.", "note": "'Je suis' = eu sou E eu estou: o francês não separa ser e estar." },
+      { "id": "a1-01-14", "fr": "Bienvenue à Paris !", "pt": "Bem-vindo a Paris!" },
+      { "id": "a1-01-15", "fr": "Au revoir, monsieur !", "pt": "Até logo, senhor!", "note": "'Monsieur' soa [me-siê]: o 'n' e o 'r' não se pronunciam." },
+      { "id": "a1-01-16", "fr": "À bientôt !", "pt": "Até breve!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Tu ou vous ?",
+        "body": "Em francês há duas formas de dizer *você*. **Tu** é o íntimo: família, amigos, crianças, colegas da mesma idade. **Vous** é o respeitoso: desconhecidos, vendedores, pessoas mais velhas — como *o senhor / a senhora* em português.\nE tem mais: **vous** também é o plural. Falando com duas pessoas, é sempre *vous*, mesmo que sejam amigos.\nNa dúvida, comece com **vous**: é melhor parecer educado demais do que íntimo demais. Se a pessoa propuser *« On se tutoie ? »*, aí você passa para o **tu**.\nPor isso o Léo fala *tu* com a Camille e com a Mamie, mas *vous* com o Monsieur Bernard.",
+        "examples": [
+          { "fr": "Salut Camille, tu vas bien ?", "pt": "Oi, Camille, tudo bem? (informal)" },
+          { "fr": "Bonjour monsieur, vous allez bien ?", "pt": "Bom dia, senhor, tudo bem? (formal)" },
+          { "fr": "Camille et Léo, vous êtes là ?", "pt": "Camille e Léo, vocês estão aí? (plural)" }
+        ]
+      },
+      {
+        "title": "Letras finais mudas",
+        "body": "Em francês, a maioria das consoantes no fim da palavra **não se pronuncia**: *salut* soa [sa-lü], *vous* soa [vu], *beaucoup* soa [bô-ku]. O **e** final também costuma ficar mudo: *je m'appelle* termina em [pél].\nAs exceções mais comuns são as letras de **CaReFuL** (c, r, f, l), que costumam soar no fim: *avec*, *bonjour*, *neuf*, *il*. Mas atenção: o *r* dos verbos em *-er* (*parler*) e o de *monsieur* são mudos.\nE tem a **ligação** (*liaison*): quando a palavra seguinte começa com vogal, a consoante muda 'acorda' e se junta a ela: *vous allez* soa [vu-za-lê]. O português faz igual: em 'os amigos', a gente fala [u-za-mi-gus]!",
+        "examples": [
+          { "fr": "Salut, ça va ?", "pt": "Oi, tudo bem? ('salut' = [sa-lü])" },
+          { "fr": "Vous allez bien ?", "pt": "Tudo bem com o senhor? ([vu-za-lê])" },
+          { "fr": "Bonjour, monsieur.", "pt": "Bom dia, senhor. ([bõ-jur, me-siê])" }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você encontra Monsieur Bernard na escada do prédio. Cumprimente-o, diga seu nome, pergunte como ele está e se despeça (use vous).",
+      "model": "Bonjour, monsieur ! Je m'appelle Léo. Enchanté ! Vous allez bien ? Au revoir, à bientôt !"
+    },
+    "culture": "Em Paris, ao entrar numa loja, padaria ou café, diga sempre 'Bonjour' (ou 'Bonsoir' à noite) — não cumprimentar é visto como falta de educação. Entre amigos e família rola 'la bise': em Paris, geralmente dois beijinhos no rosto.",
+    "glossary": {
+      "salut": "oi / tchau (informal)",
+      "tu": "você (informal)",
+      "es": "é / está (être, com tu)",
+      "oui": "sim",
+      "c'": "isso (antes de vogal)",
+      "c'est": "é / isso é",
+      "est": "é / está (être)",
+      "moi": "eu / mim (forma tônica)",
+      "et": "e",
+      "toi": "você (forma tônica de tu)",
+      "bienvenue": "bem-vindo(a)",
+      "à": "a / em / para",
+      "paris": "Paris",
+      "ça": "isso; ça va = tudo bem",
+      "va": "vai (aller)",
+      "merci": "obrigado(a)",
+      "un": "um",
+      "peu": "pouco; un peu = um pouco",
+      "fatigué": "cansado",
+      "mais": "mas",
+      "content": "contente",
+      "je": "eu",
+      "te": "te",
+      "présente": "apresento (présenter)",
+      "monsieur": "senhor",
+      "le": "o",
+      "voisin": "vizinho",
+      "de": "de",
+      "mamie": "vovó",
+      "bonjour": "bom dia / olá",
+      "jeune": "jovem",
+      "homme": "homem",
+      "enchanté": "muito prazer",
+      "m'": "me (antes de vogal)",
+      "appelle": "chamo / chama (s'appeler)",
+      "vous": "você / o senhor, a senhora / vocês",
+      "allez": "vai / vão (aller, com vous); allez ! = bom, vamos!",
+      "bien": "bem",
+      "pas": "não (negação)",
+      "trop": "demais / muito",
+      "très": "muito",
+      "vais": "vou (aller)",
+      "bon": "bom",
+      "séjour": "estadia",
+      "au": "ao / no (à + le)",
+      "revoir": "rever; au revoir = até logo",
+      "bientôt": "logo; à bientôt = até breve",
+      "bonsoir": "boa noite (ao chegar)",
+      "madame": "senhora",
+      "comment": "como",
+      "t'": "te (antes de vogal)",
+      "appelles": "chama (s'appeler, com tu)",
+      "appelez": "chama (s'appeler, com vous)",
+      "suis": "sou / estou (être)",
+      "vas": "vai (aller, com tu)",
+      "êtes": "é / são / está (être, com vous)",
+      "là": "lá / aí / aqui"
+    }
+  },
+  {
+    "id": "a1-02",
+    "level": "A1",
+    "track": "main",
+    "title": "Je viens du Brésil",
+    "titlePt": "De onde você é?",
+    "goal": "Dizer de onde você vem, onde mora e que línguas fala — e perguntar o mesmo para os outros.",
+    "dialogue": {
+      "title": "Un ami de Camille",
+      "context": "Ainda no café, chega Julien, um amigo da Camille. Ele quer saber tudo sobre o primo brasileiro.",
+      "lines": [
+        { "who": "Julien", "fr": "Salut ! Moi, c'est Julien.", "pt": "Oi! Eu sou o Julien." },
+        { "who": "Léo", "fr": "Salut ! Moi, c'est Léo. Enchanté !", "pt": "Oi! Eu sou o Léo. Prazer!" },
+        { "who": "Julien", "fr": "Tu viens d'où, Léo ?", "pt": "De onde você é, Léo?" },
+        { "who": "Léo", "fr": "Je viens du Brésil, de São Paulo.", "pt": "Sou do Brasil, de São Paulo." },
+        { "who": "Julien", "fr": "Ah, tu es brésilien ! Et tu parles très bien français !", "pt": "Ah, você é brasileiro! E fala francês muito bem!" },
+        { "who": "Léo", "fr": "Merci ! Mais je parle juste un peu. Ma grand-mère est parisienne.", "pt": "Obrigado! Mas eu falo só um pouco. Minha avó é parisiense." },
+        { "who": "Camille", "fr": "C'est aussi ma grand-mère !", "pt": "Ela é minha avó também!" },
+        { "who": "Julien", "fr": "Et tu habites à São Paulo ?", "pt": "E você mora em São Paulo?" },
+        { "who": "Léo", "fr": "Oui. Et toi, tu es parisien ?", "pt": "Moro. E você, é parisiense?" },
+        { "who": "Julien", "fr": "Non, je suis canadien. Je viens de Montréal, mais maintenant, j'habite à Paris.", "pt": "Não, sou canadense. Venho de Montreal, mas agora moro em Paris." },
+        { "who": "Léo", "fr": "Alors tu parles anglais et français ?", "pt": "Então você fala inglês e francês?" },
+        { "who": "Julien", "fr": "Oui ! Et un peu portugais : obrigado, saudade, caipirinha !", "pt": "Falo! E um pouco de português: obrigado, saudade, caipirinha!" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-02-01", "fr": "Tu viens d'où ?", "pt": "De onde você é?", "note": "Literalmente 'você vem de onde?'. Na fala, deixar o 'où' no fim é o mais natural." },
+      { "id": "a1-02-02", "fr": "Je viens du Brésil.", "pt": "Sou do Brasil.", "note": "'viens' tem som nasal: [viẽ]. 'du' = de + le, como o nosso 'do'." },
+      { "id": "a1-02-03", "fr": "Vous êtes d'où ?", "pt": "De onde o senhor é?", "note": "Ligação: [vu-zét-du]." },
+      { "id": "a1-02-04", "fr": "Je suis brésilien.", "pt": "Sou brasileiro." },
+      { "id": "a1-02-05", "fr": "Elle est brésilienne.", "pt": "Ela é brasileira.", "note": "No feminino, a nasal 'abre': brésilien [bre-zi-liẽ] → brésilienne [bre-zi-liénn]." },
+      { "id": "a1-02-06", "fr": "Camille est française.", "pt": "Camille é francesa." },
+      { "id": "a1-02-07", "fr": "J'habite à São Paulo.", "pt": "Moro em São Paulo.", "note": "O 'h' é mudo, então 'je' vira j': [ja-bit]." },
+      { "id": "a1-02-08", "fr": "Tu habites à Paris ?", "pt": "Você mora em Paris?" },
+      { "id": "a1-02-09", "fr": "Je parle un peu français.", "pt": "Falo um pouco de francês." },
+      { "id": "a1-02-10", "fr": "Tu parles anglais ?", "pt": "Você fala inglês?" },
+      { "id": "a1-02-11", "fr": "Ma grand-mère est parisienne.", "pt": "Minha avó é parisiense." },
+      { "id": "a1-02-12", "fr": "Il est canadien, de Montréal.", "pt": "Ele é canadense, de Montreal." },
+      { "id": "a1-02-13", "fr": "J'habite en France maintenant.", "pt": "Agora eu moro na França." },
+      { "id": "a1-02-14", "fr": "Elle habite aux États-Unis.", "pt": "Ela mora nos Estados Unidos.", "note": "Ligação dupla: [ô-zê-ta-zü-ni]." },
+      { "id": "a1-02-15", "fr": "Moi, c'est Julien.", "pt": "Eu sou o Julien.", "note": "Jeito bem comum e descontraído de se apresentar." },
+      { "id": "a1-02-16", "fr": "Vous parlez portugais ?", "pt": "O senhor fala português?" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Brésilien, brésilienne",
+        "body": "Como no português (*brasileiro/brasileira*), os adjetivos franceses mudam no feminino. A regra geral é **acrescentar -e**: *français → française*, *anglais → anglaise*. Alguns ainda dobram a consoante: *brésilien → brésilienne*, *canadien → canadienne*, *parisien → parisienne*.\nO interessante é o **som**: muitas vezes a consoante final, que era muda, passa a soar no feminino. *Français* termina em [sé], *française* em [séz]. E a nasal de *brésilien* [-liẽ] 'abre' em *brésilienne* [-liénn].\nSe o adjetivo já termina em **-e**, nada muda: *suisse*, *belge*. E repare: nacionalidade se escreve com minúscula (*il est français*) e país com maiúscula (*la France*) — igual ao português.",
+        "examples": [
+          { "fr": "Léo est brésilien.", "pt": "Léo é brasileiro." },
+          { "fr": "Camille est parisienne.", "pt": "Camille é parisiense." },
+          { "fr": "Il est anglais, elle est anglaise.", "pt": "Ele é inglês, ela é inglesa." },
+          { "fr": "Il est suisse, elle est suisse.", "pt": "Ele é suíço, ela é suíça." }
+        ]
+      },
+      {
+        "title": "En France, au Brésil, à Paris",
+        "body": "Para dizer onde você está ou para onde vai, o francês escolhe a preposição pelo tipo de lugar:\n• **à** + cidade: *à Paris, à São Paulo*\n• **en** + país feminino (quase todos terminam em -e): *en France, en Italie*\n• **au** + país masculino: *au Brésil, au Canada*\n• **aux** + país no plural: *aux États-Unis*\nÉ a mesma lógica do português, que diz *na França* e *no Brasil*: o gênero do país decide. Para dizer de onde você vem, use **de**: *de France*, *du Brésil*, *des États-Unis*, *de Paris*.\nDica: *le Brésil* é masculino e *la France* é feminino, como em português. Nem sempre bate (*le Mexique* termina em -e e é masculino!), mas ajuda muito.",
+        "examples": [
+          { "fr": "J'habite en France.", "pt": "Moro na França." },
+          { "fr": "Je suis au Brésil.", "pt": "Estou no Brasil." },
+          { "fr": "Il travaille aux États-Unis.", "pt": "Ele trabalha nos Estados Unidos." },
+          { "fr": "Je viens de Paris.", "pt": "Venho de Paris." }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Apresente-se para um novo amigo francês: nome, nacionalidade, de onde você vem, onde mora e que línguas fala.",
+      "model": "Salut ! Moi, c'est Léo. Je suis brésilien, je viens de São Paulo. J'habite au Brésil et je parle portugais, anglais et un peu français."
+    },
+    "culture": "Os franceses adoram brincar com o próprio idioma: quem fala mal francês 'parle français comme une vache espagnole' (fala francês como uma vaca espanhola). Mas qualquer esforço, começando por um 'bonjour' bem dito, abre muitas portas em Paris.",
+    "glossary": {
+      "viens": "venho / vem (venir)",
+      "d'": "de (antes de vogal)",
+      "où": "onde / aonde",
+      "du": "do (de + le) / um pouco de (du pain = pão)",
+      "brésil": "Brasil",
+      "são": "São (de São Paulo)",
+      "paulo": "Paulo (de São Paulo)",
+      "ah": "ah",
+      "brésilien": "brasileiro",
+      "parles": "fala (parler, com tu)",
+      "français": "francês",
+      "parle": "falo / fala (parler)",
+      "juste": "só / apenas",
+      "ma": "minha",
+      "grand-mère": "avó",
+      "parisienne": "parisiense (fem.)",
+      "aussi": "também",
+      "habites": "mora (habiter, com tu)",
+      "parisien": "parisiense (masc.)",
+      "non": "não",
+      "canadien": "canadense",
+      "montréal": "Montreal",
+      "maintenant": "agora",
+      "j'": "eu (antes de vogal)",
+      "habite": "moro / mora (habiter)",
+      "alors": "então",
+      "anglais": "inglês",
+      "portugais": "português",
+      "obrigado": "obrigado (em português!)",
+      "saudade": "saudade (em português!)",
+      "caipirinha": "caipirinha",
+      "elle": "ela",
+      "brésilienne": "brasileira",
+      "française": "francesa",
+      "il": "ele",
+      "en": "em (en France = na França; en mars = em março)",
+      "france": "França",
+      "aux": "aos / nos (à + les)",
+      "états-unis": "Estados Unidos",
+      "parlez": "fala / falam (parler, com vous)",
+      "anglaise": "inglesa",
+      "suisse": "suíço / suíça",
+      "travaille": "trabalho / trabalha (travailler)"
+    }
+  },
+  {
+    "id": "a1-03",
+    "level": "A1",
+    "track": "main",
+    "title": "Ma famille",
+    "titlePt": "Minha família",
+    "goal": "Falar da sua família, dizer a idade das pessoas e contar até vinte.",
+    "dialogue": {
+      "title": "L'album photo",
+      "context": "Léo e Camille chegam ao apartamento da Mamie Hélène, no 15e. Depois dos abraços, a avó pega o álbum de fotos da família.",
+      "lines": [
+        { "who": "Mamie", "fr": "Léo, mon chéri ! Enfin !", "pt": "Léo, meu querido! Finalmente!" },
+        { "who": "Léo", "fr": "Bonjour, Mamie ! Tu vas bien ?", "pt": "Oi, vó! Tudo bem com você?" },
+        { "who": "Mamie", "fr": "Très bien, mon grand. Viens, j'ai des photos !", "pt": "Muito bem, meu querido. Vem, tenho umas fotos!" },
+        { "who": "Léo", "fr": "Oh, c'est qui, le petit garçon ?", "pt": "Ah, quem é o menininho?" },
+        { "who": "Mamie", "fr": "C'est ton père ! Là, il a six ans.", "pt": "É o seu pai! Aqui ele tem seis anos." },
+        { "who": "Camille", "fr": "Et la petite fille avec lui, c'est ma mère !", "pt": "E a menininha com ele é a minha mãe!" },
+        { "who": "Mamie", "fr": "Et toi, Léo, tu as quel âge maintenant ? Vingt ans ?", "pt": "E você, Léo, quantos anos tem agora? Vinte?" },
+        { "who": "Léo", "fr": "Mamie ! J'ai trente-deux ans !", "pt": "Vó! Eu tenho trinta e dois anos!" },
+        { "who": "Mamie", "fr": "Trente-deux ans ! Et tu as une copine ?", "pt": "Trinta e dois anos! E você tem namorada?" },
+        { "who": "Léo", "fr": "Euh... j'ai un chat.", "pt": "Hã... eu tenho um gato." },
+        { "who": "Camille", "fr": "Un chat, c'est déjà ça !", "pt": "Um gato já é alguma coisa!" },
+        { "who": "Mamie", "fr": "Mes deux petits-enfants chez moi... quel bonheur !", "pt": "Meus dois netos aqui em casa... que alegria!" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-03-01", "fr": "C'est ma famille.", "pt": "Esta é a minha família." },
+      { "id": "a1-03-02", "fr": "Voici mon père et ma mère.", "pt": "Aqui estão meu pai e minha mãe.", "note": "'mon' (masc.), 'ma' (fem.), 'mes' (plural): concorda com a coisa possuída, como 'meu/minha'." },
+      { "id": "a1-03-03", "fr": "J'ai un frère et une sœur.", "pt": "Tenho um irmão e uma irmã.", "note": "'sœur': diga 'é' com os lábios em bico, como para dizer 'ô'." },
+      { "id": "a1-03-04", "fr": "Tu as des frères et sœurs ?", "pt": "Você tem irmãos?" },
+      { "id": "a1-03-05", "fr": "Camille est ma cousine.", "pt": "Camille é minha prima." },
+      { "id": "a1-03-06", "fr": "Mes grands-parents habitent à Paris.", "pt": "Meus avós moram em Paris." },
+      { "id": "a1-03-07", "fr": "Tu as quel âge ?", "pt": "Quantos anos você tem?", "note": "Literalmente 'você tem que idade?'. Ligação: [ké-laj]." },
+      { "id": "a1-03-08", "fr": "J'ai trente-deux ans.", "pt": "Tenho trinta e dois anos." },
+      { "id": "a1-03-09", "fr": "Mon fils a six ans.", "pt": "Meu filho tem seis anos.", "note": "'fils' soa [fis]; 'six ans' liga com som de z: [si-zã]." },
+      { "id": "a1-03-10", "fr": "Ma sœur a dix-huit ans.", "pt": "Minha irmã tem dezoito anos." },
+      { "id": "a1-03-11", "fr": "Mon oncle a deux filles.", "pt": "Meu tio tem duas filhas.", "note": "'fille' soa [fiy]: aqui o 'll' soa como 'i'." },
+      { "id": "a1-03-12", "fr": "Vous avez des enfants ?", "pt": "O senhor tem filhos?", "note": "'enfants' = filhos ou crianças. Duas ligações: [vu-za-vê-dê-zã-fã]." },
+      { "id": "a1-03-13", "fr": "Nous avons quatre enfants.", "pt": "Temos quatro filhos." },
+      { "id": "a1-03-14", "fr": "Ils ont quinze ans.", "pt": "Eles têm quinze anos.", "note": "'ils ont' [il-zõ] = eles têm; 'ils sont' [il-sõ] = eles são. O z ou o s muda tudo!" },
+      { "id": "a1-03-15", "fr": "C'est mon amie Sophie.", "pt": "Esta é minha amiga Sophie." },
+      { "id": "a1-03-16", "fr": "Non, mais j'ai un chat !", "pt": "Não, mas eu tenho um gato!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "J'ai trente ans : a idade com avoir",
+        "body": "Em francês, você **tem** anos, exatamente como em português: *j'ai trente ans* = *tenho trinta anos*. Nada de *je suis trente* — isso é inglês!\nDuas diferenças: a palavra **ans** é obrigatória. Em português dá para dizer 'tenho trinta'; em francês, *j'ai trente* fica incompleto. E a pergunta também usa *avoir*: *Tu as quel âge ?* (literalmente 'você tem que idade?').\nRepare na ligação, que aparece em quase toda idade: *deux ans* [dê-zã], *trois ans* [trwa-zã], *six ans* [si-zã], *dix ans* [di-zã]. E *neuf ans* soa [nê-vã], com som de v!",
+        "examples": [
+          { "fr": "J'ai trente ans.", "pt": "Tenho trinta anos." },
+          { "fr": "Ma cousine a vingt-huit ans.", "pt": "Minha prima tem vinte e oito anos." },
+          { "fr": "Il a dix ans.", "pt": "Ele tem dez anos." },
+          { "fr": "Elle a neuf ans.", "pt": "Ela tem nove anos." }
+        ]
+      },
+      {
+        "title": "Mon amie : mon antes de vogal",
+        "body": "Os possessivos concordam com a **coisa possuída**, como em português: *mon père* (meu pai), *ma mère* (minha mãe), *mes parents* (meus pais).\nMas tem uma pegadinha: antes de palavra feminina que começa com **vogal** ou **h mudo**, *ma* vira **mon**: *mon amie*, *mon école*, *mon histoire*. O motivo é o som: *ma amie* juntaria duas vogais, e o francês detesta esse choque (é o mesmo motivo de *je* virar *j'* em *j'ai*). Com *mon*, a ligação resolve: [mõ-na-mi].\nA palavra continua feminina — *mon amie est française* — só o possessivo muda. Vale também para *ton* e *son*: *ton amie*, *son école*.",
+        "examples": [
+          { "fr": "Mon amie est brésilienne.", "pt": "Minha amiga é brasileira." },
+          { "fr": "C'est ton école ?", "pt": "É a sua escola?" },
+          { "fr": "Voici ma cousine et mon amie Sophie.", "pt": "Aqui estão minha prima e minha amiga Sophie." }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Mostre uma foto da sua família (real ou imaginária) e descreva: quem é quem e quantos anos cada um tem.",
+      "model": "C'est ma famille. J'ai un frère, il a dix-neuf ans, et une sœur, elle a seize ans. Mes parents habitent à São Paulo. Et j'ai un chat !"
+    },
+    "culture": "Cuidado: 'mes parents' quase sempre quer dizer 'meus pais' (pai e mãe); para os parentes em geral, diz-se 'la famille'. E 'Mamie' e 'Papi' são os jeitos carinhosos de chamar os avós, como 'vovó' e 'vovô'.",
+    "glossary": {
+      "mon": "meu",
+      "chéri": "querido",
+      "enfin": "finalmente",
+      "j'ai": "eu tenho (avoir); j'ai vu = eu vi",
+      "ai": "tenho (avoir); j'ai vu = eu vi",
+      "des": "uns, umas / dos, das (de + les)",
+      "photos": "fotos",
+      "oh": "ah / oh",
+      "qui": "quem",
+      "petit": "pequeno",
+      "garçon": "menino",
+      "ton": "seu, teu (de tu)",
+      "père": "pai",
+      "mère": "mãe",
+      "a": "tem (avoir); il a vu = ele viu",
+      "six": "seis",
+      "ans": "anos",
+      "la": "a (artigo)",
+      "petite": "pequena",
+      "fille": "filha / menina",
+      "avec": "com",
+      "lui": "ele (forma tônica)",
+      "as": "tem (avoir, com tu); tu as vu = você viu",
+      "quel": "qual / que",
+      "âge": "idade",
+      "vingt": "vinte",
+      "trente-deux": "trinta e dois",
+      "trente": "trinta",
+      "deux": "dois",
+      "une": "uma",
+      "copine": "namorada / amiga",
+      "euh": "hã... (hesitação)",
+      "chat": "gato",
+      "déjà": "já",
+      "mes": "meus / minhas",
+      "petits-enfants": "netos",
+      "chez": "na casa de; chez moi = na minha casa",
+      "bonheur": "felicidade, alegria",
+      "famille": "família",
+      "voici": "aqui está / eis",
+      "frère": "irmão",
+      "sœur": "irmã",
+      "frères": "irmãos",
+      "sœurs": "irmãs",
+      "cousine": "prima",
+      "grands-parents": "avós",
+      "parents": "pais (pai e mãe)",
+      "habitent": "moram (habiter)",
+      "fils": "filho",
+      "dix-huit": "dezoito",
+      "oncle": "tio",
+      "filles": "filhas / meninas",
+      "avez": "tem / têm (avoir, com vous)",
+      "enfants": "filhos / crianças",
+      "nous": "nós",
+      "avons": "temos (avoir); nous avons vu = nós vimos",
+      "quatre": "quatro",
+      "ils": "eles",
+      "ont": "têm (avoir); ils ont vu = eles viram",
+      "quinze": "quinze",
+      "amie": "amiga",
+      "vingt-huit": "vinte e oito",
+      "dix": "dez",
+      "neuf": "nove",
+      "école": "escola",
+      "dix-neuf": "dezenove",
+      "seize": "dezesseis"
+    }
+  },
+  {
+    "id": "a1-04",
+    "level": "A1",
+    "track": "main",
+    "title": "Au café",
+    "titlePt": "No café",
+    "goal": "Pedir algo para comer e beber com educação, entender o preço e pedir a conta.",
+    "dialogue": {
+      "title": "Le petit-déjeuner",
+      "context": "Primeira manhã em Paris. Camille leva Léo para tomar café da manhã num café da rue du Commerce, pertinho da casa da Mamie.",
+      "lines": [
+        { "who": "Le serveur", "fr": "Bonjour ! Vous désirez ?", "pt": "Bom dia! O que vão querer?" },
+        { "who": "Camille", "fr": "Un café, s'il vous plaît.", "pt": "Um café, por favor." },
+        { "who": "Léo", "fr": "Et pour moi, je voudrais un café au lait.", "pt": "E para mim, eu queria um café com leite." },
+        { "who": "Le serveur", "fr": "Un grand crème, alors ?", "pt": "Um 'grand crème', então?" },
+        { "who": "Léo", "fr": "Euh... oui, un grand crème ! Et une tartine, s'il vous plaît.", "pt": "Hã... isso, um 'grand crème'! E um pão com manteiga, por favor." },
+        { "who": "Le serveur", "fr": "Avec du beurre et de la confiture ?", "pt": "Com manteiga e geleia?" },
+        { "who": "Léo", "fr": "Oui, merci !", "pt": "Sim, por favor!" },
+        { "who": "Camille", "fr": "Il a faim, mon cousin !", "pt": "Meu primo está com fome!" },
+        { "who": "Léo", "fr": "L'addition, s'il vous plaît !", "pt": "A conta, por favor!" },
+        { "who": "Le serveur", "fr": "Alors... ça fait dix euros quatre-vingt-dix.", "pt": "Então... dá dez euros e noventa." },
+        { "who": "Léo", "fr": "Dix euros quatre-vingt-dix ? C'est cher !", "pt": "Dez e noventa? Que caro!" },
+        { "who": "Camille", "fr": "C'est Paris ! Allez, je t'invite.", "pt": "É Paris! Deixa, é por minha conta." }
+      ]
+    },
+    "cards": [
+      { "id": "a1-04-01", "fr": "Je voudrais un café, s'il vous plaît.", "pt": "Eu queria um café, por favor.", "note": "'voudrais' soa [vu-dré]; 's'il vous plaît' soa [sil-vu-plé]." },
+      { "id": "a1-04-02", "fr": "Vous désirez ?", "pt": "O que deseja?", "note": "Frase típica de garçom e vendedor. A resposta começa com 'Je voudrais...'." },
+      { "id": "a1-04-03", "fr": "Un grand crème, s'il vous plaît.", "pt": "Um café com leite grande, por favor.", "note": "No café parisiense, café com leite se pede como 'un crème'." },
+      { "id": "a1-04-04", "fr": "Et pour moi, un croissant.", "pt": "E para mim, um croissant." },
+      { "id": "a1-04-05", "fr": "Du pain avec du beurre.", "pt": "Pão com manteiga." },
+      { "id": "a1-04-06", "fr": "Avec de la confiture ?", "pt": "Com geleia?" },
+      { "id": "a1-04-07", "fr": "De l'eau, s'il vous plaît.", "pt": "Água, por favor.", "note": "No restaurante, peça 'une carafe d'eau': a água da torneira é grátis." },
+      { "id": "a1-04-08", "fr": "J'ai faim et j'ai soif.", "pt": "Estou com fome e com sede." },
+      { "id": "a1-04-09", "fr": "L'addition, s'il vous plaît !", "pt": "A conta, por favor!" },
+      { "id": "a1-04-10", "fr": "Ça fait combien ?", "pt": "Quanto dá?" },
+      { "id": "a1-04-11", "fr": "Ça fait dix euros quatre-vingt-dix.", "pt": "Dá dez euros e noventa.", "note": "'quatre-vingt-dix' = 4 × 20 + 10 = 90. 'dix euros' liga: [di-zê-rô]." },
+      { "id": "a1-04-12", "fr": "C'est cher !", "pt": "É caro!" },
+      { "id": "a1-04-13", "fr": "Je t'invite.", "pt": "É por minha conta.", "note": "Literalmente 'eu te convido': quer dizer que você paga." },
+      { "id": "a1-04-14", "fr": "Deux cafés et un thé, s'il vous plaît.", "pt": "Dois cafés e um chá, por favor." },
+      { "id": "a1-04-15", "fr": "Vous avez des croissants ?", "pt": "Vocês têm croissant?" },
+      { "id": "a1-04-16", "fr": "Mamie a quatre-vingt-quatre ans.", "pt": "A vovó tem oitenta e quatro anos.", "note": "84 = 4 × 20 + 4. De 70 a 99, o francês faz contas!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Du pain, de la confiture : o partitivo",
+        "body": "Em português dizemos 'quero pão', 'tem manteiga?', sem artigo nenhum. Em francês isso não funciona: o substantivo quase sempre precisa de um artigo. Quando se trata de uma **quantidade indefinida** de algo que não se conta (pão, água, geleia), usa-se o **partitivo**:\n• **du** + masculino: *du pain, du beurre*\n• **de la** + feminino: *de la confiture*\n• **de l'** + vogal: *de l'eau*\n• **des** + plural: *des croissants*\nPense nele como um 'um pouco de' invisível: *du pain* = '(um pouco de) pão'. Já *le pain* é 'o pão' (em geral ou um específico), e *un pain* é 'um pão' inteiro.",
+        "examples": [
+          { "fr": "Je voudrais du pain.", "pt": "Eu queria pão." },
+          { "fr": "Avec de la confiture, s'il vous plaît.", "pt": "Com geleia, por favor." },
+          { "fr": "Je voudrais de l'eau.", "pt": "Eu queria água." },
+          { "fr": "Il mange des croissants.", "pt": "Ele come croissants." }
+        ]
+      },
+      {
+        "title": "Je voudrais : o jeito educado",
+        "body": "*Je voudrais* vem do verbo *vouloir* (querer), num tempo chamado condicional. É exatamente o nosso '**eu queria**' ou '**eu gostaria**' na hora de pedir algo.\nPor que não dizer *je veux* (eu quero)? Porque soa direto demais, como uma criança exigindo. No café, na padaria, na loja: use sempre *je voudrais*.\nPor enquanto, guarde como um bloco pronto: *je voudrais* + o que você quer. O condicional completo vem no A2. E não esqueça o *s'il vous plaît* no final: em Paris, ele faz milagres.",
+        "examples": [
+          { "fr": "Je voudrais un croissant, s'il vous plaît.", "pt": "Eu queria um croissant, por favor." },
+          { "fr": "Je voudrais l'addition.", "pt": "Eu queria a conta." },
+          { "fr": "Je veux un café !", "pt": "Quero um café! (direto demais)" }
+        ]
+      },
+      {
+        "title": "70, 80, 90 : a matemática francesa",
+        "body": "De 1 a 69, tudo normal. Depois, o francês começa a fazer contas:\n• **70** = *soixante-dix* (60 + 10)\n• **80** = *quatre-vingts* (4 × 20)\n• **90** = *quatre-vingt-dix* (4 × 20 + 10)\nEntão 75 é *soixante-quinze* (60 + 15), 84 é *quatre-vingt-quatre* e 99 é *quatre-vingt-dix-neuf* (4 × 20 + 19). É herança de um jeito antigo de contar de vinte em vinte.\nDetalhe de escrita: *quatre-vingts* leva **s** quando está sozinho, mas perde o s quando vem outro número depois: *quatre-vingt-trois*. Na Bélgica e na Suíça dizem *septante* e *nonante* — mas em Paris é a conta mesmo!",
+        "examples": [
+          { "fr": "Ça fait soixante-quinze euros.", "pt": "Dá setenta e cinco euros." },
+          { "fr": "Il a quatre-vingts ans.", "pt": "Ele tem oitenta anos." },
+          { "fr": "Quatre-vingt-dix-neuf, cent !", "pt": "Noventa e nove, cem!" }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você está num café em Paris. Peça uma bebida e algo para comer, pergunte o preço e peça a conta.",
+      "model": "Bonjour ! Je voudrais un grand crème et un croissant, s'il vous plaît. Ça fait combien ? Merci ! L'addition, s'il vous plaît."
+    },
+    "culture": "No café parisiense, o preço muda conforme o lugar: no balcão ('au comptoir') é mais barato que na mesa ou no terraço. E a água da torneira é grátis: basta pedir 'une carafe d'eau'.",
+    "glossary": {
+      "désirez": "deseja (désirer, com vous)",
+      "café": "café",
+      "s'il": "se (ele); s'il vous plaît = por favor",
+      "plaît": "agrada (plaire); s'il vous plaît = por favor",
+      "pour": "para / por",
+      "voudrais": "queria / gostaria (vouloir)",
+      "lait": "leite",
+      "grand": "grande; mon grand = meu querido (para um rapaz)",
+      "crème": "creme; un crème = café com leite",
+      "tartine": "fatia de pão com manteiga ou geleia",
+      "beurre": "manteiga",
+      "confiture": "geleia",
+      "faim": "fome",
+      "cousin": "primo",
+      "l'": "o / a (antes de vogal)",
+      "addition": "conta (no café, restaurante)",
+      "fait": "faz (faire) / feito (particípio); ça fait = dá (preço)",
+      "euros": "euros",
+      "quatre-vingt-dix": "noventa",
+      "cher": "caro",
+      "invite": "convido (inviter); je t'invite = é por minha conta",
+      "croissant": "croissant",
+      "pain": "pão",
+      "eau": "água",
+      "soif": "sede",
+      "combien": "quanto(s)",
+      "cafés": "cafés",
+      "thé": "chá",
+      "croissants": "croissants",
+      "quatre-vingt-quatre": "oitenta e quatro",
+      "mange": "como / come (manger)",
+      "veux": "quero (vouloir)",
+      "soixante-quinze": "setenta e cinco",
+      "quatre-vingts": "oitenta",
+      "quatre-vingt-dix-neuf": "noventa e nove",
+      "cent": "cem"
+    }
+  },
+  {
+    "id": "a1-05",
+    "level": "A1",
+    "track": "main",
+    "title": "Dans le métro",
+    "titlePt": "No metrô",
+    "goal": "Perguntar e entender o caminho, dizer aonde você vai e se virar no metrô.",
+    "dialogue": {
+      "title": "Direction Montmartre",
+      "context": "Léo quer ir sozinho a Montmartre encontrar a Camille. Na porta do prédio, ele cruza com Monsieur Bernard. Depois, na estação, pede ajuda a uma senhora — e a Camille liga para ele.",
+      "lines": [
+        { "who": "Monsieur Bernard", "fr": "Bonjour, Léo ! Vous allez où comme ça ?", "pt": "Bom dia, Léo! Aonde você vai assim?" },
+        { "who": "Léo", "fr": "Bonjour, monsieur ! Je vais à Montmartre. Le métro, c'est où ?", "pt": "Bom dia, senhor! Vou a Montmartre. Onde fica o metrô?" },
+        { "who": "Monsieur Bernard", "fr": "La station Vaugirard ? C'est tout droit, puis à droite.", "pt": "A estação Vaugirard? É só seguir reto, depois à direita." },
+        { "who": "Léo", "fr": "C'est loin ?", "pt": "É longe?" },
+        { "who": "Monsieur Bernard", "fr": "Non, c'est à cinq minutes à pied. Vous prenez la ligne douze.", "pt": "Não, fica a cinco minutos a pé. Você pega a linha doze." },
+        { "who": "Léo", "fr": "Et pour aller au Sacré-Cœur ?", "pt": "E para ir à Sacré-Cœur?" },
+        { "who": "Monsieur Bernard", "fr": "Vous descendez à Abbesses. Et après... ça monte beaucoup !", "pt": "Você desce em Abbesses. E depois... sobe muito!" },
+        { "who": "Léo", "fr": "Excusez-moi, madame, où est la ligne douze ?", "pt": "Com licença, senhora, onde fica a linha doze?" },
+        { "who": "Une dame", "fr": "La douze ? C'est par là, à gauche.", "pt": "A doze? É por ali, à esquerda." },
+        { "who": "Léo", "fr": "Merci beaucoup ! Bonne journée !", "pt": "Muito obrigado! Tenha um bom dia!" },
+        { "who": "Camille", "fr": "Allô, Léo ? Tu es où ?", "pt": "Alô, Léo? Cadê você?" },
+        { "who": "Léo", "fr": "Je suis dans le métro... J'arrive !", "pt": "Estou no metrô... Tô chegando!" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-05-01", "fr": "Je vais à Montmartre.", "pt": "Vou a Montmartre." },
+      { "id": "a1-05-02", "fr": "Tu vas où ?", "pt": "Aonde você vai?" },
+      { "id": "a1-05-03", "fr": "Vous allez où comme ça ?", "pt": "Aonde o senhor vai assim?", "note": "Pergunta simpática de quem encontra você na rua. Ligação: [vu-za-lê-u]." },
+      { "id": "a1-05-04", "fr": "Le métro, c'est où ?", "pt": "Onde fica o metrô?" },
+      { "id": "a1-05-05", "fr": "Où est la station, s'il vous plaît ?", "pt": "Onde fica a estação, por favor?" },
+      { "id": "a1-05-06", "fr": "C'est loin ?", "pt": "É longe?", "note": "'loin' é nasal: [lwẽ]." },
+      { "id": "a1-05-07", "fr": "Non, c'est tout près.", "pt": "Não, é bem pertinho." },
+      { "id": "a1-05-08", "fr": "C'est tout droit, puis à droite.", "pt": "É reto, depois à direita.", "note": "Cuidado: 'tout droit' [tu-drwa] = em frente; 'à droite' [a-drwat] = à direita. Só o 't' final muda!" },
+      { "id": "a1-05-09", "fr": "Vous tournez à gauche.", "pt": "Você vira à esquerda.", "note": "'gauche' soa [gôch]." },
+      { "id": "a1-05-10", "fr": "C'est à cinq minutes à pied.", "pt": "Fica a cinco minutos a pé." },
+      { "id": "a1-05-11", "fr": "Je vais au musée.", "pt": "Vou ao museu.", "note": "à + le = au, como 'a + o = ao' em português." },
+      { "id": "a1-05-12", "fr": "Nous allons aux Champs-Élysées.", "pt": "Vamos para a Champs-Élysées." },
+      { "id": "a1-05-13", "fr": "Elle va à l'hôtel.", "pt": "Ela vai para o hotel." },
+      { "id": "a1-05-14", "fr": "Ils vont à la boulangerie.", "pt": "Eles vão à padaria." },
+      { "id": "a1-05-15", "fr": "Je suis dans le métro.", "pt": "Estou no metrô." },
+      { "id": "a1-05-16", "fr": "J'arrive !", "pt": "Tô chegando!", "note": "Os franceses dizem 'j'arrive' mesmo saindo de casa... igualzinho ao nosso 'tô chegando'!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Au, aux, du, des : as contrações",
+        "body": "O português adora juntar preposição com artigo: *a + o = ao*, *de + o = do*, *em + a = na*. O francês faz o mesmo, mas só com **à** e **de** diante de **le** e **les**:\n• **à + le = au**: *je vais au musée*\n• **à + les = aux**: *aux Champs-Élysées*\n• **de + le = du**: *je viens du Brésil*\n• **de + les = des**: *la maison des voisins*\nCom **la** e **l'**, nada muda: *à la boulangerie*, *à l'hôtel*, *de la gare*.\nO erro clássico de brasileiro é dizer *à le métro*. Lembre: onde o português diria 'ao' ou 'do', o francês quase sempre diz *au* ou *du*.",
+        "examples": [
+          { "fr": "Je vais au cinéma.", "pt": "Vou ao cinema." },
+          { "fr": "Elle va aux États-Unis.", "pt": "Ela vai para os Estados Unidos." },
+          { "fr": "Il arrive du Canada.", "pt": "Ele chega do Canadá." },
+          { "fr": "C'est la maison des voisins.", "pt": "É a casa dos vizinhos." }
+        ]
+      },
+      {
+        "title": "Tu vas où ? A pergunta no fim",
+        "body": "Nos livros, as perguntas começam com a palavra interrogativa: *Où vas-tu ?* Mas na rua, os franceses — e principalmente os parisienses — preferem deixá-la **no fim**, com a frase na ordem normal: *Tu vas où ?*, *C'est où ?*, *Tu arrives quand ?*\nÉ como no português falado: 'Você vai aonde?'. Outro truque muito comum é destacar o assunto no começo: *Le métro, c'est où ?* ('O metrô, fica onde?').\nE para pedir informação a um desconhecido, comece com *Excusez-moi* e termine com *s'il vous plaît*: a educação conta muito!",
+        "examples": [
+          { "fr": "Vous allez où ?", "pt": "Aonde o senhor vai?" },
+          { "fr": "La gare, c'est où ?", "pt": "A estação de trem, fica onde?" },
+          { "fr": "Excusez-moi, la ligne douze, s'il vous plaît ?", "pt": "Com licença, a linha doze, por favor?" }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Um turista pergunta a você como chegar à padaria mais próxima. Explique o caminho em 3 ou 4 frases.",
+      "model": "La boulangerie ? C'est tout près ! Vous allez tout droit, puis vous tournez à gauche. C'est à deux minutes à pied."
+    },
+    "culture": "O metrô de Paris tem mais de 300 estações. Cada linha tem um número e uma 'direction', o nome da estação final. Ninguém diz 'sentido norte': diz-se 'ligne douze, direction Mairie d'Aubervilliers'.",
+    "glossary": {
+      "comme": "como; comme ça = assim",
+      "montmartre": "Montmartre (bairro no alto de Paris)",
+      "métro": "metrô",
+      "station": "estação (de metrô)",
+      "vaugirard": "Vaugirard (estação de metrô no 15e)",
+      "tout": "tudo / todo / bem; tout droit = reto",
+      "droit": "reto; tout droit = em frente",
+      "puis": "depois, em seguida",
+      "droite": "direita",
+      "loin": "longe",
+      "cinq": "cinco",
+      "minutes": "minutos",
+      "pied": "pé; à pied = a pé",
+      "prenez": "pega (prendre, com vous)",
+      "ligne": "linha",
+      "douze": "doze",
+      "aller": "ir",
+      "sacré-cœur": "Sacré-Cœur (basílica de Montmartre)",
+      "descendez": "desce (descendre, com vous)",
+      "abbesses": "Abbesses (estação de metrô em Montmartre)",
+      "après": "depois",
+      "monte": "sobe (monter)",
+      "beaucoup": "muito",
+      "excusez-moi": "com licença / desculpe",
+      "par": "por; par là = por ali",
+      "gauche": "esquerda",
+      "bonne": "boa",
+      "journée": "dia; bonne journée = tenha um bom dia",
+      "allô": "alô (ao telefone)",
+      "dans": "em / dentro de",
+      "arrive": "chego / chega (arriver)",
+      "près": "perto",
+      "tournez": "vira (tourner, com vous)",
+      "musée": "museu",
+      "allons": "vamos (aller)",
+      "champs-élysées": "Champs-Élysées (avenida famosa)",
+      "hôtel": "hotel",
+      "vont": "vão (aller)",
+      "boulangerie": "padaria",
+      "cinéma": "cinema",
+      "canada": "Canadá",
+      "maison": "casa",
+      "voisins": "vizinhos",
+      "gare": "estação de trem"
+    }
+  },
+  {
+    "id": "a1-06",
+    "level": "A1",
+    "track": "main",
+    "title": "Ma journée",
+    "titlePt": "Meu dia a dia",
+    "goal": "Contar sua rotina, dizer as horas e usar os verbos em -er e os pronominais no presente.",
+    "dialogue": {
+      "title": "Bonjour, la marmotte !",
+      "context": "Léo acorda tarde, ainda no fuso horário do Brasil. Na cozinha, a Mamie já está de pé há horas.",
+      "lines": [
+        { "who": "Mamie", "fr": "Bonjour, la marmotte ! Il est déjà onze heures !", "pt": "Bom dia, dorminhoco! Já são onze horas!" },
+        { "who": "Léo", "fr": "Onze heures ? Mais au Brésil, il est six heures !", "pt": "Onze horas? Mas no Brasil são seis!" },
+        { "who": "Mamie", "fr": "Moi, je me lève à six heures tous les jours.", "pt": "Eu me levanto às seis todo dia." },
+        { "who": "Léo", "fr": "À six heures ? C'est tôt !", "pt": "Às seis? Que cedo!" },
+        { "who": "Mamie", "fr": "Le matin, c'est calme. Je prépare le café, j'écoute la radio...", "pt": "De manhã é tudo calmo. Preparo o café, escuto o rádio..." },
+        { "who": "Léo", "fr": "Et l'après-midi ?", "pt": "E à tarde?" },
+        { "who": "Mamie", "fr": "Je déjeune à midi, puis je me repose.", "pt": "Almoço ao meio-dia, depois descanso." },
+        { "who": "Léo", "fr": "Et Camille ? Elle travaille aujourd'hui ?", "pt": "E a Camille? Ela trabalha hoje?" },
+        { "who": "Mamie", "fr": "Oui, elle commence à neuf heures et elle rentre tard. Elle travaille trop !", "pt": "Sim, ela começa às nove e volta tarde. Ela trabalha demais!" },
+        { "who": "Léo", "fr": "Et toi, Mamie, tu te couches à quelle heure ?", "pt": "E você, vó, vai dormir que horas?" },
+        { "who": "Mamie", "fr": "À dix heures. Et toi, à une heure du matin, je sais !", "pt": "Às dez. E você, à uma da manhã, eu sei!" },
+        { "who": "Léo", "fr": "Bon, je me douche, je m'habille et je t'aide, d'accord ?", "pt": "Bom, vou tomar banho, me vestir e te ajudar, tá?" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-06-01", "fr": "Je me lève à six heures.", "pt": "Eu me levanto às seis horas.", "note": "'six heures' liga com som de z: [si-zêr]." },
+      { "id": "a1-06-02", "fr": "Il est quelle heure ?", "pt": "Que horas são?", "note": "É o jeito falado. O formal é 'Quelle heure est-il ?'." },
+      { "id": "a1-06-03", "fr": "Il est sept heures et quart.", "pt": "São sete e quinze." },
+      { "id": "a1-06-04", "fr": "Il est midi et demi.", "pt": "É meio-dia e meia." },
+      { "id": "a1-06-05", "fr": "Je prépare le café.", "pt": "Eu preparo o café." },
+      { "id": "a1-06-06", "fr": "J'écoute la radio le matin.", "pt": "Escuto rádio de manhã." },
+      { "id": "a1-06-07", "fr": "Tu travailles aujourd'hui ?", "pt": "Você trabalha hoje?", "note": "'travailles' soa [tra-vaiy]: o '-es' final é mudo." },
+      { "id": "a1-06-08", "fr": "Elle commence à neuf heures.", "pt": "Ela começa às nove.", "note": "'neuf heures' liga com som de v: [nê-vêr]." },
+      { "id": "a1-06-09", "fr": "Nous déjeunons à midi.", "pt": "Almoçamos ao meio-dia.", "note": "Com 'nous', a terminação '-ons' se pronuncia: [dê-jê-nõ]." },
+      { "id": "a1-06-10", "fr": "Je me repose un peu.", "pt": "Descanso um pouco." },
+      { "id": "a1-06-11", "fr": "Le soir, je dîne à huit heures.", "pt": "À noite, janto às oito." },
+      { "id": "a1-06-12", "fr": "Je me couche à dix heures.", "pt": "Vou dormir às dez.", "note": "'se coucher' = deitar-se, ir dormir." },
+      { "id": "a1-06-13", "fr": "Tu te couches tard !", "pt": "Você vai dormir tarde!" },
+      { "id": "a1-06-14", "fr": "Je me douche et je m'habille.", "pt": "Tomo banho e me visto." },
+      { "id": "a1-06-15", "fr": "Ils travaillent beaucoup.", "pt": "Eles trabalham muito.", "note": "'travaillent' soa igual a 'travaille': o '-ent' do verbo é sempre mudo." },
+      { "id": "a1-06-16", "fr": "Vous rentrez à quelle heure ?", "pt": "A que horas o senhor volta para casa?" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Parle, parles, parlent : tudo soa igual",
+        "body": "Nos verbos em **-er** (a grande maioria dos verbos franceses), o presente tem seis formas escritas, mas só **três sons**:\n• *je parle, tu parles, il parle, ils parlent* → todos soam [parl]\n• *nous parlons* → [par-lõ]\n• *vous parlez* → [par-lê]\nAs terminações **-e, -es, -ent** são mudas! Em português, cada pessoa tem um som diferente (falo, fala, falamos, falam), e por isso dá para dizer só 'falo'. Em francês, como o verbo soa igual, o **pronome é obrigatório**: é ele que diz quem fala. Nunca diga só *parle* para 'falo'.\nA parte boa: para falar, você já sabe metade da conjugação!",
+        "examples": [
+          { "fr": "Je travaille à Paris.", "pt": "Eu trabalho em Paris." },
+          { "fr": "Ils parlent vite.", "pt": "Eles falam rápido." },
+          { "fr": "Nous parlons français.", "pt": "Falamos francês." },
+          { "fr": "Vous parlez anglais ?", "pt": "Vocês falam inglês?" }
+        ]
+      },
+      {
+        "title": "Je me lève = eu me levanto",
+        "body": "Os verbos pronominais funcionam quase como em português: *je me lève* = 'eu me levanto'. O pronome muda com a pessoa: **me, te, se, nous, vous, se**. Antes de vogal ou h mudo, vira **m', t', s'**: *je m'habille*, *il s'appelle*.\nAlguns são pronominais em francês, mas não em português: *se coucher* (ir dormir), *se reposer* (descansar), *se doucher* (tomar banho). E *s'appeler* você usa desde a primeira lição: *je m'appelle* é literalmente 'eu me chamo'.\nCom *nous* e *vous*, o pronome se repete: *nous nous levons*, *vous vous couchez*. Parece estranho, mas é assim mesmo!",
+        "examples": [
+          { "fr": "Je me lève tôt.", "pt": "Eu me levanto cedo." },
+          { "fr": "Tu te reposes ?", "pt": "Você está descansando?" },
+          { "fr": "Il s'appelle Bernard.", "pt": "Ele se chama Bernard." },
+          { "fr": "Nous nous couchons à minuit.", "pt": "Vamos dormir à meia-noite." }
+        ]
+      },
+      {
+        "title": "Il est quelle heure ?",
+        "body": "Para as horas, o francês usa **il est** + número + **heures**: *il est huit heures* = 'são oito horas'. A palavra *heures* nunca cai: em português dizemos 'são oito', mas em francês *il est huit* não basta.\n• *et quart* = e quinze\n• *et demie* = e meia\n• *moins le quart* = quinze para\n• *midi* = meio-dia, *minuit* = meia-noite\nNo trem, no cinema e no rádio, usa-se o relógio de 24 horas: *vingt heures trente* (20h30). E para dizer 'às oito', basta **à**: *à huit heures*.",
+        "examples": [
+          { "fr": "Il est huit heures et quart.", "pt": "São oito e quinze." },
+          { "fr": "Il est neuf heures moins le quart.", "pt": "São quinze para as nove." },
+          { "fr": "Le film commence à vingt heures.", "pt": "O filme começa às vinte horas." }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Descreva um dia normal seu: a que horas você acorda, o que faz de manhã, à tarde e à noite, e a que horas vai dormir.",
+      "model": "Je me lève à sept heures. Je me douche et je prépare le café. Je travaille de neuf heures à dix-huit heures. Le soir, je dîne et je regarde un film. Je me couche à minuit."
+    },
+    "culture": "Os franceses levam o almoço a sério: entre meio-dia e duas da tarde, muitas lojas pequenas fecham e os restaurantes lotam. O jantar em família costuma ser por volta das oito da noite.",
+    "glossary": {
+      "marmotte": "marmota; la marmotte = dorminhoco(a)",
+      "onze": "onze",
+      "heures": "horas",
+      "me": "me",
+      "lève": "levanto (se lever)",
+      "tous": "todos; tous les jours = todo dia",
+      "les": "os / as",
+      "jours": "dias",
+      "tôt": "cedo",
+      "matin": "manhã",
+      "calme": "calmo",
+      "prépare": "preparo / prepara (préparer)",
+      "écoute": "escuto / escuta (écouter)",
+      "radio": "rádio",
+      "l'après-midi": "a tarde / à tarde",
+      "midi": "meio-dia",
+      "déjeune": "almoço / almoça (déjeuner)",
+      "repose": "descanso (se reposer)",
+      "aujourd'hui": "hoje",
+      "commence": "começa (commencer)",
+      "rentre": "volta para casa (rentrer)",
+      "tard": "tarde",
+      "couches": "vai dormir (se coucher, com tu)",
+      "quelle": "qual / que (fem.)",
+      "heure": "hora",
+      "sais": "sei (savoir)",
+      "douche": "tomo banho (se doucher)",
+      "habille": "visto (s'habiller)",
+      "aide": "ajudo (aider)",
+      "d'accord": "tá bom / combinado",
+      "accord": "acordo; d'accord = tá bom",
+      "sept": "sete",
+      "huit": "oito",
+      "quart": "quarto; et quart = e quinze",
+      "demi": "meio; et demi(e) = e meia",
+      "travailles": "trabalha (travailler, com tu)",
+      "déjeunons": "almoçamos (déjeuner)",
+      "soir": "noite (o fim do dia)",
+      "dîne": "janto / janta (dîner)",
+      "couche": "vou dormir (se coucher)",
+      "travaillent": "trabalham (travailler)",
+      "rentrez": "volta (rentrer, com vous)",
+      "parlent": "falam (parler)",
+      "vite": "rápido",
+      "parlons": "falamos (parler)",
+      "reposes": "descansa (se reposer, com tu)",
+      "s'": "se (antes de vogal)",
+      "couchons": "vamos dormir (se coucher)",
+      "minuit": "meia-noite",
+      "moins": "menos; moins le quart = quinze para",
+      "film": "filme",
+      "regarde": "assisto / olho (regarder)"
+    }
+  },
+  {
+    "id": "a1-07",
+    "level": "A1",
+    "track": "main",
+    "title": "J'aime, je n'aime pas",
+    "titlePt": "Gostos e preferências",
+    "goal": "Dizer do que você gosta e do que não gosta, falar de esportes e música, e usar a negação.",
+    "dialogue": {
+      "title": "Le déjeuner du dimanche",
+      "context": "Domingo, Camille vem almoçar na casa da Mamie. À mesa, os três conversam sobre o que gostam de fazer.",
+      "lines": [
+        { "who": "Camille", "fr": "Alors, Léo, tu aimes Paris ?", "pt": "E aí, Léo, está gostando de Paris?" },
+        { "who": "Léo", "fr": "J'adore Paris ! Mais je n'aime pas le métro à huit heures.", "pt": "Adoro Paris! Mas não gosto do metrô às oito da manhã." },
+        { "who": "Camille", "fr": "Moi non plus ! Et tu fais du sport ?", "pt": "Nem eu! E você pratica algum esporte?" },
+        { "who": "Léo", "fr": "Oui, je joue au foot avec des amis. Et toi ?", "pt": "Sim, jogo futebol com uns amigos. E você?" },
+        { "who": "Camille", "fr": "Moi, je fais du yoga. Je déteste le foot.", "pt": "Eu faço ioga. Detesto futebol." },
+        { "who": "Léo", "fr": "Tu détestes le foot ? C'est pas possible !", "pt": "Você detesta futebol? Não é possível!" },
+        { "who": "Mamie", "fr": "Et la musique, Léo ? Tu joues du piano ?", "pt": "E música, Léo? Você toca piano?" },
+        { "who": "Léo", "fr": "Non, Mamie, je joue de la guitare... mal !", "pt": "Não, vó, eu toco violão... mal!" },
+        { "who": "Mamie", "fr": "Ce n'est pas grave ! Moi, j'adore la musique brésilienne.", "pt": "Não tem problema! Eu adoro música brasileira." },
+        { "who": "Camille", "fr": "C'est vrai, Mamie écoute de la bossa nova tous les jours !", "pt": "É verdade, a vovó ouve bossa nova todo dia!" },
+        { "who": "Léo", "fr": "Et tu aimes la samba, Mamie ?", "pt": "E você gosta de samba, vó?" },
+        { "who": "Mamie", "fr": "J'adore danser la samba ! Mais mon dos, lui, n'aime pas ça.", "pt": "Adoro dançar samba! Mas as minhas costas não gostam nada disso." }
+      ]
+    },
+    "cards": [
+      { "id": "a1-07-01", "fr": "J'adore Paris !", "pt": "Adoro Paris!" },
+      { "id": "a1-07-02", "fr": "Je n'aime pas le métro.", "pt": "Não gosto do metrô.", "note": "Na fala, o 'ne' quase sempre some: 'j'aime pas le métro'." },
+      { "id": "a1-07-03", "fr": "Tu aimes le café ?", "pt": "Você gosta de café?" },
+      { "id": "a1-07-04", "fr": "Moi aussi !", "pt": "Eu também!" },
+      { "id": "a1-07-05", "fr": "Moi non plus !", "pt": "Nem eu! / Eu também não!", "note": "Para concordar com uma frase negativa, use 'moi non plus', nunca 'moi aussi'." },
+      { "id": "a1-07-06", "fr": "Je fais du yoga.", "pt": "Faço ioga." },
+      { "id": "a1-07-07", "fr": "Il fait du vélo le matin.", "pt": "Ele anda de bicicleta de manhã." },
+      { "id": "a1-07-08", "fr": "Je joue au foot avec des amis.", "pt": "Jogo futebol com uns amigos.", "note": "'jouer à' + esporte ou jogo: à + le foot = au foot." },
+      { "id": "a1-07-09", "fr": "Tu joues du piano ?", "pt": "Você toca piano?", "note": "'jouer de' + instrumento: de + le piano = du piano." },
+      { "id": "a1-07-10", "fr": "Je joue de la guitare.", "pt": "Toco violão.", "note": "'la guitare' serve tanto para violão quanto para guitarra." },
+      { "id": "a1-07-11", "fr": "Elle déteste la pluie.", "pt": "Ela detesta chuva." },
+      { "id": "a1-07-12", "fr": "Ce n'est pas grave.", "pt": "Não tem problema." },
+      { "id": "a1-07-13", "fr": "C'est pas possible !", "pt": "Não é possível!" },
+      { "id": "a1-07-14", "fr": "Nous aimons beaucoup la musique.", "pt": "Gostamos muito de música." },
+      { "id": "a1-07-15", "fr": "J'aime bien le cinéma.", "pt": "Gosto de cinema.", "note": "'J'aime bien' é MAIS FRACO que 'j'aime'. Com pessoas: 'je t'aime bien' = gosto de você; 'je t'aime' = te amo!" },
+      { "id": "a1-07-16", "fr": "Je n'aime pas trop ça.", "pt": "Não gosto muito disso.", "note": "'pas trop' = 'não muito': jeito educado de dizer que não gosta." }
+    ],
+    "pourquoi": [
+      {
+        "title": "Ne... pas : a negação sanduíche",
+        "body": "Em português, basta um 'não' antes do verbo. Em francês, a negação tem **duas partes** que abraçam o verbo: **ne** antes, **pas** depois: *Je **n'**aime **pas** le métro.* Antes de vogal, *ne* vira **n'**.\nO brasileiro até leva vantagem: no 'não gosto não', a gente também faz negação dupla!\nAgora, o segredo: na **fala**, o *ne* quase sempre desaparece. Os parisienses dizem *j'aime pas*, *c'est pas grave*, *je sais pas*. Quem carrega a negação é o *pas*. Na escrita e em situações formais, use os dois; para entender a rua, preste atenção no *pas*.",
+        "examples": [
+          { "fr": "Je ne parle pas allemand.", "pt": "Não falo alemão." },
+          { "fr": "Il ne travaille pas aujourd'hui.", "pt": "Ele não trabalha hoje." },
+          { "fr": "J'aime pas le froid.", "pt": "Não gosto de frio. (falado)" },
+          { "fr": "C'est pas grave.", "pt": "Não tem problema. (falado)" }
+        ]
+      },
+      {
+        "title": "J'aime le café : o artigo da ideia geral",
+        "body": "Com os verbos de gosto (**aimer, adorer, détester, préférer**), o francês usa o **artigo definido**: *j'aime **le** café*, *j'adore **la** musique*, *je déteste **les** chats*. Em português dizemos 'gosto de café', sem artigo, mas em francês a ideia geral ('o café' como categoria) precisa de *le/la/les*.\nCompare com o café da lição 4: lá, *je voudrais **du** café* era uma quantidade, 'um pouco de café'. Aqui, *j'aime **le** café* é o café em geral.\nE nada de preposição: *j'aime le café*, nunca 'j'aime de café'.",
+        "examples": [
+          { "fr": "J'aime le chocolat.", "pt": "Gosto de chocolate." },
+          { "fr": "Elle adore les chats.", "pt": "Ela adora gatos." },
+          { "fr": "Je déteste le froid.", "pt": "Detesto frio." },
+          { "fr": "Je voudrais du café.", "pt": "Eu queria café. (uma quantidade)" }
+        ]
+      },
+      {
+        "title": "Jouer à, jouer de, faire de",
+        "body": "Em português, a gente **joga** futebol e **toca** violão. Em francês, é o mesmo verbo, *jouer*, e a **preposição** muda o sentido:\n• **jouer à** + esporte ou jogo: *jouer au foot, jouer aux cartes*\n• **jouer de** + instrumento: *jouer du piano, jouer de la guitare*\nPara atividades em geral, o francês usa **faire de**: *faire du sport, faire du yoga, faire du vélo*.\nNão esqueça as contrações: *à + le = au*, *de + le = du*.",
+        "examples": [
+          { "fr": "Je joue au tennis.", "pt": "Jogo tênis." },
+          { "fr": "Mamie joue du piano.", "pt": "A vovó toca piano." },
+          { "fr": "Tu fais du sport ?", "pt": "Você pratica esporte?" }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte a um amigo francês três coisas de que você gosta, duas de que não gosta e um esporte ou instrumento que você pratica.",
+      "model": "J'adore la musique et le cinéma. J'aime bien le café. Je n'aime pas le froid et je déteste le métro à huit heures. Je joue au foot et je joue de la guitare."
+    },
+    "culture": "O almoço de domingo em família ('le déjeuner du dimanche') é quase sagrado na França e pode durar a tarde toda. E esporte em Paris não é só futebol: o Tour de France, a grande corrida de ciclismo, tradicionalmente termina na Champs-Élysées.",
+    "glossary": {
+      "aimes": "gosta (aimer, com tu)",
+      "adore": "adoro / adora (adorer)",
+      "n'": "não (ne antes de vogal)",
+      "aime": "gosto / gosta (aimer)",
+      "plus": "mais; moi non plus = nem eu",
+      "fais": "faço / faz (faire)",
+      "sport": "esporte",
+      "joue": "jogo / toco (jouer)",
+      "foot": "futebol",
+      "amis": "amigos",
+      "yoga": "ioga",
+      "déteste": "detesto / detesta (détester)",
+      "détestes": "detesta (détester, com tu)",
+      "possible": "possível",
+      "musique": "música",
+      "joues": "joga / toca (jouer, com tu)",
+      "piano": "piano",
+      "guitare": "violão / guitarra",
+      "mal": "mal",
+      "ce": "isso; este, esse (ce soir = hoje à noite)",
+      "grave": "grave; ce n'est pas grave = não tem problema",
+      "vrai": "verdadeiro; c'est vrai = é verdade",
+      "bossa": "bossa (bossa nova)",
+      "nova": "nova (bossa nova)",
+      "samba": "samba",
+      "danser": "dançar",
+      "dos": "costas",
+      "vélo": "bicicleta",
+      "pluie": "chuva",
+      "aimons": "gostamos (aimer)",
+      "ne": "não (ne... pas)",
+      "allemand": "alemão",
+      "froid": "frio",
+      "chocolat": "chocolate",
+      "chats": "gatos",
+      "tennis": "tênis"
+    }
+  },
+  {
+    "id": "a1-08",
+    "level": "A1",
+    "track": "main",
+    "title": "Au marché",
+    "titlePt": "Na feira",
+    "goal": "Comprar frutas, legumes e outros alimentos, pedir quantidades, perguntar o preço e falar de cores.",
+    "dialogue": {
+      "title": "Le marché de Grenelle",
+      "context": "Quarta de manhã. Léo acompanha a Mamie à feira do boulevard de Grenelle, debaixo do metrô aéreo.",
+      "lines": [
+        { "who": "La vendeuse", "fr": "Bonjour ! Je vous écoute.", "pt": "Bom dia! Pois não?" },
+        { "who": "Mamie", "fr": "Bonjour ! Je voudrais un kilo de tomates et un peu de persil.", "pt": "Bom dia! Eu queria um quilo de tomate e um pouco de salsinha." },
+        { "who": "La vendeuse", "fr": "Désolée, je n'ai pas de persil aujourd'hui.", "pt": "Desculpe, hoje não tenho salsinha." },
+        { "who": "Mamie", "fr": "Tant pis ! Et les fraises, elles sont bonnes ?", "pt": "Paciência! E os morangos, estão bons?" },
+        { "who": "La vendeuse", "fr": "Délicieuses ! Quatre euros la barquette.", "pt": "Uma delícia! Quatro euros a caixinha." },
+        { "who": "Mamie", "fr": "Alors, deux barquettes, s'il vous plaît.", "pt": "Então, duas caixinhas, por favor." },
+        { "who": "Léo", "fr": "Mamie, regarde, il y a des mangues !", "pt": "Vó, olha, tem manga!" },
+        { "who": "Mamie", "fr": "Des mangues ? Tu es à Paris, pas à Rio !", "pt": "Manga? Você está em Paris, não no Rio!" },
+        { "who": "Léo", "fr": "Juste une ! Regarde, elle est jaune et rouge, elle est parfaite !", "pt": "Só uma! Olha, ela está amarela e vermelha, está perfeita!" },
+        { "who": "La vendeuse", "fr": "Et avec ceci ?", "pt": "E o que mais?" },
+        { "who": "Mamie", "fr": "C'est tout, merci. Ça fait combien ?", "pt": "É só isso, obrigada. Quanto dá?" },
+        { "who": "La vendeuse", "fr": "Quatorze euros vingt, madame.", "pt": "Catorze e vinte, senhora." }
+      ]
+    },
+    "cards": [
+      { "id": "a1-08-01", "fr": "Je voudrais un kilo de tomates.", "pt": "Eu queria um quilo de tomate." },
+      { "id": "a1-08-02", "fr": "Un peu de persil, s'il vous plaît.", "pt": "Um pouco de salsinha, por favor." },
+      { "id": "a1-08-03", "fr": "Je vous écoute.", "pt": "Pois não?", "note": "Literalmente 'estou escutando o senhor': é o 'pois não?' de vendedores e atendentes." },
+      { "id": "a1-08-04", "fr": "Il y a des mangues !", "pt": "Tem manga!", "note": "'il y a' = 'tem' ou 'há'. Na fala rápida, vira quase [ya]." },
+      { "id": "a1-08-05", "fr": "Il n'y a pas de pain.", "pt": "Não tem pão." },
+      { "id": "a1-08-06", "fr": "Je n'ai pas de persil.", "pt": "Não tenho salsinha.", "note": "Depois da negação, 'du / de la / des' viram simplesmente 'de'." },
+      { "id": "a1-08-07", "fr": "C'est combien, les fraises ?", "pt": "Quanto custam os morangos?" },
+      { "id": "a1-08-08", "fr": "Quatre euros la barquette.", "pt": "Quatro euros a caixinha.", "note": "Na feira, o preço vem com 'le/la': 'trois euros le kilo' = três euros o quilo." },
+      { "id": "a1-08-09", "fr": "Et avec ceci ?", "pt": "E o que mais?", "note": "Pergunta clássica do vendedor. Para encerrar: 'C'est tout, merci'." },
+      { "id": "a1-08-10", "fr": "C'est tout, merci.", "pt": "É só isso, obrigado." },
+      { "id": "a1-08-11", "fr": "Une douzaine d'œufs, s'il vous plaît.", "pt": "Uma dúzia de ovos, por favor.", "note": "'un œuf' soa [ẽ-nêf], mas 'des œufs' soa [dê-zê]: no plural, o 'f' some!" },
+      { "id": "a1-08-12", "fr": "Un morceau de fromage.", "pt": "Um pedaço de queijo." },
+      { "id": "a1-08-13", "fr": "Il y a beaucoup de monde !", "pt": "Tem muita gente!" },
+      { "id": "a1-08-14", "fr": "Elle est jaune et rouge.", "pt": "Ela é amarela e vermelha." },
+      { "id": "a1-08-15", "fr": "Je voudrais trois pommes vertes.", "pt": "Eu queria três maçãs verdes.", "note": "As cores vêm depois do substantivo e concordam: vert → verte → vertes." },
+      { "id": "a1-08-16", "fr": "Tant pis !", "pt": "Paciência! / Fazer o quê!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Un kilo de, pas de : quando sobra só o de",
+        "body": "Há duas situações em que *du, de la, des* (e também *un, une*) encolhem para um simples **de**:\n**1. Depois de uma quantidade:** *un kilo **de** tomates*, *un peu **de** persil*, *beaucoup **de** monde*, *une douzaine **d'**œufs*. A quantidade já foi dita, então o artigo sai — igualzinho ao português 'um quilo **de** tomate'.\n**2. Depois da negação:** *j'ai **du** pain* → *je n'ai pas **de** pain*; *il y a **des** mangues* → *il n'y a pas **de** mangues*. Faz sentido: 'nenhum pão' é quantidade zero, e quantidade pede *de*.\nAtenção: isso vale só para *du/de la/des/un/une*. Com *le/la/les*, nada muda: *je n'aime pas **le** pain*.",
+        "examples": [
+          { "fr": "Un kilo de pommes, s'il vous plaît.", "pt": "Um quilo de maçã, por favor." },
+          { "fr": "Il y a beaucoup de touristes.", "pt": "Tem muito turista." },
+          { "fr": "Je n'ai pas de voiture.", "pt": "Não tenho carro." },
+          { "fr": "Il n'y a pas de fraises aujourd'hui.", "pt": "Hoje não tem morango." }
+        ]
+      },
+      {
+        "title": "Il y a : o nosso 'tem'",
+        "body": "*Il y a* é o equivalente exato do 'tem' (ou 'há') do português: *il y a un marché ici* = 'tem uma feira aqui'. E, como o nosso 'tem', **não muda no plural**: *il y a des mangues* = 'tem mangas'.\nNa negação, o sanduíche abraça o *y a*: *il **n'**y a **pas** de persil*. Na pergunta, basta a entonação: *Il y a du pain ?*\nNa fala rápida, os parisienses engolem o *il*: você vai ouvir [ya] e [ya-pa].",
+        "examples": [
+          { "fr": "Il y a un marché ici.", "pt": "Tem uma feira aqui." },
+          { "fr": "Il y a du pain ?", "pt": "Tem pão?" },
+          { "fr": "Il n'y a pas de persil.", "pt": "Não tem salsinha." }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você está na feira. Cumprimente o vendedor, peça duas coisas com quantidade, pergunte se tem um terceiro produto e pergunte o preço.",
+      "model": "Bonjour ! Je voudrais un kilo de pommes et une barquette de fraises, s'il vous plaît. Il y a des mangues ? C'est combien ?"
+    },
+    "culture": "Paris tem dezenas de feiras ao ar livre ('marchés'), duas ou três vezes por semana em cada bairro. Na banca, em geral não se escolhe a fruta com a mão: o vendedor serve você — é só dizer o que quer e quanto.",
+    "glossary": {
+      "kilo": "quilo",
+      "tomates": "tomates",
+      "persil": "salsinha",
+      "désolée": "desculpe / sinto muito (mulher falando)",
+      "tant": "tanto; tant pis = paciência",
+      "pis": "pior; tant pis = paciência, azar",
+      "fraises": "morangos",
+      "elles": "elas",
+      "sont": "são / estão (être)",
+      "bonnes": "boas",
+      "délicieuses": "deliciosas",
+      "barquette": "caixinha (de frutas)",
+      "barquettes": "caixinhas (de frutas)",
+      "y": "lá; il y a = tem, há",
+      "mangues": "mangas",
+      "rio": "Rio (de Janeiro)",
+      "jaune": "amarelo(a)",
+      "rouge": "vermelho(a)",
+      "parfaite": "perfeita",
+      "ceci": "isto; et avec ceci ? = e o que mais?",
+      "quatorze": "catorze",
+      "douzaine": "dúzia",
+      "œufs": "ovos",
+      "morceau": "pedaço",
+      "fromage": "queijo",
+      "monde": "mundo; beaucoup de monde = muita gente",
+      "trois": "três",
+      "pommes": "maçãs",
+      "vertes": "verdes (fem. pl.)",
+      "touristes": "turistas",
+      "voiture": "carro",
+      "marché": "feira, mercado",
+      "ici": "aqui"
+    }
+  },
+  {
+    "id": "a1-09",
+    "level": "A1",
+    "track": "main",
+    "title": "Ce week-end",
+    "titlePt": "Planos para o fim de semana",
+    "goal": "Falar de planos com o futuro próximo, dizer dias e meses e comentar o tempo.",
+    "dialogue": {
+      "title": "Des projets",
+      "context": "Sexta à noite. Camille passa na casa da Mamie para combinar o fim de semana com Léo.",
+      "lines": [
+        { "who": "Camille", "fr": "Léo, tu vas faire quoi ce week-end ?", "pt": "Léo, o que você vai fazer neste fim de semana?" },
+        { "who": "Léo", "fr": "Je ne sais pas. Il va faire beau ?", "pt": "Não sei. Vai fazer tempo bom?" },
+        { "who": "Camille", "fr": "Samedi, oui ! Il va faire vingt-cinq degrés.", "pt": "No sábado, sim! Vai fazer vinte e cinco graus." },
+        { "who": "Léo", "fr": "Super ! Alors je vais visiter le Louvre.", "pt": "Ótimo! Então vou visitar o Louvre." },
+        { "who": "Camille", "fr": "Il fait beau et tu vas au musée ? Non, non : pique-nique au bord de la Seine !", "pt": "Faz sol e você vai para o museu? Nada disso: piquenique na beira do Sena!" },
+        { "who": "Léo", "fr": "Bonne idée ! Et dimanche ?", "pt": "Boa ideia! E no domingo?" },
+        { "who": "Camille", "fr": "Dimanche, il va pleuvoir. Tu vas aller au Louvre avec Mamie !", "pt": "No domingo vai chover. Você vai ao Louvre com a vovó!" },
+        { "who": "Mamie", "fr": "Ah non, dimanche, je vais au cinéma avec Monsieur Bernard.", "pt": "Ah, não, no domingo eu vou ao cinema com o Monsieur Bernard." },
+        { "who": "Camille", "fr": "Avec Monsieur Bernard ? Ah bon ?", "pt": "Com o Monsieur Bernard? É mesmo?" },
+        { "who": "Mamie", "fr": "C'est un ami, c'est tout !", "pt": "É um amigo, só isso!" },
+        { "who": "Léo", "fr": "Bon... dimanche, je vais aller au Louvre tout seul.", "pt": "Bom... no domingo eu vou ao Louvre sozinho." },
+        { "who": "Camille", "fr": "Mais non, je vais venir avec toi !", "pt": "Claro que não, eu vou com você!" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-09-01", "fr": "Tu vas faire quoi ce week-end ?", "pt": "O que você vai fazer neste fim de semana?", "note": "'week-end' é masculino: le week-end, ce week-end." },
+      { "id": "a1-09-02", "fr": "Je ne sais pas.", "pt": "Não sei.", "note": "Na fala vira 'je sais pas', ou até [ché-pa]." },
+      { "id": "a1-09-03", "fr": "Il fait beau aujourd'hui.", "pt": "Hoje está um dia bonito." },
+      { "id": "a1-09-04", "fr": "Il va pleuvoir dimanche.", "pt": "Vai chover no domingo." },
+      { "id": "a1-09-05", "fr": "Il fait froid ce matin.", "pt": "Está frio hoje de manhã." },
+      { "id": "a1-09-06", "fr": "Il fait chaud en août.", "pt": "Faz calor em agosto.", "note": "'août' tem uma sílaba só: [ut] ou [u]." },
+      { "id": "a1-09-07", "fr": "Il y a du vent.", "pt": "Está ventando." },
+      { "id": "a1-09-08", "fr": "Samedi, je vais visiter le Louvre.", "pt": "No sábado, vou visitar o Louvre." },
+      { "id": "a1-09-09", "fr": "Nous allons pique-niquer.", "pt": "Vamos fazer um piquenique." },
+      { "id": "a1-09-10", "fr": "Je vais venir avec toi.", "pt": "Vou com você.", "note": "Para acompanhar a pessoa com quem você fala, o francês usa 'venir' (vir): 'je viens avec toi'." },
+      { "id": "a1-09-11", "fr": "Lundi, je vais travailler.", "pt": "Na segunda, vou trabalhar.", "note": "Dia sem preposição: 'lundi' = na segunda; 'le lundi' = toda segunda." },
+      { "id": "a1-09-12", "fr": "Aujourd'hui, c'est vendredi.", "pt": "Hoje é sexta-feira." },
+      { "id": "a1-09-13", "fr": "Mon anniversaire, c'est le douze mars.", "pt": "Meu aniversário é dia doze de março." },
+      { "id": "a1-09-14", "fr": "Elle va arriver en juillet.", "pt": "Ela vai chegar em julho." },
+      { "id": "a1-09-15", "fr": "Je ne vais pas travailler demain.", "pt": "Amanhã não vou trabalhar.", "note": "A negação abraça o 'aller': je ne vais pas + infinitivo." },
+      { "id": "a1-09-16", "fr": "Bonne idée !", "pt": "Boa ideia!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Je vais faire = vou fazer",
+        "body": "Boa notícia: o **futur proche** (futuro próximo) é idêntico ao português falado. Você conjuga **aller** no presente e coloca o outro verbo no infinitivo: *je vais visiter* = 'vou visitar', *il va pleuvoir* = 'vai chover'.\nSó precisa do presente de *aller*, que você já usou no metrô: *je vais, tu vas, il va, nous allons, vous allez, ils vont*.\nNa negação, o sanduíche fica em volta do *aller*: *je **ne** vais **pas** travailler*. E dá para dizer *je vais aller* sem medo: é tão normal quanto o nosso 'vou ir', que todo brasileiro fala.",
+        "examples": [
+          { "fr": "Je vais visiter Paris.", "pt": "Vou visitar Paris." },
+          { "fr": "Il va faire beau.", "pt": "Vai fazer tempo bom." },
+          { "fr": "Nous allons manger chez Mamie.", "pt": "Vamos comer na casa da vovó." },
+          { "fr": "Je ne vais pas travailler.", "pt": "Não vou trabalhar." }
+        ]
+      },
+      {
+        "title": "Il fait beau : o tempo com faire",
+        "body": "Para falar do tempo, o francês usa **il fait** — o 'faz' do português, como em 'faz frio', 'faz calor', 'faz vinte graus':\n• *il fait beau* (tempo bom), *il fait chaud* (calor), *il fait froid* (frio), *il fait gris* (tempo fechado)\n• *il fait vingt degrés* (faz vinte graus)\nPara chuva e neve, há verbos próprios: *il pleut* (chove), *il neige* (neva). E para sol e vento, volta o nosso velho *il y a*: *il y a du soleil*, *il y a du vent*.\nEsse *il* não é ninguém, como o sujeito escondido de 'chove': está ali só porque o verbo francês sempre precisa de sujeito.",
+        "examples": [
+          { "fr": "Il fait beau !", "pt": "Está um dia lindo!" },
+          { "fr": "Il pleut à Paris.", "pt": "Está chovendo em Paris." },
+          { "fr": "Il y a du soleil.", "pt": "Tem sol." },
+          { "fr": "Il fait trente degrés.", "pt": "Faz trinta graus." }
+        ]
+      },
+      {
+        "title": "Lundi, le lundi, en mars",
+        "body": "Dias e meses se escrevem com **minúscula**, como em português. Mas a preposição muda:\n• *lundi* (sem nada) = 'na segunda' (esta segunda)\n• *le lundi* = 'às segundas' (toda segunda)\n• *en mars* = 'em março'\nPara datas: **le** + número + mês: *le douze mars*. Só o dia 1 é especial: *le premier mai*.\nOs dias: *lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche*. Os meses: *janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre*.",
+        "examples": [
+          { "fr": "Samedi, je vais au cinéma.", "pt": "No sábado vou ao cinema." },
+          { "fr": "Le dimanche, je me repose.", "pt": "Aos domingos, eu descanso." },
+          { "fr": "C'est le premier mai.", "pt": "É primeiro de maio." },
+          { "fr": "En décembre, il fait froid.", "pt": "Em dezembro faz frio." }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte seus planos para o próximo fim de semana: o que vai fazer no sábado e no domingo, e como vai estar o tempo.",
+      "model": "Samedi, il va faire beau. Je vais faire du vélo et je vais manger avec des amis. Dimanche, il va pleuvoir : je vais regarder un film et je vais me reposer."
+    },
+    "culture": "Quando faz sol, os parisienses correm para os parques e para a beira do Sena — no verão, parte das margens vira até 'praia', com o 'Paris Plages'. Mas o tempo muda rápido em Paris: leve sempre um guarda-chuva!",
+    "glossary": {
+      "faire": "fazer",
+      "quoi": "o quê",
+      "week-end": "fim de semana",
+      "beau": "bonito; il fait beau = o tempo está bom",
+      "samedi": "sábado",
+      "vingt-cinq": "vinte e cinco",
+      "degrés": "graus",
+      "super": "ótimo, legal",
+      "visiter": "visitar",
+      "louvre": "Louvre (museu)",
+      "pique-nique": "piquenique",
+      "bord": "beira; au bord de = na beira de",
+      "seine": "Sena (o rio de Paris)",
+      "idée": "ideia",
+      "dimanche": "domingo",
+      "pleuvoir": "chover",
+      "ami": "amigo",
+      "seul": "sozinho",
+      "venir": "vir",
+      "chaud": "quente; il fait chaud = faz calor",
+      "août": "agosto",
+      "vent": "vento",
+      "pique-niquer": "fazer piquenique",
+      "lundi": "segunda-feira",
+      "travailler": "trabalhar",
+      "vendredi": "sexta-feira",
+      "anniversaire": "aniversário",
+      "mars": "março",
+      "arriver": "chegar",
+      "juillet": "julho",
+      "demain": "amanhã",
+      "manger": "comer",
+      "pleut": "chove (pleuvoir)",
+      "soleil": "sol",
+      "premier": "primeiro",
+      "mai": "maio",
+      "décembre": "dezembro",
+      "regarder": "assistir / olhar",
+      "reposer": "descansar (se reposer)"
+    }
+  },
+  {
+    "id": "a1-10",
+    "level": "A1",
+    "track": "main",
+    "title": "Des questions",
+    "titlePt": "Fazer perguntas",
+    "goal": "Fazer perguntas de três jeitos diferentes e usar as palavras interrogativas: où, quand, comment, pourquoi, combien, quel.",
+    "dialogue": {
+      "title": "Le thé de Monsieur Bernard",
+      "context": "Monsieur Bernard convida Léo e a Mamie para um chá no apartamento dele. Ele é muito simpático... e muito curioso.",
+      "lines": [
+        { "who": "Monsieur Bernard", "fr": "Alors, Léo, comment trouvez-vous Paris ?", "pt": "Então, Léo, o que está achando de Paris?" },
+        { "who": "Léo", "fr": "C'est magnifique ! Mais les gens parlent très vite.", "pt": "É maravilhosa! Mas as pessoas falam muito rápido." },
+        { "who": "Monsieur Bernard", "fr": "Et qu'est-ce que vous faites au Brésil ?", "pt": "E o que você faz no Brasil?" },
+        { "who": "Léo", "fr": "Je suis ingénieur. Je travaille à São Paulo.", "pt": "Sou engenheiro. Trabalho em São Paulo." },
+        { "who": "Monsieur Bernard", "fr": "Ingénieur ! Très bien. Et vous restez combien de temps à Paris ?", "pt": "Engenheiro! Muito bem. E você fica quanto tempo em Paris?" },
+        { "who": "Léo", "fr": "Trois semaines.", "pt": "Três semanas." },
+        { "who": "Monsieur Bernard", "fr": "Seulement ? Mais pourquoi ?", "pt": "Só isso? Mas por quê?" },
+        { "who": "Léo", "fr": "Parce que mon chef m'attend, malheureusement !", "pt": "Porque meu chefe está me esperando, infelizmente!" },
+        { "who": "Mamie", "fr": "Monsieur Bernard, vous êtes trop curieux !", "pt": "Monsieur Bernard, o senhor é curioso demais!" },
+        { "who": "Monsieur Bernard", "fr": "Pardon, pardon ! Une dernière question : est-ce que vous aimez le thé ?", "pt": "Desculpe, desculpe! Uma última pergunta: você gosta de chá?" },
+        { "who": "Léo", "fr": "Euh... oui ?", "pt": "Hã... sim?" },
+        { "who": "Monsieur Bernard", "fr": "Parfait ! Quel thé voulez-vous ? Vert, noir, à la menthe ?", "pt": "Perfeito! Que chá você quer? Verde, preto, de hortelã?" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-10-01", "fr": "Comment trouvez-vous Paris ?", "pt": "O que o senhor acha de Paris?", "note": "'trouver' = encontrar e também achar (opinião). A inversão 'trouvez-vous' é formal." },
+      { "id": "a1-10-02", "fr": "Qu'est-ce que tu fais ?", "pt": "O que você está fazendo?" },
+      { "id": "a1-10-03", "fr": "Tu fais quoi dans la vie ?", "pt": "O que você faz da vida?", "note": "Jeito informal de perguntar a profissão de alguém." },
+      { "id": "a1-10-04", "fr": "Je suis ingénieur.", "pt": "Sou engenheiro.", "note": "Profissão sem artigo, como em português: 'je suis ingénieur', não 'un ingénieur'." },
+      { "id": "a1-10-05", "fr": "Est-ce que vous aimez le thé ?", "pt": "O senhor gosta de chá?", "note": "'est-ce que' [és-ke] transforma qualquer frase em pergunta." },
+      { "id": "a1-10-06", "fr": "Tu restes combien de temps ?", "pt": "Quanto tempo você vai ficar?" },
+      { "id": "a1-10-07", "fr": "Pourquoi ? Parce que je travaille.", "pt": "Por quê? Porque eu trabalho.", "note": "'pourquoi' pergunta, 'parce que' responde — como 'por quê' e 'porque'." },
+      { "id": "a1-10-08", "fr": "Quand est-ce que tu pars ?", "pt": "Quando você vai embora?", "note": "Ligação: o 'd' de 'quand' soa como 't': [kã-tés-ke]." },
+      { "id": "a1-10-09", "fr": "Où est-ce que tu habites ?", "pt": "Onde você mora?" },
+      { "id": "a1-10-10", "fr": "Quelle heure est-il ?", "pt": "Que horas são?", "note": "Versão formal de 'il est quelle heure ?'." },
+      { "id": "a1-10-11", "fr": "Quel est ton numéro ?", "pt": "Qual é o seu número?" },
+      { "id": "a1-10-12", "fr": "Quelle est votre adresse ?", "pt": "Qual é o seu endereço?" },
+      { "id": "a1-10-13", "fr": "Comment ça s'écrit ?", "pt": "Como se escreve?" },
+      { "id": "a1-10-14", "fr": "Ça coûte combien ?", "pt": "Quanto custa?" },
+      { "id": "a1-10-15", "fr": "Tu es libre ce soir ?", "pt": "Você está livre hoje à noite?" },
+      { "id": "a1-10-16", "fr": "Qu'est-ce que c'est ?", "pt": "O que é isso?" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Três jeitos de perguntar",
+        "body": "Em francês, a mesma pergunta pode ter três formas, cada uma num **registro**:\n**1. Entonação**: a frase normal, com a voz subindo no fim: *Tu viens ce soir ?* É o jeito mais comum na fala, igual ao português.\n**2. Est-ce que**: coloque *est-ce que* no começo: *Est-ce que tu viens ce soir ?* É neutro: funciona em qualquer situação, falada ou escrita.\n**3. Inversão**: o verbo vem antes do sujeito, ligado por hífen: *Viens-tu ce soir ?* É formal e mais escrito — o Monsieur Bernard adora.\nNa dúvida, use *est-ce que*: nunca soa errado. Com os amigos, entonação e pronto.",
+        "examples": [
+          { "fr": "Tu viens ce soir ?", "pt": "Você vem hoje à noite? (informal)" },
+          { "fr": "Est-ce que tu viens ce soir ?", "pt": "Você vem hoje à noite? (neutro)" },
+          { "fr": "Viens-tu ce soir ?", "pt": "Você vem hoje à noite? (formal)" }
+        ]
+      },
+      {
+        "title": "Qu'est-ce que = o que é que",
+        "body": "*Qu'est-ce que* parece um monstro, mas é velho conhecido: é, palavra por palavra, o nosso '**o que é que**'. *Qu'est-ce que tu fais ?* = 'O que é que você faz?'. Pronuncie tudo junto: [kés-ke].\nNo dia a dia, há um atalho muito usado: deixar **quoi** no fim da frase: *Tu fais quoi ?* ('Você faz o quê?'). É informal, mas os parisienses usam o tempo todo.\nO mesmo vale para as outras palavras interrogativas: *Où est-ce que tu habites ?* ou *Tu habites où ?*; *Quand est-ce que tu pars ?* ou *Tu pars quand ?*",
+        "examples": [
+          { "fr": "Qu'est-ce que vous voulez ?", "pt": "O que o senhor quer?" },
+          { "fr": "Tu fais quoi ce soir ?", "pt": "O que você vai fazer hoje à noite?" },
+          { "fr": "Tu pars quand ?", "pt": "Quando você vai embora?" }
+        ]
+      },
+      {
+        "title": "Quel, quelle, quels, quelles",
+        "body": "*Quel* é o nosso 'qual' ou 'que' antes de um substantivo, e **concorda** com ele: *quel âge* (masc.), *quelle heure* (fem.), *quels fruits* (masc. pl.), *quelles couleurs* (fem. pl.).\nA parte boa: as quatro formas **soam igual**, [kél]. Só na escrita é preciso pensar.\nCom o verbo *être*, *quel* vem antes: *Quel est ton nom ?* ('Qual é o seu nome?'), *Quelle est votre adresse ?*",
+        "examples": [
+          { "fr": "Il fait quel temps ?", "pt": "Como está o tempo?" },
+          { "fr": "Quelle est ta couleur préférée ?", "pt": "Qual é a sua cor preferida?" },
+          { "fr": "Quels fruits est-ce que tu aimes ?", "pt": "De que frutas você gosta?" }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Você vai conhecer um amigo da Camille. Prepare cinco perguntas para ele (nome, de onde vem, profissão, onde mora, do que gosta), usando jeitos diferentes de perguntar.",
+      "model": "Comment tu t'appelles ? Tu viens d'où ? Qu'est-ce que tu fais dans la vie ? Où est-ce que tu habites ? Est-ce que tu aimes le foot ?"
+    },
+    "culture": "Numa conversa com franceses, perguntar logo de cara o salário de alguém é muito indiscreto. Já 'Qu'est-ce que vous faites dans la vie ?' (o que você faz da vida?) é uma das primeiras perguntas num jantar.",
+    "glossary": {
+      "trouvez": "acha (trouver, com vous)",
+      "magnifique": "magnífico(a)",
+      "gens": "pessoas",
+      "qu'est-ce": "o que é; qu'est-ce que = o que",
+      "qu'": "que (antes de vogal)",
+      "que": "que",
+      "est-ce": "é isso; est-ce que = (marca de pergunta)",
+      "faites": "faz (faire, com vous)",
+      "ingénieur": "engenheiro",
+      "restez": "fica (rester, com vous)",
+      "temps": "tempo",
+      "semaines": "semanas",
+      "seulement": "somente, só",
+      "pourquoi": "por quê",
+      "parce": "parce que = porque",
+      "chef": "chefe",
+      "attend": "espera (attendre)",
+      "malheureusement": "infelizmente",
+      "curieux": "curioso",
+      "pardon": "desculpe / perdão",
+      "dernière": "última",
+      "question": "pergunta",
+      "aimez": "gosta (aimer, com vous)",
+      "parfait": "perfeito",
+      "voulez": "quer (vouloir, com vous)",
+      "vert": "verde",
+      "noir": "preto",
+      "menthe": "hortelã",
+      "vie": "vida",
+      "restes": "fica (rester, com tu)",
+      "quand": "quando",
+      "pars": "vai embora, parte (partir)",
+      "numéro": "número",
+      "votre": "seu, sua (de vous)",
+      "adresse": "endereço",
+      "écrit": "escreve (écrire); ça s'écrit = se escreve",
+      "coûte": "custa (coûter)",
+      "libre": "livre",
+      "ta": "sua, tua (de tu)",
+      "couleur": "cor",
+      "préférée": "preferida",
+      "quels": "quais / que (masc. pl.)",
+      "fruits": "frutas"
+    }
+  },
+  {
+    "id": "a1-11",
+    "level": "A1",
+    "track": "main",
+    "title": "Hier",
+    "titlePt": "Ontem",
+    "goal": "Contar o que você fez com o passé composé com avoir, incluindo verbos irregulares bem comuns.",
+    "dialogue": {
+      "title": "Le Louvre sous la pluie",
+      "context": "Segunda de manhã. Durante o café, a Mamie quer saber como foi o domingo de Léo e Camille no Louvre.",
+      "lines": [
+        { "who": "Mamie", "fr": "Alors, mon chéri, qu'est-ce que vous avez fait hier ?", "pt": "E então, querido, o que vocês fizeram ontem?" },
+        { "who": "Léo", "fr": "Nous avons visité le Louvre. J'ai vu la Joconde !", "pt": "Visitamos o Louvre. Eu vi a Mona Lisa!" },
+        { "who": "Mamie", "fr": "Et tu as aimé ?", "pt": "E você gostou?" },
+        { "who": "Léo", "fr": "Oui, mais elle est toute petite ! Et j'ai surtout vu des téléphones.", "pt": "Gostei, mas ela é pequenininha! E eu vi mais foi celular." },
+        { "who": "Mamie", "fr": "Ah, les touristes ! Et après ?", "pt": "Ah, os turistas! E depois?" },
+        { "who": "Léo", "fr": "Après, nous avons mangé une crêpe et nous avons pris le bus.", "pt": "Depois comemos um crepe e pegamos o ônibus." },
+        { "who": "Mamie", "fr": "Et la pluie ? Il a beaucoup plu, hier !", "pt": "E a chuva? Choveu muito ontem!" },
+        { "who": "Léo", "fr": "Oui, et je n'ai pas pris de parapluie...", "pt": "Pois é, e eu não levei guarda-chuva..." },
+        { "who": "Mamie", "fr": "Mon pauvre ! Tu as eu froid ?", "pt": "Coitadinho! Você passou frio?" },
+        { "who": "Léo", "fr": "Un peu. Alors j'ai acheté un parapluie... avec la tour Eiffel !", "pt": "Um pouco. Aí comprei um guarda-chuva... com a Torre Eiffel!" },
+        { "who": "Mamie", "fr": "Très chic ! Tu as vraiment fait le touriste !", "pt": "Que chique! Você bancou o turista mesmo!" },
+        { "who": "Léo", "fr": "Et toi, Mamie ? Tu as fait quoi, hier ?", "pt": "E você, vó? O que você fez ontem?" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-11-01", "fr": "Qu'est-ce que tu as fait hier ?", "pt": "O que você fez ontem?", "note": "'fait' (feito) vem de 'faire'. O 't' final é mudo: [fé]." },
+      { "id": "a1-11-02", "fr": "J'ai visité le Louvre.", "pt": "Visitei o Louvre." },
+      { "id": "a1-11-03", "fr": "J'ai vu la Joconde !", "pt": "Vi a Mona Lisa!", "note": "'vu' (visto) vem de 'voir'. Para o 'u' francês, diga 'i' com os lábios em bico." },
+      { "id": "a1-11-04", "fr": "Tu as aimé ?", "pt": "Você gostou?" },
+      { "id": "a1-11-05", "fr": "Nous avons mangé une crêpe.", "pt": "Comemos um crepe." },
+      { "id": "a1-11-06", "fr": "Nous avons pris le bus.", "pt": "Pegamos o ônibus.", "note": "'pris' vem de 'prendre' (pegar, tomar). O 's' é mudo: [pri]." },
+      { "id": "a1-11-07", "fr": "Il a beaucoup plu hier.", "pt": "Choveu muito ontem.", "note": "'plu' vem de 'pleuvoir' (chover)." },
+      { "id": "a1-11-08", "fr": "Je n'ai pas pris de parapluie.", "pt": "Não levei guarda-chuva." },
+      { "id": "a1-11-09", "fr": "Tu as eu froid ?", "pt": "Você passou frio?", "note": "'eu' (particípio de 'avoir') soa [ü], como o 'u' francês." },
+      { "id": "a1-11-10", "fr": "J'ai acheté un parapluie.", "pt": "Comprei um guarda-chuva." },
+      { "id": "a1-11-11", "fr": "Tu as bien dormi ?", "pt": "Dormiu bem?", "note": "A pergunta de todo café da manhã francês!" },
+      { "id": "a1-11-12", "fr": "J'ai fait les courses.", "pt": "Fiz as compras." },
+      { "id": "a1-11-13", "fr": "Elle a fini son travail.", "pt": "Ela terminou o trabalho." },
+      { "id": "a1-11-14", "fr": "Ils ont attendu le bus.", "pt": "Eles esperaram o ônibus." },
+      { "id": "a1-11-15", "fr": "Je n'ai pas compris.", "pt": "Não entendi.", "note": "Frase de sobrevivência! A negação abraça o 'ai': je n'ai pas compris." },
+      { "id": "a1-11-16", "fr": "Hier soir, j'ai regardé un film.", "pt": "Ontem à noite, vi um filme." }
+    ],
+    "pourquoi": [
+      {
+        "title": "J'ai mangé = comi (com o verbo 'ter')",
+        "body": "O **passé composé** é o passado do dia a dia: serve para ações terminadas, como o pretérito perfeito do português ('comi', 'visitei', 'vi').\nA diferença está na construção: o francês usa **avoir** no presente + o **particípio** do verbo. *J'ai mangé* é, palavra por palavra, 'eu tenho comido'. Mas atenção: o sentido é 'comi', ação concluída — não o 'tenho comido' do português, que indica repetição.\nVocê já conhece o presente de *avoir* (*j'ai, tu as, il a, nous avons, vous avez, ils ont*), então metade do trabalho está feito. E na conversa é praticamente o único passado de ações que você vai ouvir: o *passé simple* fica para os livros.",
+        "examples": [
+          { "fr": "J'ai mangé une crêpe.", "pt": "Comi um crepe." },
+          { "fr": "Tu as visité le Louvre ?", "pt": "Você visitou o Louvre?" },
+          { "fr": "Nous avons regardé un film.", "pt": "Assistimos a um filme." }
+        ]
+      },
+      {
+        "title": "Mangé, fini, vu : os particípios",
+        "body": "Os verbos regulares formam o particípio assim:\n• **-er → -é**: *manger → mangé*, *visiter → visité* (soa igual ao infinitivo!)\n• **-ir → -i**: *finir → fini*, *dormir → dormi*\n• **-re → -u**: *attendre → attendu*\nAlguns irregulares muito usados precisam ser decorados: *faire → **fait***, *prendre → **pris***, *voir → **vu***, *avoir → **eu*** [ü], *comprendre → **compris***, *pleuvoir → **plu***.\nNa negação, o sanduíche abraça só o **avoir**: *je **n'**ai **pas** vu*, *il **n'**a **pas** compris*.",
+        "examples": [
+          { "fr": "J'ai fini !", "pt": "Terminei!" },
+          { "fr": "Il a pris le métro.", "pt": "Ele pegou o metrô." },
+          { "fr": "Je n'ai pas vu le film.", "pt": "Não vi o filme." },
+          { "fr": "Tu as eu de la chance !", "pt": "Você teve sorte!" }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte o que você fez no último fim de semana: pelo menos quatro ações, incluindo um verbo irregular (fait, pris, vu ou eu).",
+      "model": "Samedi, j'ai fait les courses et j'ai mangé avec des amis. Dimanche, j'ai pris le métro et j'ai visité un musée. Le soir, j'ai vu un film. Je n'ai pas travaillé !"
+    },
+    "culture": "O Louvre é o museu mais visitado do mundo, e a 'Joconde' (Mona Lisa) mede só 77 × 53 cm: quase todo mundo se surpreende com o tamanho. Os parisienses costumam deixar os museus para os dias de chuva.",
+    "glossary": {
+      "hier": "ontem",
+      "visité": "visitado (visiter)",
+      "vu": "visto (voir)",
+      "joconde": "Mona Lisa (la Joconde)",
+      "aimé": "gostado (aimer)",
+      "toute": "toda; toute petite = pequenininha",
+      "surtout": "principalmente",
+      "téléphones": "telefones, celulares",
+      "mangé": "comido (manger)",
+      "crêpe": "crepe",
+      "pris": "pegado, tomado (prendre)",
+      "bus": "ônibus",
+      "plu": "chovido (pleuvoir)",
+      "eu": "tido (avoir)",
+      "parapluie": "guarda-chuva",
+      "pauvre": "pobre; mon pauvre = coitadinho",
+      "acheté": "comprado (acheter)",
+      "tour": "torre",
+      "eiffel": "Eiffel (la tour Eiffel)",
+      "chic": "chique",
+      "vraiment": "realmente, mesmo",
+      "touriste": "turista",
+      "dormi": "dormido (dormir)",
+      "courses": "compras (do dia a dia)",
+      "fini": "terminado (finir)",
+      "son": "seu, dele, dela",
+      "travail": "trabalho",
+      "attendu": "esperado (attendre)",
+      "compris": "entendido (comprendre)",
+      "regardé": "assistido, olhado (regarder)",
+      "chance": "sorte",
+      "travaillé": "trabalhado (travailler)"
+    }
+  },
+  {
+    "id": "a1-12",
+    "level": "A1",
+    "track": "main",
+    "title": "Chez Mamie",
+    "titlePt": "Na casa da vovó",
+    "goal": "Contar idas, vindas e acontecimentos no passado com o passé composé com être, fazendo a concordância.",
+    "dialogue": {
+      "title": "L'histoire de la famille",
+      "context": "Segunda à noite, depois do jantar. A Mamie conta o que fez no domingo — e, aos poucos, a história da família.",
+      "lines": [
+        { "who": "Mamie", "fr": "Hier, je suis allée au cinéma avec Monsieur Bernard.", "pt": "Ontem fui ao cinema com o Monsieur Bernard." },
+        { "who": "Léo", "fr": "Ah bon ? Et vous êtes rentrés tard ?", "pt": "É mesmo? E vocês voltaram tarde?" },
+        { "who": "Mamie", "fr": "Non, nous sommes rentrés à dix heures. C'est un ami, je te dis !", "pt": "Não, voltamos às dez. Ele é só um amigo, já falei!" },
+        { "who": "Léo", "fr": "D'accord, Mamie... Dis, tu es née ici, à Paris ?", "pt": "Tá bom, vó... Me diz uma coisa: você nasceu aqui, em Paris?" },
+        { "who": "Mamie", "fr": "Oui, je suis née dans le quinzième. Et je suis restée !", "pt": "Sim, nasci no 15º. E fiquei!" },
+        { "who": "Léo", "fr": "Et papa ? Il est parti au Brésil à quel âge ?", "pt": "E o papai? Com que idade ele foi para o Brasil?" },
+        { "who": "Mamie", "fr": "À vingt-cinq ans. Il est parti pour six mois...", "pt": "Com vinte e cinco anos. Ele foi por seis meses..." },
+        { "who": "Léo", "fr": "... et il est resté trente-cinq ans !", "pt": "... e ficou trinta e cinco anos!" },
+        { "who": "Mamie", "fr": "Oui ! Il est tombé amoureux de ta mère.", "pt": "Pois é! Ele se apaixonou pela sua mãe." },
+        { "who": "Léo", "fr": "Et maintenant, moi, je suis venu à Paris.", "pt": "E agora sou eu que vim para Paris." },
+        { "who": "Mamie", "fr": "Oui, mon chéri. Tu es arrivé... à la maison.", "pt": "Sim, meu querido. Você chegou... em casa." },
+        { "who": "Léo", "fr": "Mamie, tu vas me faire pleurer !", "pt": "Vó, assim você vai me fazer chorar!" }
+      ]
+    },
+    "cards": [
+      { "id": "a1-12-01", "fr": "Je suis allée au cinéma.", "pt": "Fui ao cinema. (mulher falando)", "note": "Quem fala é mulher, por isso 'allée', com 'e'. A pronúncia é igual à de 'allé'." },
+      { "id": "a1-12-02", "fr": "Nous sommes rentrés à dix heures.", "pt": "Voltamos às dez." },
+      { "id": "a1-12-03", "fr": "Je suis né à São Paulo.", "pt": "Nasci em São Paulo.", "note": "'naître' (nascer) usa 'être' no passado: je suis né, elle est née." },
+      { "id": "a1-12-04", "fr": "Elle est née à Paris.", "pt": "Ela nasceu em Paris." },
+      { "id": "a1-12-05", "fr": "Il est parti au Brésil.", "pt": "Ele foi para o Brasil.", "note": "'partir' = ir embora, partir para outro lugar." },
+      { "id": "a1-12-06", "fr": "Il est resté trente-cinq ans.", "pt": "Ele ficou trinta e cinco anos.", "note": "Falso amigo: 'rester' = ficar (e não 'restar')." },
+      { "id": "a1-12-07", "fr": "Tu es arrivé quand ?", "pt": "Quando você chegou?" },
+      { "id": "a1-12-08", "fr": "Je suis arrivé lundi.", "pt": "Cheguei na segunda." },
+      { "id": "a1-12-09", "fr": "Elle est venue avec moi.", "pt": "Ela veio comigo.", "note": "'venue' leva 'e' porque o sujeito, 'elle', é feminino." },
+      { "id": "a1-12-10", "fr": "Ils sont partis ce matin.", "pt": "Eles foram embora hoje de manhã." },
+      { "id": "a1-12-11", "fr": "Il est tombé amoureux.", "pt": "Ele se apaixonou.", "note": "Literalmente 'caiu apaixonado'. 'tomber' (cair) também usa 'être'." },
+      { "id": "a1-12-12", "fr": "Camille est sortie hier soir.", "pt": "Camille saiu ontem à noite." },
+      { "id": "a1-12-13", "fr": "Vous êtes allés où ?", "pt": "Aonde vocês foram?" },
+      { "id": "a1-12-14", "fr": "Je ne suis pas resté longtemps.", "pt": "Não fiquei muito tempo." },
+      { "id": "a1-12-15", "fr": "Nous sommes montés à pied.", "pt": "Subimos a pé." },
+      { "id": "a1-12-16", "fr": "Tu vas me faire pleurer !", "pt": "Você vai me fazer chorar!" }
+    ],
+    "pourquoi": [
+      {
+        "title": "Por que alguns verbos usam être ?",
+        "body": "A maioria dos verbos faz o passé composé com *avoir*. Mas um grupo de uns quinze verbos usa **être** — quase todos de **movimento** ou de **mudança de estado**: *aller, venir, arriver, partir, entrer, sortir, monter, descendre, tomber, rester, rentrer, retourner, naître, mourir, devenir*.\nUm truque: imagine uma **casa**. Você *nasce* nela, *chega*, *entra*, *sobe*, *desce*, *cai*, *fica*, *sai*, *vai embora*... e um dia *morre*. O que acontece 'na casa' usa *être*.\nCurioso: o português antigo também fazia isso! Ainda dizemos 'é chegada a hora', um resto do tempo em que se dizia 'ele é chegado' para 'ele chegou'.",
+        "examples": [
+          { "fr": "Je suis allé au Louvre.", "pt": "Fui ao Louvre." },
+          { "fr": "Ma sœur est née en mars.", "pt": "Minha irmã nasceu em março." },
+          { "fr": "Ils sont partis hier.", "pt": "Eles foram embora ontem." },
+          { "fr": "Nous sommes restés à la maison.", "pt": "Ficamos em casa." }
+        ]
+      },
+      {
+        "title": "Allé, allée, allés : a concordância",
+        "body": "Com *être*, o particípio funciona como um adjetivo e **concorda com o sujeito**, como em 'ele está cansado / ela está cansada':\n• *il est allé* / *elle est allée*\n• *ils sont allés* / *elles sont allées*\nGrupo misto fica no masculino: *Mamie et Monsieur Bernard sont rentrés*.\nA boa notícia: quase sempre isso **não muda a pronúncia**. *Allé* e *allée* soam igual; a diferença é só na escrita.\nE com *avoir* não há essa concordância com o sujeito: *elle a mangé*, *ils ont vu*.",
+        "examples": [
+          { "fr": "Léo est arrivé.", "pt": "Léo chegou." },
+          { "fr": "Mamie est arrivée.", "pt": "A vovó chegou." },
+          { "fr": "Mes parents sont venus.", "pt": "Meus pais vieram." },
+          { "fr": "Camille et Sophie sont sorties.", "pt": "Camille e Sophie saíram." }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte uma viagem que você fez: quando foi, quando chegou, quanto tempo ficou e quando voltou. Use pelo menos quatro verbos com être.",
+      "model": "L'année dernière, je suis allé à Rio. Je suis parti en juillet et je suis arrivé le soir. Je suis resté deux semaines. Je suis rentré à São Paulo le premier août."
+    },
+    "culture": "O 15e é o arrondissement mais populoso de Paris: um bairro residencial e familiar, cheio de feiras e padarias, vizinho da Torre Eiffel. Para dizer onde moram, os parisienses falam simplesmente 'dans le quinzième'.",
+    "glossary": {
+      "allée": "ido (aller, fem.); je suis allée = fui",
+      "rentrés": "voltado (rentrer, masc. pl.)",
+      "sommes": "somos / estamos (être); nous sommes allés = nós fomos",
+      "dis": "digo / diz (dire); dis ! = me diz",
+      "née": "nascida (naître)",
+      "quinzième": "décimo quinto (o 15e arrondissement)",
+      "restée": "ficado (rester, fem.)",
+      "papa": "papai",
+      "parti": "ido embora (partir)",
+      "mois": "mês / meses",
+      "resté": "ficado (rester)",
+      "tombé": "caído (tomber); tombé amoureux = apaixonado",
+      "amoureux": "apaixonado",
+      "venu": "vindo (venir)",
+      "arrivé": "chegado (arriver)",
+      "pleurer": "chorar",
+      "né": "nascido (naître)",
+      "venue": "vinda (venir, fem.)",
+      "partis": "idos embora (partir, pl.)",
+      "sortie": "saído (sortir, fem.)",
+      "allés": "idos (aller, pl.)",
+      "longtemps": "muito tempo",
+      "montés": "subido (monter, pl.)",
+      "allé": "ido (aller)",
+      "restés": "ficado (rester, pl.)",
+      "arrivée": "chegado (arriver, fem.)",
+      "venus": "vindos (venir, pl.)",
+      "sorties": "saído (sortir, fem. pl.)",
+      "année": "ano",
+      "rentré": "voltado (rentrer)",
+      "trente-cinq": "trinta e cinco"
+    }
+  }
+]
