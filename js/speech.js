@@ -1,13 +1,12 @@
-// Free audio: the device's own French voices (Web Speech API), voice recording, and,
-// where the browser offers it, speech recognition to check pronunciation.
+// Free audio: the device's own French voices (Web Speech API) and voice recording.
 import { normApos } from "./text.js";
 
 const synth = window.speechSynthesis;
 let voices = [];
-let settings = { voice: "", rate: 1 };
+let settings = { voice: "", rate: 1.2 };
 let token = 0; // bumps on every new utterance or stop, so stale playback can tell it was superseded
 
-export const SLOW = 0.7; // the turtle button plays at 70% of the normal speed
+export const SLOW = 0.65; // the "Devagar" button plays at 65% of the normal speed
 
 const MALE = ["thomas", "daniel", "nicolas", "jacques", "henri", "paul", "mathieu", "antoine", "louis", "félix", "felix"];
 const FEMALE = ["amélie", "amelie", "audrey", "aurélie", "aurelie", "marie", "virginie", "chantal", "céline", "celine", "julie", "léa", "juliette", "claire"];
@@ -86,7 +85,7 @@ export async function speak(text, { slow = false, gender = null } = {}) {
   if (voice) u.voice = voice;
   u.lang = voice?.lang || "fr-FR";
   u.pitch = pitch;
-  u.rate = (settings.rate || 1) * (slow ? SLOW : 1);
+  u.rate = (settings.rate || 1.2) * (slow ? SLOW : 1);
   return new Promise((resolve) => {
     let started = false;
     let finished = false;
@@ -136,66 +135,4 @@ export async function startRecording() {
         rec.stop();
       }),
   };
-}
-
-// ---------- recognition (optional) ----------
-
-const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-export const canRecognize = () => !!Recognition;
-export const LISTEN_MAX_MS = 8000;
-
-const ERRORS = {
-  "no-speech": "Não ouvi nada. Toque e fale logo em seguida.",
-  "audio-capture": "Não encontrei o microfone.",
-  "not-allowed": "O microfone ou o reconhecimento de voz foi bloqueado. Libere nos Ajustes do celular.",
-  "service-not-allowed": "O reconhecimento de voz não funciona neste modo do celular. Use “Gravar minha voz” para comparar.",
-  network: "O reconhecimento de voz precisa de internet.",
-};
-export const recognitionError = (code) => ERRORS[code] || "O reconhecimento de voz não está disponível agora.";
-
-// Starts listening in French. Returns { done: Promise<string[]>, stop() }.
-// Shows partial text through onPartial, stops by itself after LISTEN_MAX_MS.
-export function startListening({ onPartial } = {}) {
-  const r = new Recognition();
-  r.lang = "fr-FR";
-  r.interimResults = true;
-  r.maxAlternatives = 3;
-  r.continuous = false;
-  let finals = [];
-  let partial = "";
-  let settled = false;
-  let resolveFn;
-  let rejectFn;
-  const done = new Promise((res, rej) => {
-    resolveFn = res;
-    rejectFn = rej;
-  });
-  const result = () => (finals.length ? finals : partial ? [partial] : []);
-  const finish = (err) => {
-    if (settled) return;
-    settled = true;
-    clearTimeout(cap);
-    err ? rejectFn(err) : resolveFn(result());
-  };
-  r.onresult = (e) => {
-    const last = e.results[e.results.length - 1];
-    partial = [...e.results].map((x) => x[0].transcript).join(" ").trim();
-    if (last.isFinal) finals = [...last].map((a) => a.transcript);
-    onPartial?.(partial);
-  };
-  r.onerror = (e) => finish(e.error === "aborted" ? null : e.error || "error");
-  r.onend = () => finish();
-  const stop = () => {
-    try {
-      r.stop();
-    } catch {}
-    setTimeout(() => finish(), 1500); // some phones never fire "end"
-  };
-  const cap = setTimeout(stop, LISTEN_MAX_MS);
-  try {
-    r.start();
-  } catch (e) {
-    finish(e.error || "error");
-  }
-  return { done, stop };
 }

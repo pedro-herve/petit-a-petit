@@ -747,13 +747,6 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 .speak-pill.huge { min-height: 64px; padding: 14px 26px; font-size: 17px; }
 .speak-pill.huge .icon { width: 28px; height: 28px; }
 .speak-pill:active { transform: scale(0.97); }
-.listening { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px; border-radius: 14px; background: var(--surface); border: 1px dashed var(--red); }
-.rec-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--red); animation: pulse 1s infinite; }
-.live-heard { font-family: var(--serif); font-size: 18px; text-align: center; }
-.revisit-bar { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 12px; background: var(--gold-soft); color: var(--ink-2); font-size: 14px; }
-.revisit-bar .icon { width: 18px; height: 18px; color: var(--gold); }
-.revisit-bar span { flex: 1; }
-.revisit-bar .btn.link { min-height: 0; padding: 0; font-size: 14px; }
 
 /* ---------- navigation cues: ▶ study · › view ---------- */
 .plan-list { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 15px; color: var(--ink-2); }
@@ -768,3 +761,21 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
 .rule-row .btn { pointer-events: none; }
 .st-current .btn.grow { flex: 1; }
 .view-link.plain { border: none; background: none; padding: 8px 0; text-align: left; justify-content: flex-start; }
+
+/* ---------- rating: choose, then "Próxima" ---------- */
+.rate-row.two { grid-template-columns: repeat(2, 1fr); }
+.rate-row.has-choice .btn.rate:not(.selected) { opacity: 0.45; }
+.btn.rate.selected { outline: 3px solid currentColor; outline-offset: 2px; opacity: 1; }
+.rating-when { text-align: center; font-size: 14px; color: var(--ink-2); min-height: 20px; }
+.rating .btn.primary.big .icon { width: 20px; height: 20px; }
+
+/* ---------- revisiting a step ---------- */
+.my-answer { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); }
+.my-answer > small { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.my-answer .typed { font-family: var(--serif); font-size: 19px; }
+.rating-badge { align-self: flex-start; padding: 4px 12px; border-radius: 99px; font-weight: 800; font-size: 14px; }
+.rating-badge.again { background: color-mix(in srgb, var(--red) 14%, var(--surface)); color: var(--red); }
+.rating-badge.hard { background: var(--orange-soft); color: var(--orange); }
+.rating-badge.good { background: var(--green-soft); color: var(--green); }
+.rating-badge.easy { background: var(--blue-soft); color: var(--blue); }
+.chip .icon { width: 14px; height: 14px; }

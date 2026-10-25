@@ -41,9 +41,10 @@ function render() {
   if (!s.profile) return renderSetup(root, { onReady: ready });
   indexContent(s.custom);
   if (migrateLevels(s)) store.persist();
-  // Old default speed (0.92) was slower than natural French; normal is now 1.0.
-  if (s.settings.rate === 0.92) {
-    s.settings.rate = 1;
+  // Earlier default speeds (0.92, then 1.0) sounded slower than everyday French; normal is now 1.2.
+  if (!s.settings.rateV) {
+    if (!s.settings.rate || s.settings.rate <= 1) s.settings.rate = 1.2;
+    s.settings.rateV = 2;
     store.persist();
   }
   applyTheme(s.settings.theme);

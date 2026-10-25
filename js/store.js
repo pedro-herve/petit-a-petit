@@ -8,7 +8,7 @@ const listeners = new Set();
 let accountId = null;
 let state = null;
 
-export const DEFAULT_SETTINGS = { voice: "", rate: 1, autoplay: true, showPt: false, reminder: "19:00", theme: "auto" };
+export const DEFAULT_SETTINGS = { voice: "", rate: 1.2, rateV: 2, autoplay: true, showPt: false, reminder: "19:00", theme: "auto" };
 
 function blank() {
   return {

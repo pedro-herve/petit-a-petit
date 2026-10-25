@@ -11,7 +11,7 @@ import { startTour } from "../tour.js";
 import { dayKey } from "../time.js";
 import { applyTheme } from "../theme.js";
 
-export const VERSION = "1.5.0";
+export const VERSION = "1.6.0";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {
@@ -109,7 +109,7 @@ export function renderProfile(el) {
     h("option", { value: "" }, "Automática"),
     voices.map((v) => h("option", { value: v.id, selected: v.id === s.settings.voice || null }, `${v.name} (${v.lang})`))
   );
-  const rate = h("input", { type: "range", min: "0.8", max: "1.2", step: "0.05", value: String(s.settings.rate), onchange: (e) => { setSetting("rate", Number(e.target.value)); speak("Bonjour ! Voici la vitesse normale."); } });
+  const rate = h("input", { type: "range", min: "0.9", max: "1.6", step: "0.05", value: String(s.settings.rate), onchange: (e) => { setSetting("rate", Number(e.target.value)); speak("Bonjour ! Voici la vitesse normale."); } });
   const time = h("input", { type: "time", value: s.settings.reminder || "19:00", onchange: (e) => setSetting("reminder", e.target.value) });
   const fileIn = h("input", {
     type: "file",
@@ -186,7 +186,7 @@ export function renderProfile(el) {
     h("section", { class: "card" },
       h("h3", null, "Áudio"),
       row("Voz francesa", voiceSel),
-      row("Velocidade normal", rate, "No meio (1,0) é a velocidade em que os franceses falam. O botão “Devagar” toca a 70% dela."),
+      row("Velocidade normal", rate, "O padrão (1,2) é o ritmo de uma conversa do dia a dia. O botão “Devagar” toca a 65% dela."),
       row("Tocar áudio automaticamente", toggle(s.settings.autoplay, (v) => setSetting("autoplay", v))),
       row("Tradução nos diálogos", toggle(s.settings.showPt, (v) => setSetting("showPt", v)), "Mostrar o português logo de início"),
       h("div", { class: "row gap wrap" }, h("button", { class: "btn soft", onclick: () => speak("Bonjour ! Je suis ta voix française. On y va ?") }, icon("volume"), "Testar voz")),

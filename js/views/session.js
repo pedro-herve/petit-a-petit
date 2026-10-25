@@ -4,7 +4,7 @@ import { content, nextNewCards, unit, card as getCard, currentLevel, unitProgres
 import { preview, schedule, formatInterval, AGAIN, HARD, GOOD, EASY } from "../fsrs.js";
 import { dayEnd } from "../time.js";
 import { h, mount, icon, frText, md, speakBtn, toast, confirmSheet } from "../ui.js";
-import { speak, stopSpeaking, canRecord, startRecording, canRecognize, startListening, recognitionError, LISTEN_MAX_MS } from "../speech.js";
+import { speak, stopSpeaking, canRecord, startRecording } from "../speech.js";
 import { compare, typo } from "../text.js";
 import { PROVIDERS, correctionPrompt, sendTo } from "../ai.js";
 import { go } from "../nav.js";
@@ -220,9 +220,12 @@ export function renderSession(root) {
       body
     )
   );
-  const R = revisiting && ["review", "dictation", "quiz", "task"].includes(step.type) ? replay : { intro, dialogue, pourquoi, learn, review, dictation, task, quiz, done }[step.type];
-  R(body, step, () => next(root));
-  if (revisiting) body.prepend(h("div", { class: "revisit-bar" }, icon("refresh"), h("span", null, "Revendo"), h("button", { class: "btn link", onclick: () => { S.idx = S.maxIdx; renderSession(root); } }, "Voltar para onde parei")));
+  if (revisiting)
+    replay(body, step, {
+      forward: () => { stopLines(); S.idx++; renderSession(root); },
+      resume: () => { stopLines(); S.idx = S.maxIdx; renderSession(root); },
+    });
+  else ({ intro, dialogue, pourquoi, learn, review, dictation, task, quiz, done })[step.type](body, step, () => next(root));
   window.scrollTo(0, 0);
 }
 
@@ -236,22 +239,45 @@ function unitLabel(u) {
 
 // ---------- steps ----------
 
-// A step already answered, shown again with its answer and no new rating.
-function replay(el, step, done) {
-  if (step.type === "task") {
-    el.append(taskView(unit(step.unit)), h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: done }, "Avançar")));
-    return;
+const RATING_LABEL = { [AGAIN]: "Errei", [HARD]: "Difícil", [GOOD]: "Bom", [EASY]: "Fácil" };
+const RATING_CLASS = { [AGAIN]: "again", [HARD]: "hard", [GOOD]: "good", [EASY]: "easy" };
+
+// A step already done, shown again read-only with what the learner did there.
+function replay(el, step, { forward, resume }) {
+  const r = step.result || {};
+  const cardView = (c) => [
+    h("div", { class: "big-fr" }, frText(c.fr)),
+    h("div", { class: "row gap center" }, speakBtn(c.fr, { cls: "round" }), speakBtn(c.fr, { slow: true, cls: "round" })),
+    h("div", { class: "big-pt" }, c.pt),
+    c.note && h("div", { class: "note" }, icon("info"), h("span", null, c.note)),
+  ];
+  const mine = (title, ...content) => h("div", { class: "my-answer" }, h("small", null, title), ...content);
+  let content;
+  if (step.type === "intro") {
+    const u = unit(step.unit);
+    content = [h("h1", { class: "display" }, typo(u.title)), h("p", { class: "lead" }, u.titlePt), u.goal && h("div", { class: "goal" }, icon("star"), h("div", null, u.goal))];
+  } else if (step.type === "dialogue") content = [dialogueView(unit(step.unit), { startHidden: false })];
+  else if (step.type === "pourquoi") content = [pourquoiView(unit(step.unit).pourquoi[step.index])];
+  else if (step.type === "task") content = [taskView(unit(step.unit), { text: r.text || "", readOnly: true })];
+  else {
+    const c = getCard(step.id);
+    content = [h("div", { class: "card-step" }, ...cardView(c))];
+    if (step.type === "review") {
+      if (r.typed) content.push(mine("Você escreveu", h("p", { class: "typed", lang: "fr" }, r.typed), diffView(compare(c.fr, r.typed))));
+      else if (step.mode === "produce") content.push(mine("Você respondeu de cabeça", h("p", { class: "muted" }, "Sem escrever.")));
+      if (r.rating) content.push(mine("Sua avaliação", h("div", { class: "row gap" }, h("span", { class: `rating-badge ${RATING_CLASS[r.rating]}` }, RATING_LABEL[r.rating]), r.interval && h("span", { class: "muted small" }, `volta em ${r.interval}`))));
+      if (r.practice) content.push(mine("Sua avaliação", h("span", { class: `rating-badge ${r.practice === "right" ? "good" : "again"}` }, r.practice === "right" ? "Acertei" : "Errei")));
+    }
+    if (step.type === "dictation")
+      content.push(r.skipped || r.typed == null ? mine("Ditado", h("p", { class: "muted" }, "Você pulou este ditado.")) : mine("Você escreveu", h("p", { class: "typed", lang: "fr" }, r.typed || "—"), diffView(compare(c.fr, r.typed || ""))));
   }
-  const c = getCard(step.id);
+  const last = S.idx + 1 >= S.maxIdx;
   el.append(
-    h("div", { class: "step card-step" },
-      chip("Revendo"),
-      h("div", { class: "big-fr" }, frText(c.fr)),
-      h("div", { class: "row gap center" }, speakBtn(c.fr, { cls: "round" }), speakBtn(c.fr, { slow: true, cls: "round" })),
-      h("div", { class: "big-pt" }, c.pt),
-      c.note && h("div", { class: "note" }, icon("info"), h("span", null, c.note))
-    ),
-    h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: done }, "Avançar"))
+    h("div", { class: "step" }, h("span", { class: "chip gold" }, icon("refresh"), "Revendo · você já fez este passo"), ...content),
+    h("div", { class: last ? "step-actions" : "step-actions two" },
+      !last && h("button", { class: "btn ghost", onclick: resume }, "Voltar para onde parei"),
+      h("button", { class: "btn primary big", onclick: last ? resume : forward }, last ? "Voltar para onde parei" : "Próximo passo")
+    )
   );
 }
 
@@ -406,34 +432,6 @@ function shadowTools(text) {
     };
     box.append(btn);
   }
-  if (canRecognize()) {
-    // Tap to start, tap again to stop (it also stops by itself after a few seconds).
-    let session = null;
-    const btn = h("button", { class: "btn soft" }, icon("sparkle"), "Testar pronúncia");
-    const reset = () => {
-      session = null;
-      btn.classList.remove("recording");
-      btn.replaceChildren(icon("sparkle"), "Testar de novo");
-    };
-    btn.onclick = async () => {
-      if (session) return session.stop();
-      stopSpeaking();
-      const live = h("p", { class: "live-heard" }, "Fale a frase agora…");
-      res.replaceChildren(h("div", { class: "listening" }, h("span", { class: "rec-dot" }), live, h("small", { class: "muted" }, `Toque em Parar quando terminar (para sozinho em ${LISTEN_MAX_MS / 1000} s).`)));
-      btn.classList.add("recording");
-      btn.replaceChildren(icon("stop"), "Parar");
-      session = startListening({ onPartial: (t) => (live.textContent = `“${t}”`) });
-      try {
-        const alts = await session.done;
-        const best = alts.map((a) => compare(text, a)).sort((x, y) => y.score - x.score)[0];
-        res.replaceChildren(best ? diffView(best, alts[0]) : h("p", { class: "muted" }, recognitionError("no-speech")));
-      } catch (code) {
-        res.replaceChildren(h("p", { class: "muted" }, recognitionError(code)));
-      }
-      reset();
-    };
-    box.append(btn);
-  }
   return box.childElementCount ? h("div", null, box, res) : null;
 }
 
@@ -497,6 +495,7 @@ function review(el, step, done) {
 
   const reveal = () => {
     typed = input.value.trim();
+    step.result = { typed };
     ask.remove();
     actions.remove();
     showAnswer();
@@ -525,37 +524,67 @@ function review(el, step, done) {
   }
 
   function practiceButtons() {
-    return h("div", { class: "step-actions two" },
-      h("button", { class: "btn rate again", onclick: done }, "Errei"),
-      h("button", { class: "btn rate good", onclick: done }, "Acertei")
+    let chosen = null;
+    const nextBtn = h("button", { class: "btn primary big", disabled: true, onclick: () => { step.result = { ...step.result, practice: chosen }; done(); } }, "Próxima", icon("chevron"));
+    const pick = (v) => (e) => {
+      chosen = v;
+      e.currentTarget.parentElement.querySelectorAll(".btn.rate").forEach((b) => b.classList.toggle("selected", b === e.currentTarget));
+      e.currentTarget.parentElement.classList.add("has-choice");
+      nextBtn.disabled = false;
+    };
+    return h("div", { class: "rating" },
+      h("p", { class: "muted small center" }, "Como foi?"),
+      h("div", { class: "rate-row two" },
+        h("button", { class: "btn rate again", onclick: pick("wrong") }, h("span", null, "Errei")),
+        h("button", { class: "btn rate good", onclick: pick("right") }, h("span", null, "Acertei"))
+      ),
+      nextBtn
     );
   }
 
   function ratingButtons(suggested) {
     const now = Date.now();
     const pv = preview(st, now);
-    const label = { [AGAIN]: "Errei", [HARD]: "Difícil", [GOOD]: "Bom", [EASY]: "Fácil" };
-    const cls = { [AGAIN]: "again", [HARD]: "hard", [GOOD]: "good", [EASY]: "easy" };
     const firstTime = !store.get().seen?.ratingTip;
+    let chosen = suggested;
+    const when = h("p", { class: "rating-when" });
+    const nextBtn = h("button", { class: "btn primary big", disabled: !chosen, onclick: () => chosen && rate(chosen, now) }, "Próxima", icon("chevron"));
+    const row = h("div", { class: `rate-row ${chosen ? "has-choice" : ""}` });
+    const describe = () => {
+      when.textContent = chosen ? (chosen === AGAIN ? "Ela volta daqui a 10 minutos, ainda nesta sessão." : `Ela volta em ${formatInterval(pv[chosen].due - now)}.`) : "Escolha uma opção e toque em Próxima.";
+    };
+    describe();
     return h("div", { class: "rating" },
       firstTime &&
         h("div", { class: "callout rating-tip" }, icon("info"),
           h("span", null, "Avalie com sinceridade: ", h("b", null, "Errei"), " traz a frase de volta em 10 minutos; ", h("b", null, "Bom"), " e ", h("b", null, "Fácil"), " a espaçam por dias. Embaixo de cada botão está quando ela volta.")
         ),
-      h("p", { class: "muted small center" }, "Quão bem você lembrou?"),
-      h("div", { class: "rate-row" },
+      h("p", { class: "muted small center" }, suggested ? "Sugerimos uma nota pela sua resposta. Pode mudar se quiser." : "Quão bem você lembrou?"),
+      mount(row,
         [AGAIN, HARD, GOOD, EASY].map((g) =>
-          h("button", { class: `btn rate ${cls[g]} ${suggested === g ? "suggested" : ""}`, onclick: () => rate(g, now) },
-            h("span", null, label[g]),
+          h("button", {
+            class: `btn rate ${RATING_CLASS[g]} ${chosen === g ? "selected" : ""}`,
+            onclick: (e) => {
+              chosen = g;
+              row.classList.add("has-choice");
+              row.querySelectorAll(".btn.rate").forEach((b) => b.classList.toggle("selected", b === e.currentTarget));
+              nextBtn.disabled = false;
+              describe();
+            },
+          },
+            h("span", null, RATING_LABEL[g]),
             h("small", null, formatInterval(pv[g].due - now))
           )
         )
-      )
+      ),
+      when,
+      nextBtn
     );
   }
 
   function rate(g, now) {
     const isNew = !st || !st.reps;
+    step.result = { ...step.result, rating: g, interval: g === AGAIN ? "10 minutos" : formatInterval(preview(st, now)[g].due - now) };
     store.update((s) => {
       s.cards[step.id] = { ...schedule(st, g, now), added: st?.added || now };
       if (!s.seen?.ratingTip) s.seen = { ...(s.seen || {}), ratingTip: now };
@@ -579,6 +608,7 @@ function dictation(el, step, done) {
   const out = h("div");
   const check = () => {
     const r = compare(c.fr, input.value);
+    step.result = { typed: input.value.trim() };
     input.disabled = true;
     out.replaceChildren(
       diffView(r),
@@ -588,7 +618,7 @@ function dictation(el, step, done) {
     actions.replaceChildren(h("button", { class: "btn primary big", onclick: done }, "Continuar"));
   };
   const actions = h("div", { class: "step-actions two" },
-    h("button", { class: "btn ghost", onclick: done }, "Pular"),
+    h("button", { class: "btn ghost", onclick: () => { step.result = { skipped: true }; done(); } }, "Pular"),
     h("button", { class: "btn primary", onclick: check }, "Verificar")
   );
   input.addEventListener("keydown", (e) => e.key === "Enter" && !e.shiftKey && (e.preventDefault(), !input.disabled && check()));
@@ -688,9 +718,9 @@ function examResult(el) {
   );
 }
 
-export function taskView(u, { onDone, doneLabel = "Concluir unidade" } = {}) {
+export function taskView(u, { onDone, doneLabel = "Concluir unidade", text = "", readOnly = false } = {}) {
   const level = currentLevel(store.get());
-  const area = h("textarea", { class: "answer", rows: 5, placeholder: "Escreva (ou dite) em francês…", lang: "fr", autocapitalize: "sentences", spellcheck: "false" });
+  const area = h("textarea", { class: "answer", rows: 5, placeholder: readOnly ? "Você não escreveu nada nesta missão." : "Escreva (ou dite) em francês…", lang: "fr", autocapitalize: "sentences", spellcheck: "false", readonly: readOnly, value: text });
   const model = h("div", { class: "model", hidden: true }, h("div", { class: "muted small" }, "Resposta-modelo"), frText(u.task.model), speakBtn(u.task.model, { cls: "small" }));
   return h("div", { class: "step" },
     chip("Missão", "rose"),
@@ -708,7 +738,7 @@ export function taskView(u, { onDone, doneLabel = "Concluir unidade" } = {}) {
       )
     ),
     model,
-    onDone && h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: onDone }, doneLabel))
+    onDone && h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: () => onDone(area.value.trim()) }, doneLabel))
   );
 }
 
@@ -716,7 +746,8 @@ function task(el, step, done) {
   const u = unit(step.unit);
   el.append(
     taskView(u, {
-      onDone: () => {
+      onDone: (text) => {
+        step.result = { text };
         store.update((s) => {
           s.units[u.id] = { ...(s.units[u.id] || {}), done: Date.now() };
         });
