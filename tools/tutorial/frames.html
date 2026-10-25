@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Tutorial frames</title>
+<!-- Renders one 720x1280 frame of the install tutorial, chosen by ?f=<platform>-<step>-<a|b>. -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #fbf7f0; --ink: #1c2540; --ink2: #485069; --muted: #847e73; --blue: #2b4bb0; --red: #d8433a;
+    --serif: "New York", ui-serif, "Iowan Old Style", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Helvetica Neue", sans-serif;
+  }
+  html, body { width: 720px; height: 1280px; overflow: hidden; background: var(--bg); font-family: var(--sans); color: var(--ink); }
+  .frame { position: relative; width: 720px; height: 1280px; }
+  .brand { position: absolute; top: 34px; left: 40px; right: 40px; display: flex; align-items: center; gap: 12px; }
+  .brand .mark { width: 48px; height: 48px; border-radius: 13px; overflow: hidden; }
+  .brand b { font-family: var(--serif); font-size: 26px; font-weight: 600; }
+  .brand .pill { margin-left: auto; background: var(--ink); color: var(--bg); font-weight: 700; font-size: 18px; padding: 7px 16px; border-radius: 99px; }
+  .head { position: absolute; top: 112px; left: 40px; right: 40px; }
+  .stepno { color: var(--red); font-weight: 800; letter-spacing: .08em; font-size: 20px; text-transform: uppercase; }
+  .caption { font-size: 40px; line-height: 1.18; font-weight: 750; margin-top: 8px; letter-spacing: -0.01em; }
+  .caption em { font-style: normal; color: var(--blue); }
+  .sub { font-size: 23px; line-height: 1.35; color: var(--ink2); margin-top: 10px; }
+  .phone { position: absolute; left: 50%; transform: translateX(-50%); top: 372px; width: 424px; height: 890px; border-radius: 62px; background: #111; padding: 12px; box-shadow: 0 30px 60px rgba(28,37,64,.25); }
+  .screen { position: relative; width: 400px; height: 866px; border-radius: 50px; overflow: hidden; background: #fff; }
+  .screen > img.shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .island { position: absolute; top: 11px; left: 50%; transform: translateX(-50%); width: 112px; height: 32px; background: #000; border-radius: 20px; z-index: 30; }
+  .ring { position: absolute; z-index: 40; border-radius: 50%; border: 6px solid var(--red); background: rgba(216,67,58,.14); box-shadow: 0 0 0 10px rgba(216,67,58,.25); }
+  .box { position: absolute; z-index: 40; border-radius: 14px; border: 5px solid var(--red); box-shadow: 0 0 0 9px rgba(216,67,58,.22); }
+  .hand { position: absolute; z-index: 41; font-size: 58px; line-height: 1; filter: drop-shadow(0 4px 6px rgba(0,0,0,.3)); }
+  .status { position: absolute; top: 0; left: 0; right: 0; height: 50px; display: flex; justify-content: space-between; align-items: center; padding: 0 34px 0 40px; font-weight: 700; font-size: 17px; z-index: 20; }
+  .android .status { height: 34px; padding: 0 20px; font-size: 14px; font-weight: 600; }
+
+  /* chat */
+  .chat { position: absolute; inset: 0; background: #efe7dd; }
+  .chat-top { height: 108px; background: #f7f7f7; border-bottom: 1px solid #ddd; display: flex; align-items: flex-end; gap: 12px; padding: 0 18px 14px; }
+  .chat-top .avatar { width: 40px; height: 40px; border-radius: 50%; background: #c9b8f0; display: grid; place-items: center; font-size: 22px; }
+  .chat-top b { font-size: 18px; }
+  .chat-top small { display: block; font-size: 13px; color: #777; }
+  .bubble { position: absolute; left: 16px; right: 70px; background: #fff; border-radius: 16px; padding: 12px 14px; font-size: 17px; line-height: 1.35; box-shadow: 0 1px 1px rgba(0,0,0,.1); }
+  .bubble .who { color: #b4473d; font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+  .bubble .link { color: #0a66c2; text-decoration: underline; word-break: break-all; }
+  .bubble .time { text-align: right; font-size: 12px; color: #999; margin-top: 4px; }
+
+  /* generic sheets */
+  .dim { position: absolute; inset: 0; background: rgba(0,0,0,.28); z-index: 5; }
+  .ios-sheet { position: absolute; left: 8px; right: 8px; bottom: 8px; z-index: 10; background: rgba(250,248,246,.97); border-radius: 38px; padding: 22px 20px 20px; box-shadow: 0 -4px 30px rgba(0,0,0,.18); }
+  .share-head { display: flex; gap: 14px; align-items: center; padding-bottom: 16px; border-bottom: 1px solid #e3e0dc; }
+  .share-head .ic { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; flex: none; }
+  .share-head b { font-size: 17px; display: block; }
+  .share-head small { font-size: 14px; color: #888; display: block; }
+  .share-head .opt { display: inline-block; margin-top: 6px; font-size: 14px; padding: 4px 12px; background: #fff; border-radius: 99px; }
+  .apps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 18px 0; border-bottom: 1px solid #e3e0dc; text-align: center; font-size: 13px; }
+  .apps i { display: block; width: 62px; height: 62px; margin: 0 auto 6px; border-radius: 15px; }
+  .acts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding-top: 18px; text-align: center; font-size: 13px; line-height: 1.2; }
+  .acts span.c { display: grid; place-items: center; width: 62px; height: 62px; margin: 0 auto 6px; border-radius: 50%; background: #e8e5e1; font-size: 26px; }
+  .list { background: #fff; border-radius: 16px; overflow: hidden; margin-top: 12px; }
+  .list div { display: flex; justify-content: space-between; align-items: center; padding: 15px 18px; font-size: 17px; border-top: 1px solid #ece9e6; }
+  .list div:first-child { border-top: none; }
+  .list div.hl { background: #fff4d6; font-weight: 700; }
+  .list div span:last-child { font-size: 21px; color: #333; }
+
+  /* iOS add-to-home screen */
+  .add { position: absolute; inset: 0; background: #f2f1f6; padding-top: 54px; }
+  .add-nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 18px; font-size: 17px; }
+  .add-nav .cancel { color: #007aff; }
+  .add-nav b { font-size: 17px; }
+  .add-nav .ok { color: #007aff; font-weight: 700; }
+  .add-card { margin: 18px 16px; background: #fff; border-radius: 14px; padding: 16px; display: flex; gap: 14px; align-items: center; }
+  .add-card .ic { width: 64px; height: 64px; border-radius: 15px; overflow: hidden; flex: none; }
+  .add-card .name { font-size: 18px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+  .add-card small { font-size: 14px; color: #888; }
+  .add-row { margin: 0 16px; background: #fff; border-radius: 14px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; font-size: 17px; }
+  .toggle { width: 52px; height: 32px; border-radius: 99px; background: #34c759; position: relative; }
+  .toggle::after { content: ""; position: absolute; right: 3px; top: 3px; width: 26px; height: 26px; border-radius: 50%; background: #fff; }
+  .add-note { margin: 10px 30px; font-size: 13px; color: #888; line-height: 1.35; }
+
+  /* home screens */
+  .home { position: absolute; inset: 0; background: linear-gradient(160deg, #f6c58b 0%, #e98f8f 45%, #7f8fd6 100%); }
+  .android .home { background: linear-gradient(170deg, #a7c4a0 0%, #6f9fb8 55%, #3d5a80 100%); }
+  .grid { position: absolute; top: 90px; left: 22px; right: 22px; display: grid; grid-template-columns: repeat(4, 1fr); row-gap: 26px; text-align: center; color: #fff; font-size: 12.5px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,.3); }
+  .grid i { display: block; width: 64px; height: 64px; margin: 0 auto 6px; border-radius: 16px; background: rgba(255,255,255,.55); }
+  .android .grid i { border-radius: 50%; }
+  .grid .me i { overflow: hidden; background: none; box-shadow: 0 0 0 4px #fff, 0 6px 18px rgba(0,0,0,.3); }
+  .dock { position: absolute; left: 16px; right: 16px; bottom: 18px; height: 92px; border-radius: 34px; background: rgba(255,255,255,.35); display: flex; justify-content: space-around; align-items: center; }
+  .dock i { width: 64px; height: 64px; border-radius: 16px; background: rgba(255,255,255,.6); }
+
+  /* android chrome */
+  .chrome-bar { position: absolute; top: 34px; left: 0; right: 0; height: 64px; background: #fff; display: flex; align-items: center; gap: 10px; padding: 0 12px; border-bottom: 1px solid #e5e5e5; z-index: 8; }
+  .chrome-bar .home-ic { font-size: 22px; color: #444; }
+  .chrome-bar .url { flex: 1; height: 44px; border-radius: 22px; background: #eef1f4; display: flex; align-items: center; padding: 0 14px; font-size: 16px; color: #333; gap: 8px; }
+  .chrome-bar .tabs { width: 24px; height: 24px; border: 2.5px solid #444; border-radius: 6px; font-size: 13px; display: grid; place-items: center; font-weight: 700; color: #444; }
+  .chrome-bar .dots { font-size: 28px; font-weight: 900; color: #444; width: 24px; text-align: center; line-height: 1; }
+  .page { position: absolute; top: 98px; left: 0; right: 0; bottom: 0; overflow: hidden; }
+  .page img { width: 100%; display: block; }
+  .cct-bar { position: absolute; top: 34px; left: 0; right: 0; height: 64px; background: #f7f7f7; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-bottom: 1px solid #ddd; z-index: 8; font-size: 15px; }
+  .cct-bar .x { font-size: 24px; color: #444; }
+  .cct-bar .t { flex: 1; }
+  .cct-bar .t b { display: block; font-size: 16px; }
+  .cct-bar .t small { color: #777; font-size: 13px; }
+  .menu { position: absolute; top: 40px; right: 8px; width: 270px; z-index: 12; background: #fff; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.25); padding: 8px 0; }
+  .menu div { padding: 13px 20px; font-size: 16.5px; color: #222; }
+  .menu div.hl { background: #fff4d6; font-weight: 700; }
+  .menu hr { border: none; border-top: 1px solid #eee; margin: 6px 0; }
+  .a-dialog { position: absolute; left: 0; right: 0; bottom: 0; z-index: 10; background: #fff; border-radius: 28px 28px 0 0; padding: 28px 26px 34px; box-shadow: 0 -6px 30px rgba(0,0,0,.2); }
+  .a-dialog h4 { font-size: 22px; font-weight: 600; margin-bottom: 18px; }
+  .a-dialog .row { display: flex; gap: 14px; align-items: center; }
+  .a-dialog .ic { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; flex: none; }
+  .a-dialog b { font-size: 18px; display: block; }
+  .a-dialog small { color: #777; font-size: 14px; }
+  .a-dialog .btns { display: flex; justify-content: flex-end; gap: 12px; margin-top: 26px; }
+  .a-dialog .btns span { padding: 12px 22px; border-radius: 99px; font-weight: 700; font-size: 16px; color: #1a73e8; }
+  .a-dialog .btns span.primary { background: #1a73e8; color: #fff; }
+
+  /* intro/final cards */
+  .card-page { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px; text-align: center; gap: 26px; }
+  .card-page .big-mark { width: 190px; height: 190px; border-radius: 48px; overflow: hidden; box-shadow: 0 20px 50px rgba(28,37,64,.3); }
+  .card-page h1 { font-family: var(--serif); font-size: 58px; line-height: 1.08; font-weight: 600; }
+  .card-page p { font-size: 28px; color: var(--ink2); line-height: 1.4; }
+  .card-page ul { list-style: none; text-align: left; font-size: 28px; line-height: 1.4; display: flex; flex-direction: column; gap: 16px; color: var(--ink2); }
+  .card-page ul b { color: var(--ink); }
+  .card-page .url { font-size: 22px; color: var(--blue); font-weight: 700; background: #e7ecfa; padding: 10px 20px; border-radius: 14px; }
+  .proverb { font-family: var(--serif); font-style: italic; font-size: 24px; color: var(--muted); }
+  .glow-fix { position: absolute; z-index: 6; backdrop-filter: saturate(0) brightness(1.06); -webkit-backdrop-filter: saturate(0) brightness(1.06); }
+</style>
+</head>
+<body>
+<div class="frame" id="frame"></div>
+<script>
+const LOGO = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%"><rect width="512" height="512" fill="#1C2540"/><g transform="translate(100 104) scale(13)" fill="none" stroke="#FBF7F0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h.01M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5M10 18v3M14 17.75V21M7 18a6 6 0 0 0 3.84-10.61"/></g><circle cx="392" cy="112" r="26" fill="#D8433A"/></svg>`;
+const URL_TXT = "pedro-herve.github.io/petit-a-petit";
+// Screenshot (1170x2532) -> screen (400x866)
+const S = 400 / 1170;
+const px = (x, y) => [x * S, y * S];
+
+const chat = () => `
+  <div class="chat">
+    <div class="chat-top"><span class="avatar">👨‍👩‍👧</span><div><b>Família</b><small>Pedro, Mamãe, Vovó…</small></div></div>
+    <div class="bubble" style="top:150px"><div class="who">Pedro</div>Oi, família! 💛 Fiz um aplicativo para a gente aprender francês juntos. É grátis!</div>
+    <div class="bubble" style="top:268px"><div class="who">Pedro</div>Toque aqui para abrir:<br><span class="link" id="t-link">https://${URL_TXT}/</span><div class="time">09:41</div></div>
+  </div>`;
+
+const shareSheet = (expanded) => `
+  <img class="shot" src="ios/01-safari.png"><div class="dim"></div>
+  <div class="ios-sheet" ${expanded ? 'style="top:170px"' : ""}>
+    <div class="share-head"><div class="ic">${LOGO}</div><div><b>Petit à Petit</b><small>pedro-herve.github.io</small><span class="opt">Opções ›</span></div></div>
+    ${expanded ? `
+      <div class="list">
+        <div><span>Copiar</span><span>⧉</span></div>
+        <div><span>Adicionar à Lista de Leitura</span><span>👓</span></div>
+        <div><span>Adicionar a Favoritos</span><span>☆</span></div>
+        <div><span>Buscar na Página</span><span>🔍</span></div>
+        <div class="hl" id="t-add"><span>Adicionar à Tela de Início</span><span>⊞</span></div>
+        <div><span>Marcação</span><span>✎</span></div>
+        <div><span>Imprimir</span><span>⎙</span></div>
+      </div>` : `
+      <div class="apps"><div><i style="background:#e9e4f7"></i>Mensagens</div><div><i style="background:#e4f0e8"></i>Lembretes</div><div><i style="background:#e3eefc"></i>Safari</div><div><i style="background:#f1f1f1"></i>Mais</div></div>
+      <div class="acts"><div><span class="c">⧉</span>Copiar</div><div><span class="c">☆</span>Adicionar a Favoritos</div><div><span class="c">👓</span>Adicionar à Lista de Leitura</div><div id="t-vermais"><span class="c">⌄</span>Ver Mais</div></div>`}
+  </div>`;
+
+const addScreen = () => `
+  <div class="add">
+    <div class="add-nav"><span class="cancel">Cancelar</span><b>Adicionar à Tela de Início</b><span class="ok" id="t-ok">Adicionar</span></div>
+    <div class="add-card"><div class="ic">${LOGO}</div><div style="flex:1"><div class="name">Petit à Petit</div><small>pedro-herve.github.io</small></div></div>
+    <div class="add-row"><span>Abrir como App Web</span><span class="toggle"></span></div>
+    <p class="add-note">Um ícone será adicionado à Tela de Início para que você possa acessar rapidamente este site.</p>
+  </div>`;
+
+const homeScreen = (android) => {
+  const names = android ? ["Telefone", "Mensagens", "Câmera", "Galeria", "Relógio", "Agenda", "Contatos", "Configurar", "Notas", "Clima", "Música", "Arquivos"]
+                        : ["Mensagens", "Fotos", "Câmera", "Relógio", "Calendário", "Notas", "Mapas", "Clima", "Lembretes", "Música", "Ajustes", "Contatos"];
+  const cells = names.map((n) => `<div><i></i>${n}</div>`).join("");
+  return `<div class="home"><div class="grid">${cells}<div class="me" id="t-icon"><i>${LOGO}</i>Petit à Petit</div></div>${android ? "" : '<div class="dock"><i></i><i></i><i></i><i></i></div>'}</div>`;
+};
+
+const chromePage = (img, { menu = false, dialog = false } = {}) => `
+  <div class="chrome-bar"><span class="home-ic">⌂</span><div class="url">🔒 ${URL_TXT.replace("/petit-a-petit", "")}</div><span class="tabs">1</span><span class="dots">⋮</span></div>
+  <div class="page"><img src="${img}"></div>
+  ${menu ? `<div class="menu" style="top:40px">
+      <div>Nova guia</div><div>Nova guia anônima</div><hr><div>Histórico</div><div>Downloads</div><div>Favoritos</div><hr>
+      <div>Compartilhar…</div><div>Encontrar na página</div><div>Traduzir…</div><div class="hl" id="t-menu">Instalar app</div><div>Versão para computador</div><hr><div>Configurações</div></div>` : ""}
+  ${dialog ? `<div class="dim"></div><div class="a-dialog"><h4>Instalar app</h4><div class="row"><div class="ic">${LOGO}</div><div><b>Petit à Petit</b><small>${URL_TXT.replace("/petit-a-petit", "")}</small></div></div><div class="btns"><span>Cancelar</span><span class="primary" id="t-install">Instalar</span></div></div>` : ""}`;
+
+const customTab = () => `
+  <div class="cct-bar"><span class="x">✕</span><div class="t"><b>Petit à Petit</b><small>${URL_TXT.replace("/petit-a-petit", "")}</small></div><span class="dots" style="font-size:28px;font-weight:900;color:#444">⋮</span></div>
+  <div class="page"><img src="android/app.png"></div>
+  <div class="menu" style="top:40px"><div>Atualizar</div><div>Compartilhar…</div><div>Encontrar na página</div><hr><div class="hl" id="t-chrome">Abrir no Chrome</div></div>`;
+
+const FRAMES = {
+  ios: [
+    { card: "intro" },
+    { cap: "Toque no <em>link</em> que eu te mandei", sub: "Ele abre no Safari, o navegador do iPhone.", screen: chat(), tap: "#t-link" },
+    { cap: "Toque nos <em>três risquinhos ≡</em>, lá embaixo", sub: "Em iPhones mais antigos, toque direto no botão Compartilhar (o quadrado com a setinha ⬆).", screen: `<img class="shot" src="ios/01-safari.png">`, tap: { ring: [...px(344, 2358), 34] } },
+    { cap: "Toque em <em>Compartilhar</em>", screen: `<img class="shot" src="ios/02-menu.png"><div class="glow-fix" style="left:${272 * S}px;top:${1700 * S}px;width:${750 * S}px;height:${260 * S}px"></div>`, tap: { box: [100, 392, 238, 46], hand: "left" } },
+    { cap: "Toque em <em>Ver Mais</em>", sub: "É o último botão, com a setinha para baixo ⌄.", screen: shareSheet(false), tap: "#t-vermais" },
+    { cap: "Toque em <em>Adicionar à Tela de Início</em>", sub: "Se não aparecer, arraste a lista para cima.", screen: shareSheet(true), tap: "#t-add" },
+    { cap: "Toque em <em>Adicionar</em>, no canto de cima", screen: addScreen(), tap: "#t-ok" },
+    { cap: "Pronto! O app está na sua tela 🎉", sub: "Abra sempre pelo ícone do passarinho.", screen: homeScreen(false), tap: "#t-icon" },
+    { card: "final" },
+  ],
+  android: [
+    { card: "intro" },
+    { cap: "Toque no <em>link</em> que eu te mandei", sub: "O ideal é ele abrir no Chrome, o navegador do Android.", screen: chat(), tap: "#t-link" },
+    { cap: "Abriu dentro do WhatsApp? Toque nos <em>⋮</em> e em <em>Abrir no Chrome</em>", sub: "Se já abriu no Chrome, pule este passo.", screen: customTab(), tap: { sel: "#t-chrome", hand: "left" } },
+    { cap: "Toque em <em>Instalar o app</em>", sub: "É o botão azul no alto da página.", screen: chromePage("android/app.png"), tap: { box: [37, 229, 326, 44] } },
+    { cap: "Toque em <em>Instalar</em> para confirmar", screen: chromePage("android/app.png", { dialog: true }), tap: "#t-install" },
+    { cap: "Pronto! O app está na sua tela 🎉", sub: "Abra sempre pelo ícone do passarinho.", screen: homeScreen(true), tap: "#t-icon" },
+    { cap: "O botão azul não apareceu?", sub: "Toque nos ⋮ (três pontinhos) lá em cima e depois em <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>.", screen: chromePage("android/app.png", { menu: true }), tap: { sel: "#t-menu", hand: "left" } },
+    { card: "final" },
+  ],
+};
+
+function card(kind, platform) {
+  const name = platform === "ios" ? "iPhone" : "Android";
+  if (kind === "intro")
+    return `<div class="card-page"><div class="big-mark">${LOGO}</div><h1>Como instalar o<br>Petit à Petit<br>no ${name}</h1><p>Leva menos de 1 minuto.<br>É só seguir os passos 👇</p></div>`;
+  return `<div class="card-page"><div class="big-mark" style="width:150px;height:150px;border-radius:38px">${LOGO}</div><h1>Agora é só<br>começar!</h1>
+    <ul><li>1. <b>Crie sua conta</b> (e-mail e senha)</li><li>2. Escolha <b>quantos minutos</b> por dia</li><li>3. Estude <b>um pouquinho todo dia</b></li></ul>
+    <span class="url">${URL_TXT}</span><p class="proverb">« Petit à petit, l’oiseau fait son nid. »</p></div>`;
+}
+
+const [platform, idx, variant] = (new URLSearchParams(location.search).get("f") || "ios-1-b").split("-");
+const list = FRAMES[platform];
+const f = list[Number(idx)];
+const steps = list.filter((x) => !x.card).length;
+const stepNo = list.slice(0, Number(idx) + 1).filter((x) => !x.card).length;
+const el = document.getElementById("frame");
+if (f.card) {
+  el.innerHTML = card(f.card, platform);
+} else {
+  el.innerHTML = `
+    <div class="brand"><span class="mark">${LOGO}</span><b>Petit à Petit</b><span class="pill">${platform === "ios" ? "iPhone" : "Android"}</span></div>
+    <div class="head"><div class="stepno">Passo ${stepNo} de ${steps}</div><div class="caption">${f.cap}</div>${f.sub ? `<div class="sub">${f.sub}</div>` : ""}</div>
+    <div class="phone ${platform}"><div class="screen">${f.screen}${platform === "ios" ? '<div class="island"></div>' : ""}</div></div>`;
+  if (variant === "b" && f.tap) mark(f.tap);
+}
+// Draws the tap marker on the phone (outside the clipped screen) and a finger pointing at it.
+function mark(tap) {
+  const phone = el.querySelector(".phone");
+  const screen = el.querySelector(".screen");
+  const O = 12; // phone bezel
+  let r;
+  let shape = "box";
+  if (typeof tap === "string" || tap.sel) {
+    const t = screen.querySelector(tap.sel || tap).getBoundingClientRect();
+    const s0 = screen.getBoundingClientRect();
+    r = { x: t.left - s0.left - 6, y: t.top - s0.top - 6, w: t.width + 12, h: t.height + 12 };
+  } else if (tap.box) {
+    const [x, y, w, h] = tap.box;
+    r = { x, y, w, h };
+  } else {
+    const [cx, cy, rad] = tap.ring;
+    r = { x: cx - rad, y: cy - rad, w: rad * 2, h: rad * 2 };
+    shape = "ring";
+  }
+  const m = document.createElement("div");
+  m.className = shape;
+  Object.assign(m.style, { left: `${r.x + O}px`, top: `${r.y + O}px`, width: `${r.w}px`, height: `${r.h}px` });
+  phone.append(m);
+  const hand = document.createElement("div");
+  hand.className = "hand";
+  const cx = r.x + r.w / 2 + O;
+  const below = r.y + r.h < 640;
+  if (tap.hand === "left") {
+    hand.textContent = "👈";
+    Object.assign(hand.style, { left: `${r.x + r.w + O + 6}px`, top: `${r.y + r.h / 2 + O - 30}px` });
+  } else {
+    hand.textContent = below ? "👆" : "👇";
+    Object.assign(hand.style, { left: `${Math.min(cx - 29, 424 - 64)}px`, top: below ? `${r.y + r.h + O + 10}px` : `${r.y + O - 72}px` });
+  }
+  phone.append(hand);
+}
+window.FRAME_COUNT = { ios: FRAMES.ios.length, android: FRAMES.android.length };
+</script>
+</body>
+</html>

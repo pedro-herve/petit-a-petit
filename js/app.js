@@ -14,6 +14,7 @@ import { renderNotebook } from "./views/notebook.js";
 import { renderProfile } from "./views/profile.js";
 import { renderSession, active } from "./views/session.js";
 import { maybeStartTour } from "./tour.js";
+import "./install.js";
 
 const root = document.getElementById("app");
 

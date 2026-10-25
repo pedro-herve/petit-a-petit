@@ -4,6 +4,7 @@ import * as auth from "../auth.js";
 import { h, icon, toast, confirmSheet } from "../ui.js";
 import { syncNow } from "../sync.js";
 import { go } from "../nav.js";
+import { installCard, shouldOfferInstall } from "../install.js";
 
 export const MINUTE_OPTIONS = [5, 10, 15, 20, 30, 45, 60];
 
@@ -13,6 +14,7 @@ export function renderWelcome(root, { onReady }) {
   const cloud = auth.cloudEnabled();
   root.replaceChildren(
     h("main", { class: "welcome" },
+      shouldOfferInstall() && installCard(),
       h("div", { class: "welcome-hero" },
         logo(),
         h("h1", { class: "brand" }, "Petit à Petit"),

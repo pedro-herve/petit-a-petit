@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Como instalar · Petit à Petit</title>
+<meta name="description" content="Vídeo de 30 segundos mostrando como instalar o Petit à Petit no iPhone ou no Android." />
+<link rel="icon" href="../icons/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+<meta property="og:title" content="Como instalar o Petit à Petit" />
+<meta property="og:description" content="Vídeo de 30 segundos: iPhone ou Android." />
+<meta property="og:image" content="../icons/icon-512.png" />
+<style>
+  :root { --bg: #fbf7f0; --ink: #1c2540; --ink2: #485069; --blue: #2b4bb0; --soft: #e7ecfa; --line: #e8dfcf; --red: #d8433a;
+    --serif: "New York", ui-serif, Georgia, serif; --sans: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #11151e; --ink: #eee9df; --ink2: #c4c0b7; --blue: #8ea5f5; --soft: #222c4d; --line: #2d3549; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.5 var(--sans); }
+  main { max-width: 560px; margin: 0 auto; padding: calc(env(safe-area-inset-top) + 24px) 16px 40px; display: flex; flex-direction: column; gap: 18px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 52px; height: 52px; border-radius: 14px; }
+  .brand b { font-family: var(--serif); font-size: 26px; font-weight: 600; }
+  h1 { font-family: var(--serif); font-size: 32px; line-height: 1.15; margin: 4px 0 0; font-weight: 600; }
+  p { margin: 0; color: var(--ink2); }
+  .tabs { display: flex; gap: 6px; background: var(--soft); padding: 5px; border-radius: 16px; }
+  .tabs button { flex: 1; border: none; background: none; padding: 14px 8px; border-radius: 12px; font: 700 18px var(--sans); color: var(--ink2); }
+  .tabs button.on { background: var(--bg); color: var(--ink); box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  video { width: 100%; border-radius: 22px; background: #000; aspect-ratio: 9 / 16; box-shadow: 0 10px 30px rgba(28,37,64,.18); }
+  ol { margin: 0; padding-left: 26px; display: flex; flex-direction: column; gap: 8px; color: var(--ink2); }
+  ol b { color: var(--ink); }
+  .open { display: block; text-align: center; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700; font-size: 20px; padding: 18px; border-radius: 16px; }
+  .note { font-size: 15px; border-left: 3px solid var(--red); padding-left: 12px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><img src="../icons/icon-192.png" alt=""><b>Petit à Petit</b></div>
+  <h1>Como instalar o app no seu celular</h1>
+  <p>Assista ao vídeo (30 segundos) e depois faça igual. Escolha o tipo do seu celular:</p>
+  <div class="tabs" role="tablist">
+    <button id="t-ios" role="tab">iPhone</button>
+    <button id="t-android" role="tab">Android</button>
+  </div>
+
+  <section id="ios">
+    <video src="instalar-ios.mp4" controls playsinline preload="metadata" poster=""></video>
+    <ol>
+      <li>Abra o link do app no <b>Safari</b>.</li>
+      <li>Toque nos <b>três risquinhos ≡</b> lá embaixo e em <b>Compartilhar</b>.<br><small>Em iPhones mais antigos, toque direto no botão Compartilhar (quadrado com setinha ⬆).</small></li>
+      <li>Toque em <b>Ver Mais</b> e em <b>Adicionar à Tela de Início</b>.</li>
+      <li>Toque em <b>Adicionar</b>, no canto de cima.</li>
+    </ol>
+  </section>
+
+  <section id="android" hidden>
+    <video src="instalar-android.mp4" controls playsinline preload="metadata"></video>
+    <ol>
+      <li>Abra o link do app no <b>Chrome</b>. Se abrir dentro do WhatsApp, toque nos <b>⋮</b> e em <b>Abrir no Chrome</b>.</li>
+      <li>Toque no botão azul <b>Instalar o app</b>.</li>
+      <li>Confirme em <b>Instalar</b>.</li>
+      <li>Não apareceu o botão? Toque nos <b>⋮</b> lá em cima e em <b>Instalar app</b>.</li>
+    </ol>
+  </section>
+
+  <a class="open" href="../">Abrir o Petit à Petit</a>
+  <p class="note">Depois de instalado, abra sempre pelo ícone do passarinho na tela do celular. Qualquer dúvida, me chama!</p>
+</main>
+<script>
+  const show = (id) => {
+    for (const p of ["ios", "android"]) {
+      document.getElementById(p).hidden = p !== id;
+      document.getElementById("t-" + p).classList.toggle("on", p === id);
+      if (p !== id) document.querySelector(`#${p} video`).pause();
+    }
+  };
+  document.getElementById("t-ios").onclick = () => show("ios");
+  document.getElementById("t-android").onclick = () => show("android");
+  show(location.hash === "#android" || (location.hash !== "#ios" && /android/i.test(navigator.userAgent)) ? "android" : "ios");
+</script>
+</body>
+</html>

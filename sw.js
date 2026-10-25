@@ -1,6 +1,6 @@
 // Offline support: everything the app needs is cached on install.
 // Bump VERSION whenever any file changes so phones pick up the update.
-const VERSION = "pap-v1.2.0";
+const VERSION = "pap-v1.3.0";
 const FILES = [
   "./",
   "index.html",
@@ -12,6 +12,7 @@ const FILES = [
   "js/config.js",
   "js/content.js",
   "js/fsrs.js",
+  "js/install.js",
   "js/nav.js",
   "js/speech.js",
   "js/store.js",

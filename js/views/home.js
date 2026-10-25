@@ -2,23 +2,13 @@
 import * as store from "../store.js";
 import { unit, currentUnit, unitProgress } from "../content.js";
 import { dayKey, addDays } from "../time.js";
-import { h, mount, icon, progressRing, isIOS, isStandalone, sheet } from "../ui.js";
+import { h, mount, icon, progressRing } from "../ui.js";
+import { install, shouldOfferInstall, isAndroid } from "../install.js";
 import { typo } from "../text.js";
 import { planToday, buildDaily, buildExtraNew, start } from "./session.js";
 import { go } from "../nav.js";
 
 const WEEKDAYS = ["D", "S", "T", "Q", "Q", "S", "S"];
-
-export function installHelp() {
-  sheet("Instalar no iPhone",
-    h("ol", { class: "steps-list" },
-      h("li", null, "Abra este site no ", h("b", null, "Safari"), "."),
-      h("li", null, "Toque no botão ", h("b", null, "Compartilhar"), " ", icon("share", "inline"), " na barra de baixo."),
-      h("li", null, "Role e toque em ", h("b", null, "Adicionar à Tela de Início"), "."),
-      h("li", null, "Toque em ", h("b", null, "Adicionar"), ". Pronto: o app abre em tela cheia e funciona offline.")
-    )
-  );
-}
 
 export function renderHome(el) {
   const s = store.get();
@@ -80,8 +70,8 @@ export function renderHome(el) {
       ),
       h("div", { class: `streak ${streak ? "on" : ""}`, title: "Dias seguidos" }, icon("flame"), h("b", null, String(streak)))
     ),
-    isIOS() && !isStandalone() &&
-      h("button", { class: "install-banner", onclick: installHelp }, icon("download"), h("span", null, h("b", null, "Instale no iPhone"), " para usar como app, em tela cheia e offline."), icon("chevron")),
+    shouldOfferInstall() &&
+      h("button", { class: "install-banner", onclick: install }, icon("download"), h("span", null, h("b", null, isAndroid() ? "Instale o app" : "Instale no iPhone"), " para usar em tela cheia, com ícone próprio e sem internet."), icon("chevron")),
     todayCard,
     cur &&
       (() => {

@@ -5,12 +5,12 @@ import { h, mount, icon, sheet, toast, confirmSheet } from "../ui.js";
 import { configure, frenchVoices, speak } from "../speech.js";
 import { status, syncNow, isCloudAccount } from "../sync.js";
 import { minutesChooser } from "./onboarding.js";
-import { installHelp } from "./home.js";
+import { installHelp } from "../install.js";
 import { rerender, go } from "../nav.js";
 import { startTour } from "../tour.js";
 import { dayKey } from "../time.js";
 
-export const VERSION = "1.2.0";
+export const VERSION = "1.3.0";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {
@@ -215,7 +215,7 @@ export function renderProfile(el) {
           } catch {}
         },
       }, icon("share"), "Compartilhar o app", icon("chevron")),
-      h("button", { class: "list-btn", onclick: installHelp }, icon("download"), "Instalar no iPhone", icon("chevron")),
+      h("button", { class: "list-btn", onclick: installHelp }, icon("download"), "Como instalar no celular", icon("chevron")),
       h("button", { class: "list-btn", onclick: methodSheet }, icon("info"), "Por que este método funciona", icon("chevron")),
       h("button", {
         class: "list-btn danger-text",
