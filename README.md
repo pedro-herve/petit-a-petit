@@ -61,6 +61,8 @@ Para mandar para outras pessoas, é só compartilhar o link (há um botão *Comp
 
 ## Ativar login (opcional, grátis)
 
+> Na versão publicada acima o login já está ativo (projeto Firebase `petit-a-petit-af44b`, plano Spark, Firestore em São Paulo). Os passos abaixo servem para quem fizer um fork e quiser o próprio projeto.
+
 Sem configuração, o app usa um perfil local (o progresso fica no aparelho; há exportar/importar backup em Perfil). Para ter **conta com e-mail e senha** e progresso sincronizado entre aparelhos, use o Firebase no plano **Spark (gratuito, sem cartão)**:
 
 1. Acesse https://console.firebase.google.com → **Adicionar projeto** (pode desativar o Google Analytics).

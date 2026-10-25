@@ -9,7 +9,7 @@ import { installHelp } from "./home.js";
 import { rerender } from "../nav.js";
 import { dayKey } from "../time.js";
 
-export const VERSION = "1.0.0";
+export const VERSION = "1.1.0";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {
