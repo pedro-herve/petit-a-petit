@@ -11,7 +11,7 @@ import { startTour } from "../tour.js";
 import { dayKey } from "../time.js";
 import { applyTheme } from "../theme.js";
 
-export const VERSION = "1.6.0";
+export const VERSION = "1.7.0";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {

@@ -30,9 +30,10 @@ export function renderHome(el) {
           progressRing(today.sec / goalSec, 72, 7, `${Math.round(today.sec / 60)}′`),
           h("div", null,
             h("h2", null, studiedToday ? "Continuar hoje" : "Sessão de hoje"),
+            h("p", { class: "muted small" }, "Seu treino do dia: revisões de tudo o que você já viu + as próximas frases da sua estação."),
             h("ul", { class: "plan-list" },
               plan.reviews.length > 0 && h("li", null, icon("refresh"), `${plan.reviews.length} ${plan.reviews.length === 1 ? "revisão" : "revisões"}`),
-              plan.news.length > 0 && h("li", null, icon("sparkle"), `${plan.news.length} frases novas`, cur && h("span", { class: "muted" }, ` · ${typo(cur.title)}`)),
+              plan.news.length > 0 && h("li", null, icon("sparkle"), h("span", null, `${plan.news.length} frases novas`, cur && h("span", { class: "muted" }, ` · ${typo(cur.title)}`))),
               h("li", { class: "muted" }, icon("clock"), `≈ ${plan.minutes} min`)
             )
           )
@@ -101,7 +102,9 @@ export function renderHome(el) {
           h("h3", { class: "serif" }, typo(cur.title)),
           h("p", { class: "muted" }, cur.titlePt),
           h("div", { class: "bar thin" }, h("div", { class: "bar-fill line-fill", style: { width: `${pr.pct * 100}%` } })),
-          h("div", { class: "row" }, h("small", { class: "muted grow" }, `${pr.added} de ${pr.total} frases`), h("span", { class: "view-link" }, "Ver estação", icon("chevron")))
+          h("small", { class: "muted" }, `${pr.added} de ${pr.total} frases · o conteúdo da lição: diálogo, porquês, frases e missão`),
+          h("button", { class: "btn soft", onclick: (e) => { e.stopPropagation(); go(`/trilha/${cur.id}`); } }, icon("book"), "Abrir estação", icon("chevron")),
+          h("small", { class: "muted center" }, "Leia e ouça com calma, antes ou depois da sessão.")
         );
       })(),
     h("section", { class: "card week" },

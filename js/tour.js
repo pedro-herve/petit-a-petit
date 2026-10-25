@@ -15,23 +15,23 @@ function allSteps() {
     },
     {
       target: ".today",
-      title: "Comece sempre por aqui",
-      text: `Esta é a sua sessão do dia. Ao tocar em Começar a sessão, o app junta as revisões que vencem hoje com até ${n} frases novas, tudo cabendo nos seus ${minutes} minutos. O anel mostra quanto você já estudou hoje.`,
+      title: "A Sessão de hoje: seu treino",
+      text: `É aqui que você estuda todo dia, e é o único botão ▶ do app. A sessão junta as revisões que vencem hoje (de tudo o que você já viu) com até ${n} frases novas da sua estação, cabendo nos seus ${minutes} minutos.`,
     },
     {
-      title: "Uma regra simples",
+      target: ".unit-card",
+      title: "A estação: o conteúdo",
+      text: "Cada estação é uma lição: diálogo, porquês, frases e missão. A sessão vai te ensinando as frases dela aos poucos. Toque em Abrir estação para ler e ouvir tudo com calma, antes ou depois da sessão.",
+    },
+    {
+      title: "Sessão × estação",
       rule: true,
-      text: "Em todo o app, o botão azul com ▶ começa os exercícios. Já tocar no nome de uma estação ou na setinha › só abre para ver o conteúdo, sem começar nada.",
+      text: "Resumindo:",
     },
     {
       target: ".streak",
       title: "Dias seguidos",
       text: "Cada dia com pelo menos uma sessão conta aqui. Pouco todo dia vale mais do que muito de vez em quando.",
-    },
-    {
-      target: ".unit-card",
-      title: "Onde você está",
-      text: "A estação em que você está e quantas frases dela já viu. Toque no cartão para ver o diálogo, os porquês e as frases, sem começar exercícios.",
     },
     {
       target: ".week",
@@ -41,7 +41,7 @@ function allSteps() {
     {
       target: '.tabbar a[href="#/trilha"]',
       title: "Trilha",
-      text: "O caminho completo: A1, A2, B1 e a Trilha Mamie, que já entra intercalada no momento certo. Dá para abrir qualquer unidade e estudar fora de ordem.",
+      text: "O mapa do curso: cada nível (A1 a C1) é uma linha de metrô e cada lição é uma estação, com a Trilha Mamie intercalada. As estações abrem em sequência e, no fim de cada linha, uma prova libera a próxima.",
     },
     {
       target: '.tabbar a[href="#/praticar"]',
@@ -79,7 +79,7 @@ function finish({ startSession = false } = {}) {
   active.root.remove();
   active = null;
   store.update((s) => {
-    s.seen = { ...(s.seen || {}), tour: s.seen?.tour || Date.now() };
+    s.seen = { ...(s.seen || {}), tour: s.seen?.tour || Date.now(), tour2: Date.now() };
   });
   if (startSession) start(buildDaily(store.get()), { daily: true });
 }
@@ -111,8 +111,8 @@ function render() {
     : step.rule
       ? h("div", { class: "stack tight" },
           h("p", { class: "tour-text" }, step.text),
-          h("div", { class: "rule-row" }, h("span", { class: "btn primary small" }, icon("play"), "Estudar"), h("span", null, "começa os exercícios")),
-          h("div", { class: "rule-row" }, h("span", { class: "view-link" }, "Ver estação", icon("chevron")), h("span", null, "só abre para ver"))
+          h("div", { class: "rule-row" }, h("span", { class: "btn primary small" }, icon("play"), "Começar a sessão"), h("span", null, "treinar: revisões + frases novas")),
+          h("div", { class: "rule-row" }, h("span", { class: "btn soft small" }, icon("book"), "Abrir estação"), h("span", null, "ler e ouvir o conteúdo da lição"))
         )
       : h("p", { class: "tour-text" }, step.text);
 
@@ -185,5 +185,5 @@ export function startTour() {
 export const tourActive = () => !!active;
 
 export function maybeStartTour() {
-  if (!store.get()?.seen?.tour) setTimeout(() => location.hash.replace(/^#/, "") === "/hoje" && startTour(), 450);
+  if (!store.get()?.seen?.tour2) setTimeout(() => location.hash.replace(/^#/, "") === "/hoje" && startTour(), 450);
 }
