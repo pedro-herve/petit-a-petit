@@ -174,5 +174,5 @@ export function startTour() {
 export const tourActive = () => !!active;
 
 export function maybeStartTour() {
-  if (!store.get()?.seen?.tour) setTimeout(startTour, 450);
+  if (!store.get()?.seen?.tour) setTimeout(() => location.hash.replace(/^#/, "") === "/hoje" && startTour(), 450);
 }

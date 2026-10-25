@@ -1,6 +1,6 @@
 # Petit à Petit
 
-**Francês de verdade, um pouco por dia.** App web (PWA) gratuito para brasileiros aprenderem francês, do A1 ao B1, com uma trilha especial para conversar com a família francesa ("Trilha Mamie"). Instala na tela de início do iPhone, funciona offline e não tem custo nenhum: nem para quem mantém, nem para quem usa.
+**Francês de verdade, um pouco por dia.** App web (PWA) gratuito para brasileiros aprenderem francês, do A1 ao C1, com uma trilha especial para conversar com a família francesa ("Trilha Mamie"). Instala na tela de início do iPhone, funciona offline e não tem custo nenhum: nem para quem mantém, nem para quem usa.
 
 **Abrir o app:** https://pedro-herve.github.io/petit-a-petit/ (no iPhone: Safari → Compartilhar → Adicionar à Tela de Início)
 
@@ -27,10 +27,14 @@
 | `content/mamie.json` | Trilha Mamie (A1–A2) | 6 |
 | `content/a2.json` | A2 · Paris au quotidien | 12 |
 | `content/b1.json` | B1 · Parler vraiment | 10 |
+| `content/b2.json` | B2 · Aisance | 10 |
+| `content/c1.json` | C1 · Maîtrise | 10 |
 
 Cada unidade tem diálogo, 14–16 frases com áudio, explicações "Pourquoi ?", missão de produção, nota cultural e glossário palavra por palavra. A Trilha Mamie é intercalada na ordem principal no momento em que a gramática necessária já foi vista (veja `ORDER` em `js/content.js`).
 
-**B2/C1 e temas extras:** em *Praticar → Criar lição com IA*, o app gera um prompt para a versão gratuita do Claude ou do ChatGPT; a resposta (JSON) é colada de volta e vira uma lição completa em "Minhas lições".
+**Trilha em linhas de metrô.** Cada nível é uma "linha" (cores do metrô de Paris) e cada unidade é uma estação. As estações abrem em sequência; no fim de cada linha há o **Terminus**, uma prova de 20 perguntas (80% para passar) que libera a linha seguinte. Quem já sabe o básico faz o mesmo teste no cadastro para começar no A2. Estrelas por estação: ★ frases vistas, ★★ missão feita, ★★★ frases dominadas.
+
+**Temas extras:** em *Praticar → Criar lição com IA*, o app gera um prompt para a versão gratuita do Claude ou do ChatGPT; a resposta (JSON) é colada de volta e vira uma lição completa em "Minhas lições".
 
 Para escrever lições novas à mão, siga `content/SPEC.md` e valide:
 

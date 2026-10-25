@@ -5,6 +5,7 @@ import { h, icon, toast, confirmSheet } from "../ui.js";
 import { syncNow } from "../sync.js";
 import { go } from "../nav.js";
 import { installCard, shouldOfferInstall } from "../install.js";
+import { startExam } from "./session.js";
 
 export const MINUTE_OPTIONS = [5, 10, 15, 20, 30, 45, 60];
 
@@ -167,9 +168,8 @@ export function renderSetup(root, { onReady, email = "" }) {
         h("div", { class: "setup-step" },
           h("h2", null, "Por onde começar?"),
           [
-            ["a1", "Do zero", "Começar pelo A1: cumprimentos, café, metrô, família."],
-            ["a2", "Já me viro no básico", "Pular para o A2. O A1 continua disponível na Trilha."],
-            ["mamie", "Pela trilha Mamie", "Começar falando com a avó: telefonemas, carinho, almoço em família."],
+            ["a1", "Do zero", "Começar pela Linha A1: cumprimentos, café, metrô, família. A Trilha Mamie aparece ao longo do caminho."],
+            ["test", "Já me viro no básico", "Faça um teste rápido de 20 perguntas. Se acertar 80%, você começa direto na Linha A2."],
           ].map(([id, t, d]) =>
             h("button", { class: `choice ${data.start === id ? "on" : ""}`, type: "button", onclick: () => { data.start = id; draw(); } },
               h("b", null, t),
@@ -193,11 +193,11 @@ export function renderSetup(root, { onReady, email = "" }) {
                 return draw();
               }
               store.update((s) => {
-                s.profile = { name: data.name.trim(), minutes: data.minutes, start: data.start === "mamie" ? "a1" : data.start, email, createdAt: Date.now(), updatedAt: Date.now() };
-                if (data.start === "mamie") s.focus = "m-01";
+                s.profile = { name: data.name.trim(), minutes: data.minutes, start: "a1", email, createdAt: Date.now(), updatedAt: Date.now() };
               });
               onReady();
               go("/hoje");
+              if (data.start === "test") setTimeout(() => startExam("A1", { placement: true }), 100);
             },
           }, last ? "C’est parti !" : "Continuar"),
           stepIdx > 0 && h("button", { class: "btn link", onclick: () => { stepIdx--; draw(); } }, "Voltar")

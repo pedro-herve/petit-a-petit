@@ -1,6 +1,6 @@
 // The study session: builds the step list from the learner's time budget and plays it.
 import * as store from "../store.js";
-import { content, nextNewCards, unit, card as getCard, currentLevel } from "../content.js";
+import { content, nextNewCards, unit, card as getCard, currentLevel, unitProgress, lineOf, levelInfo, examReady, currentUnit, LEVEL_IDS, EXAM_PASS } from "../content.js";
 import { preview, schedule, formatInterval, AGAIN, HARD, GOOD, EASY } from "../fsrs.js";
 import { dayEnd } from "../time.js";
 import { h, mount, icon, frText, md, speakBtn, toast, confirmSheet } from "../ui.js";
@@ -114,17 +114,42 @@ export function buildPractice(state, kind, n = 10) {
   return [];
 }
 
+// Level exam (and placement test): multiple choice, graded automatically, no effect on reviews.
+export function buildExam(level, n = 20) {
+  const pool = lineOf(level).flatMap((u) => u.cards);
+  const picked = shuffle(pool).slice(0, n);
+  const kinds = ["listen", "fr", "pt"];
+  return picked.map((c, i) => {
+    const kind = kinds[i % kinds.length];
+    const field = kind === "pt" ? "fr" : "pt";
+    const others = shuffle(pool.filter((x) => x.id !== c.id && x[field] !== c[field]));
+    const distractors = [];
+    for (const o of others) {
+      if (distractors.length === 3) break;
+      if (!distractors.some((d) => d[field] === o[field])) distractors.push(o);
+    }
+    return { type: "quiz", id: c.id, kind, options: shuffle([c, ...distractors]).map((x) => x.id) };
+  });
+}
+
+export function startExam(level, { placement = false } = {}) {
+  const steps = buildExam(level);
+  start(steps, { title: `Prova do ${level}`, exam: { level, placement, correct: 0, total: steps.length } });
+}
+
 // ---------------------------------------------------------------------------
 // Player
 
 let S = null; // { steps, idx, title, tick, sec, counted, stats, requeued }
 
-export function start(steps, { title = "Sessão de hoje", daily = false } = {}) {
+export function start(steps, { title = "Sessão de hoje", daily = false, exam = null } = {}) {
   if (!steps.length) {
     toast("Nada para estudar agora.");
     return;
   }
-  S = { steps: [...steps, { type: "done" }], idx: 0, title, daily, tick: Date.now(), sec: 0, counted: false, stats: { reviews: 0, again: 0, news: 0 }, requeued: {} };
+  const state = store.get();
+  const doneAtStart = new Set([...content.units.keys()].filter((id) => unitProgress(state, id).done));
+  S = { steps: [...steps, { type: "done" }], idx: 0, title, daily, exam, doneAtStart, touched: new Set(), tick: Date.now(), sec: 0, counted: false, stats: { reviews: 0, again: 0, news: 0 }, requeued: {} };
   go("/sessao");
 }
 
@@ -150,13 +175,13 @@ function next(root) {
   renderSession(root);
 }
 
-function exit() {
+function exit(to = "/hoje") {
   stopSpeaking();
   if (S) addTime();
   store.persist();
   S = null;
   syncNow();
-  go("/hoje");
+  go(to);
 }
 
 export function renderSession(root) {
@@ -174,12 +199,12 @@ export function renderSession(root) {
           onclick: () => (step.type === "done" || S.idx === 0 ? exit() : confirmSheet("Sair da sessão?", "O que você já fez fica salvo.", "Sair", exit)),
         }, icon("x")),
         h("div", { class: "bar" }, h("div", { class: "bar-fill", style: { width: `${pct * 100}%` } })),
-        h("span", { class: "session-count" }, step.type === "done" ? "" : `${S.idx + 1}/${total}`)
+        h("span", { class: "session-count" }, step.type === "done" ? "" : S.exam ? `${S.exam.level} · ${S.idx + 1}/${total}` : `${S.idx + 1}/${total}`)
       ),
       body
     )
   );
-  const R = { intro, dialogue, pourquoi, learn, review, dictation, task, done }[step.type];
+  const R = { intro, dialogue, pourquoi, learn, review, dictation, task, quiz, done }[step.type];
   R(body, step, () => next(root));
   window.scrollTo(0, 0);
 }
@@ -468,6 +493,7 @@ function review(el, step, done) {
     });
     store.logDay({ reviews: isNew ? 0 : 1, news: isNew ? 1 : 0, again: g === AGAIN ? 1 : 0 });
     S.stats[isNew ? "news" : "reviews"]++;
+    if (isNew) S.touched.add(c.unit);
     if (g === AGAIN) S.stats.again++;
     if (g === AGAIN && (S.requeued[step.id] || 0) < 2) {
       S.requeued[step.id] = (S.requeued[step.id] || 0) + 1;
@@ -511,7 +537,89 @@ function dictation(el, step, done) {
   setTimeout(() => speak(c.fr), 300);
 }
 
-export function taskView(u, { onDone } = {}) {
+function quiz(el, step, done) {
+  const c = getCard(step.id);
+  const prompts = { listen: "Ouça e escolha o que significa", fr: "O que esta frase quer dizer?", pt: "Como se diz em francês?" };
+  const label = (id) => (step.kind === "pt" ? typo(getCard(id).fr) : getCard(id).pt);
+  let answered = false;
+  const actions = h("div", { class: "step-actions" });
+  const options = h("div", { class: "quiz-options" },
+    step.options.map((id) =>
+      h("button", {
+        class: "quiz-opt",
+        "data-id": id,
+        lang: step.kind === "pt" ? "fr" : null,
+        onclick: (e) => {
+          if (answered) return;
+          answered = true;
+          const right = id === c.id;
+          if (right) S.exam.correct++;
+          options.querySelectorAll(".quiz-opt").forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.id === c.id) b.classList.add("right");
+          });
+          if (!right) e.currentTarget.classList.add("wrong");
+          speak(c.fr);
+          mount(actions, h("button", { class: "btn primary big", onclick: done }, "Continuar"));
+        },
+      }, label(id))
+    )
+  );
+  el.append(
+    h("div", { class: "step card-step" },
+      h("span", { class: "chip gold" }, S.exam.placement ? "Teste de nivelamento" : `Prova do ${S.exam.level}`),
+      h("p", { class: "prompt" }, prompts[step.kind]),
+      step.kind === "listen" && h("div", { class: "row gap center listen-big" }, speakBtn(c.fr, { cls: "round huge" }), speakBtn(c.fr, { slow: true, cls: "round" })),
+      step.kind === "fr" && h("div", { class: "big-fr", lang: "fr" }, typo(c.fr)),
+      step.kind === "pt" && h("div", { class: "big-pt strong" }, c.pt),
+      options
+    ),
+    actions
+  );
+  if (step.kind === "listen") setTimeout(() => speak(c.fr), 300);
+}
+
+function examResult(el) {
+  const { level, correct, total, placement } = S.exam;
+  const score = total ? correct / total : 0;
+  const pass = score >= EXAM_PASS;
+  const need = Math.ceil(total * EXAM_PASS);
+  const next = LEVEL_IDS[LEVEL_IDS.indexOf(level) + 1];
+  store.update((s) => {
+    s.levels ||= {};
+    const r = s.levels[level] || {};
+    s.levels[level] = {
+      ...r,
+      attempts: (r.attempts || 0) + 1,
+      best: Math.max(r.best || 0, score),
+      passed: r.passed || (pass ? Date.now() : null),
+      via: r.passed ? r.via : pass ? (placement ? "placement" : "exam") : r.via || null,
+    };
+  });
+  const info = levelInfo(level);
+  el.append(
+    h("div", { class: "step done-step" },
+      pass
+        ? h("div", { class: "stamp", style: { "--line": info.color } }, h("small", null, "Petit à Petit"), h("b", null, level), h("span", null, "Validé"))
+        : h("div", { class: "done-badge" }, icon("refresh")),
+      h("h1", { class: "display" }, pass ? "Félicitations !" : "Presque !"),
+      h("p", { class: "lead" },
+        pass
+          ? next ? `Você acertou ${correct} de ${total}. A Linha ${next} está liberada!` : `Você acertou ${correct} de ${total} e concluiu a jornada inteira. Chapeau !`
+          : placement
+            ? `Você acertou ${correct} de ${total} (precisava de ${need}). Sem problema: começamos pela Linha A1, e as primeiras estações vão voar.`
+            : `Você acertou ${correct} de ${total}; para passar são ${need}. Revise as frases do ${level} e tente de novo quando quiser.`
+      ),
+      h("div", { class: "stats-grid" }, stat(`${Math.round(score * 100)}%`, "acertos"), stat(`${need}/${total}`, "para passar"))
+    ),
+    h("div", { class: "step-actions two" },
+      !pass && !placement && h("button", { class: "btn ghost", onclick: () => { exit(); setTimeout(() => startExam(level), 50); } }, "Tentar de novo"),
+      h("button", { class: "btn primary big", onclick: () => { exit("/trilha"); } }, pass ? `Ver a Linha ${next || level}` : "Ver a trilha")
+    )
+  );
+}
+
+export function taskView(u, { onDone, doneLabel = "Concluir unidade" } = {}) {
   const level = currentLevel(store.get());
   const area = h("textarea", { class: "answer", rows: 5, placeholder: "Escreva (ou dite) em francês…", lang: "fr", autocapitalize: "sentences", spellcheck: "false" });
   const model = h("div", { class: "model", hidden: true }, h("div", { class: "muted small" }, "Resposta-modelo"), frText(u.task.model), speakBtn(u.task.model, { cls: "small" }));
@@ -531,7 +639,7 @@ export function taskView(u, { onDone } = {}) {
       )
     ),
     model,
-    onDone && h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: onDone }, "Concluir unidade"))
+    onDone && h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: onDone }, doneLabel))
   );
 }
 
@@ -555,6 +663,11 @@ function done(el) {
     store.logDay({ sessions: 1 });
     store.persist();
   }
+  if (S.exam) return examResult(el);
+  const state = store.get();
+  const completed = [...S.touched].filter((id) => !S.doneAtStart.has(id) && unitProgress(state, id).done).map(unit);
+  const examLevel = examReady(state);
+  const nextId = currentUnit(state);
   const { reviews, news, again } = S.stats;
   const total = reviews + news;
   const acc = total ? Math.round(((total - again) / total) * 100) : null;
@@ -571,9 +684,22 @@ function done(el) {
         stat(reviews, "revisões"),
         stat(acc == null ? "—" : `${acc}%`, "acertos")
       ),
-      h("div", { class: "streak-line" }, icon("flame"), st === 1 ? "1 dia seguido" : `${st} dias seguidos`)
+      h("div", { class: "streak-line" }, icon("flame"), st === 1 ? "1 dia seguido" : `${st} dias seguidos`),
+      completed.map((u) =>
+        h("div", { class: "station-done", style: { "--line": levelInfo(u.level).color, "--line-ink": levelInfo(u.level).ink } },
+          h("span", { class: "station-dot" }, icon("check")),
+          h("div", null, h("small", null, "Estação concluída"), h("b", { class: "serif" }, typo(u.title)))
+        )
+      ),
+      completed.length > 0 && examLevel &&
+        h("div", { class: "callout" }, icon("star"), h("span", null, h("b", null, `Terminus da Linha ${examLevel}! `), "Faça a prova para liberar a próxima linha.")),
+      completed.length > 0 && !examLevel && nextId &&
+        h("p", { class: "muted" }, "Próxima estação: ", h("b", { class: "serif" }, typo(unit(nextId).title)))
     ),
-    h("div", { class: "step-actions" }, h("button", { class: "btn primary big", onclick: exit }, "Voltar ao início"))
+    h("div", { class: completed.length && examLevel ? "step-actions two" : "step-actions" },
+      completed.length > 0 && examLevel && h("button", { class: "btn ghost", onclick: () => { exit(); setTimeout(() => startExam(examLevel), 50); } }, "Fazer a prova"),
+      h("button", { class: "btn primary big", onclick: () => exit() }, "Voltar ao início")
+    )
   );
 }
 

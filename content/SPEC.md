@@ -152,3 +152,29 @@ O objetivo é que o aluno consiga conversar com a avó parisiense. Sempre `tu`. 
 4. `m-04` (A2) **Ma vie au Brésil** — contar à avó sobre trabalho, rotina, família, planos (presente, passé composé, futur proche). Pourquoi: como contar novidades usando os 3 tempos básicos.
 5. `m-05` (A2) **Raconte-moi, Mamie** — pedir e entender lembranças: "Comment c'était, Paris, quand tu étais jeune ?", imparfait para compreensão. Pourquoi: imparfait como "tempo das lembranças".
 6. `m-06` (A2) **Le Paris de Mamie** — o bairro dela, arrondissements, padaria, mercado, metrô, expressões parisienses antigas e atuais. Pourquoi: como os parisienses falam dos lugares ("dans le 15e", "rive gauche").
+
+### B2 (`b2.json`, track `main`) — "Aisance"
+Léo agora mora parte do ano em Paris (studio no prédio da Mamie, trabalha remoto como engenheiro). Camille e o namorado Hugo pensam em se mudar para Lyon. Monsieur Bernard é o vizinho de cima. Frases de até ~16 palavras; francês natural e variado.
+1. `b2-01` **Je suis ravi que tu sois venu** — subjuntivo passado e sentimentos (être content/désolé/étonné que + subj. passé). Pourquoi: "que você tenha vindo".
+2. `b2-02` **Bien que…** — nuançar opinião: il me semble que, j'ai l'impression que, il se peut que, bien que/quoique + subj., même si + indicativo. Pourquoi: bien que × même si.
+3. `b2-03` **Au bureau** — registro profissional, e-mails e reuniões: je vous prie de, n'hésitez pas à, ci-joint, je reviens vers vous, faire le point. Pourquoi: fórmulas de cortesia e o "vous" profissional.
+4. `b2-04` **Les expressions imagées** — idiomatismes frequentes: coûter les yeux de la tête, poser un lapin, avoir le cafard, tomber dans les pommes, mettre son grain de sel, ce n'est pas la mer à boire. Pourquoi: entender pela imagem, não pela tradução literal.
+5. `b2-05` **Il était une fois… le passé simple** — reconhecer o passé simple em contos e livros (il fut, elle alla, ils dirent); Mamie lê um conto para Léo. Pourquoi: passé simple é da escrita; reconhecer, não precisa usar falando.
+6. `b2-06` **Pour que tout aille bien** — causa, consequência e finalidade: puisque, comme, étant donné que, si bien que, de sorte que, afin que/pour que + subj. Pourquoi: "para que" pede subjuntivo nas duas línguas.
+7. `b2-07` **Je le lui ai dit** — pronomes duplos e ordem: je le lui ai dit, il m'en a parlé, vas-y, donne-le-moi, ne me le dis pas. Pourquoi: a ordem dos pronomes (me/te/se/nous/vous → le/la/les → lui/leur → y → en).
+8. `b2-08` **Certes, mais…** — debater com nuance: certes… mais, il n'empêche que, en revanche, quand bien même, je vous l'accorde; interromper com educação. Pourquoi: concessão (admitir para depois discordar).
+9. `b2-09` **La France d'aujourd'hui** — sociedade e atualidade: la grève, la hausse des prix, le pouvoir d'achat, l'écologie, les élections; nominalização. Pourquoi: nominalização (augmenter → la hausse).
+10. `b2-10` **Quand tu auras fini** — futur antérieur e hipóteses complexas: quand tu auras fini, dès que j'aurai reçu, j'aurais dû, si j'avais su. Pourquoi: futur antérieur = "terei feito".
+
+### C1 (`c1.json`, track `main`) — "Maîtrise"
+Léo já conversa com fluência; o foco é nuance, registro, implícito e cultura. Frases de até ~18 palavras.
+1. `c1-01` **Les registres** — familier, courant, soutenu: a mesma ideia em três registros (bouquin/livre/ouvrage, bosser/travailler/œuvrer). Pourquoi: quando cada registro cabe.
+2. `c1-02` **L'implicite et l'ironie** — litote ("ce n'est pas mal" = é ótimo), antífrase, ironia, o understatement francês. Pourquoi: a litote.
+3. `c1-03` **Argumenter avec élégance** — conectores avançados: or, toutefois, néanmoins, en outre, par ailleurs, dès lors, force est de constater. Pourquoi: "or" (= ora) e o encadeamento lógico.
+4. `c1-04` **La langue littéraire** — reconhecer subjonctif imparfait (qu'il fût), inversões (peut-être est-il…), ne explétif (avant qu'il ne parte, je crains qu'il ne vienne), ne sozinho (je ne sais). Pourquoi: o "ne" que não nega.
+5. `c1-05` **Parler comme un Parisien** — gírias e oral rápido atuais: bosser, kiffer, galérer, avoir le seum, chelou, ouf, tkt, chais pas, t'sais. Pourquoi: por que o francês falado "engole" sílabas.
+6. `c1-06` **Références culturelles** — expressões vindas da cultura: la madeleine de Proust, c'est kafkaïen, l'esprit de l'escalier, un dialogue de sourds, Piaf, Brel, le cinéma. Pourquoi: referências que os franceses usam sem explicar.
+7. `c1-07` **Négocier et convaincre** — mundo profissional avançado: je me permets de, à cet égard, il conviendrait de, sauf erreur de ma part, atenuação e diplomacia. Pourquoi: a arte de atenuar (hedging).
+8. `c1-08` **Les faux amis** — falsos cognatos PT→FR: attendre (esperar), prétendre (afirmar), la salade, la tasse, un costume, sensible, la journée, un rapport. Pourquoi: as armadilhas mais comuns para brasileiros.
+9. `c1-09` **Les nuances des émotions** — vocabulário fino de sentimentos: être aux anges, en avoir ras-le-bol, être dépité, avoir le mal du pays, être bouleversé, avoir un pincement au cœur. Pourquoi: intensidade e matiz.
+10. `c1-10` **Une lettre pour Mamie** — ler e escrever uma carta longa, afetuosa e cuidada para a avó: lembranças, gratidão, planos; fórmulas de carta (Ma très chère Mamie… Je t'embrasse tendrement). Pourquoi: a estrutura de uma carta francesa. É o fim emocionante da jornada.

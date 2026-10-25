@@ -1,7 +1,7 @@
 // Entry point: loads content, picks the account, routes between tabs.
 import * as store from "./store.js";
 import * as auth from "./auth.js";
-import { loadContent, indexContent } from "./content.js";
+import { loadContent, indexContent, migrateLevels } from "./content.js";
 import { configure } from "./speech.js";
 import { h, icon } from "./ui.js";
 import { route, setRenderer, go } from "./nav.js";
@@ -39,6 +39,7 @@ function render() {
   if (!s) return renderWelcome(root, { onReady: ready });
   if (!s.profile) return renderSetup(root, { onReady: ready });
   indexContent(s.custom);
+  if (migrateLevels(s)) store.persist();
   configure(s.settings);
 
   const r = route();

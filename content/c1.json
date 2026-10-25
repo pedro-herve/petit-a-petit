@@ -1,0 +1,3168 @@
+[
+  {
+    "id": "c1-01",
+    "level": "C1",
+    "track": "main",
+    "title": "Les registres",
+    "titlePt": "Familiar, corrente, formal",
+    "goal": "Dizer a mesma coisa em três registros (familier, courant, soutenu) e escolher o tom certo para cada situação.",
+    "dialogue": {
+      "title": "Le jeu des registres",
+      "context": "Noite de chuva no apartamento da Mamie. Professora a vida inteira, ela inventa uma brincadeira: diz uma frase em francês 'normal'; Camille a traduz para a gíria e Léo, que já fala com fluência, tenta a versão mais chique possível.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Bon, on joue au jeu des registres ? Je dis une phrase, vous la transformez.",
+          "pt": "Bom, vamos brincar do jogo dos registros? Eu digo uma frase e vocês a transformam."
+        },
+        {
+          "who": "Camille",
+          "fr": "Vas-y, Mamie ! Moi, je fais le familier, et Léo le soutenu.",
+          "pt": "Manda, vó! Eu fico com o familiar, e o Léo com o formal."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Première phrase : « Je travaille beaucoup en ce moment. »",
+          "pt": "Primeira frase: 'Estou trabalhando muito ultimamente.'"
+        },
+        {
+          "who": "Camille",
+          "fr": "Facile : « Je bosse comme une malade en ce moment. »",
+          "pt": "Fácil: 'Tô trampando feito uma louca ultimamente.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "Et en soutenu : « J'œuvre sans relâche ces temps-ci. »",
+          "pt": "E no formal: 'Tenho labutado incansavelmente nestes tempos.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Bravo ! Un peu solennel, mais très juste. Deuxième : « J'ai lu un livre génial. »",
+          "pt": "Bravo! Um pouco solene, mas muito correto. Segunda: 'Li um livro genial.'"
+        },
+        {
+          "who": "Camille",
+          "fr": "« J'ai lu un bouquin trop bien. »",
+          "pt": "'Li um livro muito massa.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« J'ai achevé la lecture d'un ouvrage remarquable. »",
+          "pt": "'Concluí a leitura de uma obra notável.'"
+        },
+        {
+          "who": "Camille",
+          "fr": "Personne ne parle comme ça, Léo ! On dirait un discours de ministre.",
+          "pt": "Ninguém fala assim, Léo! Parece discurso de ministro."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Ne te moque pas. À l'écrit ou devant un jury, c'est exactement ce qu'il faut.",
+          "pt": "Não tire sarro. Por escrito ou diante de uma banca, é exatamente o que se espera."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et pour « je n'ai pas d'argent » ?",
+          "pt": "E para 'não tenho dinheiro'?"
+        },
+        {
+          "who": "Camille",
+          "fr": "« J'ai pas un rond. » Ou « je suis fauchée », ça marche aussi.",
+          "pt": "'Tô sem um tostão.' Ou 'tô dura', também serve."
+        },
+        {
+          "who": "Léo",
+          "fr": "Alors, en soutenu : « Je me trouve quelque peu désargenté. »",
+          "pt": "Então, no formal: 'Encontro-me um tanto desprovido de recursos.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Parfait ! Et moi, en courant : « Tu n'as plus d'argent ? Alors c'est moi qui t'invite. »",
+          "pt": "Perfeito! E eu, no corrente: 'Você está sem dinheiro? Então quem convida sou eu.'"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-01-01",
+        "fr": "Je bosse comme un fou en ce moment.",
+        "pt": "Tô trampando feito louco ultimamente.",
+        "note": "Familier: bosser = trabalhar. Normal entre amigos e colegas próximos; evite numa entrevista de emprego."
+      },
+      {
+        "id": "c1-01-02",
+        "fr": "J'œuvre sans relâche depuis des mois.",
+        "pt": "Venho trabalhando sem descanso há meses.",
+        "note": "Soutenu: œuvrer vem de 'œuvre' (obra). O 'œu' soa como um 'é' dito com biquinho: [é-vrê]."
+      },
+      {
+        "id": "c1-01-03",
+        "fr": "Elle œuvre pour la protection des enfants.",
+        "pt": "Ela trabalha pela proteção das crianças."
+      },
+      {
+        "id": "c1-01-04",
+        "fr": "J'ai lu un bouquin trop bien.",
+        "pt": "Li um livro muito massa.",
+        "note": "Familier: bouquin = livro. Os 'bouquinistes' do Sena vendem livros usados."
+      },
+      {
+        "id": "c1-01-05",
+        "fr": "J'ai achevé la lecture d'un ouvrage remarquable.",
+        "pt": "Concluí a leitura de uma obra notável.",
+        "note": "Soutenu: ouvrage = obra; achever = concluir. Típico de resenhas, discursos e textos acadêmicos."
+      },
+      {
+        "id": "c1-01-06",
+        "fr": "J'ai pas un rond ce mois-ci.",
+        "pt": "Tô sem um tostão este mês.",
+        "note": "Familier: 'un rond' era uma moeda (redonda). E, como sempre na fala, sem o 'ne'."
+      },
+      {
+        "id": "c1-01-07",
+        "fr": "Je suis fauché jusqu'à la fin du mois.",
+        "pt": "Tô duro até o fim do mês."
+      },
+      {
+        "id": "c1-01-08",
+        "fr": "Je me trouve quelque peu désargenté.",
+        "pt": "Encontro-me um tanto desprovido de recursos."
+      },
+      {
+        "id": "c1-01-09",
+        "fr": "On va bouffer un truc ?",
+        "pt": "Bora comer alguma coisa?",
+        "note": "Familier: bouffer = comer; 'la bouffe' = a comida. Com Monsieur Bernard, diga 'manger'."
+      },
+      {
+        "id": "c1-01-10",
+        "fr": "Me feriez-vous l'honneur de dîner avec moi ?",
+        "pt": "O senhor me daria a honra de jantar comigo?"
+      },
+      {
+        "id": "c1-01-11",
+        "fr": "Bon, je me casse. À plus !",
+        "pt": "Bom, vou vazar. Até mais!",
+        "note": "Familier: se casser = ir embora. Fora do círculo de amigos, pode soar grosseiro."
+      },
+      {
+        "id": "c1-01-12",
+        "fr": "Permettez-moi de prendre congé.",
+        "pt": "Permita-me que me despeça."
+      },
+      {
+        "id": "c1-01-13",
+        "fr": "Tu piges ou je te fais un dessin ?",
+        "pt": "Sacou ou quer que eu desenhe?"
+      },
+      {
+        "id": "c1-01-14",
+        "fr": "Je ne saisis pas bien votre propos.",
+        "pt": "Não compreendo bem o que o senhor quer dizer.",
+        "note": "Soutenu: saisir = captar; 'le propos' = aquilo que alguém diz."
+      },
+      {
+        "id": "c1-01-15",
+        "fr": "Cela ne me dérange nullement.",
+        "pt": "Isso não me incomoda de forma alguma."
+      },
+      {
+        "id": "c1-01-16",
+        "fr": "Personne ne parle comme ça, voyons !",
+        "pt": "Ninguém fala assim, ora essa!"
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Três andares do mesmo prédio",
+        "body": "O francês tem três **registros** bem marcados, como três andares de um prédio:\n**familier**: amigos, família, mensagens → *bosser, bouquin, fric, bouffer*\n**courant**: o francês 'neutro', que serve em quase tudo → *travailler, livre, argent, manger*\n**soutenu**: escrita cuidada, discursos, cartas formais → *œuvrer, ouvrage, fonds, se restaurer*\n\nO português também tem isso ('trampo / trabalho / labor', 'grana / dinheiro / recursos'), mas o francês **cobra mais caro** o erro de registro: um *bouffer* numa entrevista soa grosseiro, e um *ouvrage* numa mesa de bar soa pedante.\n\nRegra prática: na dúvida, fique no **courant**. Ele nunca ofende ninguém, e você sobe ou desce um andar conforme a situação pedir.",
+        "examples": [
+          {
+            "fr": "Il a plein de fric.",
+            "pt": "Ele tem muita grana. (familier)"
+          },
+          {
+            "fr": "Il a beaucoup d'argent.",
+            "pt": "Ele tem muito dinheiro. (courant)"
+          },
+          {
+            "fr": "Il dispose de fonds considérables.",
+            "pt": "Ele dispõe de recursos consideráveis. (soutenu)"
+          }
+        ]
+      },
+      {
+        "title": "A gramática também muda de registro",
+        "body": "Não é só o vocabulário: a **gramática** também sobe e desce.\n**Negação:** *j'sais pas* (fam.) → *je ne sais pas* (cour.) → *je ne sais* (sout., quase só na escrita)\n**Pronome:** *ça* (fam. e cour.) → *cela* (sout.)\n**'A gente':** *on* → *nous*\n**Pergunta:** *tu viens ?* → *est-ce que tu viens ?* → *viens-tu ?*\n**Intensidade:** *super, trop* → *très* → *fort, extrêmement*\n\nDois sinais entregam o soutenu: o *ne* nunca cai e a **inversão** aparece com naturalidade (*Puis-je vous aider ?*). No familier, é o contrário: a inversão quase some e a pergunta fica na ordem normal (*Tu fais quoi ?*).",
+        "examples": [
+          {
+            "fr": "Tu fais quoi ce soir ?",
+            "pt": "Vai fazer o quê hoje à noite? (familier)"
+          },
+          {
+            "fr": "Que faites-vous ce soir ?",
+            "pt": "O que o senhor vai fazer esta noite? (soutenu)"
+          },
+          {
+            "fr": "Puis-je vous aider ?",
+            "pt": "Posso ajudá-lo? (soutenu)"
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Escreva a mesma mensagem duas vezes: uma para um amigo (familier) e outra para um professor ou chefe (soutenu), avisando que você não vai poder ir a um encontro porque está trabalhando demais.",
+      "model": "Salut ! Désolé, je peux pas venir ce soir, je bosse comme un fou. On se voit la semaine prochaine ? — Madame, je suis navré de ne pouvoir assister à la réunion de ce soir : je suis actuellement débordé. Je vous prie de bien vouloir m'en excuser."
+    },
+    "culture": "A Académie française, fundada em 1635 pelo cardeal Richelieu, zela pelo 'bon usage' da língua. Mas são os parisienses que inventam as palavras novas, e todo ano os dicionários Le Petit Robert e Larousse anunciam quais delas entraram de vez no uso — muitas vindas do registro familier.",
+    "glossary": {
+      "bon": "bom; bem (para começar ou encerrar)",
+      "on": "a gente; se (impessoal)",
+      "joue": "joga, brinca (jouer)",
+      "au": "ao, no (à + le)",
+      "jeu": "jogo, brincadeira",
+      "des": "uns, umas; dos, das",
+      "registres": "registros",
+      "je": "eu",
+      "dis": "digo; diga! (dire)",
+      "une": "uma",
+      "phrase": "frase",
+      "vous": "vocês; o senhor, a senhora",
+      "la": "a; ela (pronome)",
+      "transformez": "transformam (transformer)",
+      "vas": "vai (aller; vas-y = vai lá, manda)",
+      "y": "lá, aí; nisso (vas-y = vai em frente)",
+      "mamie": "vovó, vó",
+      "moi": "eu, mim (tônico)",
+      "fais": "faço, faz; faça! (faire)",
+      "le": "o; ele (pronome)",
+      "familier": "familiar, informal (registro)",
+      "et": "e",
+      "soutenu": "formal, culto (registro)",
+      "première": "primeira",
+      "travaille": "trabalho, trabalha (travailler)",
+      "beaucoup": "muito",
+      "en": "em; disso, dele (pronome)",
+      "ce": "este, esse; isso",
+      "moment": "momento (en ce moment = ultimamente)",
+      "facile": "fácil",
+      "bosse": "trampo, trabalho (bosser, fam.)",
+      "comme": "como",
+      "malade": "doente (comme une malade = feito louca)",
+      "j'": "eu (antes de vogal)",
+      "œuvre": "obra; trabalha (œuvrer, sout.)",
+      "sans": "sem",
+      "relâche": "trégua, descanso (sans relâche = sem parar)",
+      "ces": "estes, esses",
+      "temps": "tempo (en deux temps = em duas etapas)",
+      "ci": "aqui, este (ce mois-ci = este mês; ces temps-ci = ultimamente)",
+      "bravo": "bravo, parabéns",
+      "un": "um",
+      "peu": "pouco (un peu = um pouco)",
+      "solennel": "solene",
+      "mais": "mas",
+      "très": "muito",
+      "juste": "correto, certeiro; só; logo (juste après = logo depois)",
+      "deuxième": "segunda, segundo",
+      "ai": "tenho (avoir; j'ai lu = li)",
+      "lu": "lido (lire)",
+      "livre": "livro",
+      "génial": "genial",
+      "bouquin": "livro (fam.)",
+      "trop": "demais; muito (fam.)",
+      "bien": "bem; bom",
+      "achevé": "concluído (achever, sout.)",
+      "lecture": "leitura",
+      "d'": "de (antes de vogal)",
+      "ouvrage": "obra (sout.)",
+      "remarquable": "notável",
+      "personne": "ninguém; pessoa",
+      "ne": "não (ne… pas)",
+      "parle": "fala (parler)",
+      "ça": "isso",
+      "dirait": "diria (dire; on dirait = parece)",
+      "discours": "discurso",
+      "de": "de",
+      "ministre": "ministro",
+      "te": "te",
+      "moque": "zombe, tire sarro (se moquer)",
+      "pas": "não (ne… pas)",
+      "à": "a, em, para",
+      "l'": "o, a (antes de vogal)",
+      "écrit": "escrita; escrito (à l'écrit = por escrito)",
+      "ou": "ou",
+      "devant": "diante de",
+      "jury": "banca, júri",
+      "c'": "isso (ce antes de vogal)",
+      "est": "é, está (être)",
+      "exactement": "exatamente",
+      "qu'": "que (antes de vogal)",
+      "il": "ele; (impessoal) il faut, il pleut",
+      "faut": "é preciso (falloir)",
+      "pour": "para; por",
+      "n'": "não (ne antes de vogal)",
+      "argent": "dinheiro",
+      "rond": "(fam.) tostão: pas un rond; redondo",
+      "suis": "sou, estou (être)",
+      "fauchée": "dura, sem dinheiro (fam.)",
+      "marche": "funciona, serve (marcher; ça marche = beleza)",
+      "aussi": "também; (no início da frase, literário) por isso",
+      "alors": "então",
+      "me": "me",
+      "trouve": "encontro, acho (trouver; je me trouve = encontro-me)",
+      "quelque": "algum (quelque peu = um tanto, sout.)",
+      "désargenté": "sem dinheiro (sout., humorístico)",
+      "parfait": "perfeito",
+      "courant": "corrente, comum (registro); au courant = informado",
+      "tu": "você (informal)",
+      "as": "tem (avoir, tu)",
+      "plus": "mais; (ne… plus) não… mais; (fam.) à plus = até mais",
+      "qui": "que, quem",
+      "t'": "te; você (antes de vogal)",
+      "invite": "convido (inviter; c'est moi qui t'invite = eu pago)",
+      "fou": "louco",
+      "depuis": "desde; há (tempo)",
+      "mois": "mês, meses",
+      "elle": "ela",
+      "protection": "proteção",
+      "enfants": "crianças, filhos",
+      "fauché": "duro, sem dinheiro (fam.)",
+      "jusqu'": "até (antes de vogal)",
+      "fin": "fim",
+      "du": "do (de + le)",
+      "va": "vai (aller)",
+      "bouffer": "comer, rangar (fam.)",
+      "truc": "coisa, negócio (fam.)",
+      "feriez": "faria (faire, vous)",
+      "honneur": "honra",
+      "dîner": "jantar",
+      "avec": "com",
+      "casse": "(se casser, fam.) vou vazar; quebra (casser)",
+      "permettez": "permita (permettre, vous)",
+      "prendre": "tomar, pegar (prendre congé = despedir-se)",
+      "congé": "folga, licença (prendre congé = despedir-se)",
+      "piges": "saca, entende (piger, fam.)",
+      "dessin": "desenho (faire un dessin = explicar tim-tim por tim-tim)",
+      "saisis": "capto, compreendo (saisir)",
+      "votre": "seu, sua (de vous)",
+      "propos": "o que alguém diz, as palavras",
+      "cela": "isso (sout.)",
+      "dérange": "incomoda (déranger)",
+      "nullement": "de forma alguma (sout.)",
+      "voyons": "ora essa; vejamos (voir)",
+      "a": "tem (avoir); (passé composé) il a fermé = fechou",
+      "plein": "cheio (fam.: plein de = muito; en plein… = no meio de)",
+      "fric": "grana (fam.)",
+      "dispose": "dispõe (disposer)",
+      "fonds": "recursos, fundos",
+      "considérables": "consideráveis",
+      "quoi": "o quê",
+      "soir": "noite",
+      "que": "que; o que",
+      "faites": "faz, fazem (faire, vous)",
+      "puis": "posso (pouvoir, forma antiga: puis-je ?); depois, em seguida",
+      "aider": "ajudar",
+      "salut": "oi; tchau",
+      "désolé": "desculpa, sinto muito",
+      "peux": "posso, pode (pouvoir)",
+      "venir": "vir",
+      "se": "se",
+      "voit": "vê (voir; on se voit = a gente se vê)",
+      "semaine": "semana",
+      "prochaine": "próxima",
+      "madame": "senhora",
+      "navré": "sinto muito (formal)",
+      "pouvoir": "poder",
+      "assister": "assistir, estar presente (assister à)",
+      "réunion": "reunião",
+      "actuellement": "atualmente, no momento",
+      "débordé": "sobrecarregado",
+      "prie": "peço (prier; je vous prie de = peço-lhe que)",
+      "vouloir": "querer (bien vouloir = ter a bondade de)",
+      "m'": "me (antes de vogal)",
+      "excuser": "desculpar"
+    }
+  },
+  {
+    "id": "c1-02",
+    "level": "C1",
+    "track": "main",
+    "title": "L'implicite et l'ironie",
+    "titlePt": "O não dito e a ironia",
+    "goal": "Entender (e usar) a litote, a ironia e o understatement francês: perceber quando 'pas mal' é um grande elogio e quando 'bravo' é uma bronca.",
+    "dialogue": {
+      "title": "Le gratin de Léo",
+      "context": "Léo convidou Mamie e Monsieur Bernard para jantar no seu studio e preparou um gratin dauphinois — o primeiro da vida dele. Camille também ficou de vir…",
+      "lines": [
+        {
+          "who": "Léo",
+          "fr": "Alors, Monsieur Bernard, sincèrement, comment trouvez-vous mon gratin ?",
+          "pt": "E então, Monsieur Bernard, sinceramente, o que o senhor achou do meu gratin?"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Hmm… Ce n'est pas mauvais du tout.",
+          "pt": "Hum… Não está nada mal."
+        },
+        {
+          "who": "Léo",
+          "fr": "Pas mauvais ? Mamie, ça veut dire qu'il est raté ?",
+          "pt": "Nada mal? Vó, isso quer dizer que ficou ruim?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Au contraire ! Dans sa bouche, c'est le plus beau des compliments.",
+          "pt": "Pelo contrário! Na boca dele, é o maior dos elogios."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Votre grand-mère me connaît bien. Et je ne dirais pas non à une deuxième part.",
+          "pt": "Sua avó me conhece bem. E eu não recusaria um segundo pedaço."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et crois-moi, il n'est pas du genre à distribuer des compliments.",
+          "pt": "E acredite, ele não é do tipo que sai distribuindo elogios."
+        },
+        {
+          "who": "Camille",
+          "fr": "Coucou tout le monde ! Désolée, le métro était bloqué…",
+          "pt": "Oi, gente! Desculpa, o metrô ficou parado…"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Une heure de retard. Bravo, quelle ponctualité !",
+          "pt": "Uma hora de atraso. Parabéns, que pontualidade!"
+        },
+        {
+          "who": "Camille",
+          "fr": "Oh, ça va… Vous avez commencé sans moi ? Sympa, l'accueil !",
+          "pt": "Ah, tá bom… Vocês começaram sem mim? Que recepção calorosa, hein!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Il en reste un peu. Goûte, et dis-moi la vérité.",
+          "pt": "Sobrou um pouco. Prova e me fala a verdade."
+        },
+        {
+          "who": "Camille",
+          "fr": "Mmm… Il n'est pas mal, ton truc. C'est vraiment toi qui l'as fait ?",
+          "pt": "Hum… Não tá nada mal esse negócio. Foi você mesmo que fez?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Merci pour la confiance ! J'ai passé l'après-midi en cuisine.",
+          "pt": "Obrigado pela confiança! Passei a tarde inteira na cozinha."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Et ça se voit. J'irais même jusqu'à dire qu'il rivalise avec celui de votre grand-mère.",
+          "pt": "E dá para ver. Eu iria até mais longe: ele rivaliza com o da sua avó."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Ah, là, n'exagérons rien, Monsieur Bernard !",
+          "pt": "Ah, aí também não vamos exagerar, Monsieur Bernard!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-02-01",
+        "fr": "Ce n'est pas mauvais du tout.",
+        "pt": "Não está nada mal. (= está ótimo)",
+        "note": "Litote: negar o contrário para elogiar com discrição. Na boca de um francês, é um belo elogio."
+      },
+      {
+        "id": "c1-02-02",
+        "fr": "Pour un premier essai, ce n'est pas mal du tout.",
+        "pt": "Para uma primeira tentativa, não está nada mal."
+      },
+      {
+        "id": "c1-02-03",
+        "fr": "Je ne dirais pas non à une deuxième part.",
+        "pt": "Eu não recusaria um segundo pedaço.",
+        "note": "= 'Sim, por favor!' Pedir diretamente pareceria guloso; a litote deixa o pedido elegante."
+      },
+      {
+        "id": "c1-02-04",
+        "fr": "Un petit café ? Ce n'est pas de refus.",
+        "pt": "Um cafezinho? Aceito, sim."
+      },
+      {
+        "id": "c1-02-05",
+        "fr": "Il ne fait pas très chaud aujourd'hui.",
+        "pt": "Não está muito quente hoje. (= está um gelo)"
+      },
+      {
+        "id": "c1-02-06",
+        "fr": "Ce n'est pas donné, ce restaurant.",
+        "pt": "Esse restaurante não é nada barato.",
+        "note": "'Pas donné' = longe de ser dado, ou seja, caro. Litote clássica para falar de preço."
+      },
+      {
+        "id": "c1-02-07",
+        "fr": "Ce n'est pas bête, ton idée.",
+        "pt": "Até que não é má ideia. (= é uma boa ideia)"
+      },
+      {
+        "id": "c1-02-08",
+        "fr": "Bravo, quelle ponctualité !",
+        "pt": "Parabéns, que pontualidade! (irônico)",
+        "note": "Antífrase: dizer o contrário do que se pensa. O contexto (uma hora de atraso) entrega a ironia."
+      },
+      {
+        "id": "c1-02-09",
+        "fr": "Sympa, l'accueil !",
+        "pt": "Que recepção calorosa, hein! (irônico)"
+      },
+      {
+        "id": "c1-02-10",
+        "fr": "Merci pour la confiance !",
+        "pt": "Obrigado pela confiança! (irônico)"
+      },
+      {
+        "id": "c1-02-11",
+        "fr": "C'est malin, maintenant on est enfermés dehors !",
+        "pt": "Muito esperto, agora estamos trancados do lado de fora!",
+        "note": "'C'est malin !' irônico = que burrice! E 'enfermés dehors' (trancados lá fora) é uma piada clássica."
+      },
+      {
+        "id": "c1-02-12",
+        "fr": "Super, il pleut encore. J'adore.",
+        "pt": "Ótimo, está chovendo de novo. Adoro."
+      },
+      {
+        "id": "c1-02-13",
+        "fr": "Ça promet pour la suite…",
+        "pt": "Isso promete para o resto… (= vai dar problema)"
+      },
+      {
+        "id": "c1-02-14",
+        "fr": "On a connu mieux, disons.",
+        "pt": "Digamos que já vimos coisa melhor."
+      },
+      {
+        "id": "c1-02-15",
+        "fr": "Il ne s'est pas foulé pour le dessert.",
+        "pt": "Ele não se matou de trabalhar para fazer a sobremesa.",
+        "note": "Familier: 'ne pas se fouler' = não se esforçar (literalmente, não torcer o pé). Sempre irônico."
+      },
+      {
+        "id": "c1-02-16",
+        "fr": "Tu es sérieux ou c'est du second degré ?",
+        "pt": "Você está falando sério ou é ironia?",
+        "note": "'Le second degré' = o sentido irônico. 'Prendre au premier degré' = levar ao pé da letra."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "A litote: dizer menos para dizer mais",
+        "body": "A **litote** consiste em negar o contrário do que se quer dizer: em vez de 'está ótimo', o francês diz *ce n'est pas mal* (não está ruim). Parece frio, mas é o contrário: é um elogio **elegante**, sem exagero.\n\nO português também conhece o truque ('não é nada bobo', 'não está nada mal'), mas o brasileiro prefere caprichar no entusiasmo ('maravilhoso!', 'perfeito!'). Para muitos franceses, o exagero soa pouco sincero; a litote soa culta e contida.\n\nO exemplo mais famoso vem do teatro clássico: em *Le Cid* (1637), Chimène diz a Rodrigue *Va, je ne te hais point* ('Vai, eu não te odeio') — e o público inteiro entende 'eu te amo'.\n\nTruque: quando um francês **nega algo negativo**, entenda o positivo, em versão turbinada.",
+        "examples": [
+          {
+            "fr": "Ce n'est pas mal du tout.",
+            "pt": "Está muito bom."
+          },
+          {
+            "fr": "Elle n'est pas bête.",
+            "pt": "Ela é bem inteligente."
+          },
+          {
+            "fr": "Va, je ne te hais point.",
+            "pt": "Vai, eu não te odeio. (= eu te amo)"
+          }
+        ]
+      },
+      {
+        "title": "Ironia e 'second degré'",
+        "body": "A **antífrase** diz exatamente o contrário do que se pensa: *Bravo, quelle ponctualité !* para quem chegou uma hora atrasado. Em português fazemos igual: 'Que beleza, hein!' quando tudo dá errado.\n\nOs franceses adoram o **second degré** (o sentido irônico) e o usam o tempo todo:\n*C'est malin !* (muito esperto = que burrice)\n*Merci du cadeau !* (obrigado pelo presente = que encrenca você me arranjou)\n*Ça promet !* (isso promete = vai dar errado)\n*Bonjour l'ambiance !* (que clima ótimo = que clima pesado)\n\nComo perceber? Pelo **tom** (animado demais ou seco demais), pelo **contexto** e por um sorrisinho de canto de boca. Na dúvida, pergunte: *C'est du second degré ?* Ninguém vai se ofender.",
+        "examples": [
+          {
+            "fr": "Merci du cadeau !",
+            "pt": "Obrigado pelo presente! (= que encrenca!)"
+          },
+          {
+            "fr": "Bonjour l'ambiance !",
+            "pt": "Que clima animado, hein! (= que clima pesado)"
+          },
+          {
+            "fr": "C'est malin !",
+            "pt": "Muito esperto! (= que burrice!)"
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Um amigo cozinhou para você e o prato estava ótimo; depois, ele chegou meia hora atrasado ao cinema. Escreva duas ou três frases: um elogio com litote e uma reclamação irônica.",
+      "model": "Ton poulet ? Franchement, ce n'est pas mauvais du tout, je ne dirais pas non à une deuxième part. Par contre, trente minutes de retard au cinéma… Bravo, quelle ponctualité !"
+    },
+    "culture": "Os franceses têm fama de 'râleurs' (resmungões) e de econômicos nos elogios: um 'pas mal' de um parisiense vale um 'maravilhoso' de um brasileiro. Já o humor de second degré está por toda parte, das conversas de bar aos jornais satíricos como Le Canard enchaîné.",
+    "glossary": {
+      "monsieur": "senhor",
+      "sincèrement": "sinceramente",
+      "comment": "como",
+      "trouvez": "acha (trouver; comment trouvez-vous… ? = o que acha de…?)",
+      "mon": "meu",
+      "gratin": "gratinado (prato ao forno)",
+      "hmm": "hum",
+      "mauvais": "ruim",
+      "tout": "tudo; todo (pas du tout = nem um pouco; tout à fait = perfeitamente; tout à l'heure = agora há pouco)",
+      "veut": "quer (vouloir; ça veut dire = isso quer dizer)",
+      "dire": "dizer",
+      "raté": "que deu errado (rater)",
+      "contraire": "contrário (au contraire = pelo contrário)",
+      "dans": "em, dentro de",
+      "sa": "sua, dele, dela",
+      "bouche": "boca",
+      "beau": "bonito, belo (le plus beau = o maior, o mais belo)",
+      "compliments": "elogios",
+      "grand-mère": "avó",
+      "connaît": "conhece (connaître)",
+      "dirais": "diria (dire)",
+      "non": "não",
+      "part": "pedaço, porção; parte (d'une part… d'autre part = por um lado… por outro)",
+      "crois": "acredite; acredito (croire)",
+      "genre": "tipo, gênero (du genre à = do tipo que)",
+      "distribuer": "distribuir",
+      "coucou": "oi (fam.)",
+      "monde": "mundo; gente (tout le monde = todo mundo)",
+      "désolée": "desculpa, sinto muito (fem.)",
+      "métro": "metrô",
+      "était": "estava, era (être)",
+      "bloqué": "parado, bloqueado",
+      "heure": "hora",
+      "retard": "atraso",
+      "quelle": "que, qual (fem.)",
+      "ponctualité": "pontualidade",
+      "oh": "ah, oh",
+      "avez": "tem, têm (avoir, vous)",
+      "commencé": "começado (commencer)",
+      "sympa": "simpático, legal (fam.)",
+      "accueil": "recepção, acolhida",
+      "reste": "sobra; fica (rester); fique (imperativo)",
+      "goûte": "prova (goûter)",
+      "vérité": "verdade",
+      "mmm": "hum",
+      "mal": "mal (pas mal = nada mal); dor",
+      "ton": "teu, seu",
+      "vraiment": "realmente, mesmo",
+      "toi": "você (tônico)",
+      "fait": "feito; faz (faire)",
+      "merci": "obrigado",
+      "confiance": "confiança",
+      "passé": "passado (passer)",
+      "après": "depois (l'après-midi = a tarde)",
+      "midi": "meio-dia (l'après-midi = a tarde)",
+      "cuisine": "cozinha",
+      "irais": "iria (aller; j'irais jusqu'à dire = eu chegaria a dizer)",
+      "même": "mesmo; até",
+      "rivalise": "rivaliza (rivaliser)",
+      "celui": "aquele, o (celui de = o de)",
+      "ah": "ah",
+      "là": "lá; aí; aqui",
+      "exagérons": "exageremos (exagérer; n'exagérons rien = não vamos exagerar)",
+      "rien": "nada",
+      "premier": "primeiro",
+      "essai": "tentativa",
+      "petit": "pequeno; -inho",
+      "café": "café",
+      "refus": "recusa (ce n'est pas de refus = aceito com prazer)",
+      "chaud": "quente; (fam.) complicado",
+      "aujourd'hui": "hoje",
+      "donné": "dado; barato (ce n'est pas donné = é caro)",
+      "restaurant": "restaurante",
+      "bête": "bobo, burro",
+      "idée": "ideia",
+      "malin": "esperto (c'est malin ! irônico = que burrice!)",
+      "maintenant": "agora",
+      "enfermés": "trancados (enfermer)",
+      "dehors": "fora, lá fora",
+      "super": "ótimo, super",
+      "pleut": "chove (pleuvoir)",
+      "encore": "ainda; de novo; mais",
+      "adore": "adoro (adorer)",
+      "promet": "promete (promettre)",
+      "suite": "continuação, resto",
+      "connu": "conhecido (connaître; on a connu mieux = já vimos coisa melhor)",
+      "mieux": "melhor (advérbio)",
+      "disons": "digamos (dire)",
+      "s'": "se (antes de vogal)",
+      "foulé": "(se fouler, fam.) se esforçado; torcido",
+      "dessert": "sobremesa",
+      "es": "é, está (être, tu)",
+      "sérieux": "sério",
+      "second": "segundo (le second degré = a ironia)",
+      "degré": "grau",
+      "hais": "odeio (haïr)",
+      "point": "ponto (à point = na hora certa); (literário) não: ne… point",
+      "cadeau": "presente",
+      "bonjour": "bom dia, olá",
+      "ambiance": "clima, ambiente",
+      "poulet": "frango",
+      "franchement": "francamente, sinceramente",
+      "par": "por (par contre = em compensação)",
+      "contre": "contra",
+      "trente": "trinta",
+      "minutes": "minutos",
+      "cinéma": "cinema"
+    }
+  },
+  {
+    "id": "c1-03",
+    "level": "C1",
+    "track": "main",
+    "title": "Argumenter avec élégance",
+    "titlePt": "Argumentar com elegância",
+    "goal": "Construir e encadear argumentos num debate com conectores formais: or, toutefois, néanmoins, en outre, par ailleurs, dès lors, force est de constater.",
+    "dialogue": {
+      "title": "Le télétravail : progrès ou piège ?",
+      "context": "Domingo de manhã, no café da esquina. Monsieur Bernard, que adora um bom debate, desafia Léo: o trabalho remoto é um progresso ou uma armadilha? Os dois discutem com toda a cortesia — e muitos conectores.",
+      "lines": [
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Alors, Léo, le télétravail : progrès ou piège ? Je vous écoute.",
+          "pt": "Então, Léo, o trabalho remoto: progresso ou armadilha? Sou todo ouvidos."
+        },
+        {
+          "who": "Léo",
+          "fr": "Un progrès, sans hésiter. D'une part, on gagne un temps fou ; d'autre part, on choisit où vivre.",
+          "pt": "Um progresso, sem dúvida. Por um lado, a gente ganha um tempo enorme; por outro, escolhe onde morar."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Soit. Toutefois, on perd le contact humain, l'esprit d'équipe, les discussions à la machine à café.",
+          "pt": "Que seja. No entanto, perde-se o contato humano, o espírito de equipe, as conversas na máquina de café."
+        },
+        {
+          "who": "Léo",
+          "fr": "Certes. Néanmoins, rien n'empêche d'aller au bureau une ou deux fois par semaine.",
+          "pt": "É verdade. Ainda assim, nada impede de ir ao escritório uma ou duas vezes por semana."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Admettons. Or, la plupart des gens restent chez eux en pyjama !",
+          "pt": "Admitamos. Ora, a maioria das pessoas fica em casa de pijama!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Vous exagérez un peu. Par ailleurs, plusieurs études montrent que la productivité augmente.",
+          "pt": "O senhor está exagerando um pouco. Aliás, vários estudos mostram que a produtividade aumenta."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Les études… On leur fait dire ce qu'on veut. En outre, la frontière entre travail et vie privée disparaît.",
+          "pt": "Os estudos… A gente faz com que digam o que quer. Além disso, a fronteira entre trabalho e vida privada desaparece."
+        },
+        {
+          "who": "Léo",
+          "fr": "Là, je vous rejoins. Force est de constater que beaucoup ont du mal à déconnecter.",
+          "pt": "Nisso eu concordo com o senhor. É forçoso constatar que muita gente tem dificuldade de se desconectar."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Ah ! Vous voyez. Dès lors, comment pouvez-vous parler de progrès ?",
+          "pt": "Ah! Está vendo? Sendo assim, como você pode falar em progresso?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Sans le télétravail, je serais à São Paulo. Or, je suis ici, à deux pas de ma grand-mère.",
+          "pt": "Sem o trabalho remoto, eu estaria em São Paulo. Ora, estou aqui, a dois passos da minha avó."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "… Voilà un argument auquel je n'ai rien à opposer.",
+          "pt": "… Eis um argumento ao qual não tenho nada a opor."
+        },
+        {
+          "who": "Léo",
+          "fr": "Donc, j'ai gagné ?",
+          "pt": "Então, ganhei?"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Disons que nous sommes à égalité. Encore faut-il que vous payiez les cafés !",
+          "pt": "Digamos que estamos empatados. Mas, para isso, você ainda precisa pagar os cafés!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-03-01",
+        "fr": "D'une part, on gagne du temps ; d'autre part, on choisit où vivre.",
+        "pt": "Por um lado, ganha-se tempo; por outro, escolhe-se onde morar."
+      },
+      {
+        "id": "c1-03-02",
+        "fr": "Toutefois, on perd le contact humain.",
+        "pt": "No entanto, perde-se o contato humano.",
+        "note": "Toutefois = todavia, contudo. O 's' final não se pronuncia: [tut-fuá]."
+      },
+      {
+        "id": "c1-03-03",
+        "fr": "Néanmoins, rien n'empêche d'aller au bureau de temps en temps.",
+        "pt": "Ainda assim, nada impede de ir ao escritório de vez em quando."
+      },
+      {
+        "id": "c1-03-04",
+        "fr": "Il voulait partir en vacances. Or, il n'avait plus un sou.",
+        "pt": "Ele queria sair de férias. Só que não tinha mais um tostão.",
+        "note": "'Or' traz um fato novo que muda o raciocínio: 'ora', 'acontece que'. Não confunda com 'ou' (= ou)."
+      },
+      {
+        "id": "c1-03-05",
+        "fr": "Il fallait réserver avant lundi. Or, personne ne l'a fait.",
+        "pt": "Era preciso reservar antes de segunda. Ora, ninguém reservou."
+      },
+      {
+        "id": "c1-03-06",
+        "fr": "En outre, la frontière entre travail et vie privée disparaît.",
+        "pt": "Além disso, a fronteira entre trabalho e vida privada desaparece."
+      },
+      {
+        "id": "c1-03-07",
+        "fr": "Par ailleurs, plusieurs études montrent le contraire.",
+        "pt": "Aliás, vários estudos mostram o contrário.",
+        "note": "Par ailleurs = além disso, aliás: acrescenta um argumento por outro ângulo. Não indica oposição."
+      },
+      {
+        "id": "c1-03-08",
+        "fr": "Force est de constater que beaucoup ont du mal à déconnecter.",
+        "pt": "É forçoso constatar que muita gente tem dificuldade de se desconectar.",
+        "note": "Fórmula fixa, sem artigo: 'force est de' = é forçoso. Muito usada em textos e discursos."
+      },
+      {
+        "id": "c1-03-09",
+        "fr": "Dès lors, comment parler de progrès ?",
+        "pt": "Sendo assim, como falar em progresso?",
+        "note": "Dès lors = a partir daí, portanto. E 'dès lors que' = uma vez que."
+      },
+      {
+        "id": "c1-03-10",
+        "fr": "Là, je vous rejoins complètement.",
+        "pt": "Nisso, concordo plenamente com o senhor."
+      },
+      {
+        "id": "c1-03-11",
+        "fr": "Voilà un argument auquel je n'ai rien à opposer.",
+        "pt": "Eis um argumento ao qual não tenho nada a opor."
+      },
+      {
+        "id": "c1-03-12",
+        "fr": "Quant à moi, je préfère travailler en équipe.",
+        "pt": "Quanto a mim, prefiro trabalhar em equipe."
+      },
+      {
+        "id": "c1-03-13",
+        "fr": "Il n'en demeure pas moins que le problème reste entier.",
+        "pt": "Não deixa de ser verdade que o problema continua sem solução.",
+        "note": "= 'mesmo assim, o fato é que…'. Versão mais escrita e elegante de 'n'empêche que'."
+      },
+      {
+        "id": "c1-03-14",
+        "fr": "Autrement dit, tout le monde y gagne.",
+        "pt": "Em outras palavras, todo mundo sai ganhando."
+      },
+      {
+        "id": "c1-03-15",
+        "fr": "En somme, les avantages l'emportent sur les inconvénients.",
+        "pt": "Em suma, as vantagens superam as desvantagens."
+      },
+      {
+        "id": "c1-03-16",
+        "fr": "Encore faut-il que les entreprises jouent le jeu.",
+        "pt": "Resta saber se as empresas vão colaborar.",
+        "note": "'Encore faut-il que' + subjuntivo aponta uma condição que ainda falta. Repare na inversão: faut-il."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Or: o 'ora' que vira o jogo",
+        "body": "Apesar da cara, **or** não é 'ou' (que em francês é *ou*) e, aqui, também não é 'ouro'. É a conjunção do raciocínio: apresenta um **fato novo** que, somado ao anterior, leva a uma conclusão. É o nosso **'ora'**, só que bem mais vivo em francês.\n\nO modelo é o silogismo clássico:\n*Tous les hommes sont mortels. **Or**, Socrate est un homme. **Donc** Socrate est mortel.*\n\nNo dia a dia, *or* costuma trazer um obstáculo: *Il fallait réserver. **Or**, personne ne l'a fait.* Em português falado diríamos 'só que' ou 'acontece que'.\n\nDetalhe de estilo: *or* abre a frase (ou vem depois de ponto e vírgula) e quase sempre é seguido de vírgula. É típico da escrita e da fala argumentativa, não da conversa de bar.",
+        "examples": [
+          {
+            "fr": "Tous les hommes sont mortels. Or, Socrate est un homme.",
+            "pt": "Todos os homens são mortais. Ora, Sócrates é um homem."
+          },
+          {
+            "fr": "Je voulais sortir. Or, il pleuvait des cordes.",
+            "pt": "Eu queria sair. Acontece que estava chovendo a cântaros."
+          },
+          {
+            "fr": "Le projet était prêt. Or, le client a tout annulé.",
+            "pt": "O projeto estava pronto. Só que o cliente cancelou tudo."
+          }
+        ]
+      },
+      {
+        "title": "Os conectores do debate",
+        "body": "Para soar elegante num texto ou num debate, troque o *mais* e o *en plus* por:\n**toutefois / néanmoins / cependant** = no entanto, todavia, contudo\n**en outre / de plus** = além disso\n**par ailleurs** = aliás, além disso, sob outro aspecto\n**dès lors** = sendo assim, a partir daí\n**force est de constater que** = é forçoso constatar que\n**en somme** = em suma\n\nA boa notícia: quase todos têm um parente formal em português ('todavia', 'outrossim', 'é forçoso…'). A diferença é que o francês culto usa esses conectores também **falando**: num debate na TV, numa reunião, num jantar animado.\n\nEntre amigos, porém, eles soam engraçados. Lá, volte ao *mais*, ao *en plus* e ao *du coup*.",
+        "examples": [
+          {
+            "fr": "Toutefois, je comprends votre point de vue.",
+            "pt": "No entanto, entendo o seu ponto de vista."
+          },
+          {
+            "fr": "En outre, le projet coûte trop cher.",
+            "pt": "Além disso, o projeto custa caro demais."
+          },
+          {
+            "fr": "Dès lors, il faut trouver une autre solution.",
+            "pt": "Sendo assim, é preciso encontrar outra solução."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Escreva um parágrafo curto defendendo uma opinião (por exemplo: morar no centro ou no subúrbio). Use pelo menos quatro conectores da unidade, incluindo 'or'.",
+      "model": "Habiter en banlieue présente de vrais avantages. D'une part, les loyers sont plus bas ; d'autre part, on a plus d'espace. Toutefois, les transports prennent du temps. Or, le temps, c'est précieux. Force est de constater que chacun doit trouver son équilibre."
+    },
+    "culture": "Na escola francesa, todo aluno treina a 'dissertation': tese, antítese e síntese, com conectores bem amarrados. Por isso, até numa mesa de café os franceses gostam de argumentar em três partes — e de discordar só pelo prazer do debate.",
+    "glossary": {
+      "télétravail": "trabalho remoto, home office",
+      "progrès": "progresso",
+      "piège": "armadilha",
+      "écoute": "escuto (écouter)",
+      "hésiter": "hesitar",
+      "gagne": "ganha (gagner)",
+      "autre": "outro (d'autre part = por outro lado)",
+      "choisit": "escolhe (choisir)",
+      "où": "onde",
+      "vivre": "viver, morar",
+      "soit": "seja (être, subj.); (soit !) que seja, está bem",
+      "toutefois": "no entanto, todavia",
+      "perd": "perde (perdre)",
+      "contact": "contato",
+      "humain": "humano",
+      "esprit": "espírito",
+      "équipe": "equipe",
+      "les": "os, as; eles (pronome)",
+      "discussions": "conversas, discussões",
+      "machine": "máquina",
+      "certes": "é verdade, certamente",
+      "néanmoins": "ainda assim, contudo",
+      "empêche": "impede (empêcher)",
+      "aller": "ir",
+      "bureau": "escritório; escrivaninha",
+      "deux": "dois",
+      "fois": "vez(es)",
+      "admettons": "admitamos (admettre)",
+      "or": "ora, acontece que (conjunção); ouro",
+      "plupart": "maioria (la plupart des = a maioria de)",
+      "gens": "pessoas, gente",
+      "restent": "ficam (rester)",
+      "chez": "na casa de (chez eux = em casa)",
+      "eux": "eles (tônico)",
+      "pyjama": "pijama",
+      "exagérez": "exagera (exagérer, vous)",
+      "ailleurs": "em outro lugar (par ailleurs = além disso, aliás)",
+      "plusieurs": "vários",
+      "études": "estudos",
+      "montrent": "mostram (montrer)",
+      "productivité": "produtividade",
+      "augmente": "aumenta (augmenter)",
+      "leur": "lhes, a eles; seu, deles",
+      "outre": "além (en outre = além disso)",
+      "frontière": "fronteira",
+      "entre": "entre",
+      "travail": "trabalho",
+      "vie": "vida",
+      "privée": "privada",
+      "disparaît": "desaparece (disparaître)",
+      "rejoins": "concordo com, junto-me a (rejoindre)",
+      "force": "força (force est de = é forçoso)",
+      "constater": "constatar",
+      "ont": "têm (avoir)",
+      "déconnecter": "desconectar(-se)",
+      "voyez": "vê (voir, vous; vous voyez ? = está vendo?)",
+      "dès": "desde, a partir de (dès lors = sendo assim)",
+      "lors": "então, naquele momento (dès lors = a partir daí)",
+      "pouvez": "pode (pouvoir, vous)",
+      "parler": "falar",
+      "serais": "estaria, seria (être)",
+      "são": "São (São Paulo)",
+      "paulo": "Paulo (São Paulo)",
+      "ici": "aqui",
+      "ma": "minha",
+      "voilà": "eis, aí está",
+      "argument": "argumento",
+      "auquel": "ao qual",
+      "opposer": "opor",
+      "donc": "então, portanto",
+      "gagné": "ganhado (gagner; j'ai gagné = ganhei)",
+      "nous": "nós",
+      "sommes": "somos, estamos (être)",
+      "égalité": "igualdade (à égalité = empatados)",
+      "payiez": "pague (payer, subj., vous)",
+      "cafés": "cafés",
+      "voulait": "queria (vouloir)",
+      "partir": "partir, ir embora (partir en vacances = sair de férias)",
+      "vacances": "férias",
+      "avait": "tinha (avoir)",
+      "sou": "tostão (pas un sou = nem um tostão)",
+      "fallait": "era preciso (falloir)",
+      "réserver": "reservar",
+      "avant": "antes (de)",
+      "lundi": "segunda-feira",
+      "complètement": "completamente",
+      "quant": "quanto (quant à = quanto a)",
+      "préfère": "prefiro (préférer)",
+      "travailler": "trabalhar",
+      "demeure": "permanece (demeurer; il n'en demeure pas moins = não deixa de ser verdade)",
+      "moins": "menos",
+      "problème": "problema",
+      "entier": "inteiro (rester entier = continuar sem solução)",
+      "autrement": "de outro modo (autrement dit = em outras palavras)",
+      "dit": "dito; diz (dire)",
+      "somme": "soma (en somme = em suma)",
+      "avantages": "vantagens",
+      "emportent": "levam (l'emporter sur = prevalecer sobre)",
+      "sur": "sobre, em",
+      "inconvénients": "desvantagens, inconvenientes",
+      "entreprises": "empresas",
+      "jouent": "jogam (jouer; jouer le jeu = colaborar, entrar no jogo)",
+      "tous": "todos",
+      "hommes": "homens",
+      "sont": "são, estão (être)",
+      "mortels": "mortais",
+      "socrate": "Sócrates",
+      "homme": "homem",
+      "voulais": "queria (vouloir)",
+      "sortir": "sair",
+      "pleuvait": "chovia (pleuvoir)",
+      "cordes": "cordas (il pleut des cordes = chove a cântaros)",
+      "projet": "projeto",
+      "prêt": "pronto",
+      "client": "cliente",
+      "annulé": "cancelado (annuler)",
+      "comprends": "entendo (comprendre)",
+      "vue": "vista (point de vue = ponto de vista)",
+      "coûte": "custa (coûter)",
+      "cher": "caro; querido",
+      "trouver": "encontrar",
+      "solution": "solução",
+      "habiter": "morar",
+      "banlieue": "subúrbio, periferia",
+      "présente": "apresenta (présenter)",
+      "vrais": "verdadeiros",
+      "loyers": "aluguéis",
+      "bas": "baixo(s); en bas de = embaixo de",
+      "espace": "espaço",
+      "transports": "transportes",
+      "prennent": "tomam, levam (prendre)",
+      "précieux": "precioso",
+      "chacun": "cada um",
+      "doit": "deve (devoir)",
+      "son": "seu, dele, dela",
+      "équilibre": "equilíbrio"
+    }
+  },
+  {
+    "id": "c1-04",
+    "level": "C1",
+    "track": "main",
+    "title": "La langue littéraire",
+    "titlePt": "A língua literária",
+    "goal": "Reconhecer as marcas do francês literário — subjonctif imparfait, inversões, ne explétif e ne sozinho — ao ler livros, cartas antigas e textos formais.",
+    "dialogue": {
+      "title": "La lettre de Papi",
+      "context": "No fundo da caixa de cartas, Mamie encontra a primeira carta que o Papi lhe escreveu, logo depois do famoso dia do concerto. Ele escrevia de um jeito bem antiquado, e Léo descobre um francês que só tinha visto nos livros.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Regarde ce que j'ai retrouvé : la première lettre de ton grand-père, juste après le concert.",
+          "pt": "Olha o que eu encontrei: a primeira carta do seu avô, logo depois do concerto."
+        },
+        {
+          "who": "Léo",
+          "fr": "Je peux la lire ? « Mademoiselle, je crains que vous ne m'ayez déjà oublié. »",
+          "pt": "Posso ler? 'Senhorita, temo que já me tenha esquecido.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "Attends… « ne » sans « pas » ? Il a peur que tu l'aies oublié, ou que tu ne l'aies pas oublié ?",
+          "pt": "Peraí… 'ne' sem 'pas'? Ele tem medo de que você o tenha esquecido, ou de que não o tenha esquecido?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Peur d'être oublié, bien sûr ! Ce « ne » ne nie rien, c'est du style.",
+          "pt": "Medo de ter sido esquecido, claro! Esse 'ne' não nega nada, é estilo."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et là : « Je ne sais si vous accepterez de me revoir. »",
+          "pt": "E aqui: 'Não sei se aceitará me rever.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Avec « savoir », « oser » ou « pouvoir », le « pas » peut tomber. Mais là, c'est une vraie négation.",
+          "pt": "Com 'savoir', 'oser' ou 'pouvoir', o 'pas' pode cair. Mas aí é uma negação de verdade."
+        },
+        {
+          "who": "Léo",
+          "fr": "« Peut-être me trouverez-vous audacieux. Aussi ai-je longtemps hésité avant de vous écrire. »",
+          "pt": "'Talvez me ache ousado. Por isso hesitei muito antes de lhe escrever.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Tu as vu ? « Aussi », au début de la phrase, veut dire « c'est pourquoi ».",
+          "pt": "Viu? 'Aussi', no começo da frase, quer dizer 'por isso'."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et ça, c'est quoi ? « Il eût fallu que je vous connusse plus tôt. »",
+          "pt": "E isso, o que é? 'Teria sido preciso que eu a conhecesse mais cedo.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Du subjonctif imparfait ! Plus personne ne parle comme ça. Même à l'époque, c'était démodé.",
+          "pt": "Subjuntivo imperfeito! Ninguém mais fala assim. Mesmo naquela época, já era antiquado."
+        },
+        {
+          "who": "Léo",
+          "fr": "Alors pourquoi il écrivait comme ça ?",
+          "pt": "Então por que ele escrevia assim?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Pour m'impressionner, pardi ! Il avait lu trop de Proust.",
+          "pt": "Para me impressionar, ora essa! Tinha lido Proust demais."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et ça a marché ?",
+          "pt": "E funcionou?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Qui l'eût cru… Oui. Je lui ai répondu le jour même.",
+          "pt": "Quem diria… Funcionou. Respondi no mesmo dia."
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-04-01",
+        "fr": "Je crains qu'il ne pleuve demain.",
+        "pt": "Temo que chova amanhã.",
+        "note": "Ne explétif: não nega nada! O sentido é 'temo que chova'. Para negar, seria 'qu'il ne pleuve pas'."
+      },
+      {
+        "id": "c1-04-02",
+        "fr": "Partons avant qu'il ne soit trop tard.",
+        "pt": "Vamos embora antes que seja tarde demais."
+      },
+      {
+        "id": "c1-04-03",
+        "fr": "Il est plus gentil qu'on ne le croit.",
+        "pt": "Ele é mais gentil do que se pensa."
+      },
+      {
+        "id": "c1-04-04",
+        "fr": "Je ne sais si elle viendra.",
+        "pt": "Não sei se ela virá.",
+        "note": "'Ne' sozinho com savoir, oser, pouvoir e cesser: negação literária. Na fala: 'je (ne) sais pas'."
+      },
+      {
+        "id": "c1-04-05",
+        "fr": "Je n'ose vous le demander.",
+        "pt": "Não ouso lhe pedir isso."
+      },
+      {
+        "id": "c1-04-06",
+        "fr": "Il ne cesse de pleuvoir depuis lundi.",
+        "pt": "Não para de chover desde segunda."
+      },
+      {
+        "id": "c1-04-07",
+        "fr": "Peut-être est-il déjà parti.",
+        "pt": "Talvez ele já tenha ido embora.",
+        "note": "Inversão depois de 'peut-être' no início: escrita formal. Na fala: 'peut-être qu'il est déjà parti'."
+      },
+      {
+        "id": "c1-04-08",
+        "fr": "Sans doute avait-elle raison.",
+        "pt": "Ela provavelmente tinha razão.",
+        "note": "Cuidado: 'sans doute' = provavelmente. Para 'sem dúvida', diga 'sans aucun doute'."
+      },
+      {
+        "id": "c1-04-09",
+        "fr": "Aussi ai-je décidé de vous écrire.",
+        "pt": "Por isso decidi lhe escrever.",
+        "note": "'Aussi' no começo da frase, com inversão, quer dizer 'por isso'. Não é 'também'!"
+      },
+      {
+        "id": "c1-04-10",
+        "fr": "À peine était-il arrivé qu'il voulait déjà repartir.",
+        "pt": "Mal tinha chegado e já queria ir embora."
+      },
+      {
+        "id": "c1-04-11",
+        "fr": "Il fallait qu'elle fût prudente.",
+        "pt": "Era preciso que ela fosse prudente."
+      },
+      {
+        "id": "c1-04-12",
+        "fr": "Bien qu'il fût tard, ils continuèrent à parler.",
+        "pt": "Embora fosse tarde, eles continuaram conversando."
+      },
+      {
+        "id": "c1-04-13",
+        "fr": "Il eût fallu que je vous connusse plus tôt.",
+        "pt": "Eu deveria tê-la conhecido mais cedo."
+      },
+      {
+        "id": "c1-04-14",
+        "fr": "Qui l'eût cru ?",
+        "pt": "Quem diria?",
+        "note": "Fóssil literário que sobreviveu na fala ('quem teria acreditado?'). Usado com surpresa ou ironia."
+      },
+      {
+        "id": "c1-04-15",
+        "fr": "Coûte que coûte, nous y arriverons.",
+        "pt": "Custe o que custar, nós vamos conseguir.",
+        "note": "Subjuntivo fossilizado, igualzinho ao português: 'custe o que custar'."
+      },
+      {
+        "id": "c1-04-16",
+        "fr": "Je ne vous ai point oubliée, mademoiselle.",
+        "pt": "Eu não a esqueci, senhorita, de modo algum."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "O 'ne' que não nega",
+        "body": "No francês cuidado, às vezes aparece um **ne sem pas** que **não nega nada**: é o *ne explétif*. Ele surge depois de verbos de medo (*craindre, avoir peur*), de *avant que*, *à moins que* e de comparativos (*plus… que*):\n*Je crains qu'il **ne** vienne* = temo que ele **venha** (e não 'que não venha'!).\n\nEm português não existe nada parecido, então a tradução é simples: **ignore esse *ne***. Ele é opcional, soa formal, e você nunca é obrigado a usá-lo.\n\nNão o confunda com o **ne sozinho** de *savoir, oser, pouvoir* e *cesser*: *je ne sais* = não sei. Esse, sim, nega: é só uma versão literária de *je ne sais pas*.\n\nA dica: se a frase fala de medo, de 'antes que' ou de comparação, o *ne* é estilo. Fora disso, ele nega.",
+        "examples": [
+          {
+            "fr": "Je crains qu'il ne vienne.",
+            "pt": "Temo que ele venha."
+          },
+          {
+            "fr": "Je crains qu'il ne vienne pas.",
+            "pt": "Temo que ele não venha."
+          },
+          {
+            "fr": "Rentre avant qu'il ne fasse nuit.",
+            "pt": "Volte para casa antes que anoiteça."
+          },
+          {
+            "fr": "Je ne saurais vous dire.",
+            "pt": "Eu não saberia lhe dizer."
+          }
+        ]
+      },
+      {
+        "title": "Subjonctif imparfait: o português ganhou essa",
+        "body": "Curiosidade: o português usa o **subjuntivo imperfeito** todo dia ('se eu **fosse**', 'queria que você **viesse**'). O francês tem a mesma forma — *qu'il **fût***, *qu'il **eût***, *qu'il **vînt***, *qu'elle **allât*** —, mas ela **morreu na fala** e hoje só vive nos clássicos e em textos muito formais.\n\nNa conversa, e até na maioria dos textos atuais, o francês usa o **subjuntivo presente** no lugar: *il fallait qu'elle **soit** prudente* (e não *fût*).\n\nO que fazer? **Reconhecer, não usar.** As formas são fáceis de identificar: acento circunflexo na terceira pessoa (*fût, eût, vînt*) ou terminações como *-asse, -isse, -usse*. Usar isso numa conversa soaria tão pomposo quanto tratar alguém por 'vós' — a não ser de brincadeira.",
+        "examples": [
+          {
+            "fr": "Il fallait qu'elle fût prudente.",
+            "pt": "Era preciso que ela fosse prudente. (literário)"
+          },
+          {
+            "fr": "Il fallait qu'elle soit prudente.",
+            "pt": "Era preciso que ela fosse prudente. (atual)"
+          },
+          {
+            "fr": "Je voulais qu'il vînt.",
+            "pt": "Eu queria que ele viesse. (literário)"
+          }
+        ]
+      },
+      {
+        "title": "Inversões de escritor",
+        "body": "Depois de alguns advérbios no começo da frase, o francês escrito **inverte** sujeito e verbo:\n**peut-être** → *Peut-être est-il malade.* (talvez esteja doente)\n**sans doute** → *Sans doute a-t-elle raison.* (ela provavelmente tem razão)\n**aussi** → *Aussi ai-je hésité.* (por isso hesitei)\n**à peine** → *À peine était-il parti que…* (mal tinha saído e…)\n\nNa fala, a inversão desaparece: *peut-être qu'il est malade*, *elle a sans doute raison*.\n\nDuas armadilhas para brasileiros: no começo da frase, **aussi** não é 'também', é 'por isso'. E **sans doute** quer dizer 'provavelmente'; para 'sem dúvida', diga *sans aucun doute*.",
+        "examples": [
+          {
+            "fr": "Peut-être est-il malade.",
+            "pt": "Talvez ele esteja doente. (escrito)"
+          },
+          {
+            "fr": "Peut-être qu'il est malade.",
+            "pt": "Talvez ele esteja doente. (falado)"
+          },
+          {
+            "fr": "Sans doute a-t-elle raison.",
+            "pt": "Ela provavelmente tem razão."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Reescreva três frases da carta do Papi em francês falado de hoje: sem ne explétif, sem inversão e sem subjonctif imparfait.",
+      "model": "J'ai peur que vous m'ayez déjà oublié. Je ne sais pas si vous allez accepter de me revoir. Peut-être que vous allez me trouver audacieux, c'est pour ça que j'ai hésité avant de vous écrire."
+    },
+    "culture": "Proust, Flaubert e Molière continuam sendo leitura obrigatória no lycée, mas o subjonctif imparfait virou motivo de piada: um poema humorístico famoso, a 'Complainte amoureuse' (atribuída a Alphonse Allais), é feito só dessas formas, como 'que je vous aimasse'.",
+    "glossary": {
+      "regarde": "olha (regarder)",
+      "retrouvé": "reencontrado, achado (retrouver)",
+      "lettre": "carta",
+      "grand-père": "avô",
+      "concert": "concerto, show",
+      "lire": "ler",
+      "mademoiselle": "senhorita",
+      "crains": "temo (craindre)",
+      "ayez": "tenha (avoir, subj., vous)",
+      "déjà": "já",
+      "oublié": "esquecido (oublier)",
+      "attends": "espera aí; espero (attendre)",
+      "peur": "medo",
+      "aies": "tenha (avoir, subj., tu)",
+      "être": "ser, estar",
+      "sûr": "certo, seguro (bien sûr = claro)",
+      "nie": "nega (nier)",
+      "style": "estilo",
+      "sais": "sei, sabe (savoir)",
+      "si": "se; tão",
+      "accepterez": "aceitará (accepter, vous)",
+      "revoir": "rever",
+      "savoir": "saber",
+      "oser": "ousar",
+      "peut": "pode (pouvoir)",
+      "tomber": "cair",
+      "vraie": "verdadeira",
+      "négation": "negação",
+      "peut-être": "talvez",
+      "trouverez": "achará (trouver, vous)",
+      "audacieux": "ousado",
+      "longtemps": "muito tempo",
+      "hésité": "hesitado (hésiter)",
+      "écrire": "escrever",
+      "vu": "visto (voir; tu as vu ? = viu?)",
+      "début": "começo",
+      "pourquoi": "por que; c'est pourquoi = por isso",
+      "eût": "tivesse (avoir, subj. imperfeito, literário); il eût fallu = teria sido preciso",
+      "fallu": "sido preciso (falloir)",
+      "connusse": "conhecesse (connaître, subj. imperfeito, literário)",
+      "tôt": "cedo",
+      "subjonctif": "subjuntivo",
+      "imparfait": "imperfeito",
+      "époque": "época (à l'époque = naquela época)",
+      "démodé": "fora de moda, antiquado",
+      "écrivait": "escrevia (écrire)",
+      "impressionner": "impressionar",
+      "pardi": "ora essa, claro (antiquado)",
+      "proust": "Proust (escritor francês)",
+      "marché": "funcionado (marcher; ça a marché = funcionou); mercado",
+      "cru": "acreditado (croire; qui l'eût cru ? = quem diria?)",
+      "oui": "sim",
+      "lui": "ele; a ele, a ela",
+      "répondu": "respondido (répondre)",
+      "jour": "dia",
+      "pleuve": "chova (pleuvoir, subj.)",
+      "demain": "amanhã",
+      "partons": "vamos embora (partir)",
+      "tard": "tarde",
+      "gentil": "gentil",
+      "croit": "acredita, pensa (croire)",
+      "viendra": "virá (venir)",
+      "ose": "ouso (oser)",
+      "demander": "pedir; perguntar",
+      "cesse": "para, cessa (cesser)",
+      "pleuvoir": "chover",
+      "parti": "ido embora (partir)",
+      "doute": "dúvida (sans doute = provavelmente)",
+      "raison": "razão",
+      "décidé": "decidido (décider)",
+      "peine": "pena; esforço (à peine = mal, apenas)",
+      "arrivé": "chegado (arriver)",
+      "repartir": "ir embora de novo",
+      "fût": "fosse (être, subj. imperfeito, literário)",
+      "prudente": "prudente",
+      "ils": "eles",
+      "continuèrent": "continuaram (continuer, passé simple)",
+      "arriverons": "vamos conseguir (arriver; y arriver = conseguir)",
+      "oubliée": "esquecida (oublier)",
+      "vienne": "venha (venir, subj.)",
+      "rentre": "volta para casa (rentrer)",
+      "fasse": "faça (faire, subj.; il fait nuit = é noite)",
+      "nuit": "noite",
+      "saurais": "saberia (savoir)",
+      "vînt": "viesse (venir, subj. imperfeito, literário)",
+      "t": "(a-t-elle) t de ligação, só para soar bem",
+      "allez": "vão, vai (aller); (interjeição) vamos!",
+      "accepter": "aceitar"
+    }
+  },
+  {
+    "id": "c1-05",
+    "level": "C1",
+    "track": "main",
+    "title": "Parler comme un Parisien",
+    "titlePt": "Falar como um parisiense",
+    "goal": "Entender o francês oral rápido de hoje — gírias, sílabas engolidas e abreviações de mensagem — e saber quando (não) usar.",
+    "dialogue": {
+      "title": "Galère sur le quai",
+      "context": "Fim de tarde na estação Châtelet. Léo, Camille e Hugo vão a um show no Stade de France, mas o RER não chega. Registro **bem familiar**: é assim que se fala entre amigos — nunca com Monsieur Bernard!",
+      "lines": [
+        {
+          "who": "Hugo",
+          "fr": "Vingt minutes de retard… Franchement, le RER, c'est la galère tous les jours.",
+          "pt": "Vinte minutos de atraso… Sério, o RER é um perrengue todo santo dia."
+        },
+        {
+          "who": "Camille",
+          "fr": "J'ai trop le seum. Si on rate le début du concert, je pète un câble.",
+          "pt": "Tô muito pistola. Se a gente perder o começo do show, eu surto."
+        },
+        {
+          "who": "Léo",
+          "fr": "T'inquiète, on a le temps. Chais pas pourquoi, mais je le sens bien.",
+          "pt": "Relaxa, a gente tem tempo. Sei lá por quê, mas tô com um bom pressentimento."
+        },
+        {
+          "who": "Hugo",
+          "fr": "T'as entendu Léo ? « Chais pas » ! Il parle comme nous, maintenant.",
+          "pt": "Ouviu o Léo? 'Sei lá'! Agora ele fala igual à gente."
+        },
+        {
+          "who": "Camille",
+          "fr": "Ouais, c'est ouf. Au début, il parlait comme un livre.",
+          "pt": "É, muito doido. No começo, ele falava feito livro."
+        },
+        {
+          "who": "Léo",
+          "fr": "Faut bien s'adapter. Au boulot, je bosse avec des Français toute la journée, t'sais.",
+          "pt": "Tem que se adaptar, né. No trampo, eu trabalho com franceses o dia inteiro, sabe."
+        },
+        {
+          "who": "Hugo",
+          "fr": "Et tu kiffes ? La vie ici, le métro, les gens qui râlent ?",
+          "pt": "E você curte? A vida aqui, o metrô, o povo reclamando?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Grave. J'avoue, même les râleurs, je les trouve attachants.",
+          "pt": "Demais. Confesso: até os resmungões eu acho uns fofos."
+        },
+        {
+          "who": "Camille",
+          "fr": "Attends, y a une annonce… « Trafic interrompu ». Sérieux ?!",
+          "pt": "Peraí, tem um aviso… 'Circulação interrompida'. Sério?!"
+        },
+        {
+          "who": "Hugo",
+          "fr": "Ça me saoule. Bon, on prend un taxi ? J'ai la flemme d'attendre encore.",
+          "pt": "Que saco. Bom, vamos de táxi? Tô com preguiça de esperar mais."
+        },
+        {
+          "who": "Camille",
+          "fr": "Un taxi, à cette heure-ci ? C'est chaud, avec les bouchons.",
+          "pt": "Um táxi, a esta hora? Tá complicado, com esse trânsito."
+        },
+        {
+          "who": "Léo",
+          "fr": "Attendez… « Reprise du trafic » ! Un train arrive dans deux minutes.",
+          "pt": "Esperem… 'Circulação retomada'! Um trem chega em dois minutos."
+        },
+        {
+          "who": "Hugo",
+          "fr": "Ouf ! À Lyon, au moins, les trams sont à l'heure…",
+          "pt": "Ufa! Em Lyon, pelo menos, os bondes chegam na hora…"
+        },
+        {
+          "who": "Camille",
+          "fr": "Arrête un peu avec ton Lyon, toi ! Allez, du coup, on y va.",
+          "pt": "Para um pouco com essa sua Lyon! Vamos, então, bora."
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-05-01",
+        "fr": "Le RER, c'est la galère tous les matins.",
+        "pt": "O RER é um perrengue toda manhã.",
+        "note": "Familier: la galère = o perrengue. O verbo 'galérer' = ralar, passar aperto."
+      },
+      {
+        "id": "c1-05-02",
+        "fr": "J'ai galéré pour trouver un appart.",
+        "pt": "Ralei pra achar um apê."
+      },
+      {
+        "id": "c1-05-03",
+        "fr": "J'ai le seum, on a perdu le match.",
+        "pt": "Tô pistola, a gente perdeu o jogo.",
+        "note": "Argot: avoir le seum (do árabe, 'veneno') = estar com raiva, frustrado. Bem atual."
+      },
+      {
+        "id": "c1-05-04",
+        "fr": "Ce concert, je l'ai trop kiffé !",
+        "pt": "Curti demais esse show!",
+        "note": "Familier: kiffer (do árabe 'kif', prazer) = curtir, adorar. Hoje, usado por todas as idades."
+      },
+      {
+        "id": "c1-05-05",
+        "fr": "Je bosse toute la journée, je suis mort.",
+        "pt": "Trampo o dia inteiro, tô morto."
+      },
+      {
+        "id": "c1-05-06",
+        "fr": "Chais pas, on verra bien.",
+        "pt": "Sei lá, a gente vê.",
+        "note": "Je ne sais pas → je sais pas → [chê pá]. Escreve-se 'chais pas' só por brincadeira."
+      },
+      {
+        "id": "c1-05-07",
+        "fr": "T'sais, le café en bas de chez moi ? Il a fermé.",
+        "pt": "Sabe o café embaixo da minha casa? Fechou."
+      },
+      {
+        "id": "c1-05-08",
+        "fr": "Tkt, j'arrive dans cinq minutes.",
+        "pt": "Fica tranquilo, chego em cinco minutos.",
+        "note": "Tkt = t'inquiète, só por escrito (mensagens). Falado, 't'inquiète' soa [tẽ-kiét]."
+      },
+      {
+        "id": "c1-05-09",
+        "fr": "Ça me saoule, ces travaux dans la rue.",
+        "pt": "Que saco essas obras na rua."
+      },
+      {
+        "id": "c1-05-10",
+        "fr": "J'ai la flemme de sortir ce soir.",
+        "pt": "Tô com preguiça de sair hoje à noite."
+      },
+      {
+        "id": "c1-05-11",
+        "fr": "Un taxi à cette heure-ci ? C'est chaud.",
+        "pt": "Um táxi a esta hora? Tá complicado."
+      },
+      {
+        "id": "c1-05-12",
+        "fr": "Du coup, on fait quoi ce soir ?",
+        "pt": "E aí, então, a gente faz o quê hoje?",
+        "note": "'Du coup' = então, por isso. É o tique verbal número um da França; tem gente que fala a cada frase."
+      },
+      {
+        "id": "c1-05-13",
+        "fr": "J'avoue, t'as raison.",
+        "pt": "Confesso, você tem razão."
+      },
+      {
+        "id": "c1-05-14",
+        "fr": "Il a pété un câble en plein bureau.",
+        "pt": "Ele surtou no meio do escritório."
+      },
+      {
+        "id": "c1-05-15",
+        "fr": "Elle est chelou, cette histoire, non ?",
+        "pt": "Essa história é meio estranha, não?"
+      },
+      {
+        "id": "c1-05-16",
+        "fr": "Y avait un monde de ouf à la soirée.",
+        "pt": "Tinha uma multidão absurda na festa.",
+        "note": "'De ouf' (verlan de 'fou') = de doido, absurdo: 'un monde de ouf', 'c'est bon de ouf'."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Por que o francês falado 'engole' sílabas",
+        "body": "O francês tem um **e** muito fraco, o *e muet*. Na fala rápida, ele simplesmente cai, e as consoantes que sobram se juntam:\n*je ne sais pas* (4 sílabas) → *j'sais pas* → **chais pas** (2)\n*je suis* → **chuis**\n*tu sais* → **t'sais**\n*petit* → **p'tit**\n*il y a* → **y a**\n\nQuando o *j* encontra o *s*, os dois viram um som só, 'ch': daí *chais pas* e *chuis*. O português brasileiro faz exatamente a mesma coisa: 'você está' → 'cê tá', 'para' → 'pra', 'não sei' → 'num sei'.\n\nO segredo para entender os parisienses não é decorar gírias: é **treinar o ouvido** para essas formas comprimidas. Para falar, use com moderação, e nunca na escrita formal.",
+        "examples": [
+          {
+            "fr": "Chuis crevé.",
+            "pt": "Tô morto de cansado. (= je suis crevé)"
+          },
+          {
+            "fr": "Chais pas où il est.",
+            "pt": "Sei lá onde ele está. (= je ne sais pas)"
+          },
+          {
+            "fr": "Y a personne.",
+            "pt": "Num tem ninguém. (= il n'y a personne)"
+          },
+          {
+            "fr": "T'sais quoi ?",
+            "pt": "Sabe de uma coisa? (= tu sais quoi)"
+          }
+        ]
+      },
+      {
+        "title": "O francês das mensagens",
+        "body": "Nas mensagens, os franceses abreviam tanto quanto nós com 'vc', 'blz' e 'kkkk':\n**mdr** = *mort de rire* (morrendo de rir), o 'kkkk' francês\n**tkt** = *t'inquiète* (relaxa)\n**jsp** = *je sais pas* (sei lá)\n**stp / svp** = *s'il te plaît / s'il vous plaît*\n**bcp** = *beaucoup*\n**dsl** = *désolé(e)*\n**cc** = *coucou* (oi)\n\nE as gírias da vez: **kiffer** (curtir), **galérer** (ralar), **avoir le seum** (estar pistola), **la flemme** (a preguiça), **c'est chaud** (tá complicado), **grave** (demais, total).\n\nRegistro: tudo isso é **familier** ou **argot**. Perfeito com amigos; proibido num e-mail para o chefe ou numa conversa com Monsieur Bernard.",
+        "examples": [
+          {
+            "fr": "Dsl, jsp si je peux venir.",
+            "pt": "Foi mal, sei lá se consigo ir."
+          },
+          {
+            "fr": "Mdr, t'es trop drôle !",
+            "pt": "Kkkk, você é muito engraçado!"
+          },
+          {
+            "fr": "Tkt, c'est pas grave.",
+            "pt": "Relaxa, não tem problema."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Escreva uma troca de mensagens com um amigo francês que está atrasado para um show. Use pelo menos três gírias e duas abreviações.",
+      "model": "Cc ! T'es où ? Le concert commence dans dix minutes. — Dsl, le métro est en panne, c'est la galère. J'ai trop le seum ! — Tkt, je te garde une place. Mais du coup, grouille-toi ! Mdr"
+    },
+    "culture": "Os trens do RER, que ligam Paris aos subúrbios e aos aeroportos, são famosos pelos atrasos — e reclamar deles é quase um esporte local. 'Râler' (resmungar) faz parte da identidade parisiense: os próprios franceses brincam que reclamar é o seu passatempo nacional.",
+    "glossary": {
+      "vingt": "vinte",
+      "rer": "RER (trem que liga Paris aos subúrbios)",
+      "galère": "perrengue (fam.)",
+      "jours": "dias",
+      "seum": "raiva, frustração (argot: avoir le seum)",
+      "rate": "perde (rater)",
+      "pète": "(fam.) estoura (péter; péter un câble = surtar)",
+      "câble": "cabo (péter un câble = surtar)",
+      "inquiète": "(t'inquiète, fam.) relaxa (s'inquiéter = preocupar-se)",
+      "chais": "(chais pas, fam.) sei lá = je ne sais pas",
+      "sens": "sinto (sentir; je le sens bien = tenho um bom pressentimento)",
+      "entendu": "ouvido, entendido (entendre; bien entendu = claro)",
+      "ouais": "é, sim (fam.)",
+      "ouf": "(verlan de fou) doido, incrível; ufa!",
+      "parlait": "falava (parler)",
+      "adapter": "adaptar (s'adapter = adaptar-se)",
+      "boulot": "trampo, trabalho (fam.)",
+      "français": "francês, franceses",
+      "toute": "toda",
+      "journée": "dia (inteiro)",
+      "kiffes": "curte (kiffer, fam.)",
+      "râlent": "reclamam (râler)",
+      "grave": "grave; (fam.) demais, total",
+      "avoue": "confesso (avouer; fam.: j'avoue = verdade)",
+      "râleurs": "resmungões",
+      "attachants": "cativantes, uns amores",
+      "annonce": "aviso, anúncio",
+      "trafic": "tráfego, circulação",
+      "interrompu": "interrompido",
+      "saoule": "(fam.) enche o saco (saouler)",
+      "prend": "pega, toma (prendre)",
+      "taxi": "táxi",
+      "flemme": "preguiça (fam.)",
+      "attendre": "esperar",
+      "cette": "esta, essa",
+      "bouchons": "engarrafamentos; rolhas",
+      "attendez": "esperem (attendre)",
+      "reprise": "retomada",
+      "train": "trem",
+      "arrive": "chega; chego (arriver)",
+      "lyon": "Lyon (cidade)",
+      "trams": "bondes, VLT",
+      "arrête": "para (arrêter); pare!",
+      "coup": "golpe (du coup = então, por isso)",
+      "matins": "manhãs",
+      "galéré": "ralado, passado aperto (galérer, fam.)",
+      "appart": "apê (fam., appartement)",
+      "perdu": "perdido (perdre)",
+      "match": "jogo, partida",
+      "kiffé": "curtido (kiffer, fam.)",
+      "mort": "morto",
+      "verra": "verá (voir; on verra bien = a gente vê)",
+      "fermé": "fechado (fermer)",
+      "tkt": "relaxa (t'inquiète, em mensagens)",
+      "cinq": "cinco",
+      "travaux": "obras",
+      "rue": "rua",
+      "pété": "(fam.) estourado (péter un câble = surtar)",
+      "chelou": "(verlan de louche) estranho, suspeito",
+      "histoire": "história",
+      "soirée": "festa; noite",
+      "chuis": "(fam.) tô = je suis",
+      "crevé": "morto de cansado (fam.)",
+      "dsl": "(mensagem) desculpa = désolé",
+      "jsp": "(mensagem) sei lá = je sais pas",
+      "mdr": "(mensagem) kkkk = mort de rire",
+      "drôle": "engraçado",
+      "cc": "(mensagem) oi = coucou",
+      "commence": "começa (commencer)",
+      "dix": "dez",
+      "panne": "pane, defeito (en panne = quebrado)",
+      "garde": "guardo (garder)",
+      "place": "lugar",
+      "grouille": "(se grouiller, fam.) grouille-toi = anda logo"
+    }
+  },
+  {
+    "id": "c1-06",
+    "level": "C1",
+    "track": "main",
+    "title": "Références culturelles",
+    "titlePt": "Referências culturais",
+    "goal": "Entender e usar expressões que vêm da literatura, da história, da música e do cinema — as referências que os franceses fazem sem explicar.",
+    "dialogue": {
+      "title": "Le goûter des références",
+      "context": "Hora do lanche na casa da Mamie. Léo trouxe pães de queijo feitos em casa, e Monsieur Bernard chega revoltado com a burocracia… e com uma referência cultural a cada frase.",
+      "lines": [
+        {
+          "who": "Léo",
+          "fr": "Goûtez, Monsieur Bernard : des pães de queijo, faits maison !",
+          "pt": "Prove, Monsieur Bernard: pães de queijo, feitos em casa!"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Délicieux ! Et pour vous, Léo, ça doit être une vraie madeleine de Proust.",
+          "pt": "Delicioso! E para você, Léo, isso deve ser uma verdadeira madeleine de Proust."
+        },
+        {
+          "who": "Léo",
+          "fr": "Exactement. Une bouchée, et j'ai de nouveau dix ans, chez ma mère, à São Paulo.",
+          "pt": "Exatamente. Uma mordida e eu tenho dez anos de novo, na casa da minha mãe, em São Paulo."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et vous, Monsieur Bernard, votre carte d'identité ? Ça s'est arrangé ?",
+          "pt": "E o senhor, Monsieur Bernard, a sua carteira de identidade? Deu certo?"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Ne m'en parlez pas. Pour la renouveler, on me demande… une pièce d'identité valide. C'est kafkaïen !",
+          "pt": "Nem me fale. Para renová-la, me pedem… um documento de identidade válido. É kafkiano!"
+        },
+        {
+          "who": "Léo",
+          "fr": "Vous leur avez expliqué ?",
+          "pt": "O senhor explicou para eles?"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Pendant une heure. Un vrai dialogue de sourds. Et en sortant, évidemment, j'ai trouvé la réplique parfaite.",
+          "pt": "Durante uma hora. Um verdadeiro diálogo de surdos. E, na saída, é claro, achei a resposta perfeita."
+        },
+        {
+          "who": "Mamie",
+          "fr": "L'esprit de l'escalier… Ça nous arrive à tous.",
+          "pt": "O 'espírito da escada'… Acontece com todo mundo."
+        },
+        {
+          "who": "Léo",
+          "fr": "Au fait, Mamie, tu fredonnais quoi, tout à l'heure ?",
+          "pt": "Aliás, vó, o que você estava cantarolando agora há pouco?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "La Vie en rose. Ton grand-père me la chantait… horriblement faux.",
+          "pt": "La Vie en rose. Seu avô cantava para mim… terrivelmente desafinado."
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Moi, c'est Brel qui me fait pleurer. Ne me quitte pas… Quel chef-d'œuvre.",
+          "pt": "Comigo, é o Brel que me faz chorar. Ne me quitte pas… Que obra-prima."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et quand je pense que je dois bientôt repartir au Brésil…",
+          "pt": "E quando penso que daqui a pouco vou ter que voltar para o Brasil…"
+        },
+        {
+          "who": "Monsieur Bernard",
+          "fr": "Paris vaut bien une messe, Léo. Ou quelques allers-retours.",
+          "pt": "Paris bem vale uma missa, Léo. Ou algumas idas e vindas."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Bien dit ! Allez, encore un pão de queijo, Monsieur Bernard ?",
+          "pt": "Bem dito! Vamos, mais um pão de queijo, Monsieur Bernard?"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-06-01",
+        "fr": "Ce gâteau, c'est ma madeleine de Proust.",
+        "pt": "Esse bolo é a minha madeleine de Proust.",
+        "note": "Em 'Em busca do tempo perdido', o sabor de uma madeleine devolve ao narrador a infância inteira. Hoje: memória afetiva."
+      },
+      {
+        "id": "c1-06-02",
+        "fr": "Une bouchée, et j'ai de nouveau dix ans.",
+        "pt": "Uma mordida e eu tenho dez anos de novo."
+      },
+      {
+        "id": "c1-06-03",
+        "fr": "Ces démarches administratives, c'est kafkaïen.",
+        "pt": "Essa burocracia é kafkiana."
+      },
+      {
+        "id": "c1-06-04",
+        "fr": "Entre eux, c'est un vrai dialogue de sourds.",
+        "pt": "Entre eles, é um verdadeiro diálogo de surdos."
+      },
+      {
+        "id": "c1-06-05",
+        "fr": "J'ai trouvé la réponse parfaite… une fois dans la rue.",
+        "pt": "Achei a resposta perfeita… quando já estava na rua."
+      },
+      {
+        "id": "c1-06-06",
+        "fr": "C'est l'esprit de l'escalier : la bonne réplique arrive toujours trop tard.",
+        "pt": "É o 'espírito da escada': a resposta certa sempre chega tarde demais.",
+        "note": "Expressão de Diderot: a resposta brilhante que só nos ocorre na escada, depois de sair da conversa."
+      },
+      {
+        "id": "c1-06-07",
+        "fr": "Depuis qu'il est amoureux, il voit la vie en rose.",
+        "pt": "Desde que se apaixonou, ele vê tudo cor-de-rosa."
+      },
+      {
+        "id": "c1-06-08",
+        "fr": "Ne me quitte pas, de Brel, me donne toujours des frissons.",
+        "pt": "Ne me quitte pas, do Brel, sempre me dá arrepios."
+      },
+      {
+        "id": "c1-06-09",
+        "fr": "À trente-cinq ans, il vit encore chez ses parents : un vrai Tanguy !",
+        "pt": "Aos trinta e cinco anos, ainda mora com os pais: um verdadeiro Tanguy!",
+        "note": "Do filme 'Tanguy' (2001), sobre um filho adulto que se recusa a sair de casa. O nome virou substantivo."
+      },
+      {
+        "id": "c1-06-10",
+        "fr": "Il ne paie jamais l'addition, c'est un vrai Harpagon.",
+        "pt": "Ele nunca paga a conta, é um tremendo pão-duro.",
+        "note": "Harpagon é o avarento da peça 'L'Avare', de Molière (1668). 'Un Harpagon' = um pão-duro."
+      },
+      {
+        "id": "c1-06-11",
+        "fr": "Rien ne sert de courir, il faut partir à point.",
+        "pt": "Não adianta correr, é preciso sair na hora certa."
+      },
+      {
+        "id": "c1-06-12",
+        "fr": "La réunion d'hier ? Une vraie Bérézina.",
+        "pt": "A reunião de ontem? Um verdadeiro desastre.",
+        "note": "Lembrança da travessia desastrosa do rio Berezina pelo exército de Napoleão, em 1812."
+      },
+      {
+        "id": "c1-06-13",
+        "fr": "Il a un appétit gargantuesque.",
+        "pt": "Ele tem um apetite pantagruélico."
+      },
+      {
+        "id": "c1-06-14",
+        "fr": "Paris vaut bien une messe.",
+        "pt": "Paris bem vale uma missa.",
+        "note": "Frase atribuída a Henrique IV, que se converteu ao catolicismo para reinar: certos sacrifícios valem a pena."
+      },
+      {
+        "id": "c1-06-15",
+        "fr": "Ce petit café, on se croirait dans Amélie Poulain !",
+        "pt": "Este pequeno café parece cenário de Amélie Poulain!",
+        "note": "O filme 'Le Fabuleux Destin d'Amélie Poulain' (2001) virou sinônimo de uma Paris romântica e um pouco sonhadora."
+      },
+      {
+        "id": "c1-06-16",
+        "fr": "C'est une référence à quel film ?",
+        "pt": "É uma referência a qual filme?"
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Referências que ninguém explica",
+        "body": "Todo idioma tem referências que os falantes usam sem explicar; em português dizemos 'é um Dom Quixote', 'presente de grego', 'calcanhar de Aquiles'. O francês culto adora esse jogo, e muitas expressões do dia a dia vêm direto dos livros e da história:\n**une madeleine de Proust**: uma lembrança despertada por um sabor ou cheiro\n**kafkaïen**: absurdo e burocrático\n**l'esprit de l'escalier**: a resposta perfeita que chega tarde demais (Diderot)\n**un dialogue de sourds**: conversa em que ninguém escuta ninguém\n**un Harpagon**: um pão-duro (Molière)\n**la Bérézina**: um desastre total (Napoleão)\n\nVocê não precisa ter lido Proust para usar a madeleine — muitos franceses também não leram! Mas reconhecer a referência faz você captar o subtexto e rir na hora certa.",
+        "examples": [
+          {
+            "fr": "C'est ma madeleine de Proust.",
+            "pt": "É a minha madeleine de Proust. (memória afetiva)"
+          },
+          {
+            "fr": "Quelle Bérézina !",
+            "pt": "Que desastre!"
+          },
+          {
+            "fr": "C'est complètement kafkaïen.",
+            "pt": "É completamente kafkiano."
+          }
+        ]
+      },
+      {
+        "title": "Piaf, Brel, La Fontaine e o cinema",
+        "body": "A música e a escola também alimentam a conversa. Títulos de canções viram expressões: **voir la vie en rose** (Piaf) é ver tudo cor-de-rosa; **Non, je ne regrette rien** é citado por quem assume as próprias escolhas; **Ne me quitte pas** (Brel) é o símbolo da paixão desesperada.\n\nAs fábulas de **La Fontaine**, decoradas por todas as crianças, viraram provérbios: *Rien ne sert de courir, il faut partir à point* (a lebre e a tartaruga).\n\nNo cinema, personagens viram substantivos: **un Tanguy** é o filho adulto que não sai de casa.\n\nDica: quando um francês cita algo e espera um sorriso cúmplice, não tenha vergonha de perguntar: *C'est une référence à quoi ?* Eles adoram explicar.",
+        "examples": [
+          {
+            "fr": "Il voit la vie en rose.",
+            "pt": "Ele vê tudo cor-de-rosa."
+          },
+          {
+            "fr": "C'est un vrai Tanguy.",
+            "pt": "É um filho que não quer sair de casa."
+          },
+          {
+            "fr": "C'est une référence à quoi ?",
+            "pt": "É uma referência a quê?"
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte qual cheiro ou sabor é a sua 'madeleine de Proust' e descreva uma situação burocrática absurda que você viveu. Use pelo menos três referências da unidade.",
+      "model": "L'odeur du café le matin, c'est ma madeleine de Proust : je revois la cuisine de ma grand-mère. Par contre, renouveler mon passeport, c'était kafkaïen. Avec l'employé, c'était un vrai dialogue de sourds… et j'ai trouvé la bonne réponse dans l'escalier !"
+    },
+    "culture": "Jacques Brel era belga e Édith Piaf começou cantando nas ruas de Paris; hoje, os dois continuam tocando nos cafés da cidade. Já o 'esprit de l'escalier' vem de Diderot: ele contou que, numa discussão, ficou sem resposta e só achou as palavras certas ao chegar ao pé da escada.",
+    "glossary": {
+      "goûtez": "prove, provem (goûter)",
+      "pães": "(português) pães: pães de queijo",
+      "queijo": "(português) queijo: pão de queijo",
+      "pão": "(português) pão: pão de queijo",
+      "faits": "feitos (faire; fait maison = caseiro)",
+      "maison": "casa (fait maison = feito em casa)",
+      "délicieux": "delicioso",
+      "madeleine": "madeleine (bolinho em forma de concha)",
+      "bouchée": "mordida, bocado",
+      "nouveau": "novo (de nouveau = de novo)",
+      "ans": "anos (de idade)",
+      "mère": "mãe",
+      "carte": "cartão, carteira (carte d'identité = carteira de identidade)",
+      "identité": "identidade",
+      "arrangé": "resolvido, arranjado (s'arranger)",
+      "parlez": "fale (parler, vous; ne m'en parlez pas = nem me fale)",
+      "renouveler": "renovar",
+      "demande": "pede (demander)",
+      "pièce": "peça; documento (pièce d'identité); cômodo",
+      "valide": "válido",
+      "kafkaïen": "kafkiano",
+      "expliqué": "explicado (expliquer)",
+      "pendant": "durante",
+      "vrai": "verdadeiro",
+      "dialogue": "diálogo",
+      "sourds": "surdos",
+      "sortant": "saindo (sortir; en sortant = ao sair)",
+      "évidemment": "evidentemente, é claro",
+      "trouvé": "encontrado (trouver)",
+      "réplique": "resposta, fala (no teatro e no cinema)",
+      "parfaite": "perfeita",
+      "escalier": "escada",
+      "fredonnais": "cantarolava (fredonner)",
+      "rose": "rosa, cor-de-rosa",
+      "chantait": "cantava (chanter)",
+      "horriblement": "horrivelmente",
+      "faux": "falso; desafinado (chanter faux)",
+      "brel": "Brel (Jacques Brel, cantor belga)",
+      "pleurer": "chorar",
+      "quitte": "deixe; deixo (quitter: ne me quitte pas = não me deixe)",
+      "quel": "que, qual (masc.)",
+      "chef-d'œuvre": "obra-prima",
+      "quand": "quando",
+      "pense": "penso (penser)",
+      "dois": "devo, tenho que (devoir)",
+      "bientôt": "em breve",
+      "brésil": "Brasil",
+      "paris": "Paris",
+      "vaut": "vale (valoir)",
+      "messe": "missa",
+      "quelques": "alguns, algumas",
+      "allers-retours": "idas e vindas",
+      "gâteau": "bolo",
+      "démarches": "trâmites, procedimentos",
+      "administratives": "administrativas",
+      "réponse": "resposta",
+      "bonne": "boa",
+      "toujours": "sempre; ainda",
+      "amoureux": "apaixonado",
+      "donne": "dá (donner); la donne = a distribuição das cartas (changer la donne = mudar tudo)",
+      "frissons": "arrepios",
+      "trente-cinq": "trinta e cinco",
+      "vit": "vive, mora (vivre)",
+      "ses": "seus, suas (dele, dela)",
+      "parents": "pais; parentes",
+      "tanguy": "Tanguy (personagem de filme)",
+      "paie": "paga (payer)",
+      "jamais": "nunca",
+      "addition": "conta (no restaurante)",
+      "harpagon": "Harpagon (o avarento de Molière)",
+      "sert": "serve (servir; rien ne sert de = não adianta)",
+      "courir": "correr",
+      "hier": "ontem",
+      "bérézina": "Berezina (um desastre)",
+      "appétit": "apetite",
+      "gargantuesque": "pantagruélico, enorme",
+      "croirait": "acreditaria (croire; on se croirait = parece que estamos)",
+      "amélie": "Amélie (personagem de filme)",
+      "poulain": "Poulain (sobrenome); potro",
+      "référence": "referência",
+      "film": "filme",
+      "odeur": "cheiro",
+      "matin": "manhã",
+      "revois": "revejo (revoir)",
+      "passeport": "passaporte",
+      "employé": "funcionário"
+    }
+  },
+  {
+    "id": "c1-07",
+    "level": "C1",
+    "track": "main",
+    "title": "Négocier et convaincre",
+    "titlePt": "Negociar e convencer",
+    "goal": "Negociar prazos e condições com diplomacia: atenuar pedidos, discordar sem ofender e propor contrapartidas no francês profissional.",
+    "dialogue": {
+      "title": "La visio avec Madame Lambert",
+      "context": "Léo trabalha remotamente como engenheiro. Hoje ele tem uma videochamada delicada com Madame Lambert, diretora de um cliente francês: o projeto está atrasado, e ele precisa negociar um novo prazo sem perder a confiança dela.",
+      "lines": [
+        {
+          "who": "Madame Lambert",
+          "fr": "Bonjour Léo. Vous souhaitiez faire le point sur le calendrier ?",
+          "pt": "Bom dia, Léo. Você queria repassar o cronograma?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Bonjour Madame Lambert. Oui, je me permets de vous solliciter, car nous avons pris un peu de retard.",
+          "pt": "Bom dia, Madame Lambert. Sim, tomo a liberdade de procurá-la porque estamos com um pequeno atraso."
+        },
+        {
+          "who": "Madame Lambert",
+          "fr": "Du retard ? Sauf erreur de ma part, la livraison est prévue pour le quinze.",
+          "pt": "Atraso? Salvo engano, a entrega está prevista para o dia quinze."
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est exact. À cet égard, il conviendrait peut-être de revoir légèrement l'échéance.",
+          "pt": "Exatamente. A esse respeito, talvez conviesse rever ligeiramente o prazo."
+        },
+        {
+          "who": "Madame Lambert",
+          "fr": "Je vous avoue que cela nous mettrait dans une situation délicate.",
+          "pt": "Confesso que isso nos colocaria numa situação delicada."
+        },
+        {
+          "who": "Léo",
+          "fr": "Je le comprends tout à fait. Ne serait-il pas envisageable de livrer en deux temps ?",
+          "pt": "Entendo perfeitamente. Não seria possível fazer a entrega em duas etapas?"
+        },
+        {
+          "who": "Madame Lambert",
+          "fr": "C'est-à-dire ?",
+          "pt": "Como assim?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Une première version le quinze, comme convenu, puis la version définitive une semaine plus tard.",
+          "pt": "Uma primeira versão no dia quinze, como combinado, e a versão final uma semana depois."
+        },
+        {
+          "who": "Madame Lambert",
+          "fr": "Hmm. Et en contrepartie, que nous proposez-vous ?",
+          "pt": "Hum. E, em contrapartida, o que vocês nos propõem?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Nous prendrions en charge des tests supplémentaires, sans surcoût pour vous.",
+          "pt": "Assumiríamos testes adicionais, sem custo extra para vocês."
+        },
+        {
+          "who": "Madame Lambert",
+          "fr": "Voilà qui change la donne. Il faudrait néanmoins que j'en parle à ma direction.",
+          "pt": "Isso muda tudo. Mesmo assim, eu precisaria falar com a minha diretoria."
+        },
+        {
+          "who": "Léo",
+          "fr": "Bien entendu. Si je puis me permettre, une réponse d'ici vendredi serait idéale.",
+          "pt": "Claro. Se me permite, uma resposta até sexta seria o ideal."
+        },
+        {
+          "who": "Madame Lambert",
+          "fr": "Je vais faire le nécessaire. Je vous tiens au courant.",
+          "pt": "Vou providenciar. Mantenho você informado."
+        },
+        {
+          "who": "Léo",
+          "fr": "Parfait. Je vous remercie de votre compréhension, Madame Lambert.",
+          "pt": "Perfeito. Agradeço a sua compreensão, Madame Lambert."
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-07-01",
+        "fr": "Je me permets de vous relancer au sujet de notre dernier échange.",
+        "pt": "Tomo a liberdade de retomar o assunto da nossa última conversa.",
+        "note": "Relancer = cobrar uma resposta com educação (o 'follow-up'). 'Je me permets de' suaviza a cobrança."
+      },
+      {
+        "id": "c1-07-02",
+        "fr": "Sauf erreur de ma part, la facture n'a pas encore été réglée.",
+        "pt": "Salvo engano, a fatura ainda não foi paga.",
+        "note": "Repare: ninguém é acusado. 'Vous n'avez pas payé' seria direto demais."
+      },
+      {
+        "id": "c1-07-03",
+        "fr": "À cet égard, il conviendrait de revoir le calendrier.",
+        "pt": "A esse respeito, seria conveniente rever o cronograma."
+      },
+      {
+        "id": "c1-07-04",
+        "fr": "Il conviendrait de clarifier ce point avant de signer.",
+        "pt": "Seria conveniente esclarecer este ponto antes de assinar.",
+        "note": "'Il conviendrait de' = seria conveniente. O conditionnel transforma uma ordem em sugestão."
+      },
+      {
+        "id": "c1-07-05",
+        "fr": "Ne serait-il pas envisageable de livrer en deux temps ?",
+        "pt": "Não seria possível entregar em duas etapas?"
+      },
+      {
+        "id": "c1-07-06",
+        "fr": "Je vous avoue que cela nous mettrait dans une situation délicate.",
+        "pt": "Confesso que isso nos colocaria numa situação delicada."
+      },
+      {
+        "id": "c1-07-07",
+        "fr": "Je comprends tout à fait votre position.",
+        "pt": "Entendo perfeitamente a sua posição."
+      },
+      {
+        "id": "c1-07-08",
+        "fr": "Et en contrepartie, que nous proposez-vous ?",
+        "pt": "E, em contrapartida, o que vocês nos propõem?"
+      },
+      {
+        "id": "c1-07-09",
+        "fr": "Voilà qui change la donne.",
+        "pt": "Isso muda tudo.",
+        "note": "'La donne' é a distribuição das cartas num jogo. Mudar a donne = mudar as regras do jogo."
+      },
+      {
+        "id": "c1-07-10",
+        "fr": "Si je puis me permettre, une réponse d'ici vendredi serait idéale.",
+        "pt": "Se me permite, uma resposta até sexta seria o ideal.",
+        "note": "'Puis' = 'peux', forma antiga que só sobrevive na inversão: 'si je puis', 'puis-je'."
+      },
+      {
+        "id": "c1-07-11",
+        "fr": "Je ne suis pas certain que ce soit la meilleure option.",
+        "pt": "Não tenho certeza de que seja a melhor opção."
+      },
+      {
+        "id": "c1-07-12",
+        "fr": "Il me paraît difficile d'aller plus loin sur le prix.",
+        "pt": "Parece-me difícil baixar mais o preço."
+      },
+      {
+        "id": "c1-07-13",
+        "fr": "Et si nous coupions la poire en deux ?",
+        "pt": "E se a gente dividisse a diferença?",
+        "note": "Couper la poire en deux = dividir a pera ao meio: cada lado cede metade. Registro courant."
+      },
+      {
+        "id": "c1-07-14",
+        "fr": "Trouvons un terrain d'entente qui convienne aux deux parties.",
+        "pt": "Vamos encontrar um meio-termo que convenha às duas partes."
+      },
+      {
+        "id": "c1-07-15",
+        "fr": "Nous prendrions en charge les frais de livraison.",
+        "pt": "Nós assumiríamos os custos de entrega."
+      },
+      {
+        "id": "c1-07-16",
+        "fr": "Je vous remercie de votre souplesse sur ce dossier.",
+        "pt": "Agradeço a sua flexibilidade neste assunto."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "A arte de atenuar",
+        "body": "Numa negociação em francês, quem fala direto demais perde. O segredo é **atenuar** (o *hedging*): dizer a mesma coisa, mas com amortecedores.\n**O conditionnel** transforma exigência em sugestão: *il faut* → *il conviendrait de*.\n**A pergunta negativa** abre espaço para o outro: *Ne serait-il pas envisageable de… ?*\n**Modalizadores** suavizam: *peut-être, légèrement, un peu, éventuellement*.\n**Tirar o 'você' da frase** evita acusar: *Vous n'avez pas payé* → *Sauf erreur de ma part, la facture n'a pas été réglée*.\n\nO brasileiro já tem esse talento ('será que não daria para…?'). A diferença é que, em francês, existem **fórmulas fixas** que todo profissional reconhece — e usá-las é o que faz você soar à vontade numa reunião.",
+        "examples": [
+          {
+            "fr": "Il faut changer la date.",
+            "pt": "É preciso mudar a data. (direto)"
+          },
+          {
+            "fr": "Il conviendrait peut-être de changer la date.",
+            "pt": "Talvez fosse conveniente mudar a data. (diplomático)"
+          },
+          {
+            "fr": "Ne serait-il pas possible d'attendre un peu ?",
+            "pt": "Não seria possível esperar um pouco?"
+          }
+        ]
+      },
+      {
+        "title": "Fórmulas que quase existem em português",
+        "body": "Boa notícia: várias fórmulas francesas têm gêmeas formais em português.\n**je me permets de** = tomo a liberdade de\n**sauf erreur de ma part** = salvo engano (meu)\n**si je puis me permettre** = se me permite\n**à cet égard** = a esse respeito\n**en contrepartie** = em contrapartida\n**je vous avoue que** = confesso que\n\nA diferença é de **frequência**: em português elas soam um pouco empoladas, mas em francês são o **padrão** de qualquer reunião ou e-mail profissional.\n\nE repare em *puis*: é uma forma antiga de *peux* que só sobrevive nessas fórmulas invertidas (*si je puis*, *puis-je*). Na conversa normal, continue dizendo *je peux*.",
+        "examples": [
+          {
+            "fr": "Je me permets de vous rappeler notre accord.",
+            "pt": "Tomo a liberdade de lembrá-lo do nosso acordo."
+          },
+          {
+            "fr": "Sauf erreur de ma part, c'est le bon document.",
+            "pt": "Salvo engano, é o documento certo."
+          },
+          {
+            "fr": "Puis-je vous poser une question ?",
+            "pt": "Posso lhe fazer uma pergunta?"
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Escreva um e-mail curto a um cliente pedindo mais uma semana de prazo. Atenue o pedido, ofereça uma contrapartida e peça uma resposta até uma data.",
+      "model": "Madame, je me permets de revenir vers vous au sujet du projet. Sauf erreur de ma part, la livraison est prévue pour vendredi. Ne serait-il pas envisageable de la décaler d'une semaine ? En contrepartie, nous prendrions en charge les tests. Une réponse d'ici mardi serait idéale. Bien cordialement, Léo"
+    },
+    "culture": "Nas reuniões francesas, discordar abertamente é aceitável — o confronto de ideias é visto como saudável —, desde que o tom seja impecável. Por isso, 'je comprends tout à fait votre position, toutefois…' é uma das frases mais ouvidas nas salas de reunião do país.",
+    "glossary": {
+      "souhaitiez": "desejava, queria (souhaiter)",
+      "faire": "fazer (faire le point = repassar a situação)",
+      "calendrier": "calendário; cronograma",
+      "lambert": "Lambert (sobrenome)",
+      "permets": "permito (permettre; je me permets de = tomo a liberdade de)",
+      "solliciter": "solicitar; procurar (alguém)",
+      "car": "pois, porque",
+      "avons": "temos (avoir)",
+      "pris": "tomado, pegado (prendre; prendre du retard = atrasar-se)",
+      "sauf": "salvo, exceto",
+      "erreur": "erro (sauf erreur de ma part = salvo engano)",
+      "livraison": "entrega",
+      "prévue": "prevista (prévoir)",
+      "quinze": "quinze",
+      "exact": "exato",
+      "cet": "este, esse (masc., antes de vogal)",
+      "égard": "respeito, consideração (à cet égard = a esse respeito)",
+      "conviendrait": "conviria, seria conveniente (convenir)",
+      "légèrement": "ligeiramente",
+      "échéance": "prazo, vencimento",
+      "mettrait": "colocaria (mettre)",
+      "situation": "situação",
+      "délicate": "delicada",
+      "serait": "seria (être)",
+      "envisageable": "possível, viável (envisager = considerar)",
+      "livrer": "entregar",
+      "version": "versão",
+      "convenu": "combinado (convenir)",
+      "définitive": "definitiva, final",
+      "contrepartie": "contrapartida",
+      "proposez": "propõem (proposer, vous)",
+      "prendrions": "assumiríamos, tomaríamos (prendre; prendre en charge = assumir)",
+      "charge": "carga, encargo (prendre en charge = assumir)",
+      "tests": "testes",
+      "supplémentaires": "adicionais",
+      "surcoût": "custo adicional",
+      "change": "muda (changer)",
+      "faudrait": "seria preciso (falloir)",
+      "direction": "diretoria, direção",
+      "permettre": "permitir (si je puis me permettre = se me permite)",
+      "vendredi": "sexta-feira",
+      "idéale": "ideal",
+      "vais": "vou (aller)",
+      "nécessaire": "necessário (faire le nécessaire = providenciar)",
+      "tiens": "mantenho (tenir; je vous tiens au courant = eu te mantenho informado)",
+      "remercie": "agradeço (remercier)",
+      "compréhension": "compreensão",
+      "c'est-à-dire": "ou seja; como assim?",
+      "relancer": "cobrar uma resposta, retomar o contato",
+      "sujet": "assunto (au sujet de = a respeito de)",
+      "notre": "nosso, nossa",
+      "dernier": "último",
+      "échange": "conversa, troca",
+      "facture": "fatura, conta",
+      "été": "sido (être); verão",
+      "réglée": "paga, quitada (régler)",
+      "clarifier": "esclarecer",
+      "signer": "assinar",
+      "position": "posição",
+      "certain": "certo, seguro",
+      "meilleure": "melhor (adj. fem.)",
+      "option": "opção",
+      "paraît": "parece (paraître)",
+      "difficile": "difícil",
+      "loin": "longe (aller plus loin = ir além)",
+      "prix": "preço",
+      "coupions": "cortássemos, dividíssemos (couper)",
+      "poire": "pera (couper la poire en deux = dividir a diferença)",
+      "trouvons": "vamos encontrar (trouver)",
+      "terrain": "terreno (terrain d'entente = meio-termo)",
+      "entente": "entendimento, acordo",
+      "convienne": "convenha (convenir, subj.)",
+      "aux": "aos, às (à + les)",
+      "parties": "partes",
+      "frais": "custos, despesas; fresco",
+      "souplesse": "flexibilidade",
+      "dossier": "assunto, caso; pasta",
+      "changer": "mudar",
+      "date": "data",
+      "possible": "possível",
+      "rappeler": "lembrar; ligar de volta",
+      "accord": "acordo",
+      "document": "documento",
+      "poser": "fazer (uma pergunta); pôr",
+      "question": "pergunta, questão",
+      "revenir": "voltar (revenir vers vous = retomar o contato)",
+      "vers": "para, em direção a; por volta de",
+      "décaler": "adiar, mudar a data",
+      "mardi": "terça-feira",
+      "cordialement": "cordialmente (bien cordialement = atenciosamente)"
+    }
+  },
+  {
+    "id": "c1-08",
+    "level": "C1",
+    "track": "main",
+    "title": "Les faux amis",
+    "titlePt": "Os falsos amigos",
+    "goal": "Evitar as armadilhas de vocabulário que mais pegam brasileiros: palavras parecidas com o português, mas com outro sentido.",
+    "dialogue": {
+      "title": "Marina et les faux amis",
+      "context": "Marina, a namorada de Léo, está passando uma semana em Paris. Médica, ela estuda francês há meses e se vira muito bem… mas, no jantar na casa da Mamie, os falsos amigos atacam.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Marina, ma chérie, tu as l'air fatiguée. Tu as passé une bonne journée ?",
+          "pt": "Marina, querida, você parece cansada. Teve um bom dia?"
+        },
+        {
+          "who": "Marina",
+          "fr": "Oui, mais je suis un peu constipée depuis l'avion…",
+          "pt": "Tive, mas estou com o intestino um pouco preso desde o avião… (ela quis dizer 'resfriada')"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Oh ! Euh… ce sont des choses qui arrivent, en voyage.",
+          "pt": "Ah! Hã… são coisas que acontecem em viagem."
+        },
+        {
+          "who": "Léo",
+          "fr": "Marina, « constipée », c'est… un problème d'intestin. Tu veux dire « enrhumée » !",
+          "pt": "Marina, 'constipée' é… problema de intestino. Você quer dizer 'resfriada'!"
+        },
+        {
+          "who": "Marina",
+          "fr": "Oh non ! Quelle honte… Et je suis médecin, en plus !",
+          "pt": "Ah, não! Que vergonha… E eu ainda sou médica!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Ne t'en fais pas, ma chérie. Et ce matin, tu as pu visiter le musée ?",
+          "pt": "Não se preocupe, querida. E hoje de manhã, você conseguiu visitar o museu?"
+        },
+        {
+          "who": "Marina",
+          "fr": "Non, j'ai attendu des patients en visio. Mon cabinet au Brésil ne s'arrête jamais.",
+          "pt": "Não, fiquei esperando pacientes por vídeo. (ela quis dizer 'atendi') Meu consultório no Brasil não para nunca."
+        },
+        {
+          "who": "Léo",
+          "fr": "Tu les as attendus ? Ils étaient en retard ? Tu veux dire que tu as fait des consultations !",
+          "pt": "Você esperou por eles? Estavam atrasados? Você quer dizer que atendeu!"
+        },
+        {
+          "who": "Marina",
+          "fr": "Ces faux amis… Bon, au moins, cette tarte est exquise. Euh… « exquise », c'est bien un compliment ?",
+          "pt": "Esses falsos amigos… Bom, pelo menos esta torta está deliciosa. Hã… 'exquise' é elogio mesmo, né?"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Le plus beau ! Rien à voir avec votre « esquisito », d'après Léo.",
+          "pt": "O mais bonito! Nada a ver com o 'esquisito' de vocês, segundo o Léo."
+        },
+        {
+          "who": "Marina",
+          "fr": "Ouf. Alors je prétends rester encore une semaine, si c'est possible.",
+          "pt": "Ufa. Então eu afirmo que vou ficar mais uma semana, se for possível. (ela quis dizer 'pretendo')"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Je prétends » ? Ça veut dire « j'affirme ». Tu veux dire « je compte rester ».",
+          "pt": "'Je prétends'? Isso quer dizer 'eu afirmo'. Você quer dizer 'pretendo ficar'."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Peu importe, ma chérie : reste autant que tu veux. Ici, tu es chez toi.",
+          "pt": "Não importa, querida: fique quanto quiser. Aqui, você está em casa."
+        },
+        {
+          "who": "Marina",
+          "fr": "Merci, Mamie. Ça, au moins, je l'ai compris sans dictionnaire !",
+          "pt": "Obrigada, Mamie. Isso, pelo menos, eu entendi sem dicionário!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-08-01",
+        "fr": "J'ai attendu le bus pendant vingt minutes.",
+        "pt": "Esperei o ônibus durante vinte minutos.",
+        "note": "Attendre = esperar. Atender o telefone = répondre; um cliente = servir; um paciente = recevoir."
+      },
+      {
+        "id": "c1-08-02",
+        "fr": "Le médecin reçoit ses patients le matin.",
+        "pt": "O médico atende os pacientes de manhã."
+      },
+      {
+        "id": "c1-08-03",
+        "fr": "Il prétend qu'il n'a rien vu.",
+        "pt": "Ele afirma que não viu nada.",
+        "note": "Prétendre = afirmar (muitas vezes com um quê de dúvida). Pretender = compter, avoir l'intention de."
+      },
+      {
+        "id": "c1-08-04",
+        "fr": "Je compte rester encore une semaine.",
+        "pt": "Pretendo ficar mais uma semana."
+      },
+      {
+        "id": "c1-08-05",
+        "fr": "Je suis enrhumée depuis lundi.",
+        "pt": "Estou resfriada desde segunda.",
+        "note": "Constipé(e) = com intestino preso! Resfriado = enrhumé. Um clássico que deixa todo brasileiro vermelho."
+      },
+      {
+        "id": "c1-08-06",
+        "fr": "Cette tarte est vraiment exquise.",
+        "pt": "Esta torta está realmente deliciosa.",
+        "note": "Exquis = delicioso, requintado. Esquisito = bizarre, étrange (ou chelou, na gíria)."
+      },
+      {
+        "id": "c1-08-07",
+        "fr": "Je me ressers une tasse de café.",
+        "pt": "Vou me servir de mais uma xícara de café.",
+        "note": "Tasse = xícara. A taça é 'une coupe' (de champanhe) ou 'un verre à pied' (de vinho)."
+      },
+      {
+        "id": "c1-08-08",
+        "fr": "Il a mis son plus beau costume pour le mariage.",
+        "pt": "Ele vestiu o seu melhor terno para o casamento.",
+        "note": "Costume = terno. O costume (hábito) = l'habitude, la coutume."
+      },
+      {
+        "id": "c1-08-09",
+        "fr": "Elle a l'habitude de se lever tôt.",
+        "pt": "Ela tem o costume de acordar cedo."
+      },
+      {
+        "id": "c1-08-10",
+        "fr": "Achète une salade et des tomates au marché.",
+        "pt": "Compra um pé de alface e tomates na feira.",
+        "note": "Salade = salada, mas também o pé de alface! E 'raconter des salades' = contar lorota (familier)."
+      },
+      {
+        "id": "c1-08-11",
+        "fr": "J'ai passé toute la journée au bureau.",
+        "pt": "Passei o dia inteiro no escritório."
+      },
+      {
+        "id": "c1-08-12",
+        "fr": "Je dois rendre mon rapport avant vendredi.",
+        "pt": "Tenho que entregar o meu relatório antes de sexta.",
+        "note": "Rapport = relatório, e também relação ('aucun rapport'). Reportagem = le reportage."
+      },
+      {
+        "id": "c1-08-13",
+        "fr": "Ça n'a aucun rapport avec notre discussion.",
+        "pt": "Isso não tem nenhuma relação com a nossa conversa."
+      },
+      {
+        "id": "c1-08-14",
+        "fr": "Elle est très sensible, fais attention à ce que tu dis.",
+        "pt": "Ela é muito sensível, cuidado com o que você fala."
+      },
+      {
+        "id": "c1-08-15",
+        "fr": "Au lycée, mon surnom était « le Brésilien ».",
+        "pt": "No ensino médio, o meu apelido era 'o Brasileiro'.",
+        "note": "Surnom = apelido! O sobrenome é 'le nom de famille'. E o nome é 'le prénom'."
+      },
+      {
+        "id": "c1-08-16",
+        "fr": "J'ai un entretien d'embauche demain matin.",
+        "pt": "Tenho uma entrevista de emprego amanhã de manhã."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "Por que tantos falsos amigos?",
+        "body": "Francês e português vêm do latim, então milhares de palavras são parentes. O problema é que, em dois mil anos, cada língua levou o significado para um lado:\no latim *attendere* (dirigir a atenção, esperar) → o francês ficou com **esperar** (*attendre*); o português, com **atender**.\no latim *praetendere* (alegar, apresentar como desculpa) → *prétendre* = **afirmar**; 'pretender' = ter a intenção.\n*exquis* e 'esquisito' vêm do mesmo *exquisitus* (rebuscado): o francês ficou com o 'requintado'; o português, com o 'estranho'.\n\nO perigo é que essas palavras parecem tão óbvias que a gente nem desconfia. A regra de ouro: quando uma palavra francesa parecer **fácil demais**, confirme o sentido. E quando for usar uma palavra 'igualzinha ao português', desconfie duas vezes.",
+        "examples": [
+          {
+            "fr": "J'attends Marina.",
+            "pt": "Estou esperando a Marina."
+          },
+          {
+            "fr": "Il prétend être malade.",
+            "pt": "Ele afirma estar doente."
+          },
+          {
+            "fr": "Le dîner était exquis.",
+            "pt": "O jantar estava delicioso."
+          }
+        ]
+      },
+      {
+        "title": "As armadilhas campeãs",
+        "body": "Decore estes pares — são os que mais pegam brasileiros:\n**attendre** = esperar (atender = *répondre, recevoir*)\n**prétendre** = afirmar (pretender = *compter*)\n**constipé** = com intestino preso (resfriado = *enrhumé*)\n**exquis** = delicioso (esquisito = *bizarre*)\n**la tasse** = a xícara (a taça = *la coupe*)\n**le costume** = o terno (o costume = *l'habitude*)\n**le surnom** = o apelido (o sobrenome = *le nom de famille*)\n**la journée** = o dia inteiro (a jornada, viagem = *le périple*)\n**le rapport** = o relatório, a relação (a reportagem = *le reportage*)\n**l'entretien** = a entrevista (o entretenimento = *le divertissement*)\n**déjeuner** = almoçar (o desjejum = *le petit-déjeuner*)\n\nE um 'falso falso amigo': **sensible** = sensível mesmo! Só que 'sensato' é *sensé* ou *raisonnable*.",
+        "examples": [
+          {
+            "fr": "Je suis enrhumé.",
+            "pt": "Estou resfriado."
+          },
+          {
+            "fr": "Quel est ton nom de famille ?",
+            "pt": "Qual é o seu sobrenome?"
+          },
+          {
+            "fr": "C'est une décision sensée.",
+            "pt": "É uma decisão sensata."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Escreva cinco frases usando corretamente attendre, prétendre, exquis, surnom e journée. Depois, confira se nenhuma delas caiu numa armadilha.",
+      "model": "J'attends Marina depuis une heure. Il prétend qu'il a tout compris, mais j'en doute. Ce gâteau est exquis ! Mon surnom, c'est « le Carioca ». J'ai passé une journée formidable avec ma grand-mère."
+    },
+    "culture": "Falso amigo até dentro do próprio francês: na França, 'déjeuner' é o almoço e 'dîner' é o jantar; mas na Bélgica, na Suíça e no Québec, 'déjeuner' é o café da manhã, 'dîner' é o almoço e o jantar se chama 'souper'.",
+    "glossary": {
+      "marina": "Marina (namorada do Léo)",
+      "chérie": "querida",
+      "air": "ar; cara, aparência (avoir l'air = parecer)",
+      "fatiguée": "cansada",
+      "constipée": "com intestino preso (falso amigo!)",
+      "avion": "avião",
+      "euh": "hã, é…",
+      "choses": "coisas",
+      "arrivent": "acontecem; chegam (arriver)",
+      "voyage": "viagem",
+      "intestin": "intestino",
+      "veux": "quero, quer (vouloir; tu veux dire = você quer dizer)",
+      "enrhumée": "resfriada",
+      "honte": "vergonha",
+      "médecin": "médico, médica",
+      "pu": "podido, conseguido (pouvoir)",
+      "visiter": "visitar",
+      "musée": "museu",
+      "attendu": "esperado (attendre)",
+      "patients": "pacientes",
+      "visio": "videochamada (fam., visioconférence)",
+      "cabinet": "consultório",
+      "attendus": "esperados (attendre)",
+      "étaient": "estavam, eram (être)",
+      "consultations": "consultas",
+      "amis": "amigos",
+      "tarte": "torta",
+      "exquise": "deliciosa, requintada",
+      "compliment": "elogio",
+      "voir": "ver (rien à voir = nada a ver)",
+      "esquisito": "(português) estranho; em francês, bizarre",
+      "prétends": "afirmo (prétendre, falso amigo!)",
+      "rester": "ficar",
+      "affirme": "afirmo (affirmer)",
+      "compte": "pretendo, conto (compter); conta",
+      "importe": "importa (peu importe = não importa)",
+      "autant": "tanto (autant que tu veux = quanto quiser)",
+      "compris": "entendido (comprendre)",
+      "dictionnaire": "dicionário",
+      "bus": "ônibus",
+      "reçoit": "recebe; atende (recevoir)",
+      "prétend": "afirma (prétendre, falso amigo!)",
+      "ressers": "sirvo de novo (se resservir = servir-se de mais)",
+      "tasse": "xícara (falso amigo!)",
+      "mis": "posto, vestido (mettre)",
+      "costume": "terno (falso amigo!)",
+      "mariage": "casamento",
+      "habitude": "costume, hábito",
+      "lever": "levantar (se lever = acordar, levantar-se)",
+      "salade": "salada; pé de alface",
+      "achète": "compra (acheter)",
+      "tomates": "tomates",
+      "rendre": "entregar, devolver",
+      "rapport": "relatório; relação",
+      "aucun": "nenhum",
+      "discussion": "conversa, discussão",
+      "sensible": "sensível",
+      "attention": "atenção (fais attention = cuidado)",
+      "lycée": "ensino médio, colégio",
+      "surnom": "apelido (falso amigo!)",
+      "brésilien": "brasileiro",
+      "entretien": "entrevista; manutenção",
+      "embauche": "contratação (entretien d'embauche = entrevista de emprego)",
+      "exquis": "delicioso, requintado",
+      "enrhumé": "resfriado",
+      "nom": "nome (nom de famille = sobrenome)",
+      "famille": "família",
+      "décision": "decisão",
+      "sensée": "sensata",
+      "carioca": "carioca",
+      "formidable": "maravilhoso, ótimo"
+    }
+  },
+  {
+    "id": "c1-09",
+    "level": "C1",
+    "track": "main",
+    "title": "Les nuances des émotions",
+    "titlePt": "As nuances das emoções",
+    "goal": "Expressar sentimentos com precisão e na intensidade certa: alegria, frustração, saudade, emoção e desânimo, do mais leve ao mais forte.",
+    "dialogue": {
+      "title": "Le cœur partagé",
+      "context": "Novembro em Paris, chuva há semanas. Léo vai voltar a São Paulo por alguns meses e está com o coração dividido. No fim da tarde, ele passa na casa da Mamie — e ela tem uma notícia para dar.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Tu as l'air tout chose, mon chéri. Qu'est-ce qui ne va pas ?",
+          "pt": "Você está com uma cara estranha, querido. O que é que não vai bem?"
+        },
+        {
+          "who": "Léo",
+          "fr": "Je ne sais pas… J'ai le mal du pays, je crois. Le soleil, ma mère, les amis…",
+          "pt": "Não sei… Acho que estou com saudade de casa. O sol, a minha mãe, os amigos…"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Après tant de mois, c'est normal. Et Marina te manque, aussi.",
+          "pt": "Depois de tantos meses, é normal. E você está com saudade da Marina também."
+        },
+        {
+          "who": "Léo",
+          "fr": "Énormément. Mais en même temps, j'ai un pincement au cœur à l'idée de partir.",
+          "pt": "Muita. Mas, ao mesmo tempo, sinto um aperto no coração só de pensar em ir embora."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Tu as le cœur partagé entre deux villes. Ta mère disait la même chose.",
+          "pt": "Você está com o coração dividido entre duas cidades. Sua mãe dizia a mesma coisa."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et puis j'en ai ras-le-bol de cette pluie. Trois semaines sans voir le soleil !",
+          "pt": "E, além disso, estou de saco cheio dessa chuva. Três semanas sem ver o sol!"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Ah, novembre à Paris, ce n'est pas vraiment la fête, je te l'accorde.",
+          "pt": "Ah, novembro em Paris não é exatamente uma festa, isso eu admito."
+        },
+        {
+          "who": "Léo",
+          "fr": "Et hier, j'étais dépité : mon vol a été annulé, il faut tout réorganiser.",
+          "pt": "E ontem fiquei chateado: meu voo foi cancelado, vou ter que reorganizar tudo."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Bon. J'ai peut-être de quoi te remonter le moral. J'ai vu mon médecin ce matin.",
+          "pt": "Bom. Talvez eu tenha algo para te animar. Fui ao médico hoje de manhã."
+        },
+        {
+          "who": "Léo",
+          "fr": "Ton médecin ? Tout va bien ? Tu me fais peur…",
+          "pt": "Ao médico? Está tudo bem? Você está me assustando…"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Tout va très bien. Il m'a dit que je pouvais encore voyager. Au printemps, je reviens à São Paulo !",
+          "pt": "Está tudo ótimo. Ele disse que eu ainda posso viajar. Na primavera, eu volto para São Paulo!"
+        },
+        {
+          "who": "Léo",
+          "fr": "C'est vrai ?! Mamie, je suis aux anges ! Maman va être bouleversée.",
+          "pt": "Sério?! Vó, estou nas nuvens! A mamãe vai ficar muito emocionada."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Moi aussi, je suis émue. Revoir ta mère, et cette fois pour un mois entier…",
+          "pt": "Eu também estou emocionada. Rever sua mãe, e desta vez por um mês inteiro…"
+        },
+        {
+          "who": "Léo",
+          "fr": "Je n'en reviens pas. Tu viens de transformer mon mois de novembre !",
+          "pt": "Não acredito. Você acabou de transformar o meu mês de novembro!"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-09-01",
+        "fr": "J'ai le mal du pays depuis quelques semaines.",
+        "pt": "Estou com saudade de casa há algumas semanas.",
+        "note": "Mal du pays = saudade da terra natal. Para a saudade de alguém, use 'manquer': 'tu me manques'."
+      },
+      {
+        "id": "c1-09-02",
+        "fr": "J'ai eu un pincement au cœur en quittant la maison.",
+        "pt": "Senti um aperto no coração ao sair de casa.",
+        "note": "Pincement = beliscão. Uma tristeza leve e breve, típica de despedidas e lembranças."
+      },
+      {
+        "id": "c1-09-03",
+        "fr": "J'en ai ras-le-bol de cette pluie !",
+        "pt": "Tô de saco cheio dessa chuva!",
+        "note": "Familier: ras-le-bol = a tigela cheia até a borda. Mais forte que 'j'en ai marre'."
+      },
+      {
+        "id": "c1-09-04",
+        "fr": "J'étais dépité quand le concert a été annulé.",
+        "pt": "Fiquei chateado quando o show foi cancelado.",
+        "note": "Dépité = frustrado e chateado. Vem de 'dépit', o 'despeito' do português."
+      },
+      {
+        "id": "c1-09-05",
+        "fr": "Je suis aux anges depuis ce matin.",
+        "pt": "Estou nas nuvens desde hoje de manhã.",
+        "note": "Aux anges = entre os anjos: felicidade máxima. O português prefere as nuvens; o francês, os anjos."
+      },
+      {
+        "id": "c1-09-06",
+        "fr": "Cette lettre m'a complètement bouleversé.",
+        "pt": "Essa carta me deixou completamente abalado.",
+        "note": "Bouleverser = virar de cabeça para baixo. Emoção muito forte, boa ou ruim, conforme o contexto."
+      },
+      {
+        "id": "c1-09-07",
+        "fr": "Tu as l'air tout chose, qu'est-ce qui se passe ?",
+        "pt": "Você está meio estranho, o que está acontecendo?"
+      },
+      {
+        "id": "c1-09-08",
+        "fr": "J'ai le cœur partagé entre deux villes.",
+        "pt": "Meu coração está dividido entre duas cidades."
+      },
+      {
+        "id": "c1-09-09",
+        "fr": "Ta visite m'a vraiment remonté le moral.",
+        "pt": "A sua visita me animou de verdade."
+      },
+      {
+        "id": "c1-09-10",
+        "fr": "Je n'en reviens pas qu'elle ait dit oui !",
+        "pt": "Não acredito que ela disse sim!",
+        "note": "'Ne pas en revenir' = não se refazer da surpresa. Com 'que', pede subjuntivo: 'qu'elle ait dit'."
+      },
+      {
+        "id": "c1-09-11",
+        "fr": "J'avais la boule au ventre avant l'entretien.",
+        "pt": "Eu estava com um nó no estômago antes da entrevista."
+      },
+      {
+        "id": "c1-09-12",
+        "fr": "Elle était émue aux larmes.",
+        "pt": "Ela estava emocionada até as lágrimas."
+      },
+      {
+        "id": "c1-09-13",
+        "fr": "Il est vexé qu'on ne l'ait pas invité.",
+        "pt": "Ele está magoado por não ter sido convidado."
+      },
+      {
+        "id": "c1-09-14",
+        "fr": "Je suis soulagée, tout s'est bien passé.",
+        "pt": "Estou aliviada, deu tudo certo."
+      },
+      {
+        "id": "c1-09-15",
+        "fr": "Il était hors de lui en voyant la facture.",
+        "pt": "Ele ficou fora de si quando viu a conta."
+      },
+      {
+        "id": "c1-09-16",
+        "fr": "J'en ai gros sur le cœur depuis cette dispute.",
+        "pt": "Estou com um peso no coração desde aquela briga."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "A escada da intensidade",
+        "body": "O francês tem uma escada de palavras para cada emoção, e escolher o degrau certo é o que separa o B2 do C1:\n**Alegria:** *content* → *heureux* → *ravi* → *aux anges*\n**Tristeza:** *triste* → *abattu* → *effondré*\n**Irritação:** *agacé* → *énervé* → *furieux* → *hors de soi*\n**Saturação:** *j'en ai marre* → *j'en ai ras-le-bol* → *j'en ai par-dessus la tête*\n**Emoção:** *touché* → *ému* → *bouleversé*\n\nEm português fazemos o mesmo ('contente', 'feliz', 'radiante', 'nas nuvens'). A armadilha é ficar sempre no mesmo degrau: um francês que diz *je suis ravi* está bem mais feliz do que um que diz *je suis content* — e *content*, às vezes, é só educação.",
+        "examples": [
+          {
+            "fr": "Je suis content de te voir.",
+            "pt": "Estou contente de te ver."
+          },
+          {
+            "fr": "Je suis ravi de te voir !",
+            "pt": "Estou radiante de te ver!"
+          },
+          {
+            "fr": "J'en ai par-dessus la tête !",
+            "pt": "Estou por aqui com isso!"
+          }
+        ]
+      },
+      {
+        "title": "Saudade em francês",
+        "body": "Dizem que 'saudade' não tem tradução. Em francês, ela se divide em várias expressões, conforme o que falta:\n**le mal du pays**: a saudade da terra natal\n**manquer**: a saudade de alguém, com o sujeito invertido: *tu me manques* (você me faz falta)\n**la nostalgie**: a saudade de um tempo que passou\n**un pincement au cœur**: o apertinho de uma despedida ou de uma lembrança\n\nE para a melancolia sem motivo claro, os franceses dizem *avoir le vague à l'âme* (ter a alma em ondas), expressão um pouco literária, bem ao gosto da Mamie.\n\nNenhuma é tão completa quanto 'saudade'… mas, juntas, chegam bem perto.",
+        "examples": [
+          {
+            "fr": "Le Brésil me manque.",
+            "pt": "Estou com saudade do Brasil."
+          },
+          {
+            "fr": "J'ai la nostalgie de mon enfance.",
+            "pt": "Tenho saudade da minha infância."
+          },
+          {
+            "fr": "J'ai le vague à l'âme ce soir.",
+            "pt": "Estou melancólico esta noite."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Conte uma semana cheia de altos e baixos: uma frustração, uma saudade e uma ótima notícia. Use pelo menos quatro expressões da unidade, com a intensidade certa.",
+      "model": "Quelle semaine ! Lundi, j'étais dépité : mon train a été annulé. Mercredi, j'ai eu le mal du pays en écoutant de la musique brésilienne. Et puis vendredi, ma sœur m'a annoncé qu'elle venait me voir. Je suis aux anges !"
+    },
+    "culture": "Em público, os franceses costumam ser mais contidos com as emoções do que os brasileiros — eles chamam isso de 'pudeur'. Mas, entre amigos e em família, a pudeur cai, e a riqueza de expressões para cada nuance mostra que, por dentro, o coração é o mesmo.",
+    "glossary": {
+      "chose": "coisa (tout chose = esquisito, sem jeito)",
+      "chéri": "querido",
+      "pays": "país; terra (le mal du pays = saudade de casa)",
+      "soleil": "sol",
+      "tant": "tanto(s)",
+      "normal": "normal",
+      "manque": "faz falta (manquer: Marina te manque = você sente falta da Marina)",
+      "énormément": "enormemente, muito",
+      "pincement": "beliscão (un pincement au cœur = um aperto no coração)",
+      "cœur": "coração",
+      "partagé": "dividido (partager)",
+      "villes": "cidades",
+      "ta": "tua, sua",
+      "disait": "dizia (dire)",
+      "ras-le-bol": "saco cheio (fam.)",
+      "pluie": "chuva",
+      "trois": "três",
+      "semaines": "semanas",
+      "novembre": "novembro",
+      "fête": "festa",
+      "accorde": "concedo, admito (accorder; je te l'accorde = isso eu admito)",
+      "étais": "estava, era (être)",
+      "dépité": "frustrado, chateado",
+      "vol": "voo; roubo",
+      "réorganiser": "reorganizar",
+      "remonter": "levantar (remonter le moral = animar)",
+      "moral": "moral, ânimo",
+      "pouvais": "podia (pouvoir)",
+      "voyager": "viajar",
+      "printemps": "primavera",
+      "viens": "venho, vem (venir; tu viens de = você acabou de)",
+      "anges": "anjos (être aux anges = estar nas nuvens)",
+      "maman": "mamãe",
+      "bouleversée": "muito emocionada, abalada",
+      "émue": "emocionada",
+      "toutes": "todas",
+      "années": "anos",
+      "reviens": "volto (revenir; je n'en reviens pas = não acredito)",
+      "transformer": "transformar",
+      "eu": "tido (avoir; j'ai eu = tive)",
+      "quittant": "deixando (quitter; en quittant = ao deixar)",
+      "bouleversé": "muito emocionado, abalado",
+      "passe": "passa, acontece (se passer; qu'est-ce qui se passe ? = o que está acontecendo?)",
+      "visite": "visita",
+      "remonté": "levantado (remonter le moral = animar)",
+      "ait": "tenha (avoir, subj.)",
+      "avais": "tinha (avoir)",
+      "boule": "bola (la boule au ventre = nó no estômago)",
+      "ventre": "barriga, ventre",
+      "larmes": "lágrimas",
+      "vexé": "ofendido, magoado",
+      "invité": "convidado (inviter)",
+      "soulagée": "aliviada",
+      "hors": "fora (hors de lui = fora de si)",
+      "voyant": "vendo (voir; en voyant = ao ver)",
+      "gros": "grande, gordo (en avoir gros sur le cœur = estar com o coração pesado)",
+      "dispute": "briga",
+      "content": "contente",
+      "ravi": "encantado, radiante",
+      "par-dessus": "por cima de (en avoir par-dessus la tête = estar por aqui)",
+      "tête": "cabeça",
+      "nostalgie": "nostalgia, saudade (de um tempo)",
+      "enfance": "infância",
+      "vague": "onda; vago (avoir le vague à l'âme = estar melancólico)",
+      "âme": "alma",
+      "mercredi": "quarta-feira",
+      "écoutant": "ouvindo (écouter; en écoutant = ao ouvir)",
+      "musique": "música",
+      "brésilienne": "brasileira",
+      "sœur": "irmã",
+      "annoncé": "anunciado (annoncer)",
+      "venait": "vinha (venir)"
+    }
+  },
+  {
+    "id": "c1-10",
+    "level": "C1",
+    "track": "main",
+    "title": "Une lettre pour Mamie",
+    "titlePt": "Uma carta para a Mamie",
+    "goal": "Ler e escrever uma carta pessoal longa e afetuosa: abrir, lembrar, agradecer, fazer planos e se despedir com as fórmulas certas.",
+    "dialogue": {
+      "title": "Ma très chère Mamie",
+      "context": "Véspera da volta de Léo a São Paulo. Antes de partir, ele entrega à avó uma carta escrita à mão, em francês. Ela pede que ele a leia em voz alta, ali mesmo, ao lado do piano.",
+      "lines": [
+        {
+          "who": "Mamie",
+          "fr": "Une lettre ? Pour moi ? Lis-la-moi, mon chéri. Je veux l'entendre de ta bouche.",
+          "pt": "Uma carta? Para mim? Leia para mim, querido. Quero ouvir da sua boca."
+        },
+        {
+          "who": "Léo",
+          "fr": "« Paris, le 30 novembre. Ma très chère Mamie, je t'écris en français, sans dictionnaire… ou presque. »",
+          "pt": "'Paris, 30 de novembro. Minha querida vovó, escrevo para você em francês, sem dicionário… ou quase.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Quand je suis arrivé, je savais à peine dire bonjour. Aujourd'hui, je rêve même en français. »",
+          "pt": "'Quando cheguei, eu mal sabia dizer bom dia. Hoje, eu até sonho em francês.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Grâce à toi, j'ai découvert une ville, une langue et, surtout, une famille. »",
+          "pt": "'Graças a você, descobri uma cidade, uma língua e, acima de tudo, uma família.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Je n'oublierai jamais nos déjeuners du dimanche, ni l'histoire de Papi dans le métro. »",
+          "pt": "'Nunca vou esquecer os nossos almoços de domingo, nem a história do vovô no metrô.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Chaque fois que je prends le métro, je pense à ce jeune homme qui courait avec tes partitions. »",
+          "pt": "'Toda vez que pego o metrô, penso naquele rapaz que corria com as suas partituras.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Ton grand-père aurait été si fier de toi…",
+          "pt": "Seu avô teria tanto orgulho de você…"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Avec toi, j'ai compris qu'une langue s'apprend petit à petit, comme on apprend à aimer quelqu'un. »",
+          "pt": "'Com você, entendi que uma língua se aprende pouco a pouco, como se aprende a amar alguém.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Merci de m'avoir ouvert ta porte, ton piano et ton cœur. »",
+          "pt": "'Obrigado por ter me aberto a sua porta, o seu piano e o seu coração.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Je pars demain, mais je ne te quitte pas : je t'attends au printemps à São Paulo. »",
+          "pt": "'Vou embora amanhã, mas não te deixo: espero você na primavera em São Paulo.'"
+        },
+        {
+          "who": "Léo",
+          "fr": "« Prends bien soin de toi. Je t'embrasse tendrement. Ton petit-fils qui t'aime, Léo. »",
+          "pt": "'Cuide-se bem. Um beijo carinhoso. Do seu neto que te ama, Léo.'"
+        },
+        {
+          "who": "Mamie",
+          "fr": "Je la rangerai dans ma boîte, avec les lettres de ta mère.",
+          "pt": "Vou guardá-la na minha caixa, junto com as cartas da sua mãe."
+        },
+        {
+          "who": "Mamie",
+          "fr": "Et pour une lettre écrite sans dictionnaire… ce n'est pas mal du tout.",
+          "pt": "E, para uma carta escrita sem dicionário… não está nada mal."
+        },
+        {
+          "who": "Léo",
+          "fr": "« Pas mal du tout » ? Venant de toi, Mamie, c'est le plus beau des compliments.",
+          "pt": "'Nada mal'? Vindo de você, vó, é o maior dos elogios."
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "c1-10-01",
+        "fr": "Ma très chère Mamie, je t'écris de mon studio, sous la pluie.",
+        "pt": "Minha querida vovó, escrevo para você do meu estúdio, debaixo de chuva.",
+        "note": "Abertura afetuosa: 'Ma chère…', 'Ma très chère…', 'Mon cher…', sempre seguida de vírgula."
+      },
+      {
+        "id": "c1-10-02",
+        "fr": "J'espère que cette lettre te trouvera en bonne santé.",
+        "pt": "Espero que esta carta te encontre com saúde.",
+        "note": "Fórmula clássica de abertura, como o nosso 'espero que esteja bem'. Um pouco antiga, por isso perfeita para avós."
+      },
+      {
+        "id": "c1-10-03",
+        "fr": "Je prends la plume pour te dire merci.",
+        "pt": "Pego a caneta para te agradecer.",
+        "note": "'Prendre la plume' = pegar a pena: começar a escrever. Expressão elegante, um pouco solene."
+      },
+      {
+        "id": "c1-10-04",
+        "fr": "Quand je suis arrivé, je savais à peine dire bonjour.",
+        "pt": "Quando cheguei, eu mal sabia dizer bom dia."
+      },
+      {
+        "id": "c1-10-05",
+        "fr": "Grâce à toi, j'ai découvert une ville, une langue et une famille.",
+        "pt": "Graças a você, descobri uma cidade, uma língua e uma família."
+      },
+      {
+        "id": "c1-10-06",
+        "fr": "Je n'oublierai jamais nos déjeuners du dimanche.",
+        "pt": "Nunca vou esquecer os nossos almoços de domingo."
+      },
+      {
+        "id": "c1-10-07",
+        "fr": "Je garde précieusement chacun de ces souvenirs.",
+        "pt": "Guardo com carinho cada uma dessas lembranças."
+      },
+      {
+        "id": "c1-10-08",
+        "fr": "Merci de m'avoir ouvert ta porte et ton cœur.",
+        "pt": "Obrigado por ter me aberto a sua porta e o seu coração.",
+        "note": "'Merci de' + infinitivo passado (avoir + particípio), igualzinho ao 'obrigado por ter…' do português."
+      },
+      {
+        "id": "c1-10-09",
+        "fr": "Une langue s'apprend petit à petit, comme on apprend à aimer quelqu'un.",
+        "pt": "Uma língua se aprende pouco a pouco, como se aprende a amar alguém."
+      },
+      {
+        "id": "c1-10-10",
+        "fr": "Je te remercie du fond du cœur pour tout.",
+        "pt": "Eu te agradeço do fundo do coração por tudo."
+      },
+      {
+        "id": "c1-10-11",
+        "fr": "Tu me manques déjà, et je ne suis même pas encore parti.",
+        "pt": "Já estou com saudade de você, e ainda nem fui embora."
+      },
+      {
+        "id": "c1-10-12",
+        "fr": "J'ai hâte de te faire découvrir São Paulo.",
+        "pt": "Mal posso esperar para te mostrar São Paulo.",
+        "note": "'Avoir hâte de' = estar ansioso (no bom sentido) para. Muito usado em cartas e mensagens."
+      },
+      {
+        "id": "c1-10-13",
+        "fr": "Prends bien soin de toi d'ici le printemps.",
+        "pt": "Cuide-se bem até a primavera."
+      },
+      {
+        "id": "c1-10-14",
+        "fr": "Je t'embrasse tendrement.",
+        "pt": "Um beijo carinhoso.",
+        "note": "Fecho íntimo. Outras opções: 'je t'embrasse fort', 'avec toute mon affection', 'affectueusement'."
+      },
+      {
+        "id": "c1-10-15",
+        "fr": "Ton petit-fils qui t'aime.",
+        "pt": "Do seu neto que te ama."
+      },
+      {
+        "id": "c1-10-16",
+        "fr": "PS : N'oublie pas de m'envoyer ta recette de tarte aux pommes.",
+        "pt": "PS: Não esquece de me mandar a sua receita de torta de maçã.",
+        "note": "PS (ou P.-S., post-scriptum): muito usado em cartas pessoais, em geral para um recado carinhoso ou engraçado."
+      }
+    ],
+    "pourquoi": [
+      {
+        "title": "A estrutura de uma carta francesa",
+        "body": "Uma carta pessoal francesa segue um roteiro que vale a pena respeitar:\n**1. Lugar e data**, no alto, à direita: *Paris, le 30 novembre*\n**2. Fórmula de abertura**, seguida de vírgula: *Ma très chère Mamie,* / *Cher Monsieur Bernard,*\n**3. Primeira frase:** *J'espère que tu vas bien*, *Je prends la plume pour…*\n**4. Corpo:** notícias, lembranças, agradecimentos, planos\n**5. Fórmula final**, conforme a intimidade: *Je t'embrasse tendrement*, *Gros bisous*, *Affectueusement* (família e amigos) ou *Bien cordialement* (mais neutro)\n**6. Assinatura** e, se quiser, um **PS**.\n\nEm português, fechamos com 'beijos' ou 'abraços'; em francês, o *je t'embrasse* cumpre esse papel — e, numa carta para a avó, ele não pode faltar.",
+        "examples": [
+          {
+            "fr": "Ma très chère Mamie,",
+            "pt": "Minha querida vovó,"
+          },
+          {
+            "fr": "J'espère que tu vas bien.",
+            "pt": "Espero que você esteja bem."
+          },
+          {
+            "fr": "Affectueusement, Léo",
+            "pt": "Com carinho, Léo"
+          }
+        ]
+      },
+      {
+        "title": "Cher, chère, très cher: a gramática do carinho",
+        "body": "Três detalhes fazem uma carta soar nativa:\n**Concordância:** *cher* muda conforme o destinatário: *Cher Papa*, *Chère Maman*, *Chers amis*. E o *très* intensifica: *Ma très chère Mamie*.\n**O possessivo afetivo:** *Ma chère*, *Mon cher*, *Mon petit Léo*. O possessivo dá intimidade, como o nosso 'minha querida'.\n**Os três tempos da carta:** lembrar no passado (*je n'oublierai jamais le jour où…*), agradecer com o infinitivo passado (*merci de m'avoir accueilli* = obrigado por ter me acolhido, igualzinho ao português!) e projetar no futuro (*je t'attends au printemps*).\n\nRepare: uma carta assim junta tudo o que você aprendeu do A1 até aqui numa única página. Petit à petit, você chegou lá.",
+        "examples": [
+          {
+            "fr": "Chère Maman,",
+            "pt": "Querida mamãe,"
+          },
+          {
+            "fr": "Merci de m'avoir accueilli chez toi.",
+            "pt": "Obrigado por ter me recebido na sua casa."
+          },
+          {
+            "fr": "Je t'attends avec impatience.",
+            "pt": "Estou te esperando ansiosamente."
+          }
+        ]
+      }
+    ],
+    "task": {
+      "pt": "Escreva uma carta de seis a oito frases para alguém que você ama (um avô, uma avó, um amigo antigo): abertura, uma lembrança, um agradecimento, um plano e uma fórmula final carinhosa. Se quiser, termine com um PS.",
+      "model": "São Paulo, le 2 décembre. Ma chère Mamie, j'espère que cette lettre te trouvera en pleine forme. Ici, il fait déjà très chaud, et je pense souvent à nos promenades sous la pluie. Merci de m'avoir appris à aimer Paris, et à t'aimer encore plus. J'ai hâte de t'accueillir au printemps. Je t'embrasse très fort. Ton petit-fils, Léo. PS : Maman a déjà préparé ta chambre !"
+    },
+    "culture": "A França tem uma longa tradição de cartas: as que Madame de Sévigné escreveu à filha, no século XVII, ainda são lidas na escola. E muitos avós franceses guardam por décadas, numa caixa, as cartas da família — exatamente como a Mamie.",
+    "glossary": {
+      "lis": "leia (lire; lis-la-moi = leia para mim)",
+      "entendre": "ouvir",
+      "chère": "querida",
+      "écris": "escrevo (écrire)",
+      "presque": "quase",
+      "savais": "sabia (savoir)",
+      "rêve": "sonho (rêver)",
+      "grâce": "graça (grâce à = graças a)",
+      "découvert": "descoberto (découvrir)",
+      "ville": "cidade",
+      "langue": "língua",
+      "surtout": "sobretudo, acima de tudo",
+      "oublierai": "esquecerei (oublier)",
+      "nos": "nossos, nossas",
+      "déjeuners": "almoços",
+      "dimanche": "domingo",
+      "ni": "nem",
+      "papi": "vovô",
+      "chaque": "cada (chaque fois = toda vez)",
+      "prends": "pego (prendre); prends soin de toi = cuide-se",
+      "jeune": "jovem (jeune homme = rapaz)",
+      "courait": "corria (courir)",
+      "tes": "teus, tuas; seus, suas",
+      "partitions": "partituras",
+      "aurait": "teria (avoir)",
+      "fier": "orgulhoso",
+      "apprend": "aprende (apprendre; s'apprendre = ser aprendido)",
+      "aimer": "amar, gostar",
+      "quelqu'un": "alguém",
+      "avoir": "ter (merci de m'avoir… = obrigado por ter me…)",
+      "ouvert": "aberto (ouvrir)",
+      "porte": "porta",
+      "piano": "piano",
+      "pars": "vou embora, parto (partir)",
+      "soin": "cuidado (prendre soin de = cuidar de)",
+      "embrasse": "beijo (embrasser; je t'embrasse = um beijo)",
+      "tendrement": "com ternura",
+      "petit-fils": "neto",
+      "aime": "amo, ama (aimer)",
+      "rangerai": "guardarei (ranger)",
+      "boîte": "caixa",
+      "lettres": "cartas",
+      "écrite": "escrita (écrire)",
+      "venant": "vindo (venir; venant de toi = vindo de você)",
+      "studio": "estúdio, quitinete",
+      "sous": "sob, debaixo de",
+      "espère": "espero (espérer)",
+      "trouvera": "encontrará (trouver)",
+      "santé": "saúde",
+      "plume": "pena, caneta (prendre la plume = começar a escrever)",
+      "précieusement": "com cuidado, com carinho",
+      "souvenirs": "lembranças",
+      "fond": "fundo (du fond du cœur = do fundo do coração)",
+      "manques": "faz falta (manquer: tu me manques = sinto sua falta)",
+      "hâte": "pressa (avoir hâte de = estar ansioso para)",
+      "découvrir": "descobrir (faire découvrir = mostrar)",
+      "ps": "PS (post-scriptum)",
+      "oublie": "esqueça (oublier)",
+      "envoyer": "mandar, enviar",
+      "recette": "receita",
+      "pommes": "maçãs (tarte aux pommes = torta de maçã)",
+      "affectueusement": "afetuosamente, com carinho",
+      "accueilli": "acolhido, recebido (accueillir)",
+      "impatience": "impaciência (avec impatience = ansiosamente)",
+      "décembre": "dezembro",
+      "pleine": "plena, cheia (en pleine forme = em plena forma)",
+      "forme": "forma",
+      "souvent": "frequentemente",
+      "promenades": "passeios",
+      "appris": "aprendido; ensinado (apprendre)",
+      "accueillir": "receber, acolher",
+      "fort": "forte (je t'embrasse très fort = um beijo bem apertado)",
+      "préparé": "preparado (préparer)",
+      "chambre": "quarto"
+    }
+  }
+]

@@ -1,6 +1,6 @@
 // Offline support: everything the app needs is cached on install.
 // Bump VERSION whenever any file changes so phones pick up the update.
-const VERSION = "pap-v1.3.0";
+const VERSION = "pap-v1.4.0";
 const FILES = [
   "./",
   "index.html",
@@ -31,6 +31,8 @@ const FILES = [
   "content/a1.json",
   "content/a2.json",
   "content/b1.json",
+  "content/b2.json",
+  "content/c1.json",
   "content/mamie.json",
   "icons/icon.svg",
   "icons/apple-touch-icon.png",

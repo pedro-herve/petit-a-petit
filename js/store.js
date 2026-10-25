@@ -21,6 +21,7 @@ function blank() {
     days: {}, // "YYYY-MM-DD" -> { sec, reviews, again, news, sessions }
     custom: [], // lessons imported by the user
     seen: {}, // one-time guides already shown: { tour, ratingTip }
+    levels: {}, // "A1" -> { passed, best, attempts, via: "exam" | "placement" | "start" }
     updatedAt: 0,
   };
 }
@@ -129,6 +130,17 @@ export function merge(a, b) {
     for (const [k, d] of Object.entries(src)) {
       const cur = out.days[k] || {};
       out.days[k] = Object.fromEntries(["sec", "reviews", "again", "news", "sessions"].map((f) => [f, Math.max(cur[f] || 0, d[f] || 0)]));
+    }
+  for (const src of [a.levels || {}, b.levels || {}])
+    for (const [L, r] of Object.entries(src)) {
+      const cur = out.levels[L] || {};
+      out.levels[L] = {
+        ...cur,
+        ...r,
+        passed: cur.passed && r.passed ? Math.min(cur.passed, r.passed) : cur.passed || r.passed || null,
+        best: Math.max(cur.best || 0, r.best || 0),
+        attempts: Math.max(cur.attempts || 0, r.attempts || 0),
+      };
     }
   for (const src of [a.seen || {}, b.seen || {}])
     for (const [k, t] of Object.entries(src)) out.seen[k] = Math.min(out.seen[k] || Infinity, t);

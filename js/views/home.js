@@ -1,11 +1,11 @@
 // "Hoje": today's session, streak, current unit and the week at a glance.
 import * as store from "../store.js";
-import { unit, currentUnit, unitProgress } from "../content.js";
+import { unit, currentUnit, unitProgress, examReady, levelInfo, lineOf } from "../content.js";
 import { dayKey, addDays } from "../time.js";
 import { h, mount, icon, progressRing } from "../ui.js";
 import { install, shouldOfferInstall, isAndroid } from "../install.js";
 import { typo } from "../text.js";
-import { planToday, buildDaily, buildExtraNew, start } from "./session.js";
+import { planToday, buildDaily, buildExtraNew, start, startExam } from "./session.js";
 import { go } from "../nav.js";
 
 const WEEKDAYS = ["D", "S", "T", "Q", "Q", "S", "S"];
@@ -22,6 +22,7 @@ export function renderHome(el) {
   const dateFr = new Date().toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
   const curId = currentUnit(s);
   const cur = curId && unit(curId);
+  const exam = examReady(s);
 
   const todayCard = has
     ? h("section", { class: "card today" },
@@ -47,7 +48,7 @@ export function renderHome(el) {
           )
         ),
         h("div", { class: "row gap wrap" },
-          h("button", { class: "btn soft", onclick: () => start(buildExtraNew(store.get(), 5), { title: "Mais frases" }) }, icon("sparkle"), "Aprender mais 5 frases"),
+          !exam && h("button", { class: "btn soft", onclick: () => start(buildExtraNew(store.get(), 5), { title: "Mais frases" }) }, icon("sparkle"), "Aprender mais 5 frases"),
           h("button", { class: "btn soft", onclick: () => go("/praticar") }, icon("mic"), "Praticar")
         )
       );
@@ -73,17 +74,29 @@ export function renderHome(el) {
     shouldOfferInstall() &&
       h("button", { class: "install-banner", onclick: install }, icon("download"), h("span", null, h("b", null, isAndroid() ? "Instale o app" : "Instale no iPhone"), " para usar em tela cheia, com ícone próprio e sem internet."), icon("chevron")),
     todayCard,
+    exam &&
+      h("section", { class: "card exam-card", style: { "--line": levelInfo(exam).color, "--line-ink": levelInfo(exam).ink } },
+        h("span", { class: "line-badge" }, exam),
+        h("div", null,
+          h("h3", { class: "serif" }, `Terminus da Linha ${exam}!`),
+          h("p", { class: "muted" }, "Você concluiu todas as estações. Faça a prova para abrir a próxima linha.")
+        ),
+        h("button", { class: "btn primary", onclick: () => startExam(exam) }, icon("play"), "Fazer a prova")
+      ),
     cur &&
       (() => {
         const pr = unitProgress(s, cur.id);
-        return h("section", { class: "card unit-card", onclick: () => go(`/trilha/${cur.id}`) },
+        const custom = cur.id.startsWith("c-");
+        const n = custom ? 0 : lineOf(cur.level).findIndex((x) => x.id === cur.id) + 1;
+        const info = levelInfo(cur.level);
+        return h("section", { class: "card unit-card", style: custom ? null : { "--line": info.color, "--line-ink": info.ink }, onclick: () => go(`/trilha/${cur.id}`) },
           h("div", { class: "unit-card-top" },
-            h("span", { class: `chip ${cur.track === "mamie" ? "rose" : ""}` }, cur.track === "mamie" ? `Trilha Mamie · ${cur.level}` : `${cur.level} · Unidade ${Number(cur.id.slice(3)) || ""}`),
+            h("span", { class: `chip line-tag ${cur.track === "mamie" ? "rose" : ""}` }, custom ? `Minha lição · ${cur.level}` : `Linha ${cur.level} · Estação ${n}${cur.track === "mamie" ? " · Mamie" : ""}`),
             icon("chevron")
           ),
           h("h3", { class: "serif" }, typo(cur.title)),
           h("p", { class: "muted" }, cur.titlePt),
-          h("div", { class: "bar thin" }, h("div", { class: "bar-fill", style: { width: `${pr.pct * 100}%` } })),
+          h("div", { class: "bar thin" }, h("div", { class: "bar-fill line-fill", style: { width: `${pr.pct * 100}%` } })),
           h("small", { class: "muted" }, `${pr.added} de ${pr.total} frases`)
         );
       })(),
