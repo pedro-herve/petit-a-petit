@@ -13,6 +13,7 @@ import { renderPractice } from "./views/practice.js";
 import { renderNotebook } from "./views/notebook.js";
 import { renderProfile } from "./views/profile.js";
 import { renderSession, active } from "./views/session.js";
+import { maybeStartTour } from "./tour.js";
 
 const root = document.getElementById("app");
 
@@ -52,6 +53,7 @@ function render() {
   else if (r === "/perfil") renderProfile(page);
   else renderHome(page);
   root.replaceChildren(page, tabbar(r));
+  if (r === "/hoje") maybeStartTour();
 }
 
 function ready() {

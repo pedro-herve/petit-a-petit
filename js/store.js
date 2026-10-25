@@ -20,6 +20,7 @@ function blank() {
     focus: null, // unit chosen in "Trilha" to study next
     days: {}, // "YYYY-MM-DD" -> { sec, reviews, again, news, sessions }
     custom: [], // lessons imported by the user
+    seen: {}, // one-time guides already shown: { tour, ratingTip }
     updatedAt: 0,
   };
 }
@@ -129,6 +130,8 @@ export function merge(a, b) {
       const cur = out.days[k] || {};
       out.days[k] = Object.fromEntries(["sec", "reviews", "again", "news", "sessions"].map((f) => [f, Math.max(cur[f] || 0, d[f] || 0)]));
     }
+  for (const src of [a.seen || {}, b.seen || {}])
+    for (const [k, t] of Object.entries(src)) out.seen[k] = Math.min(out.seen[k] || Infinity, t);
   const custom = new Map();
   for (const u of [...(a.custom || []), ...(b.custom || [])]) custom.set(u.id, u);
   out.custom = [...custom.values()];

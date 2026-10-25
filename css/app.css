@@ -552,3 +552,32 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 .danger-text .icon:first-child { color: var(--red) !important; }
+
+/* ---------- tour ---------- */
+.tour { position: fixed; inset: 0; z-index: 80; transition: background 0.25s; }
+.tour.dim { background: rgba(10, 14, 25, 0.6); }
+.tour-spot {
+  position: fixed; border-radius: 18px; pointer-events: none;
+  box-shadow: 0 0 0 200vmax rgba(10, 14, 25, 0.6), 0 0 0 3px color-mix(in srgb, var(--bg) 85%, transparent);
+  transition: left 0.3s ease, top 0.3s ease, width 0.3s ease, height 0.3s ease, opacity 0.2s;
+}
+.tour.dim .tour-spot { opacity: 0; }
+.tour-card {
+  position: fixed; width: min(360px, calc(100vw - 32px)); background: var(--surface); color: var(--ink);
+  border-radius: 20px; padding: 18px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  display: flex; flex-direction: column; gap: 10px; transition: left 0.3s ease, top 0.3s ease; animation: rise 0.25s ease;
+}
+.tour-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; }
+.tour-head { display: flex; justify-content: space-between; align-items: center; }
+.tour-count { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); }
+.tour-head .dots span { width: 6px; height: 6px; }
+.tour-head .dots span.on { width: 16px; }
+.tour-text { color: var(--ink-2); font-size: 15px; line-height: 1.55; }
+.tour-actions { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.tour-actions .btn.link { margin-right: auto; padding-left: 0; color: var(--muted); }
+.tour-actions.column { flex-direction: column; align-items: stretch; }
+.tour-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--ink-2); }
+.tour-list li { display: flex; gap: 10px; align-items: flex-start; }
+.tour-list li .icon { color: var(--blue); width: 20px; height: 20px; margin-top: 1px; }
+.tour-list b { color: var(--ink); }
+.rating-tip { font-size: 13px; }

@@ -442,7 +442,12 @@ function review(el, step, done) {
     const pv = preview(st, now);
     const label = { [AGAIN]: "Errei", [HARD]: "Difícil", [GOOD]: "Bom", [EASY]: "Fácil" };
     const cls = { [AGAIN]: "again", [HARD]: "hard", [GOOD]: "good", [EASY]: "easy" };
+    const firstTime = !store.get().seen?.ratingTip;
     return h("div", { class: "rating" },
+      firstTime &&
+        h("div", { class: "callout rating-tip" }, icon("info"),
+          h("span", null, "Avalie com sinceridade: ", h("b", null, "Errei"), " traz a frase de volta em 10 minutos; ", h("b", null, "Bom"), " e ", h("b", null, "Fácil"), " a espaçam por dias. Embaixo de cada botão está quando ela volta.")
+        ),
       h("p", { class: "muted small center" }, "Quão bem você lembrou?"),
       h("div", { class: "rate-row" },
         [AGAIN, HARD, GOOD, EASY].map((g) =>
@@ -459,6 +464,7 @@ function review(el, step, done) {
     const isNew = !st || !st.reps;
     store.update((s) => {
       s.cards[step.id] = { ...schedule(st, g, now), added: st?.added || now };
+      if (!s.seen?.ratingTip) s.seen = { ...(s.seen || {}), ratingTip: now };
     });
     store.logDay({ reviews: isNew ? 0 : 1, news: isNew ? 1 : 0, again: g === AGAIN ? 1 : 0 });
     S.stats[isNew ? "news" : "reviews"]++;

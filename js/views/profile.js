@@ -6,10 +6,11 @@ import { configure, frenchVoices, speak } from "../speech.js";
 import { status, syncNow, isCloudAccount } from "../sync.js";
 import { minutesChooser } from "./onboarding.js";
 import { installHelp } from "./home.js";
-import { rerender } from "../nav.js";
+import { rerender, go } from "../nav.js";
+import { startTour } from "../tour.js";
 import { dayKey } from "../time.js";
 
-export const VERSION = "1.1.0";
+export const VERSION = "1.2.0";
 const appUrl = () => location.origin + location.pathname;
 
 function row(label, control, sub) {
@@ -200,6 +201,7 @@ export function renderProfile(el) {
 
     h("section", { class: "card" },
       h("h3", null, "Mais"),
+      h("button", { class: "list-btn", onclick: () => { go("/hoje"); setTimeout(startTour, 350); } }, icon("route"), "Ver o tour do app de novo", icon("chevron")),
       h("button", {
         class: "list-btn",
         onclick: async () => {
