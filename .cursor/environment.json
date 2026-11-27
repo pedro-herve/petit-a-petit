@@ -1,0 +1,11 @@
+{
+  "name": "Petit à Petit",
+  "install": "[ ! -d '/agent/repos/petit-a-petit' ] || cd '/agent/repos/petit-a-petit' || exit $?\nnpm run validate",
+  "start": "[ ! -d '/agent/repos/petit-a-petit' ] || cd '/agent/repos/petit-a-petit' || exit $?\nexec bash .cursor/start.sh",
+  "ports": [
+    {
+      "name": "Petit à Petit dev server",
+      "port": 5173
+    }
+  ]
+}
